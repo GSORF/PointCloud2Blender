@@ -46,6 +46,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="btnImport">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="text">
          <string>Import!</string>
         </property>

@@ -7,6 +7,9 @@
 
 #include <QFileDialog>
 
+#include <QThreadPool>
+#include <importworker.h>
+
 namespace Ui {
 class MainWindow;
 }
@@ -15,9 +18,8 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
-    //Create a new ImportWorkerThread
-    //Create a ThreadPool
-    //...
+    ImportWorker *importer;
+    QThreadPool threadPool;
 
 
 public:
@@ -30,6 +32,7 @@ private:
 public slots:
     void showFileOpenDialog();
     void startFileImport();
+    void updateImportStatus(int percent);
 };
 
 #endif // MAINWINDOW_H

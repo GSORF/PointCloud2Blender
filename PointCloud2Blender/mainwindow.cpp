@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    importer = NULL;
+
     connect(ui->btnFileOpenDialog, SIGNAL(clicked()), this, SLOT(showFileOpenDialog()));
     connect(ui->btnImport, SIGNAL(clicked()), this, SLOT(startFileImport()));
 
@@ -22,7 +24,7 @@ MainWindow::~MainWindow()
 void MainWindow::showFileOpenDialog()
 {
     //The following filetypes are selectable
-    QString fileFormat = "XYZ Files (*xyz);;XYZ Binary Files (*xyzb);;All Files (*.*)";
+    QString fileFormat = "XYZ Files (*xyz);;XYZ Binary Files (*xyb);;All Files (*.*)";
     QString fileName = "";
 
     fileName = QFileDialog::getOpenFileName(this, "Please specify your point cloud file", QDir::homePath(), fileFormat);
@@ -42,12 +44,19 @@ void MainWindow::startFileImport()
 {
     qDebug() << "MainWindow::startFileImport()";
 
-    //create a new Thread for importing
-    //pass the filename to the importer Thread (Name: ImportWorker)
-    //start the thread
-
+    importer = new ImportWorker(ui->txtFilePathImport->text());
     //Later: Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
+    //connect(importer, SIGNAL(newPoint(QVector3D)), PANORAMAOBJECT, SLOT(...)
+    connect(importer, SIGNAL(importStatus(int)), SLOT(updateImportStatus(int)));
+    threadPool.start(importer);
+}
 
-    //Everything else happens on the Thread (Importing, maybe calculating spherical coordinates, and sending over the data to the main data container
+void MainWindow::updateImportStatus(int percent)
+{
+    ui->prbImportStatus->setValue(percent);
 
+    if(percent >= 100)
+    {
+        ui->prbImportStatus->setValue(0);
+    }
 }
