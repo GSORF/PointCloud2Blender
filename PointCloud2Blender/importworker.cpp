@@ -24,11 +24,39 @@ void ImportWorker::run()
     //import the filename
     qDebug() << "opening file: " << this->fileName;
 
-    //send the current data set over to the panorama data container
+    QFile file(this->fileName);
+    if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        return;
 
-    emit newPoint( QVector3D(1,12,3) );
+    QTextStream inputStream(&file);
+    QString line = inputStream.readLine();
+    qDebug() << "line before loop" << line;
+    while(!line.isNull())
+    {
+        //BUG: First Line is not being imported...
+        qDebug() << "line inside loop" << line;
 
-    emit importStatus(10);
+
+        Point3D _newPoint;
+
+        //get the contents from the TextStreamObject
+        inputStream >> _newPoint.x >> _newPoint.y >> _newPoint.z >>
+                       _newPoint.r >> _newPoint.g >> _newPoint.b;
+
+
+        //send the current point over to the panorama data container
+        emit newPoint( _newPoint );
+
+        qDebug() << _newPoint.toString();
+
+        emit importStatus(10);
+
+        //read the line
+        line = inputStream.readLine();
+    }
+
+
+
 
 
 

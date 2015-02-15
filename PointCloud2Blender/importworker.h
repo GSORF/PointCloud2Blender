@@ -6,7 +6,27 @@
 #include <QThread>
 #include <QDebug>
 
-#include <QVector3D>
+#include <QFile>
+
+class Point3D
+{
+    //Example xyz file:
+    //-59.43620000 -31.36650000 302.80950000 59 46 55
+
+public:
+    //Position Data
+    float x,y,z;
+    //Color Data
+    quint16 r,g,b;
+    //Spherical Data
+    float alpha, beta, distance;
+
+    QString toString()
+    {
+        return "(" + QString::number(x) + ", "  + QString::number(y) + ", " + QString::number(z) + ")";
+    }
+};
+
 
 class ImportWorker : public QObject, public QRunnable
 {
@@ -28,7 +48,7 @@ public:
 
 
 signals:
-    void newPoint(QVector3D point);
+    void newPoint(Point3D point);
     void importStatus(int percent);
 
 public slots:
