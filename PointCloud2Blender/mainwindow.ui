@@ -33,10 +33,10 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <widget class="QLineEdit" name="lineEdit"/>
+         <widget class="QLineEdit" name="txtFilePathImport"/>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="btnFileOpenDialog">
           <property name="text">
            <string>choose...</string>
           </property>
@@ -45,14 +45,14 @@
        </layout>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="btnImport">
         <property name="text">
          <string>Import!</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar">
+       <widget class="QProgressBar" name="prbImportStatus">
         <property name="value">
          <number>0</number>
         </property>
