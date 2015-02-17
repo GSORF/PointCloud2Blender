@@ -6,6 +6,7 @@
 #include <QDebug>
 
 #include <QFileDialog>
+#include <QMessageBox>
 
 #include <QThreadPool>
 #include <importworker.h>
@@ -33,6 +34,9 @@ public slots:
     void showFileOpenDialog();
     void startFileImport();
     void updateImportStatus(int percent);
+
+    void showInfoMessage(QString message);
+    void showErrorMessage(QString message);
 };
 
 #endif // MAINWINDOW_H

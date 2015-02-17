@@ -19,8 +19,8 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete importer;
     importer = NULL;
+    delete importer;
 }
 
 void MainWindow::showFileOpenDialog()
@@ -49,7 +49,10 @@ void MainWindow::startFileImport()
     importer = new ImportWorker(ui->txtFilePathImport->text());
     //Later: Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
     //connect(importer, SIGNAL(newPoint(QVector3D)), PANORAMAOBJECT, SLOT(...)
-    connect(importer, SIGNAL(importStatus(int)), SLOT(updateImportStatus(int)));
+    connect(importer, SIGNAL(importStatus(int)), this, SLOT(updateImportStatus(int)));
+    connect(importer, SIGNAL(showInfoMessage(QString)), this, SLOT(showInfoMessage(QString)));
+    connect(importer, SIGNAL(showErrorMessage(QString)), this, SLOT(showErrorMessage(QString)));
+
     threadPool.start(importer);
 }
 
@@ -61,4 +64,14 @@ void MainWindow::updateImportStatus(int percent)
     {
         ui->prbImportStatus->setValue(0);
     }
+}
+
+void MainWindow::showInfoMessage(QString message)
+{
+    QMessageBox::information(this, "Information", message);
+}
+
+void MainWindow::showErrorMessage(QString message)
+{
+    QMessageBox::critical(this, "Error", message);
 }

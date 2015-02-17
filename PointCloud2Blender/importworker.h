@@ -10,7 +10,7 @@
 
 class Point3D
 {
-    //Example xyz file:
+    //Example xyz file (original Faro Scene):
     //-59.43620000 -31.36650000 302.80950000 59 46 55
 
 public:
@@ -18,8 +18,6 @@ public:
     float x,y,z;
     //Color Data
     quint16 r,g,b;
-    //Spherical Data
-    float alpha, beta, distance;
 
     QString toString()
     {
@@ -42,6 +40,9 @@ public:
     explicit ImportWorker(QString fileName, QObject *parent = 0);
 
     void run();
+    void import_XYZ_Ascii_File();
+    void import_XYZ_Binary_File();
+
 
     FileType fileType;
     QString fileName;
@@ -50,6 +51,9 @@ public:
 signals:
     void newPoint(Point3D point);
     void importStatus(int percent);
+
+    void showInfoMessage(QString message);
+    void showErrorMessage(QString message);
 
 public slots:
 
