@@ -55,14 +55,9 @@ void ImportWorker::import_XYZ_Ascii_File()
 
     while(!line.isNull())
     {
-        //BUG: First Line is not being imported...
-
         currentSize += line.size();
 
-        qDebug() << "totalSize: " << totalSize;
-        qDebug() << "currentSize" << currentSize;
         percent = (currentSize*100.0f)/totalSize;
-        qDebug() << "percent" << percent;
 
         Point3D _newPoint;
 
@@ -98,9 +93,6 @@ void ImportWorker::import_XYZ_Ascii_File()
 
         //send the current point over to the panorama data container
         emit newPoint( _newPoint );
-
-        qDebug() << _newPoint.toString();
-
         emit importStatus(percent);
 
 

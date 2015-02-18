@@ -14,10 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    importworker.cpp
+    importworker.cpp \
+    panorama3d.cpp
 
 HEADERS  += mainwindow.h \
-    importworker.h
+    importworker.h \
+    panorama3d.h
 
 FORMS    += mainwindow.ui
 

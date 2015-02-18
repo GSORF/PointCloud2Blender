@@ -12,6 +12,7 @@
 
 #include <QThreadPool>
 #include <importworker.h>
+#include <panorama3d.h>
 
 namespace Ui {
 class MainWindow;
@@ -23,6 +24,10 @@ class MainWindow : public QMainWindow
 
     ImportWorker *importer;
     QThreadPool threadPool;
+    Panorama3D *panorama;
+
+    Panorama3D::Orientation orientation;
+    quint8 resolution;
 
     QSettings settings;
 
@@ -47,6 +52,10 @@ public slots:
     void startFileImport();
     void openRecentFile();
     void updateImportStatus(int percent);
+
+    void updateDepthMap(QImage *depthMap);
+    void updateColorMap(QImage *colorMap);
+
 
     //Callbacks for Panorama settings:
     void onClickUpVectorLeftX();

@@ -10,6 +10,8 @@
 
 class Point3D
 {
+
+
     //Example xyz file (original Faro Scene):
     //-59.43620000 -31.36650000 302.80950000 59 46 55
 
@@ -24,7 +26,6 @@ public:
         return "(" + QString::number(x) + ", "  + QString::number(y) + ", " + QString::number(z) + ")";
     }
 };
-
 
 class ImportWorker : public QObject, public QRunnable
 {

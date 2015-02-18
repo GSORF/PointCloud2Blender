@@ -5,9 +5,15 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    qRegisterMetaType<Point3D>("Point3D");
+
     ui->setupUi(this);
 
     importer = NULL;
+    panorama = NULL;
+
+    orientation = Panorama3D::RIGHT_UP_Z;
+    resolution = 1;
 
     connect(ui->btnFileOpenDialog, SIGNAL(clicked()), this, SLOT(showFileOpenDialog()));
     connect(ui->btnImport, SIGNAL(clicked()), this, SLOT(startFileImport()));
@@ -22,6 +28,8 @@ MainWindow::~MainWindow()
     delete importer;
 
     //Note: Delete menus?
+
+    delete panorama;
 }
 
 void MainWindow::generateMenus()
@@ -89,11 +97,15 @@ void MainWindow::startFileImport()
     qDebug() << "MainWindow::startFileImport()";
 
     importer = new ImportWorker(ui->txtFilePathImport->text());
-    //Later: Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
-    //connect(importer, SIGNAL(newPoint(QVector3D)), PANORAMAOBJECT, SLOT(...)
     connect(importer, SIGNAL(importStatus(int)), this, SLOT(updateImportStatus(int)));
     connect(importer, SIGNAL(showInfoMessage(QString)), this, SLOT(showInfoMessage(QString)));
     connect(importer, SIGNAL(showErrorMessage(QString)), this, SLOT(showErrorMessage(QString)));
+
+    panorama = new Panorama3D(orientation, resolution, this);
+    connect(panorama, SIGNAL(updateDepthMap(QImage*)), this, SLOT(updateDepthMap(QImage*)));
+    connect(panorama, SIGNAL(updateColorMap(QImage*)), this, SLOT(updateColorMap(QImage*)));
+    //Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
+    connect(importer, SIGNAL(newPoint(Point3D)), panorama, SLOT(newPoint(Point3D)));
 
     threadPool.start(importer);
 }
@@ -116,62 +128,75 @@ void MainWindow::updateImportStatus(int percent)
     if(percent >= 100)
     {
         ui->prbImportStatus->setValue(0);
+        panorama->finished();
     }
+}
+
+void MainWindow::updateDepthMap(QImage *depthMap)
+{
+    ui->lblPanoramaDepth->setPixmap( QPixmap::fromImage(*depthMap) );
+    this->repaint();
+}
+
+void MainWindow::updateColorMap(QImage *colorMap)
+{
+    ui->lblPanoramaColor->setPixmap( QPixmap::fromImage(*colorMap) );
+    this->repaint();
 }
 
 void MainWindow::onClickUpVectorLeftX()
 {
-
+    orientation = Panorama3D::LEFT_UP_X;
 }
 
 void MainWindow::onClickUpVectorLeftY()
 {
-
+    orientation = Panorama3D::LEFT_UP_Y;
 }
 
 void MainWindow::onClickUpVectorLeftZ()
 {
-
+    orientation = Panorama3D::LEFT_UP_Z;
 }
 
 void MainWindow::onClickUpVectorRightX()
 {
-
+    orientation = Panorama3D::RIGHT_UP_X;
 }
 
 void MainWindow::onClickUpVectorRightY()
 {
-
+    orientation = Panorama3D::RIGHT_UP_Y;
 }
 
 void MainWindow::onClickUpVectorRightZ()
 {
-
+    orientation = Panorama3D::RIGHT_UP_Z;
 }
 
 void MainWindow::onClickPanoramaResolutionX1()
 {
-
+    resolution = 1;
 }
 
 void MainWindow::onClickPanoramaResolutionX2()
 {
-
+    resolution = 2;
 }
 
 void MainWindow::onClickPanoramaResolutionX4()
 {
-
+    resolution = 4;
 }
 
 void MainWindow::onClickPanoramaResolutionX8()
 {
-
+    resolution = 8;
 }
 
 void MainWindow::onClickPanoramaResolutionX16()
 {
-
+    resolution = 16;
 }
 
 void MainWindow::onClickExportPanoramas()
