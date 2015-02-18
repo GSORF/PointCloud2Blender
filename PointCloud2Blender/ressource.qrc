@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/application">
+        <file>assets/handedness.png</file>
+    </qresource>
+</RCC>

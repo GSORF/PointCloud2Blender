@@ -20,3 +20,6 @@ HEADERS  += mainwindow.h \
     importworker.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    ressource.qrc
