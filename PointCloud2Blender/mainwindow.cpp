@@ -119,6 +119,71 @@ void MainWindow::updateImportStatus(int percent)
     }
 }
 
+void MainWindow::onClickUpVectorLeftX()
+{
+
+}
+
+void MainWindow::onClickUpVectorLeftY()
+{
+
+}
+
+void MainWindow::onClickUpVectorLeftZ()
+{
+
+}
+
+void MainWindow::onClickUpVectorRightX()
+{
+
+}
+
+void MainWindow::onClickUpVectorRightY()
+{
+
+}
+
+void MainWindow::onClickUpVectorRightZ()
+{
+
+}
+
+void MainWindow::onClickPanoramaResolutionX1()
+{
+
+}
+
+void MainWindow::onClickPanoramaResolutionX2()
+{
+
+}
+
+void MainWindow::onClickPanoramaResolutionX4()
+{
+
+}
+
+void MainWindow::onClickPanoramaResolutionX8()
+{
+
+}
+
+void MainWindow::onClickPanoramaResolutionX16()
+{
+
+}
+
+void MainWindow::onClickExportPanoramas()
+{
+
+}
+
+void MainWindow::onClickExportMesh()
+{
+
+}
+
 void MainWindow::showInfoMessage(QString message)
 {
     QMessageBox::information(this, "Information", message);

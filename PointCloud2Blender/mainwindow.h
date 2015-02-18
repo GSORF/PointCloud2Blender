@@ -48,6 +48,23 @@ public slots:
     void openRecentFile();
     void updateImportStatus(int percent);
 
+    //Callbacks for Panorama settings:
+    void onClickUpVectorLeftX();
+    void onClickUpVectorLeftY();
+    void onClickUpVectorLeftZ();
+    void onClickUpVectorRightX();
+    void onClickUpVectorRightY();
+    void onClickUpVectorRightZ();
+    void onClickPanoramaResolutionX1();
+    void onClickPanoramaResolutionX2();
+    void onClickPanoramaResolutionX4();
+    void onClickPanoramaResolutionX8();
+    void onClickPanoramaResolutionX16();
+
+    //Callbacks for Panorama Export:
+    void onClickExportPanoramas();
+    void onClickExportMesh();
+
     void showInfoMessage(QString message);
     void showErrorMessage(QString message);
 };
