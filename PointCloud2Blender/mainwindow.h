@@ -8,6 +8,8 @@
 #include <QFileDialog>
 #include <QMessageBox>
 
+#include <QSettings>
+
 #include <QThreadPool>
 #include <importworker.h>
 
@@ -22,6 +24,13 @@ class MainWindow : public QMainWindow
     ImportWorker *importer;
     QThreadPool threadPool;
 
+    QSettings settings;
+
+    QMenu *menuFile;
+    QAction *actOpen;
+    QMenu *menuOpenRecent;
+    QAction *actOpenRecent;
+    QAction *actExit;
 
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -30,9 +39,13 @@ public:
 private:
     Ui::MainWindow *ui;
 
+    void generateMenus();
+
 public slots:
     void showFileOpenDialog();
+    void setFilePath(QString fileName);
     void startFileImport();
+    void openRecentFile();
     void updateImportStatus(int percent);
 
     void showInfoMessage(QString message);

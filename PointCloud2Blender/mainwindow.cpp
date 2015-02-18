@@ -12,8 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->btnFileOpenDialog, SIGNAL(clicked()), this, SLOT(showFileOpenDialog()));
     connect(ui->btnImport, SIGNAL(clicked()), this, SLOT(startFileImport()));
 
-
-
+    generateMenus();
 }
 
 MainWindow::~MainWindow()
@@ -21,6 +20,41 @@ MainWindow::~MainWindow()
     delete ui;
     importer = NULL;
     delete importer;
+
+    //Note: Delete menus?
+}
+
+void MainWindow::generateMenus()
+{
+    //Load application settings
+    QString recentPath = settings.value("paths/recentPath", "").toString();
+
+    //Generate menus
+    menuFile = new QMenu("&File", this);
+    actOpen = new QAction("&Open...", this);
+    actOpen->setShortcut(QKeySequence::Open);
+    actOpen->setStatusTip( tr("Open a new point cloud file") );
+    connect(actOpen, SIGNAL(triggered()), this, SLOT(showFileOpenDialog()));
+    if(!recentPath.isEmpty())
+    {
+        menuOpenRecent = new QMenu("Open &recent...", menuFile);
+        actOpenRecent = new QAction(recentPath, this);
+        connect(actOpenRecent, SIGNAL(triggered()), this, SLOT(openRecentFile()));
+    }
+    actExit  = new QAction("&Exit", this);
+    connect(actExit, SIGNAL(triggered()), this, SLOT(close()));
+
+    //Add menus
+    ui->menuBar->addMenu(menuFile);
+    menuFile->addAction(actOpen);
+    if(!recentPath.isEmpty())
+    {
+        menuFile->addMenu(menuOpenRecent);
+        menuOpenRecent->addAction(actOpenRecent);
+    }
+    menuFile->addSeparator();
+    menuFile->addAction(actExit);
+
 }
 
 void MainWindow::showFileOpenDialog()
@@ -30,6 +64,14 @@ void MainWindow::showFileOpenDialog()
     QString fileName = "";
 
     fileName = QFileDialog::getOpenFileName(this, "Please specify your point cloud file", QDir::homePath(), fileFormat);
+
+    setFilePath(fileName);
+}
+
+void MainWindow::setFilePath(QString fileName)
+{
+    //Save recent Path as setting
+    settings.setValue("paths/recentPath", fileName);
 
     if(!fileName.isEmpty())
     {
@@ -54,6 +96,17 @@ void MainWindow::startFileImport()
     connect(importer, SIGNAL(showErrorMessage(QString)), this, SLOT(showErrorMessage(QString)));
 
     threadPool.start(importer);
+}
+
+void MainWindow::openRecentFile()
+{
+    //Get the text from the menu item and use it as the filepath
+    QAction *action = qobject_cast<QAction*>(sender());
+    if(action)
+    {
+        setFilePath(action->text());
+        startFileImport();
+    }
 }
 
 void MainWindow::updateImportStatus(int percent)
