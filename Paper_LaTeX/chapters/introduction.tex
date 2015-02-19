@@ -1,0 +1,157 @@
+\section{Justification}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit interdum sagittis. Nulla facilisi. Pellentesque laoreet tincidunt semper. Pellentesque pellentesque lectus id arcu interdum cursus ut ac dui. Etiam feugiat nisl ac odio suscipit pretium venenatis eget diam. Morbi molestie ipsum sit amet sapien rutrum luctus. Proin ac dolor ut metus laoreet aliquam non id nunc. Curabitur non efficitur dolor. Donec iaculis, dui et porta iaculis, magna tellus placerat ex, sed porta sem ligula ac augue. Fusce vitae sagittis ex. Pellentesque faucibus cursus elit, et faucibus velit cursus in. Nam lobortis id neque id hendrerit. Fusce et dolor nisi.
+
+\section{Initial project specification}
+
+
+Problem of Blender not capable to handle import point clouds and display them colored \parencite[see][p10]{webBlenderArtistsPointCloudSupport}.
+
+
+
+\section{project schedule}
+
+Etiam non volutpat diam. Nam ac consectetur felis. Ut nec mi dictum, lobortis mauris quis, dapibus ligula. Nulla porttitor diam sed mauris dapibus posuere. Fusce pellentesque odio at nisl placerat porta. Donec urna risus, iaculis vitae justo quis, tempus ullamcorper diam. Integer eu gravida est. Phasellus eu ex tincidunt urna tempus pulvinar in in metus. Mauris tempus magna ac finibus suscipit. Praesent malesuada magna nibh, at rutrum felis semper a.
+
+
+
+\definecolor{RoyalBlue}{RGB}{92,102,149}
+\definecolor{OliveGreen}{RGB}{51,151,102}
+\definecolor{Maroon}{RGB}{180,20,53}
+\begin{ganttchart}[
+x unit=1.3cm,
+y unit title=0.7cm,
+y unit chart=0.8cm,
+vgrid,
+time slot format=isodate-yearmonth,
+compress calendar,
+title/.append style={draw=none, fill=RoyalBlue!50!black},
+title label font=\sffamily\bfseries\color{white},
+title label node/.append style={below=-1.6ex},
+title left shift=.05,
+title right shift=-.05,
+title height=1,
+bar/.append style={draw=none, fill=OliveGreen!75},
+bar height=.6,
+bar label font=\normalsize\color{black!50},
+group right shift=0,
+group top shift=.6,
+group height=.3,
+group peaks height=.2,
+bar incomplete/.append style={fill=Maroon}
+]{2015-01-15}{2015-07-15}
+\gantttitlecalendar{year, month=shortname} \\
+\ganttbar[
+progress=100,
+bar progress label font=\small\color{OliveGreen!75},
+bar progress label node/.append style={right=4pt},
+bar label font=\normalsize\color{OliveGreen},
+name=pp
+]{Laser Scanning}{2015-01-15}{2015-01-25} \\
+\ganttset{progress label text={}, link/.style={black, -to}}
+
+\ganttgroup{Software development}{2015-02-15}{2015-03-01} \\
+\ganttbar[progress=50, name=T1A]{Import}{2015-02-15}{2015-02-18} \\
+\ganttbar[progress=0]{Processing}{2015-02-19}{2015-02-25} \\
+\ganttbar[progress=0]{Export}{2015-02-26}{2015-03-01} \\
+
+\ganttgroup{Video production}{2015-04-01}{2015-06-01} \\
+\ganttbar[progress=0, name=T2A]{Modeling}{2015-04-01}{2015-05-01} \\
+\ganttbar[progress=0]{Animation}{2015-05-01}{2015-06-01} \\
+
+\ganttset{link/.style={OliveGreen}}
+\ganttlink[link mid=.4]{pp}{T1A}
+\ganttlink[link mid=.159]{pp}{T2A}
+\label{tab:project_schedule}
+\end{ganttchart}
+
+
+\section{State-of-the-art methods for 3D reconstruction}
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
+
+\subsection{Light Detection And Ranging (LiDAR)}
+
+This works by...
+
+LiDAR-Devices:
+
+flat mirror elliptical mount
+
+LiDAR-Lite, custom arduino build
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{graph_a.png}
+	\caption{LiDAR Scanner Point Cloud}
+	\label{fig:LiDAR}
+\end{figure}
+
+
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
+
+
+\subsection{Photogrammetry}
+
+This works by...
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{graph1.png}
+		\caption{$OpenSource: Visual SFM + Meshlab$}
+		\label{fig:visualsfm meshlab}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{graph2.png}]
+		\caption{$Free: Autodesk 123D Catch$}
+		\label{fig:123dcatch}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{graph3.png}]
+		\caption{$Commercial: Agisoft Photoscan Pro (Demo)$}
+		\label{fig:photoscan pro}
+	\end{subfigure}
+	\caption{Multiview Reconstruction from historic stereo pairs}
+	\label{fig:multiview reconstruction historic stereo}
+\end{figure}
+
+Comparison of various software, commercial and non-commercial with results
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
+
+\subsection{Google Maps (R) }
+
+This works by...
+
+rough 3D building shapes
+
+\subsection{Open Street Map (R) }
+
+This works by...
+
+Indoor version
+
+\subsection{Bavarian State Office for Survey and Geoinformation}
+
+
+
+\subsection{Autonomous mapping with UAV's and SLAM}
+
+
+
+\subsection{Manual methods}
+
+If all other methods fail, there is still the chance to get a reconstruction done roughly by taking measurements of real objects with measuring tapes or eyeballing. Loading views from the front, side and top view into a 3D software can already yield decent results.
+
+\section{Defining the scope of my work}
+
+Aliquam at varius elit. Suspendisse viverra ex a ipsum scelerisque condimentum. Nam ac neque luctus, ullamcorper neque sit amet, tincidunt felis. Maecenas id orci rutrum, tincidunt nisl non, aliquam sapien. Aenean vestibulum erat ut nisl vehicula, quis rutrum eros fermentum. Maecenas ut arcu elit. Cras vestibulum pharetra facilisis. Quisque non elit iaculis leo dignissim faucibus. Etiam fringilla tortor nibh, sit amet volutpat diam consequat ac. Sed consectetur metus quis suscipit sollicitudin. Morbi imperdiet scelerisque nunc, in dapibus lacus. Praesent ullamcorper condimentum augue vitae finibus. 

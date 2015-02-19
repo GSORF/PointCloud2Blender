@@ -1,0 +1,239 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{}
+    \entry{webBlenderArtistsPointCloudSupport}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64e88accfc6fb8b42adcaeb498d70796}
+      \strng{fullhash}{64e88accfc6fb8b42adcaeb498d70796}
+      \field{labelalpha}{Ble14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Point Cloud support in Blender: What's already there and what does the community need}
+      \field{title}{Point Cloud support in Blender: What's already there and what does the community need}
+      \field{urlday}{24}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://blenderartists.org/forum/showthread.php?349851-Point-Cloud-support-in-Blender-What-s-already-there-and-what-does-the-community-need
+      \endverb
+    \endentry
+    \entry{dp_lidar}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=6b0efb34d5a93bb6915b1107f3f74ccf}{Schroeder}{S\bibinitperiod}{Rayk}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=6b0efb34d5a93bb6915b1107f3f74ccf}{Schroeder}{S\bibinitperiod}{Rayk}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6b0efb34d5a93bb6915b1107f3f74ccf}
+      \strng{fullhash}{6b0efb34d5a93bb6915b1107f3f74ccf}
+      \field{labelalpha}{Sch14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Was kann eigentlich dieser LIDAR-Scanner? (German) [What is this LIDAR-Scanner capable of?]}
+      \field{journaltitle}{Digital Production}
+      \field{title}{Was kann eigentlich dieser LIDAR-Scanner? (German) [What is this LIDAR-Scanner capable of?]}
+      \field{volume}{07 / 14}
+      \field{year}{2014}
+      \field{pages}{8\bibrangedash 9}
+    \endentry
+    \entry{latexcompanion}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=46f6c4205fe74e93f06228103c717fe6}{Gaussians}{G\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=9355edd511e3f6fdd880ee98722a53fb}{Mittelbach}{M\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=89b327e91da74d10a7d5b3bbc56b5304}{Samorin}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=46f6c4205fe74e93f06228103c717fe6}{Gaussians}{G\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=9355edd511e3f6fdd880ee98722a53fb}{Mittelbach}{M\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=89b327e91da74d10a7d5b3bbc56b5304}{Samorin}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Heading, Massachusatz}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{5eb1a3a06fb88f3fe2492e96271c7889}
+      \strng{fullhash}{5eb1a3a06fb88f3fe2492e96271c7889}
+      \field{labelalpha}{GMS93}
+      \field{sortinit}{0}
+      \field{labeltitle}{The \LaTeX{} Companion}
+      \field{title}{The \LaTeX{} Companion}
+      \field{year}{1993}
+    \endentry
+    \entry{webLaTeX-Tutorial}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \strng{fullhash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \field{labelalpha}{Vel15}
+      \field{sortinit}{0}
+      \field{labeltitle}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{title}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.latex-tutorial.com/
+      \endverb
+    \endentry
+    \entry{ytLaTeX}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d6f38aa6ad3d750ce68ecda1441d3ce6}{ShareLaTeX}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d6f38aa6ad3d750ce68ecda1441d3ce6}{ShareLaTeX}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d6f38aa6ad3d750ce68ecda1441d3ce6}
+      \strng{fullhash}{d6f38aa6ad3d750ce68ecda1441d3ce6}
+      \field{labelalpha}{Sha13}
+      \field{sortinit}{0}
+      \field{labeltitle}{Youtube: How to Write a Thesis in LaTeX (parts 1 to 5)}
+      \field{title}{Youtube: How to Write a Thesis in LaTeX (parts 1 to 5)}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=gFAQd0ueIMc&index=1&list=PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC
+      \endverb
+    \endentry
+  \endsortlist
+  \sortlist{entry}{none}
+    \entry{webBlenderArtistsPointCloudSupport}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64e88accfc6fb8b42adcaeb498d70796}
+      \strng{fullhash}{64e88accfc6fb8b42adcaeb498d70796}
+      \field{labelalpha}{Ble14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Point Cloud support in Blender: What's already there and what does the community need}
+      \field{title}{Point Cloud support in Blender: What's already there and what does the community need}
+      \field{urlday}{24}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://blenderartists.org/forum/showthread.php?349851-Point-Cloud-support-in-Blender-What-s-already-there-and-what-does-the-community-need
+      \endverb
+    \endentry
+    \entry{dp_lidar}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=6b0efb34d5a93bb6915b1107f3f74ccf}{Schroeder}{S\bibinitperiod}{Rayk}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=6b0efb34d5a93bb6915b1107f3f74ccf}{Schroeder}{S\bibinitperiod}{Rayk}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6b0efb34d5a93bb6915b1107f3f74ccf}
+      \strng{fullhash}{6b0efb34d5a93bb6915b1107f3f74ccf}
+      \field{labelalpha}{Sch14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Was kann eigentlich dieser LIDAR-Scanner? (German) [What is this LIDAR-Scanner capable of?]}
+      \field{journaltitle}{Digital Production}
+      \field{title}{Was kann eigentlich dieser LIDAR-Scanner? (German) [What is this LIDAR-Scanner capable of?]}
+      \field{volume}{07 / 14}
+      \field{year}{2014}
+      \field{pages}{8\bibrangedash 9}
+    \endentry
+    \entry{latexcompanion}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=46f6c4205fe74e93f06228103c717fe6}{Gaussians}{G\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=9355edd511e3f6fdd880ee98722a53fb}{Mittelbach}{M\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=89b327e91da74d10a7d5b3bbc56b5304}{Samorin}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=46f6c4205fe74e93f06228103c717fe6}{Gaussians}{G\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=9355edd511e3f6fdd880ee98722a53fb}{Mittelbach}{M\bibinitperiod}{Frank}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=89b327e91da74d10a7d5b3bbc56b5304}{Samorin}{S\bibinitperiod}{Alexander}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Heading, Massachusatz}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{5eb1a3a06fb88f3fe2492e96271c7889}
+      \strng{fullhash}{5eb1a3a06fb88f3fe2492e96271c7889}
+      \field{labelalpha}{GMS93}
+      \field{sortinit}{0}
+      \field{labeltitle}{The \LaTeX{} Companion}
+      \field{title}{The \LaTeX{} Companion}
+      \field{year}{1993}
+    \endentry
+    \entry{webLaTeX-Tutorial}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \strng{fullhash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \field{labelalpha}{Vel15}
+      \field{sortinit}{0}
+      \field{labeltitle}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{title}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.latex-tutorial.com/
+      \endverb
+    \endentry
+    \entry{ytLaTeX}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d6f38aa6ad3d750ce68ecda1441d3ce6}{ShareLaTeX}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d6f38aa6ad3d750ce68ecda1441d3ce6}{ShareLaTeX}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d6f38aa6ad3d750ce68ecda1441d3ce6}
+      \strng{fullhash}{d6f38aa6ad3d750ce68ecda1441d3ce6}
+      \field{labelalpha}{Sha13}
+      \field{sortinit}{0}
+      \field{labeltitle}{Youtube: How to Write a Thesis in LaTeX (parts 1 to 5)}
+      \field{title}{Youtube: How to Write a Thesis in LaTeX (parts 1 to 5)}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=gFAQd0ueIMc&index=1&list=PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
