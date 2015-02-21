@@ -50,6 +50,58 @@ MainWindow::~MainWindow()
     delete panorama;
 }
 
+void MainWindow::processCommandLine(QString inputFile, QString translation, QString up, int resolution)
+{
+    qDebug() << "called MainWindow::processCommandLine("<< inputFile <<","<<translation<< ","<<up<<","<<resolution<<")";
+
+    setFilePath(inputFile);
+
+    translation.replace("(", "").replace(")", "");
+    QStringList translationComponents = translation.split(",");
+    if(translationComponents.size() == 3)
+    {
+        this->translation = QVector3D(translationComponents.at(0).toFloat(),translationComponents.at(1).toFloat(),translationComponents.at(2).toFloat());
+    }
+    else
+    {
+        this->translation = QVector3D(0,0,0);
+    }
+
+    if(up == "leftx")
+    {
+        this->orientation = Panorama3D::LEFT_UP_X;
+    }
+    else if(up == "lefty")
+    {
+        this->orientation = Panorama3D::LEFT_UP_Y;
+    }
+    else if(up == "leftz")
+    {
+        this->orientation = Panorama3D::LEFT_UP_Z;
+    }
+    else if(up == "rightx")
+    {
+        this->orientation = Panorama3D::RIGHT_UP_X;
+    }
+    else if(up == "righty")
+    {
+        this->orientation = Panorama3D::RIGHT_UP_Y;
+    }
+    else if(up == "rightz")
+    {
+        this->orientation = Panorama3D::RIGHT_UP_Z;
+    }
+    else
+    {
+        this->orientation = Panorama3D::RIGHT_UP_Z;
+    }
+
+    this->resolution = resolution;
+    startFileImport();
+
+
+}
+
 void MainWindow::generateMenus()
 {
     //Load application settings
