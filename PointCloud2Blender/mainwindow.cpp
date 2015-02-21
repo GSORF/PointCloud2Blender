@@ -14,9 +14,27 @@ MainWindow::MainWindow(QWidget *parent) :
 
     orientation = Panorama3D::RIGHT_UP_Z;
     resolution = 1;
+    translation = QVector3D(0,0,0);
 
+    //Connect gui elements:
     connect(ui->btnFileOpenDialog, SIGNAL(clicked()), this, SLOT(showFileOpenDialog()));
     connect(ui->btnImport, SIGNAL(clicked()), this, SLOT(startFileImport()));
+    connect(ui->btnUpVectorLeftX, SIGNAL(clicked()), this, SLOT(onClickUpVectorLeftX()));
+    connect(ui->btnUpVectorLeftY, SIGNAL(clicked()), this, SLOT(onClickUpVectorLeftY()));
+    connect(ui->btnUpVectorLeftZ, SIGNAL(clicked()), this, SLOT(onClickUpVectorLeftZ()));
+    connect(ui->btnUpVectorRightX, SIGNAL(clicked()), this, SLOT(onClickUpVectorRightX()));
+    connect(ui->btnUpVectorRightY, SIGNAL(clicked()), this, SLOT(onClickUpVectorRightY()));
+    connect(ui->btnUpVectorRightZ, SIGNAL(clicked()), this, SLOT(onClickUpVectorRightZ()));
+    connect(ui->btnPanoramaResolutionX1, SIGNAL(clicked()), this, SLOT(onClickPanoramaResolutionX1()));
+    connect(ui->btnPanoramaResolutionX2, SIGNAL(clicked()), this, SLOT(onClickPanoramaResolutionX2()));
+    connect(ui->btnPanoramaResolutionX4, SIGNAL(clicked()), this, SLOT(onClickPanoramaResolutionX4()));
+    connect(ui->btnPanoramaResolutionX8, SIGNAL(clicked()), this, SLOT(onClickPanoramaResolutionX8()));
+    connect(ui->btnPanoramaResolutionX16, SIGNAL(clicked()), this, SLOT(onClickPanoramaResolutionX16()));
+    connect(ui->sbTranslateX, SIGNAL(valueChanged(double)), this, SLOT(onChangeTranslationVectorX(double)));
+    connect(ui->sbTranslateY, SIGNAL(valueChanged(double)), this, SLOT(onChangeTranslationVectorY(double)));
+    connect(ui->sbTranslateZ, SIGNAL(valueChanged(double)), this, SLOT(onChangeTranslationVectorZ(double)));
+
+
 
     generateMenus();
 }
@@ -101,7 +119,7 @@ void MainWindow::startFileImport()
     connect(importer, SIGNAL(showInfoMessage(QString)), this, SLOT(showInfoMessage(QString)));
     connect(importer, SIGNAL(showErrorMessage(QString)), this, SLOT(showErrorMessage(QString)));
 
-    panorama = new Panorama3D(orientation, resolution, this);
+    panorama = new Panorama3D(translation, orientation, resolution, this);
     connect(panorama, SIGNAL(updateDepthMap(QImage*)), this, SLOT(updateDepthMap(QImage*)));
     connect(panorama, SIGNAL(updateColorMap(QImage*)), this, SLOT(updateColorMap(QImage*)));
     //Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
@@ -197,6 +215,21 @@ void MainWindow::onClickPanoramaResolutionX8()
 void MainWindow::onClickPanoramaResolutionX16()
 {
     resolution = 16;
+}
+
+void MainWindow::onChangeTranslationVectorX(double x)
+{
+    translation.setX(x);
+}
+
+void MainWindow::onChangeTranslationVectorY(double y)
+{
+    translation.setY(y);
+}
+
+void MainWindow::onChangeTranslationVectorZ(double z)
+{
+    translation.setZ(z);
 }
 
 void MainWindow::onClickExportPanoramas()

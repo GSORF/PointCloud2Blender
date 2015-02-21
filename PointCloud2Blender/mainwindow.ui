@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>780</width>
-    <height>541</height>
+    <width>765</width>
+    <height>582</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -191,7 +191,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QGroupBox" name="gpPanoramaResolution">
+         <widget class="QGroupBox" name="gbPanoramaResolution">
           <property name="title">
            <string>Panorama resolution</string>
           </property>
@@ -276,6 +276,52 @@
              </property>
              <property name="flat">
               <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gbTranslationVector">
+          <property name="title">
+           <string>Translation vector</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="lblTranslateByXYZ">
+             <property name="text">
+              <string>translate by (x, y, z)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="sbTranslateX">
+             <property name="minimum">
+              <double>-500.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>500.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="sbTranslateY">
+             <property name="minimum">
+              <double>-500.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>500.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="sbTranslateZ">
+             <property name="minimum">
+              <double>-500.000000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>500.000000000000000</double>
              </property>
             </widget>
            </item>
@@ -376,7 +422,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>780</width>
+     <width>765</width>
      <height>25</height>
     </rect>
    </property>

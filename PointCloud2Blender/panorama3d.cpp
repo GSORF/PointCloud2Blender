@@ -1,8 +1,9 @@
 #include "panorama3d.h"
 
-Panorama3D::Panorama3D(Orientation upVector, quint8 resolution, QObject *parent) :
+Panorama3D::Panorama3D(QVector3D translationVector, Orientation upVector, quint8 resolution, QObject *parent) :
     QObject(parent)
 {
+    this->translationVector = translationVector;
     this->upVector = upVector;
     this->resolution = resolution;
 
@@ -14,13 +15,18 @@ Panorama3D::Panorama3D(Orientation upVector, quint8 resolution, QObject *parent)
 
 void Panorama3D::finished()
 {
-    panoramaDepth.save("/home/akp/Desktop/depthmap.jpg");
-    panoramaColor.save("/home/akp/Desktop/colormap.jpg");
+    qDebug() << "Saving panoramas into " << QDir::currentPath();
+
+    panoramaDepth.save(QDir::currentPath() + "/depthmap.jpg");
+    panoramaColor.save(QDir::currentPath() + "/colormap.jpg");
 }
 
 void Panorama3D::newPoint(Point3D point)
 {
     //Calculate spherical coordinates and change the pixels of the panoramas respectively
+    point.x += translationVector.x();
+    point.y += translationVector.y();
+    point.z += translationVector.z();
 
     //Distance
     float radius = qSqrt( point.x*point.x + point.y*point.y + point.z*point.z );
@@ -48,7 +54,8 @@ void Panorama3D::newPoint(Point3D point)
     float theta_degrees = qRadiansToDegrees(theta);
     float phi_degrees = qRadiansToDegrees(phi);
 
-    float maxDistance = 300.0f;
+    //The maximum scanned distance:
+    float maxDistance = 60.0f;
 
     //qDebug() << "newPoint: (" << point.x << "," << point.y << "," << point.z << ") => (" << radius << "," << theta_degrees << "," << phi_degrees << ")";
 

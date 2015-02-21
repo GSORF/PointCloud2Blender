@@ -8,6 +8,8 @@
 #include <QFileDialog>
 #include <QMessageBox>
 
+#include <QVector3D>
+
 #include <QSettings>
 
 #include <QThreadPool>
@@ -28,6 +30,7 @@ class MainWindow : public QMainWindow
 
     Panorama3D::Orientation orientation;
     quint8 resolution;
+    QVector3D translation;
 
     QSettings settings;
 
@@ -69,6 +72,9 @@ public slots:
     void onClickPanoramaResolutionX4();
     void onClickPanoramaResolutionX8();
     void onClickPanoramaResolutionX16();
+    void onChangeTranslationVectorX(double x);
+    void onChangeTranslationVectorY(double y);
+    void onChangeTranslationVectorZ(double z);
 
     //Callbacks for Panorama Export:
     void onClickExportPanoramas();

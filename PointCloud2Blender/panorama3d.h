@@ -5,6 +5,8 @@
 
 #include <QtMath>
 #include <QImage>
+#include <QDir>
+#include <QVector3D>
 
 #include "importworker.h"
 
@@ -23,10 +25,11 @@ public:
         RIGHT_UP_Z
     };
 
-    explicit Panorama3D(Orientation upVector, quint8 resolution, QObject *parent = 0);
+    explicit Panorama3D(QVector3D translationVector, Orientation upVector, quint8 resolution, QObject *parent = 0);
     void finished();
 
 private:
+    QVector3D translationVector;
     Orientation upVector;
     quint8 resolution;
 
