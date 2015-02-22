@@ -10,6 +10,26 @@
 
 #include "importworker.h"
 
+class Point3D
+{
+
+
+    //Example xyz file (original Faro Scene):
+    //-59.43620000 -31.36650000 302.80950000 59 46 55
+
+public:
+    //Position Data
+    float x,y,z;
+    //Color Data
+    quint16 r,g,b;
+
+    QString toString()
+    {
+        return "(" + QString::number(x) + ", "  + QString::number(y) + ", " + QString::number(z) + ")";
+    }
+};
+
+
 class Panorama3D : public QObject
 {
     Q_OBJECT
@@ -41,7 +61,8 @@ signals:
     void updateColorMap(QImage *colorMap);
 
 public slots:
-    void newPoint(Point3D point);
+    void addPoint(Point3D point);
+
 
 };
 

@@ -9,8 +9,6 @@ Panorama3D::Panorama3D(QVector3D translationVector, Orientation upVector, quint8
 
     panoramaDepth = QImage(360 * resolution, 180 * resolution, QImage::Format_ARGB32_Premultiplied);
     panoramaColor = QImage(360 * resolution, 180 * resolution, QImage::Format_ARGB32_Premultiplied);
-
-
 }
 
 void Panorama3D::finished()
@@ -19,9 +17,13 @@ void Panorama3D::finished()
 
     panoramaDepth.save(QDir::currentPath() + "/depthmap.jpg");
     panoramaColor.save(QDir::currentPath() + "/colormap.jpg");
+
+    //Update the images in the user interface
+    emit updateDepthMap(&panoramaDepth);
+    emit updateColorMap(&panoramaColor);
 }
 
-void Panorama3D::newPoint(Point3D point)
+void Panorama3D::addPoint(Point3D point)
 {
     //Calculate spherical coordinates and change the pixels of the panoramas respectively
     point.x += translationVector.x();
@@ -70,9 +72,5 @@ void Panorama3D::newPoint(Point3D point)
     panoramaColor.setPixel(phi_degrees*resolution, theta_degrees*resolution, colorValue);
 
     //qDebug() << "colorValue: " << colorValue;
-
-    //Update the images in the user interface
-    emit updateDepthMap(&panoramaDepth);
-    emit updateColorMap(&panoramaColor);
 
 }

@@ -25,8 +25,8 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
     ImportWorker *importer;
-    QThreadPool threadPool;
     Panorama3D *panorama;
+    QThreadPool threadPool;
 
     Panorama3D::Orientation orientation;
     quint8 resolution;

@@ -46,8 +46,8 @@ MainWindow::~MainWindow()
     delete importer;
 
     //Note: Delete menus?
-
     delete panorama;
+
 }
 
 void MainWindow::processCommandLine(QString inputFile, QString translation, QString up, int resolution)
@@ -138,7 +138,7 @@ void MainWindow::generateMenus()
 void MainWindow::showFileOpenDialog()
 {
     //The following filetypes are selectable
-    QString fileFormat = "XYZ Files (*xyz);;XYZ Binary Files (*xyb);;All Files (*.*)";
+    QString fileFormat = "XYZ Ascii Files (*xyz);;XYZ Binary Files (*xyb);;PLY Ascii Files (*ply);;All Files (*.*)";
     QString fileName = "";
 
     fileName = QFileDialog::getOpenFileName(this, "Please specify your point cloud file", QDir::homePath(), fileFormat);
@@ -175,7 +175,7 @@ void MainWindow::startFileImport()
     connect(panorama, SIGNAL(updateDepthMap(QImage*)), this, SLOT(updateDepthMap(QImage*)));
     connect(panorama, SIGNAL(updateColorMap(QImage*)), this, SLOT(updateColorMap(QImage*)));
     //Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
-    connect(importer, SIGNAL(newPoint(Point3D)), panorama, SLOT(newPoint(Point3D)));
+    connect(importer, SIGNAL(newPoint(Point3D)), panorama, SLOT(addPoint(Point3D)));
 
     threadPool.start(importer);
 }

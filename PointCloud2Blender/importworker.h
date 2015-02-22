@@ -8,24 +8,9 @@
 
 #include <QFile>
 
-class Point3D
-{
+#include <panorama3d.h>
 
-
-    //Example xyz file (original Faro Scene):
-    //-59.43620000 -31.36650000 302.80950000 59 46 55
-
-public:
-    //Position Data
-    float x,y,z;
-    //Color Data
-    quint16 r,g,b;
-
-    QString toString()
-    {
-        return "(" + QString::number(x) + ", "  + QString::number(y) + ", " + QString::number(z) + ")";
-    }
-};
+class Point3D;
 
 class ImportWorker : public QObject, public QRunnable
 {
@@ -34,19 +19,23 @@ public:
     enum FileType
     {
         XYZ_ASCII,
-        XYZ_BINARY
+        XYZ_BINARY,
+        PLY
     };
 
 
     explicit ImportWorker(QString fileName, QObject *parent = 0);
+    ~ImportWorker();
 
     void run();
     void import_XYZ_Ascii_File();
     void import_XYZ_Binary_File();
+    void import_PLY_File();
 
 
     FileType fileType;
     QString fileName;
+
 
 
 signals:

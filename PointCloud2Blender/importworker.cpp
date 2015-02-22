@@ -14,6 +14,15 @@ ImportWorker::ImportWorker(QString fileName, QObject *parent) :
     {
         this->fileType = XYZ_BINARY;
     }
+    else if(this->fileName.endsWith(".ply"))
+    {
+        this->fileType = PLY;
+    }
+
+}
+
+ImportWorker::~ImportWorker()
+{
 
 }
 
@@ -29,6 +38,9 @@ void ImportWorker::run()
     break;
     case XYZ_BINARY:
         import_XYZ_Binary_File();
+    break;
+    case PLY:
+        import_PLY_File();
     break;
     }
 
@@ -102,8 +114,6 @@ void ImportWorker::import_XYZ_Ascii_File()
 
     file.close();
 
-    //Everything else happens on the Thread (Importing, maybe calculating spherical coordinates, and sending over the data to the main data container
-
     //after importing send a finished signal
     emit importStatus(100);
 }
@@ -111,4 +121,129 @@ void ImportWorker::import_XYZ_Ascii_File()
 void ImportWorker::import_XYZ_Binary_File()
 {
     //TODO
+}
+
+void ImportWorker::import_PLY_File()
+{
+    //import the filename
+    qDebug() << "opening file: " << this->fileName;
+
+    QFile file(this->fileName);
+    if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        return;
+
+    qint64 totalSize = file.size();
+    qint64 currentSize = 0;
+    quint16 percent = 0;
+
+    QTextStream inputStream(&file);
+    QString line = inputStream.readLine();
+
+    bool importerInfo = false;
+
+    int maxVertices = 0;
+    int currentVertex = 0;
+
+    bool header = true;
+    bool binary = false;
+
+
+    /*
+    PLY Header definitions:
+
+    ply
+    format ascii 1.0
+    format binary_little_endian 1.0
+    format binary_big_endian 1.0
+    element vertex 12
+    property float x
+    property float y
+    property float z
+    end_header
+
+    */
+    while(!line.isNull())
+    {
+        currentSize += line.size();
+
+
+        Point3D _newPoint;
+
+        //Process the line
+        QStringList lineparts = line.split(" ");
+
+        if(header)
+        {
+            percent = (currentSize*100.0f)/totalSize;
+
+            //Parse the header information
+            if(line.startsWith("format binary"))
+            {
+                binary = true;
+                qDebug() << "PLY: HEADER binary";
+            }
+            if(line.startsWith("element vertex"))
+            {
+                maxVertices = lineparts.at(2).toInt();
+                qDebug() << "PLY: HEADER maxVertices = " << maxVertices;
+            }
+            if(line.startsWith("end_header"))
+            {
+                header = false;
+            }
+        }
+        else
+        {
+            //Parse the mesh data
+            if(binary)
+            {
+                //Binary
+                if(!importerInfo)
+                {
+                    importerInfo = true;
+                    emit showErrorMessage("The imported .ply file has binary format. This is not supported, yet!");
+                }
+                break;
+            }
+            else
+            {
+                //Ascii
+                if(currentVertex < maxVertices)
+                {
+                    percent = (currentVertex*100.0f)/maxVertices;
+
+                    if(lineparts.size() >= 3)
+                    {
+                        _newPoint.x = lineparts.at(0).toFloat();
+                        _newPoint.y = lineparts.at(1).toFloat();
+                        _newPoint.z = lineparts.at(2).toFloat();
+                        _newPoint.r = 0;
+                        _newPoint.g = 0;
+                        _newPoint.b = 0;
+
+                        currentVertex++;
+                    }
+
+                    emit newPoint(_newPoint);
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+
+        //send the current point over to the panorama data container
+        emit newPoint( _newPoint );
+        emit importStatus(percent);
+
+
+        //read the next line
+        line = inputStream.readLine();
+    }
+
+    file.close();
+
+    //after importing send a finished signal
+    emit importStatus(100);
 }
