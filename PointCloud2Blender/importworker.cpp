@@ -147,6 +147,13 @@ void ImportWorker::import_PLY_File()
     bool header = true;
     bool binary = false;
 
+    bool property_x = false;
+    bool property_y = false;
+    bool property_z = false;
+    bool property_red = false;
+    bool property_green = false;
+    bool property_blue = false;
+    bool property_alpha = false;
 
     /*
     PLY Header definitions:
@@ -159,6 +166,10 @@ void ImportWorker::import_PLY_File()
     property float x
     property float y
     property float z
+    property uchar red
+    property uchar green
+    property uchar blue
+    property uchar alpha
     end_header
 
     */
@@ -187,6 +198,46 @@ void ImportWorker::import_PLY_File()
                 maxVertices = lineparts.at(2).toInt();
                 qDebug() << "PLY: HEADER maxVertices = " << maxVertices;
             }
+            if(line.startsWith("property"))
+            {
+                if(lineparts.at(2) == "x")
+                {
+                    property_x = true;
+                    qDebug() << "PLY: HEADER property = x";
+                }
+                if(lineparts.at(2) == "y")
+                {
+                    property_y = true;
+                    qDebug() << "PLY: HEADER property = y";
+                }
+                if(lineparts.at(2) == "z")
+                {
+                    property_z = true;
+                    qDebug() << "PLY: HEADER property = z";
+                }
+                if(lineparts.at(2) == "red")
+                {
+                    property_red = true;
+                    qDebug() << "PLY: HEADER property = red";
+                }
+                if(lineparts.at(2) == "green")
+                {
+                    property_green = true;
+                    qDebug() << "PLY: HEADER property = green";
+                }
+                if(lineparts.at(2) == "blue")
+                {
+                    property_blue = true;
+                    qDebug() << "PLY: HEADER property = blue";
+                }
+                if(lineparts.at(2) == "alpha")
+                {
+                    property_alpha = true;
+                    qDebug() << "PLY: HEADER property = alpha";
+                }
+            }
+
+
             if(line.startsWith("end_header"))
             {
                 header = false;
@@ -214,12 +265,32 @@ void ImportWorker::import_PLY_File()
 
                     if(lineparts.size() >= 3)
                     {
-                        _newPoint.x = lineparts.at(0).toFloat();
-                        _newPoint.y = lineparts.at(1).toFloat();
-                        _newPoint.z = lineparts.at(2).toFloat();
-                        _newPoint.r = 0;
-                        _newPoint.g = 0;
-                        _newPoint.b = 0;
+                        if(property_x)
+                            _newPoint.x = lineparts.at(0).toFloat();
+                        else
+                            _newPoint.x = 0;
+                        if(property_y)
+                            _newPoint.y = lineparts.at(1).toFloat();
+                        else
+                            _newPoint.y = 0;
+                        if(property_z)
+                            _newPoint.z = lineparts.at(2).toFloat();
+                        else
+                            _newPoint.z = 0;
+                        if(property_red)
+                            _newPoint.r = lineparts.at(3).toFloat();
+                        else
+                            _newPoint.r = 0;
+                        if(property_green)
+                            _newPoint.g = lineparts.at(4).toFloat();
+                        else
+                            _newPoint.g = 0;
+                        if(property_blue)
+                            _newPoint.b = lineparts.at(5).toFloat();
+                        else
+                            _newPoint.b = 0;
+                        if(property_alpha)
+                            //TODO: implement alpha value?
 
                         currentVertex++;
                     }

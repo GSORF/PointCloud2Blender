@@ -9,6 +9,13 @@ Panorama3D::Panorama3D(QVector3D translationVector, Orientation upVector, quint8
 
     panoramaDepth = QImage(360 * resolution, 180 * resolution, QImage::Format_ARGB32_Premultiplied);
     panoramaColor = QImage(360 * resolution, 180 * resolution, QImage::Format_ARGB32_Premultiplied);
+
+    minRadius = 500;
+    maxRadius = 0;
+    minTheta = 180;
+    maxTheta = 0;
+    minPhi = 360;
+    maxPhi = 0;
 }
 
 void Panorama3D::finished()
@@ -21,6 +28,8 @@ void Panorama3D::finished()
     //Update the images in the user interface
     emit updateDepthMap(&panoramaDepth);
     emit updateColorMap(&panoramaColor);
+
+    qDebug() << "minRadius="<<minRadius<<"maxRadius="<<maxRadius<<"minTheta="<<minTheta<<"maxTheta="<<maxTheta<<"minPhi="<<minPhi<<"maxPhi="<<maxPhi;
 }
 
 void Panorama3D::addPoint(Point3D point)
@@ -36,21 +45,17 @@ void Panorama3D::addPoint(Point3D point)
     if(!radius > 0 || point.x == 0)
         return;
 
-    //Normalize Coordinates
-    float x = point.x / radius;
-    float y = point.y / radius;
-    float z = point.z / radius;
+    float x = point.x;
+    float y = point.y;
+    float z = point.z;
 
     //Inclination (theta)
     float theta = qAcos( z / radius ); //Range: 0*PI <= theta <= 1*PI
     //Azimuth (phi)
     float phi = qAtan2(y, x); //Atan2 Range is -1*PI <= phi <= 1*PI (Note: Atan Range is (-PI/2, PI/2) !!!)
 
-    if(phi < 0) //Map phi to (0*PI, 2*PI)
-    {
-        //phi = (phi + 2*M_PI) % (2*M_PI);
-        phi = phi + M_PI;
-    }
+    //Map phi to (0*PI, 2*PI)
+    phi = phi + M_PI;
 
     //Convert to degrees
     float theta_degrees = qRadiansToDegrees(theta);
@@ -60,6 +65,33 @@ void Panorama3D::addPoint(Point3D point)
     float maxDistance = 60.0f;
 
     //qDebug() << "newPoint: (" << point.x << "," << point.y << "," << point.z << ") => (" << radius << "," << theta_degrees << "," << phi_degrees << ")";
+
+    if(radius < minRadius)
+    {
+        minRadius = radius;
+    }
+    else if(radius > maxRadius)
+    {
+        maxRadius = radius;
+    }
+
+    if(theta_degrees < minTheta)
+    {
+        minTheta = theta_degrees;
+    }
+    else if(theta_degrees > maxTheta)
+    {
+        maxTheta = theta_degrees;
+    }
+
+    if(phi_degrees < minPhi)
+    {
+        minPhi = phi_degrees;
+    }
+    else if(phi_degrees > maxPhi)
+    {
+        maxPhi = phi_degrees;
+    }
 
     //Depth image:
     QRgb depthValue = qRgb( (radius/maxDistance)*255, (radius/maxDistance)*255, (radius/maxDistance)*255 );

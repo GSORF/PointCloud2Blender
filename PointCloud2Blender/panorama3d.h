@@ -12,8 +12,6 @@
 
 class Point3D
 {
-
-
     //Example xyz file (original Faro Scene):
     //-59.43620000 -31.36650000 302.80950000 59 46 55
 
@@ -52,6 +50,13 @@ private:
     QVector3D translationVector;
     Orientation upVector;
     quint8 resolution;
+
+    float minRadius;
+    float maxRadius;
+    float minTheta;
+    float maxTheta;
+    float minPhi;
+    float maxPhi;
 
     QImage panoramaDepth;
     QImage panoramaColor;
