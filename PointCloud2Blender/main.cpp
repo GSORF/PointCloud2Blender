@@ -11,6 +11,11 @@ int get_int(QString option)
     return(get_string(option).toInt());
 }
 
+float get_float(QString option)
+{
+    return(get_string(option).toFloat());
+}
+
 void usage(QString name)
 {
     QString app(name.mid(name.lastIndexOf("/")+1));
@@ -25,10 +30,12 @@ void usage(QString name)
     qDebug() << " --translation=x,y,z: initial translation of point cloud";
     qDebug() << " --up={left/right}{x/y/z}: coordinate system handedness and up direction";
     qDebug() << " --resolution={1/2/4/8/16}: the resolution of the panorama images";
+    qDebug() << " --distance=maxDistance: the maximum distance of a point from the origin in meters";
+    qDebug() << " --projection={equirectangular/cylindrical/mercator}: the type of projection you want to use for the panoramas";
     qDebug() << " --nogui: don't show a user interface";
     qDebug() << " --help: this help text";
     qDebug() << "example: .xyz 2 Blender usage";
-    qDebug() << " ./" + app + " --input=file.xyz --translation=(20,10,50) --up=leftx --resolution=16 --nogui";
+    qDebug() << " ./" + app + " --input=file.xyz --translation=(20,10,50) --up=leftx --resolution=16 --distance=60 --projection=equirectangular --nogui";
     exit(1);
 
 }
@@ -58,6 +65,8 @@ int main(int argc, char *argv[])
     QString translation="0,0,0";
     QString up="rightz";
     int resolution=1;
+    float distance=60.0f;
+    QString projection="equirectangular";
     bool gui=true;
 
     //Initialize Variables
@@ -67,6 +76,8 @@ int main(int argc, char *argv[])
         else if(opt[i].startsWith("translation=")) translation=get_string(opt[i]);
         else if(opt[i].startsWith("up=")) up=get_string(opt[i]);
         else if(opt[i].startsWith("resolution=")) resolution=get_int(opt[i]);
+        else if(opt[i].startsWith("distance=")) distance=get_float(opt[i]);
+        else if(opt[i].startsWith("projection=")) projection=get_string(opt[i]);
         else if(opt[i] == "nogui") gui=false;
         else if(opt[i] == "help") usage( appname );
         else usage( appname );
@@ -78,7 +89,7 @@ int main(int argc, char *argv[])
     if(!gui)
     {
         //GUI will not start
-        w.processCommandLine(inputFile, translation, up, resolution);
+        w.processCommandLine(inputFile, translation, up, resolution, distance, projection);
 
     }
     else

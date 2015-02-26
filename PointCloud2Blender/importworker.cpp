@@ -121,6 +121,13 @@ void ImportWorker::import_XYZ_Ascii_File()
 void ImportWorker::import_XYZ_Binary_File()
 {
     //TODO
+    bool importerInfo = false;
+
+    if(!importerInfo)
+    {
+        importerInfo = true;
+        emit showErrorMessage("The imported .xyz file has binary format. This is not supported, yet!");
+    }
 }
 
 void ImportWorker::import_PLY_File()

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>765</width>
-    <height>582</height>
+    <height>663</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -327,6 +327,102 @@
            </item>
           </layout>
          </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="layoutDistanceProjection">
+          <item>
+           <widget class="QGroupBox" name="gpProjectionType">
+            <property name="title">
+             <string>Projection Type</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QDoubleSpinBox" name="sbMaxDistance">
+               <property name="minimum">
+                <double>1.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>250.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>10.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>60.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblMeters">
+               <property name="text">
+                <string>meters</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="gpMaximumDistance">
+            <property name="title">
+             <string>Maximum scan distance</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QPushButton" name="btnProjectionTypeEquirectangular">
+               <property name="text">
+                <string>Equirectangular</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnProjectionTypeCylindrical">
+               <property name="text">
+                <string>Cylindrical</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnProjectionTypeMercator">
+               <property name="text">
+                <string>Mercator</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </item>

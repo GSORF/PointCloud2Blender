@@ -31,6 +31,8 @@ class MainWindow : public QMainWindow
     Panorama3D::Orientation orientation;
     quint8 resolution;
     QVector3D translation;
+    Panorama3D::ProjectionType projectionType;
+    float maxDistance;
 
     QSettings settings;
 
@@ -43,7 +45,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    void processCommandLine(QString inputFile, QString translation, QString up, int resolution);
+    void processCommandLine(QString inputFile, QString translation, QString up, int resolution, float distance, QString projection);
 
 private:
     Ui::MainWindow *ui;
@@ -76,6 +78,12 @@ public slots:
     void onChangeTranslationVectorX(double x);
     void onChangeTranslationVectorY(double y);
     void onChangeTranslationVectorZ(double z);
+    void onChangeMaxDistance(double distance);
+    void onClickProjectionTypeEquirectangular();
+    void onClickProjectionTypeCylindrical();
+    void onClickProjectionTypeMercator();
+
+
 
     //Callbacks for Panorama Export:
     void onClickExportPanoramas();

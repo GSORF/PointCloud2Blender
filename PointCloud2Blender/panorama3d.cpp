@@ -1,21 +1,23 @@
 #include "panorama3d.h"
 
-Panorama3D::Panorama3D(QVector3D translationVector, Orientation upVector, quint8 resolution, QObject *parent) :
+Panorama3D::Panorama3D(QVector3D translationVector, Orientation upVector, quint8 resolution, float maxDistance, ProjectionType projectionType, QObject *parent) :
     QObject(parent)
 {
     this->translationVector = translationVector;
     this->upVector = upVector;
     this->resolution = resolution;
+    this->maxDistance = maxDistance;
+    this->projectionType = projectionType;
 
     panoramaDepth = QImage(360 * resolution, 180 * resolution, QImage::Format_ARGB32_Premultiplied);
     panoramaColor = QImage(360 * resolution, 180 * resolution, QImage::Format_ARGB32_Premultiplied);
 
     minRadius = 500;
     maxRadius = 0;
-    minTheta = 180;
-    maxTheta = 0;
-    minPhi = 360;
-    maxPhi = 0;
+    minY = 180;
+    maxY = 0;
+    minX = 360;
+    maxX = 0;
 }
 
 void Panorama3D::finished()
@@ -29,7 +31,26 @@ void Panorama3D::finished()
     emit updateDepthMap(&panoramaDepth);
     emit updateColorMap(&panoramaColor);
 
-    qDebug() << "minRadius="<<minRadius<<"maxRadius="<<maxRadius<<"minTheta="<<minTheta<<"maxTheta="<<maxTheta<<"minPhi="<<minPhi<<"maxPhi="<<maxPhi;
+    qDebug() << "minRadius="<<minRadius<<"maxRadius="<<maxRadius<<"minX="<<minX<<"maxX="<<maxX<<"minY="<<minY<<"maxY="<<maxY;
+}
+
+void Panorama3D::project(float theta, float phi, float &x, float &y)
+{
+    switch (this->projectionType) {
+    default:
+    case EQUIRECTANGULAR:
+        x = theta;
+        y = phi;
+        break;
+    case CYLINDRICAL:
+        x = theta;
+        y = qTan(phi) + M_PI;
+        break;
+    case MERCATOR:
+        x = theta;
+        y = qLn( qTan(phi) + (1/qCos(phi)) ); //this will generate huge negative values for an argument < 1
+        break;
+    }
 }
 
 void Panorama3D::addPoint(Point3D point)
@@ -45,26 +66,22 @@ void Panorama3D::addPoint(Point3D point)
     if(!radius > 0 || point.x == 0)
         return;
 
-    float x = point.x;
-    float y = point.y;
-    float z = point.z;
+    //Note: There are different definitions about phi and theta (mathematical/physical). To match it with the projections, we will use the following:
+    //Inclination (phi)
+    float phi = qAcos( point.z / radius ); //Range: 0*PI <= phi <= 1*PI
+    //Azimuth (theta)
+    float theta = qAtan2(point.y, point.x); //Atan2 Range is -1*PI <= theta <= 1*PI (Note: Atan Range is (-PI/2, PI/2) !!!)
 
-    //Inclination (theta)
-    float theta = qAcos( z / radius ); //Range: 0*PI <= theta <= 1*PI
-    //Azimuth (phi)
-    float phi = qAtan2(y, x); //Atan2 Range is -1*PI <= phi <= 1*PI (Note: Atan Range is (-PI/2, PI/2) !!!)
+    //Map theta to (0*PI, 2*PI)
+    theta = theta + M_PI;
 
-    //Map phi to (0*PI, 2*PI)
-    phi = phi + M_PI;
+    //Project spherical coordinates on 2D plane and return coordinates:
+    float x, y;
+    project(theta, phi, x, y);
 
     //Convert to degrees
-    float theta_degrees = qRadiansToDegrees(theta);
-    float phi_degrees = qRadiansToDegrees(phi);
-
-    //The maximum scanned distance:
-    float maxDistance = 60.0f;
-
-    //qDebug() << "newPoint: (" << point.x << "," << point.y << "," << point.z << ") => (" << radius << "," << theta_degrees << "," << phi_degrees << ")";
+    x = qRadiansToDegrees(x);
+    y = qRadiansToDegrees(y);
 
     if(radius < minRadius)
     {
@@ -75,34 +92,30 @@ void Panorama3D::addPoint(Point3D point)
         maxRadius = radius;
     }
 
-    if(theta_degrees < minTheta)
+    if(x < minX)
     {
-        minTheta = theta_degrees;
+        minX = x;
     }
-    else if(theta_degrees > maxTheta)
+    else if(x > maxX)
     {
-        maxTheta = theta_degrees;
+        maxX = x;
     }
 
-    if(phi_degrees < minPhi)
+    if(y < minY)
     {
-        minPhi = phi_degrees;
+        minY = y;
     }
-    else if(phi_degrees > maxPhi)
+    else if(y > maxY)
     {
-        maxPhi = phi_degrees;
+        maxY = y;
     }
 
     //Depth image:
-    QRgb depthValue = qRgb( (radius/maxDistance)*255, (radius/maxDistance)*255, (radius/maxDistance)*255 );
-    panoramaDepth.setPixel(phi_degrees*resolution, theta_degrees*resolution, depthValue);
-
-    //qDebug() << "depthValue: " << depthValue;
+    quint8 depth = (radius/maxDistance)*255;
+    QRgb depthValue = qRgba( depth, depth, depth, 255 );
+    panoramaDepth.setPixel(x*resolution, y*resolution, depthValue);
 
     //Color image:
-    QRgb colorValue = qRgb( point.r, point.g, point.b );
-    panoramaColor.setPixel(phi_degrees*resolution, theta_degrees*resolution, colorValue);
-
-    //qDebug() << "colorValue: " << colorValue;
-
+    QRgb colorValue = qRgba( point.r, point.g, point.b, 255 );
+    panoramaColor.setPixel(x*resolution, y*resolution, colorValue);
 }

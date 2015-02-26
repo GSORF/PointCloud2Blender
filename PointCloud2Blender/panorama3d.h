@@ -43,20 +43,31 @@ public:
         RIGHT_UP_Z
     };
 
-    explicit Panorama3D(QVector3D translationVector, Orientation upVector, quint8 resolution, QObject *parent = 0);
+    enum ProjectionType
+    {
+        EQUIRECTANGULAR,
+        CYLINDRICAL,
+        MERCATOR
+    };
+
+    explicit Panorama3D(QVector3D translationVector, Orientation upVector, quint8 resolution, float maxDistance, ProjectionType projectionType, QObject *parent = 0);
     void finished();
 
 private:
     QVector3D translationVector;
     Orientation upVector;
     quint8 resolution;
+    float maxDistance;
+    ProjectionType projectionType;
 
     float minRadius;
     float maxRadius;
-    float minTheta;
-    float maxTheta;
-    float minPhi;
-    float maxPhi;
+    float minX;
+    float maxX;
+    float minY;
+    float maxY;
+
+    void project(float theta, float phi, float &x, float &y);
 
     QImage panoramaDepth;
     QImage panoramaColor;

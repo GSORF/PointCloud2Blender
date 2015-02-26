@@ -15,6 +15,8 @@ MainWindow::MainWindow(QWidget *parent) :
     orientation = Panorama3D::RIGHT_UP_Z;
     resolution = 1;
     translation = QVector3D(0,0,0);
+    maxDistance = 60.0f;
+    projectionType = Panorama3D::EQUIRECTANGULAR;
 
     //Connect gui elements:
     connect(ui->btnFileOpenDialog, SIGNAL(clicked()), this, SLOT(showFileOpenDialog()));
@@ -33,7 +35,10 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->sbTranslateX, SIGNAL(valueChanged(double)), this, SLOT(onChangeTranslationVectorX(double)));
     connect(ui->sbTranslateY, SIGNAL(valueChanged(double)), this, SLOT(onChangeTranslationVectorY(double)));
     connect(ui->sbTranslateZ, SIGNAL(valueChanged(double)), this, SLOT(onChangeTranslationVectorZ(double)));
-
+    connect(ui->sbMaxDistance, SIGNAL(valueChanged(double)), this, SLOT(onChangeMaxDistance(double)));
+    connect(ui->btnProjectionTypeEquirectangular, SIGNAL(clicked()), this, SLOT(onClickProjectionTypeEquirectangular()));
+    connect(ui->btnProjectionTypeCylindrical, SIGNAL(clicked()), this, SLOT(onClickProjectionTypeCylindrical()));
+    connect(ui->btnProjectionTypeMercator, SIGNAL(clicked()), this, SLOT(onClickProjectionTypeMercator()));
 
 
     generateMenus();
@@ -50,9 +55,9 @@ MainWindow::~MainWindow()
 
 }
 
-void MainWindow::processCommandLine(QString inputFile, QString translation, QString up, int resolution)
+void MainWindow::processCommandLine(QString inputFile, QString translation, QString up, int resolution, float distance, QString projection)
 {
-    qDebug() << "called MainWindow::processCommandLine("<< inputFile <<","<<translation<< ","<<up<<","<<resolution<<")";
+    qDebug() << "called MainWindow::processCommandLine("<< inputFile <<","<<translation<< ","<<up<<","<<resolution<<","<<distance<<","<<projection<<")";
 
     setFilePath(inputFile);
 
@@ -97,6 +102,24 @@ void MainWindow::processCommandLine(QString inputFile, QString translation, QStr
     }
 
     this->resolution = resolution;
+    this->maxDistance = distance;
+    if(projection == "equirectangular")
+    {
+        this->projectionType = Panorama3D::EQUIRECTANGULAR;
+    }
+    else if(projection == "cylindrical")
+    {
+        this->projectionType = Panorama3D::CYLINDRICAL;
+    }
+    else if(projection == "mercator")
+    {
+        this->projectionType = Panorama3D::MERCATOR;
+    }
+    else
+    {
+        this->projectionType = Panorama3D::EQUIRECTANGULAR;
+    }
+
     startFileImport();
 
 
@@ -171,7 +194,7 @@ void MainWindow::startFileImport()
     connect(importer, SIGNAL(showInfoMessage(QString)), this, SLOT(showInfoMessage(QString)));
     connect(importer, SIGNAL(showErrorMessage(QString)), this, SLOT(showErrorMessage(QString)));
 
-    panorama = new Panorama3D(translation, orientation, resolution, this);
+    panorama = new Panorama3D(translation, orientation, resolution, maxDistance, projectionType, this);
     connect(panorama, SIGNAL(updateDepthMap(QImage*)), this, SLOT(updateDepthMap(QImage*)));
     connect(panorama, SIGNAL(updateColorMap(QImage*)), this, SLOT(updateColorMap(QImage*)));
     //Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
@@ -284,14 +307,34 @@ void MainWindow::onChangeTranslationVectorZ(double z)
     translation.setZ(z);
 }
 
+void MainWindow::onChangeMaxDistance(double distance)
+{
+    this->maxDistance = distance;
+}
+
+void MainWindow::onClickProjectionTypeEquirectangular()
+{
+    this->projectionType = Panorama3D::EQUIRECTANGULAR;
+}
+
+void MainWindow::onClickProjectionTypeCylindrical()
+{
+    this->projectionType = Panorama3D::CYLINDRICAL;
+}
+
+void MainWindow::onClickProjectionTypeMercator()
+{
+    this->projectionType = Panorama3D::MERCATOR;
+}
+
 void MainWindow::onClickExportPanoramas()
 {
-
+    //TODO
 }
 
 void MainWindow::onClickExportMesh()
 {
-
+    //TODO
 }
 
 void MainWindow::showInfoMessage(QString message)
