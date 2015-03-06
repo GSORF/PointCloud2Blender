@@ -62,15 +62,38 @@ void Panorama3D::addPoint(Point3D point)
 
     //Distance
     float radius = qSqrt( point.x*point.x + point.y*point.y + point.z*point.z );
+    float phi, theta;
 
     if(!radius > 0 || point.x == 0)
         return;
 
     //Note: There are different definitions about phi and theta (mathematical/physical). To match it with the projections, we will use the following:
-    //Inclination (phi)
-    float phi = qAcos( point.z / radius ); //Range: 0*PI <= phi <= 1*PI
-    //Azimuth (theta)
-    float theta = qAtan2(point.y, point.x); //Atan2 Range is -1*PI <= theta <= 1*PI (Note: Atan Range is (-PI/2, PI/2) !!!)
+
+    switch (upVector) {
+    default:
+    case RIGHT_UP_Z:
+    case LEFT_UP_Z:
+        //Inclination (phi)
+        phi = qAcos( point.z / radius ); //Range: 0*PI <= phi <= 1*PI
+        //Azimuth (theta)
+        theta = qAtan2(point.y, point.x); //Atan2 Range is -1*PI <= theta <= 1*PI (Note: Atan Range is (-PI/2, PI/2) !!!)
+        break;
+    case RIGHT_UP_Y:
+    case LEFT_UP_Y:
+        //Inclination (phi)
+        phi = qAcos( point.y / radius ); //Range: 0*PI <= phi <= 1*PI
+        //Azimuth (theta)
+        theta = qAtan2(-point.z, point.x); //Atan2 Range is -1*PI <= theta <= 1*PI (Note: Atan Range is (-PI/2, PI/2) !!!)
+        break;
+    case RIGHT_UP_X:
+    case LEFT_UP_X:
+        //Inclination (phi)
+        phi = qAcos( point.x / radius ); //Range: 0*PI <= phi <= 1*PI
+        //Azimuth (theta)
+        theta = qAtan2(point.y, -point.z); //Atan2 Range is -1*PI <= theta <= 1*PI (Note: Atan Range is (-PI/2, PI/2) !!!)
+        break;
+    }
+
 
     //Map theta to (0*PI, 2*PI)
     theta = theta + M_PI;
