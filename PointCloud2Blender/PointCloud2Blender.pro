@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui opengl
 CONFIG   += console
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -16,13 +16,19 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     importworker.cpp \
-    panorama3d.cpp
+    panorama3d.cpp \
+    glwidget.cpp \
+    glmesh.cpp
 
 HEADERS  += mainwindow.h \
     importworker.h \
-    panorama3d.h
+    panorama3d.h \
+    glwidget.h \
+    glmesh.h
 
 FORMS    += mainwindow.ui
 
 RESOURCES += \
     ressource.qrc
+
+DISTFILES +=

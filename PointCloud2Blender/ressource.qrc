@@ -2,4 +2,8 @@
     <qresource prefix="/application">
         <file>assets/handedness.png</file>
     </qresource>
+    <qresource prefix="/shaders">
+        <file>shaders/vertexshader.vert</file>
+        <file>shaders/fragmentshader.frag</file>
+    </qresource>
 </RCC>
