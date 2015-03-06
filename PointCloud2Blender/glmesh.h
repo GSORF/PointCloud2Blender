@@ -2,6 +2,9 @@
 #define GLMESH_H
 
 #include <QtOpenGL>
+#include "importworker.h"
+
+class Point3D;
 
 class GLMesh
 {
@@ -11,9 +14,16 @@ public:
 
     void draw();
 
+    void reset();
+    void addPoint(Point3D &newPoint);
+    void finished();
+
 private:
     void initVertices();
     void initColors();
+
+    int maxVertices;
+    int currentVertex;
 
     std::vector<float> vertices;
     std::vector<float> colors;

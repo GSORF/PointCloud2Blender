@@ -9,8 +9,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
 
+    threadPool.setMaxThreadCount(20);
     importer = NULL;
     panorama = NULL;
+    mesher = NULL;
 
     orientation = Panorama3D::RIGHT_UP_Z;
     resolution = 1;
@@ -53,6 +55,7 @@ MainWindow::~MainWindow()
     //Note: Delete menus?
     delete panorama;
 
+    delete mesher;
 }
 
 void MainWindow::processCommandLine(QString inputFile, QString translation, QString up, int resolution, float distance, QString projection)
@@ -199,6 +202,7 @@ void MainWindow::startFileImport()
     connect(panorama, SIGNAL(updateColorMap(QImage*)), this, SLOT(updateColorMap(QImage*)));
     //Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
     connect(importer, SIGNAL(newPoint(Point3D)), panorama, SLOT(addPoint(Point3D)));
+    connect(importer, SIGNAL(newPoint(Point3D)), this, SLOT(newPoint(Point3D)));
 
     threadPool.start(importer);
 }
@@ -222,6 +226,11 @@ void MainWindow::updateImportStatus(int percent)
     {
         ui->prbImportStatus->setValue(0);
         panorama->finished();
+        ui->canvasGL->pointCloudMesh->finished();
+
+        mesher = new MeshWorker(panorama, this);
+        connect(mesher, SIGNAL(addPoint(Point3D)), this, SLOT(newPoint(Point3D)));
+        threadPool.start(mesher);
     }
 }
 
@@ -235,6 +244,16 @@ void MainWindow::updateColorMap(QImage *colorMap)
 {
     ui->lblPanoramaColor->setPixmap( QPixmap::fromImage(*colorMap) );
     this->repaint();
+}
+
+void MainWindow::newPoint(Point3D _newPoint)
+{
+    _newPoint.x += translation.x();
+    _newPoint.y += translation.y();
+    _newPoint.z += translation.z();
+
+    ui->canvasGL->pointCloudMesh->addPoint(_newPoint);
+    ui->canvasGL->update();
 }
 
 void MainWindow::onClickUpVectorLeftX()

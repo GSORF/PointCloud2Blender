@@ -18,13 +18,15 @@ SOURCES += main.cpp\
     importworker.cpp \
     panorama3d.cpp \
     glwidget.cpp \
-    glmesh.cpp
+    glmesh.cpp \
+    meshworker.cpp
 
 HEADERS  += mainwindow.h \
     importworker.h \
     panorama3d.h \
     glwidget.h \
-    glmesh.h
+    glmesh.h \
+    meshworker.h
 
 FORMS    += mainwindow.ui
 

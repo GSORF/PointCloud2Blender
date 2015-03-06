@@ -8,7 +8,8 @@
 
 #include <QFile>
 
-#include <panorama3d.h>
+#include "panorama3d.h"
+#include "glmesh.h"
 
 class Point3D;
 

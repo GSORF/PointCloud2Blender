@@ -13,8 +13,9 @@
 #include <QSettings>
 
 #include <QThreadPool>
-#include <importworker.h>
-#include <panorama3d.h>
+#include "importworker.h"
+#include "panorama3d.h"
+#include "meshworker.h"
 
 namespace Ui {
 class MainWindow;
@@ -26,6 +27,7 @@ class MainWindow : public QMainWindow
 
     ImportWorker *importer;
     Panorama3D *panorama;
+    MeshWorker *mesher;
     QThreadPool threadPool;
 
     Panorama3D::Orientation orientation;
@@ -62,6 +64,7 @@ public slots:
     void updateDepthMap(QImage *depthMap);
     void updateColorMap(QImage *colorMap);
 
+    void newPoint(Point3D _newPoint);
 
     //Callbacks for Panorama settings:
     void onClickUpVectorLeftX();

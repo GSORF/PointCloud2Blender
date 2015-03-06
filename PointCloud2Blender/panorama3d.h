@@ -56,7 +56,9 @@ public:
 private:
     QVector3D translationVector;
     Orientation upVector;
+public:
     quint8 resolution;
+private:
     float maxDistance;
     ProjectionType projectionType;
 
@@ -69,6 +71,7 @@ private:
 
     void project(float theta, float phi, float &x, float &y);
 
+public:
     QImage panoramaDepth;
     QImage panoramaColor;
 

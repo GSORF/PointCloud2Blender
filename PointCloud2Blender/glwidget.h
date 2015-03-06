@@ -12,6 +12,7 @@ public:
     GLWidget(QWidget *parent = 0);
     ~GLWidget();
 
+    GLMesh *pointCloudMesh;
 
 protected:
     void initializeGL();
@@ -22,19 +23,19 @@ protected:
     void mouseMoveEvent(QMouseEvent *event);
     void wheelEvent(QWheelEvent *event);
     void keyPressEvent(QKeyEvent *event);
-    void keyReleaseEvent(QKeyEvent *event);
 
     void setCameraXRotation(float angle);
     void setCameraYRotation(float angle);
     void setCameraZRotation(float angle);
 
-    float cameraDistance;
+    float cameraXPosition;
+    float cameraYPosition;
+    float cameraZPosition;
     float cameraXRot;
     float cameraYRot;
     float cameraZRot;
     QPoint lastMousePosition;
 
-    GLMesh *pointCloudMesh;
     QOpenGLShaderProgram shaderProgram;
 
     int vertexAttributeID;
