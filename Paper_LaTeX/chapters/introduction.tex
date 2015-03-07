@@ -78,11 +78,11 @@ The term Light Detection And Ranging (in short LiDAR) is commonly used with high
 
 As this only gives the meter to one specific point, it is necessary to keep measuring from different viewpoints. This can be done by rotating the scanning device horizontally and vertically simultaneously. To keep cables from winding up by using two motors, devices usually use only one motor for the horizontal and a flat mirror on an elliptical mount for the vertical rotation. That way it is possible to sample a lot of points around the device position quickly and effectively.
 
-In this work the LiDAR scanner Faro Focus 3D is being used. It is capable of capturing 976,000 points per second with a vertical and horizontal field of view of 305 and 360 degrees, respectively\footnote{Techsheet Faro Focus 3D: http://www2.faro.com/site/resources/share/944}. For allowing a better registration it can also use GPS for localization and a barometer for height measurement. The measured points can be colored with a built-in camera of around 70 Megapixels.
+In this work the LiDAR scanner Faro Focus 3D is being used. It is capable of capturing 976,000 points per second with a vertical and horizontal field of view of 305 and 360 degrees, respectively\footnote{Techsheet Faro Focus 3D: http://www2.faro.com/site/resources/share/944}. For allowing a better registration it can also use GPS for localization and a barometer for height measurement. The measured points can be colored with a built-in camera of around 70 Megapixels. The price for the Focus 3D totals at 61,404.37 Euro\footnote{http://surveyequipment.com/faro-focus-3d-x-330-laser-scanner/}.
 
-Besides using a stationary device, portable devices are also available. Recently a new technology has been revealed by Csiro and is called \textit{Zebedee}. This handheld laser scanner can be used in challenging environments where a stationary device would require several scans to cover the whole area (e.g. caves, staircases) while the operator is walking. It samples over 40,000 range measurements every second and consists of a 2D laser scanner mounted on a spring system\footnote{http://www.csiro.au/Organisation-Structure/Divisions/Computational-Informatics/Zebedee-3D-mapping.aspx}. Especially the visual effects field has a great use for this device, since the environments can vary a lot during video shootings and a 3D mesh representation is ubiquitous today.
+Besides using a stationary device, portable devices are also available. Recently a new technology has been revealed by Csiro and is called \textit{Zebedee}. This handheld laser scanner can be used in challenging environments where a stationary device would require several scans to cover the whole area (e.g. caves, staircases) while the operator is walking. It samples over 40,000 range measurements every second and consists of a 2D laser scanner mounted on a spring system\footnote{http://www.csiro.au/Organisation-Structure/Divisions/Computational-Informatics/Zebedee-3D-mapping.aspx}. Especially the visual effects field has a great use for this device, since the environments can vary a lot during video shootings and a 3D mesh representation is ubiquitous today. The price for the ZEB1 handheld laser scanner is 17,000 Euro\footnote{Source: Personal contact to sales team}.
 
-Although measuring with laser technology can be found in household devices as an alternative for tape measuring, it is still quite complicated to reverse engineer such devices to get the raw distance reading. Fortunately a group of engineers tried to bridge the gap by starting a crowd funding campaign for a low-cost laser range finder, called the LiDAR-Lite\footnote{http://pulsedlight3d.com/}. It has a total range of 40 meters with a resolution of 1 cm. During this research this sensor is being used with a custom arduino build to examine how it can be used as a cheap alternative to the examples mentioned in the beginning.
+Although measuring with laser technology can be found in household devices as an alternative for tape measuring, it is still quite complicated to reverse engineer such devices to get the raw distance reading. Fortunately a group of engineers tried to bridge the gap by starting a crowd funding campaign for a low-cost laser range finder, called the LiDAR-Lite\footnote{http://pulsedlight3d.com/}. It has a total range of 40 meters with a resolution of 1 cm. During this research this sensor is being used with a custom arduino build to examine how it can be used as a cheap alternative to the examples mentioned in the beginning. The price for one module is at 82 Euro.
 
 \begin{figure}[h]
 	\centering
@@ -93,15 +93,14 @@ Although measuring with laser technology can be found in household devices as an
 
 \subsection{Ultrasonic}
 
-In contrast to LiDAR, most ultrasonic sensors are cheap, but generally are not used for higher distances at several tens of meters (though, there are products for a range higher than 100 meter\footnote{VEGAPULS 69: http://www.vega.com/downloads/AL/DE/34137-DE.pdf}). The reason for this is that sound is usually affected stronger by environmental properties than light\footnote{http://www.sensorsmag.com/sensors/acoustic-ultrasound/choosing-ultrasonic-sensor-proximity-or-distance-measurement-825}. Due to this they are often used for shorter distances e.g. for near field obstacle recognition in robotics or in small desktop laser scanners\footnote{https://www.youtube.com/watch?v=saWWhEYQxTg}. Typical ultrasonic sensors with a range 
+In contrast to LiDAR, most ultrasonic sensors are cheap, but generally are not used for higher distances at several tens of meters (though, there are products for a range higher than 100 meter\footnote{VEGAPULS 69: http://www.vega.com/downloads/AL/DE/34137-DE.pdf}). The reason for this is that sound is usually affected stronger by environmental properties than light\footnote{http://www.sensorsmag.com/sensors/acoustic-ultrasound/choosing-ultrasonic-sensor-proximity-or-distance-measurement-825}. Due to this they are often used for shorter distances e.g. for near field obstacle recognition in robotics or in small desktop laser scanners\footnote{https://www.youtube.com/watch?v=saWWhEYQxTg}. Typical ultrasonic sensor modules with a maximum range of around 5 m can be purchased for 5 Euro already.
 
 
 
 \subsection{Photogrammetry}
 
-This works by...
-
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
+Photogrammetry (also referred to as multi-view reconstruction) is a technique from the Computer Vision field and presents a cost-effective alternative to laser scanning. A real 3D object can be reconstructed as a virtual 3D model by using photographs of the scene and feeding them into such software. This works by detecting image features (for example by using Harris Corner Detector or SIFT algorithms), matching those between image pairs, computing the respective camera positions and re-projecting the reconstructed 3D points to get a point cloud representation of the real photograph\parencite[compare][p10]{bookProgrammingComputerVisionwithPython}.
+The computer vision algorithms get better each day and there is plenty of software using them.
 
 \begin{figure}[h]
 	\centering
@@ -129,34 +128,30 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra
 	\label{fig:multiview reconstruction historic stereo}
 \end{figure}
 
-Comparison of various software, commercial and non-commercial with results
-
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
+Photogrammetry will be used in this project to try to reconstruct surfaces from historical images. Fortunately stereographic image pairs are provided through the Altstadtfreunde Nürnberg e.V. By matching the laser scanner data with the Photogrammetry output a good groundwork is expected to be done for the final surface reconstruction.
 
 \subsection{Google Maps (R) }
 
-This works by...
-
-rough 3D building shapes
+The commercial application allows viewing cities from the sky with a rough representation of 3D building shapes\footnote{https://www.youtube.com/watch?v=5iolZU8LwPU}. While this service had gray boxes some years ago, today the visualization is getting more accurate. It is possible to see small details with better modeled and textured buildings.
 
 \subsection{Open Street Map (R) }
 
-This works by...
+The open source alternative to the commercial service above offers the basic functions for map viewing and navigation. OpenStreetMap (OSM) offers very detailed access to its data, like boundaries, streets and building footprints. That way it is possible to extract simple building shapes\footnote{http://demo.f4map.com/\#lat=49.4559869\&lon=11.0762814\&zoom=18} that can be used in custom software free of charge.
 
-Indoor version
+To allow for a better mapping of buildings there are also proposals on an indoor version of OSM\footnote{http://wiki.openstreetmap.org/wiki/Indoor\_Mapping}. Having this data available is a helpful thing for applications such as indoor navigation at railway and subway stations, mobile emergency exit information and robotics.
 
 \subsection{Bavarian State Office for Survey and Geoinformation}
 
-
+Geodata and city plans are also provided officially through governmental institutions. They provide various types of data, among others historical aerial photographs, digital elevation models (DEM) and also 3D building shapes. For educational purposes (like i.e. this research) they offer a university discount for the data of 25 percent. A usual dataset without any discounts containing 7580 buildings of Langwasser, district of Nuremberg in Germany, costs 1158 Euro\footnote{Personal research}.
 
 \subsection{Autonomous mapping with UAV's and SLAM}
 
-
+Drones, or unmanned aerial vehicles (UAV's), are getting more popular each day. Most of them are also equipped with a camera which allows for taking pictures or videos from viewpoints a human cannot reach easily. More expensive drones have LiDAR systems attached \footnote{https://www.youtube.com/watch?v=IMSozUpFFkU} which allow - together with the IMU (Inertial Measuring Unit) and GPS (Global Positioning System) to localize it and map its environment. A popular term for this is Simultaneous Localization And Mapping (SLAM).
 
 \subsection{Manual methods}
 
-If all other methods fail, there is still the chance to get a reconstruction done roughly by taking measurements of real objects with measuring tapes or eyeballing. Loading views from the front, side and top view into a 3D software can already yield decent results.
+If all other methods fail, there is still the chance to get a reconstruction done roughly by taking measurements of real objects with measuring tapes or eyeballing. Loading pictures from the front, side and top view into a 3D software can already yield decent results.
 
 \section{Defining the scope of this research}
 
-Aliquam at varius elit. Suspendisse viverra ex a ipsum scelerisque condimentum. Nam ac neque luctus, ullamcorper neque sit amet, tincidunt felis. Maecenas id orci rutrum, tincidunt nisl non, aliquam sapien. Aenean vestibulum erat ut nisl vehicula, quis rutrum eros fermentum. Maecenas ut arcu elit. Cras vestibulum pharetra facilisis. Quisque non elit iaculis leo dignissim faucibus. Etiam fringilla tortor nibh, sit amet volutpat diam consequat ac. Sed consectetur metus quis suscipit sollicitudin. Morbi imperdiet scelerisque nunc, in dapibus lacus. Praesent ullamcorper condimentum augue vitae finibus. 
+Although this work uses a combination of several techniques (briefly presented above), the main focus is put on examination if panoramic projection of laser scanner point clouds will be an aid for 3D reconstruction or not. This will be evaluated by using the result in a real world use case of using the reconstructed mesh in the design process.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.24)  7 MAR 2015 02:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.24)  7 MAR 2015 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,76 +1118,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--96
 ng-ultrasonic-sensor-
  []
 
-[13 <./images/graph_a.png>] <images/graph1.png, id=67, 867.24pt x 578.16pt>
-File: images/graph1.png Graphic file (type png)
 
-<use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 110.
+Underfull \vbox (badness 2027) has occurred while \output is active []
+
+ [13 <./images/graph_a.png>]
+
+LaTeX Warning: Citation 'bookProgrammingComputerVisionwithPython' on page 14 un
+defined on input line 102.
+
+<images/graph1.png, id=67, 867.24pt x 578.16pt>
+File: images/graph1.png Graphic file (type png)
+ <use images/graph1.png>
+Package pdftex.def Info: images/graph1.png used on input line 109.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 111.
+(Font)              <10.95> on input line 110.
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--111
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []\T1/cmr/m/n/10.95 (a) |$\OML/cmm/m/it/10.95 OpenSource \OT1/cmr/m/n/10.95 :
  []
 
 <images/graph2.png, id=68, 867.24pt x 578.16pt>
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 117.
+Package pdftex.def Info: images/graph2.png used on input line 116.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []\T1/cmr/m/n/10.95 (b) |$\OML/cmm/m/it/10.95 Free \OT1/cmr/m/n/10.95 :
  []
 
 <images/graph3.png, id=69, 867.24pt x 578.16pt>
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 124.
+Package pdftex.def Info: images/graph3.png used on input line 123.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []\T1/cmr/m/n/10.95 (c) |$\OML/cmm/m/it/10.95 Commercial \OT1/cmr/m/n/10.95 :
  []
 
 
-Overfull \hbox (19.16776pt too wide) in paragraph at lines 125--125
+Overfull \hbox (19.16776pt too wide) in paragraph at lines 124--124
 \OML/cmm/m/it/10.95 AgisoftPhotoscanPro\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 
 Demo\OT1/cmr/m/n/10.95 )$| 
  []
 
 [14 <./images/graph1.png> <./images/graph2.png> <./images/graph3.png>])
-[15] [16
-
-]
+[15] [16]
 Chapter 2.
 (./chapters/chapter01.tex
 File: images/graph_a.png Graphic file (type png)
  <use images/graph_a.png>
 Package pdftex.def Info: images/graph_a.png used on input line 13.
 (pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
+ [17
 
-
-LaTeX Warning: Reference `fig:x cubed graph' on page 17 undefined on input line
- 18.
-
-[17]
-
-LaTeX Warning: Reference `fig:five over x' on page 18 undefined on input line 2
-6.
-
+]
 File: images/graph1.png Graphic file (type png)
+
 <use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 38.
+Package pdftex.def Info: images/graph1.png used on input line 37.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 45.
+Package pdftex.def Info: images/graph2.png used on input line 44.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 52.
+Package pdftex.def Info: images/graph3.png used on input line 51.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 )
 [18]
@@ -1238,18 +1237,23 @@ Re-trieved 01/23/2015).
 
 LaTeX Warning: There were undefined references.
 
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19008 strings out of 495028
- 355715 string characters out of 6181497
- 735511 words of memory out of 5000000
- 21815 multiletter control sequences out of 15000+600000
+ 19006 strings out of 495028
+ 355687 string characters out of 6181497
+ 735552 words of memory out of 5000000
+ 21813 multiletter control sequences out of 15000+600000
  26453 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 63i,12n,89p,1258b,953s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,11n,89p,1258b,953s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/akp/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0800.600pk> </home/akp
 /.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/akp/.texmf-var/f
 onts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/akp/.texmf-var/fonts/pk/ljfou
@@ -1269,9 +1273,9 @@ ec/ecrm2074.600pk> </home/akp/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.6
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (31 pages, 420179 bytes).
+Output written on main.pdf (31 pages, 426941 bytes).
 PDF statistics:
- 765 PDF objects out of 1000 (max. 8388607)
+ 782 PDF objects out of 1000 (max. 8388607)
  158 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)

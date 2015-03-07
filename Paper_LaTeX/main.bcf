@@ -1942,16 +1942,17 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">webBlenderArtistsPointCloudSupport</bcf:citekey>
-    <bcf:citekey order="2">dp_lidar</bcf:citekey>
+    <bcf:citekey order="2">bookProgrammingComputerVisionwithPython</bcf:citekey>
     <bcf:citekey order="3">dp_lidar</bcf:citekey>
     <bcf:citekey order="4">dp_lidar</bcf:citekey>
-    <bcf:citekey order="5">latexcompanion</bcf:citekey>
+    <bcf:citekey order="5">dp_lidar</bcf:citekey>
     <bcf:citekey order="6">latexcompanion</bcf:citekey>
     <bcf:citekey order="7">latexcompanion</bcf:citekey>
-    <bcf:citekey order="8">webLaTeX-Tutorial</bcf:citekey>
-    <bcf:citekey order="9">dp_lidar</bcf:citekey>
-    <bcf:citekey order="10">ytLaTeX</bcf:citekey>
-    <bcf:citekey order="10">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="8">latexcompanion</bcf:citekey>
+    <bcf:citekey order="9">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="10">dp_lidar</bcf:citekey>
+    <bcf:citekey order="11">ytLaTeX</bcf:citekey>
+    <bcf:citekey order="11">webLaTeX-Tutorial</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="none">
   <bcf:sorting>
