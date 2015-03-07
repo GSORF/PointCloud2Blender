@@ -1,19 +1,21 @@
-\section{Justification}
+\section{Motivation}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit interdum sagittis. Nulla facilisi. Pellentesque laoreet tincidunt semper. Pellentesque pellentesque lectus id arcu interdum cursus ut ac dui. Etiam feugiat nisl ac odio suscipit pretium venenatis eget diam. Morbi molestie ipsum sit amet sapien rutrum luctus. Proin ac dolor ut metus laoreet aliquam non id nunc. Curabitur non efficitur dolor. Donec iaculis, dui et porta iaculis, magna tellus placerat ex, sed porta sem ligula ac augue. Fusce vitae sagittis ex. Pellentesque faucibus cursus elit, et faucibus velit cursus in. Nam lobortis id neque id hendrerit. Fusce et dolor nisi.
+The field of 3D computer graphics has always been a fascinating subject to me....
+...image processing in computer vision...
+...high interest in historical topics, because member of citizens association and representative of settlement, thus learning a lot about interesting historical facts and development of culture. For example old railway station in district Langwasser has formerly been used for deportation of people after start of the second world war.
+...
 
 \section{Initial project specification}
 
-
-Problem of Blender not capable to handle import point clouds and display them colored \parencite[see][p10]{webBlenderArtistsPointCloudSupport}.
-
-
-
-\section{project schedule}
-
-Etiam non volutpat diam. Nam ac consectetur felis. Ut nec mi dictum, lobortis mauris quis, dapibus ligula. Nulla porttitor diam sed mauris dapibus posuere. Fusce pellentesque odio at nisl placerat porta. Donec urna risus, iaculis vitae justo quis, tempus ullamcorper diam. Integer eu gravida est. Phasellus eu ex tincidunt urna tempus pulvinar in in metus. Mauris tempus magna ac finibus suscipit. Praesent malesuada magna nibh, at rutrum felis semper a.
+The idea for this research started with the personal concern of reconstructing a historical site like the old railway station in Langwasser in its historic state. Due to the fact that this railway station has never been fully finished and therefore poor historical documentation, a 3D reconstruction wouldn't be complete. Luckily the famous Pellerhaus was the perfect candidate for this research. After its destruction during World War II, it was rebuilt quite differently to the original state. While the inner courtyard is almost finished with reconstruction at the time of this writing, the facade is still looking modern. At that point, it was clear that the main research topic is going to examine ways to reconstruct the Pellerhaus in its historic state.
+A more concrete specification was defined by considering how this is going to be done. The current state of the building has to be captured with laser scanning technology to get the correct measurements from the real world reference. This point cloud data needs to be processed then. To do so, a custom software is required to be written, which can read a file format exported from the proprietary Faro SCENE application, create a panoramic image representation of the data, use it to generate a 3D mesh and export this mesh to a widely supported file format. This research will mostly rely on the open source software Blender to model and animate the historic state of the Pellerhaus, thus it is crucial to provide a compatible output to be used as a basis for the design process. By creating a surface from the point samples, a bug of Blender, which is not capable of displaying or rendering colored point clouds\parencite[see][p10]{webBlenderArtistsPointCloudSupport}, this research will overcome this problem. The goal of this research is to get a 3D model of the Pellerhaus in its historic state from 1605 by utilizing panoramic projections as described before.
 
 
+\section{Project schedule}
+
+This project is divided into two phases. The first phase is developing the software for converting laser scanner point clouds as 3D panorama meshes. The second one is designing the historic 3D model from this initial mesh.
+
+This is visualized in the following GANTT chart:
 
 \definecolor{RoyalBlue}{RGB}{92,102,149}
 \definecolor{OliveGreen}{RGB}{51,151,102}
@@ -51,9 +53,9 @@ name=pp
 \ganttset{progress label text={}, link/.style={black, -to}}
 
 \ganttgroup{Software development}{2015-02-15}{2015-03-01} \\
-\ganttbar[progress=50, name=T1A]{Import}{2015-02-15}{2015-02-18} \\
-\ganttbar[progress=0]{Processing}{2015-02-19}{2015-02-25} \\
-\ganttbar[progress=0]{Export}{2015-02-26}{2015-03-01} \\
+\ganttbar[progress=100, name=T1A]{Import}{2015-02-15}{2015-02-18} \\
+\ganttbar[progress=15]{Processing}{2015-02-19}{2015-02-25} \\
+\ganttbar[progress=10]{Export}{2015-02-26}{2015-03-01} \\
 
 \ganttgroup{Video production}{2015-04-01}{2015-06-01} \\
 \ganttbar[progress=0, name=T2A]{Modeling}{2015-04-01}{2015-05-01} \\
@@ -68,17 +70,19 @@ name=pp
 
 \section{State-of-the-art methods for 3D reconstruction}
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
+There are several methods that allow for the generation of 3D meshes from various data. One can either use several still images or videos, sample the real world with modern sensor technology. This is described as follows:
 
 \subsection{Light Detection And Ranging (LiDAR)}
 
-This works by...
+The term Light Detection And Ranging (in short LiDAR) is commonly used with high precision applications, such as scanning and mapping. It uses a laser beam emitter and receiver. The time between sending a signal and receiving it is measured and multiplied by the speed of light. This returns the meters the light traveled from the emitter to the obstacle and back. Dividing this distance by two yields the range to the obstacle in meters.
 
-LiDAR-Devices:
+As this only gives the meter to one specific point, it is necessary to keep measuring from different viewpoints. This can be done by rotating the scanning device horizontally and vertically simultaneously. To keep cables from winding up by using two motors, devices usually use only one motor for the horizontal and a flat mirror on an elliptical mount for the vertical rotation. That way it is possible to sample a lot of points around the device position quickly and effectively.
 
-flat mirror elliptical mount
+In this work the LiDAR scanner Faro Focus 3D is being used. It is capable of capturing 976,000 points per second with a vertical and horizontal field of view of 305 and 360 degrees, respectively\footnote{Techsheet Faro Focus 3D: http://www2.faro.com/site/resources/share/944}. For allowing a better registration it can also use GPS for localization and a barometer for height measurement. The measured points can be colored with a built-in camera of around 70 Megapixels.
 
-LiDAR-Lite, custom arduino build
+Besides using a stationary device, portable devices are also available. Recently a new technology has been revealed by Csiro and is called \textit{Zebedee}. This handheld laser scanner can be used in challenging environments where a stationary device would require several scans to cover the whole area (e.g. caves, staircases) while the operator is walking. It samples over 40,000 range measurements every second and consists of a 2D laser scanner mounted on a spring system\footnote{http://www.csiro.au/Organisation-Structure/Divisions/Computational-Informatics/Zebedee-3D-mapping.aspx}. Especially the visual effects field has a great use for this device, since the environments can vary a lot during video shootings and a 3D mesh representation is ubiquitous today.
+
+Although measuring with laser technology can be found in household devices as an alternative for tape measuring, it is still quite complicated to reverse engineer such devices to get the raw distance reading. Fortunately a group of engineers tried to bridge the gap by starting a crowd funding campaign for a low-cost laser range finder, called the LiDAR-Lite\footnote{http://pulsedlight3d.com/}. It has a total range of 40 meters with a resolution of 1 cm. During this research this sensor is being used with a custom arduino build to examine how it can be used as a cheap alternative to the examples mentioned in the beginning.
 
 \begin{figure}[h]
 	\centering
@@ -87,9 +91,10 @@ LiDAR-Lite, custom arduino build
 	\label{fig:LiDAR}
 \end{figure}
 
+\subsection{Ultrasonic}
 
+In contrast to LiDAR, most ultrasonic sensors are cheap, but generally are not used for higher distances at several tens of meters (though, there are products for a range higher than 100 meter\footnote{VEGAPULS 69: http://www.vega.com/downloads/AL/DE/34137-DE.pdf}). The reason for this is that sound is usually affected stronger by environmental properties than light\footnote{http://www.sensorsmag.com/sensors/acoustic-ultrasound/choosing-ultrasonic-sensor-proximity-or-distance-measurement-825}. Due to this they are often used for shorter distances e.g. for near field obstacle recognition in robotics or in small desktop laser scanners\footnote{https://www.youtube.com/watch?v=saWWhEYQxTg}. Typical ultrasonic sensors with a range 
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
 
 
 \subsection{Photogrammetry}
@@ -109,14 +114,14 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra
 	\hfill
 	\begin{subfigure}[b]{0.3\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{graph2.png}]
+		\includegraphics[width=\textwidth]{graph2.png}
 		\caption{$Free: Autodesk 123D Catch$}
 		\label{fig:123dcatch}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.3\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{graph3.png}]
+		\includegraphics[width=\textwidth]{graph3.png}
 		\caption{$Commercial: Agisoft Photoscan Pro (Demo)$}
 		\label{fig:photoscan pro}
 	\end{subfigure}
@@ -152,6 +157,6 @@ Indoor version
 
 If all other methods fail, there is still the chance to get a reconstruction done roughly by taking measurements of real objects with measuring tapes or eyeballing. Loading views from the front, side and top view into a 3D software can already yield decent results.
 
-\section{Defining the scope of my work}
+\section{Defining the scope of this research}
 
 Aliquam at varius elit. Suspendisse viverra ex a ipsum scelerisque condimentum. Nam ac neque luctus, ullamcorper neque sit amet, tincidunt felis. Maecenas id orci rutrum, tincidunt nisl non, aliquam sapien. Aenean vestibulum erat ut nisl vehicula, quis rutrum eros fermentum. Maecenas ut arcu elit. Cras vestibulum pharetra facilisis. Quisque non elit iaculis leo dignissim faucibus. Etiam fringilla tortor nibh, sit amet volutpat diam consequat ac. Sed consectetur metus quis suscipit sollicitudin. Morbi imperdiet scelerisque nunc, in dapibus lacus. Praesent ullamcorper condimentum augue vitae finibus. 
