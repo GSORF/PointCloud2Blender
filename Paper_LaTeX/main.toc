@@ -36,13 +36,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Types of projections}{18}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Converting from point cloud to Blender 3D}{19}
+\contentsline {chapter}{\numberline {3}Converting: From point cloud to Blender 3D}{19}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Concept}{19}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Use case diagram}{19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}UML class diagram}{19}
+\contentsline {subsection}{\numberline {3.1.2}Activity diagram}{19}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Generating data and testing algorithms}{20}
 \defcounter {refsection}{0}\relax 
@@ -66,15 +66,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.6}Mesh Exporter}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Production}{23}
+\contentsline {chapter}{\numberline {4}Production: Recreating the Pellerhaus from 1605}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Modeling the current Pellerhaus}{23}
+\contentsline {section}{\numberline {4.1}Modeling the current Pellerhaus facade}{23}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}Using the converter}{23}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Using UAV references with photogrammetry}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Modeling the original Pellerhaus}{24}
+\contentsline {section}{\numberline {4.2}Modeling the original Pellerhaus facade}{24}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}Using historic images as guide}{24}
 \defcounter {refsection}{0}\relax 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.24)  7 MAR 2015 19:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.24)  8 MAR 2015 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -873,7 +873,7 @@ File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 \@quotelevel=\count291
 \@quotereset=\count292
  (./main.aux
-(./declaration.aux))
+(./declaration.aux) (./abstract.aux) (./acknowledgements.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -980,7 +980,7 @@ ABD: EveryShipout initializing macros (./titlepage.tex
 File: images/TH_Nuernberg_Logo.png Graphic file (type png)
 
 <use images/TH_Nuernberg_Logo.png>
-Package pdftex.def Info: images/TH_Nuernberg_Logo.png used on input line 23.
+Package pdftex.def Info: images/TH_Nuernberg_Logo.png used on input line 27.
 (pdftex.def)             Requested size: 426.79134pt x 74.02249pt.
  [1
 
@@ -999,17 +999,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ) [2
 
 ]
-(./abstract.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+\openout2 = `abstract.aux'.
 
- [3
+
+(./abstract.tex) [3
+
 
 ]
-(./acknowledgements.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+\openout2 = `acknowledgements.aux'.
 
- [4]
-(./main.toc [5
+ (./acknowledgements.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+) [4
+
+
+] (./main.toc [5
+
 
 ])
 \tf@toc=\write5
@@ -1205,11 +1223,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 Chapter 4.
-(./chapters/chapter03.tex
-Underfull \vbox (badness 1584) has occurred while \output is active []
-
- [23]
-[24]) [25] [26
+(./chapters/chapter03.tex [23] [24]) [25] [26
 
 ]
 Chapter 5.
@@ -1223,17 +1237,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ] [30
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 74.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (8.31625pt too wide) in paragraph at lines 75--75
+Overfull \hbox (8.31625pt too wide) in paragraph at lines 69--69
 \T1/cmtt/m/n/12 1 & list = PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC$ \T1/cmr/m/n/12 (
 Re-trieved 01/23/2015). 
  []
 
-[31] (./main.aux (./declaration.aux))
+[31] (./main.aux (./declaration.aux) (./abstract.aux) (./acknowledgements.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1247,10 +1261,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19006 strings out of 495028
- 355687 string characters out of 6181497
- 735552 words of memory out of 5000000
- 21813 multiletter control sequences out of 15000+600000
+ 19016 strings out of 495028
+ 355853 string characters out of 6181497
+ 740010 words of memory out of 5000000
+ 21815 multiletter control sequences out of 15000+600000
  26453 words of font info for 58 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,11n,89p,1258b,953s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1273,9 +1287,9 @@ ec/ecrm2074.600pk> </home/akp/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.6
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (31 pages, 426941 bytes).
+Output written on main.pdf (31 pages, 436409 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
+ 810 PDF objects out of 1000 (max. 8388607)
  158 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
