@@ -1,19 +1,20 @@
 [0] Config.pm:318> INFO - This is Biber 1.8
 [0] Config.pm:321> INFO - Logfile is 'main.blg'
-[75] biber-MSWIN:272> INFO - === %a %b %e, %Y, %H:%M:%S
-[76] Biber.pm:333> INFO - Reading 'main.bcf'
-[148] Utils.pm:169> WARN - Warning: Found biblatex control file version 2.6, expected version 2.5
-[148] Biber.pm:630> INFO - Found 5 citekeys in bib section 0
+[74] biber-MSWIN:272> INFO - === %a %b %e, %Y, %H:%M:%S
+[75] Biber.pm:333> INFO - Reading 'main.bcf'
+[147] Utils.pm:169> WARN - Warning: Found biblatex control file version 2.6, expected version 2.5
+[148] Biber.pm:630> INFO - Found 9 citekeys in bib section 0
 [176] Biber.pm:3053> INFO - Processing section 0
-[205] Biber.pm:3190> INFO - Looking for bibtex format file 'references.bib' for section 0
-[209] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[204] Biber.pm:3190> INFO - Looking for bibtex format file 'references.bib' for section 0
+[208] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
 [212] bibtex.pm:812> INFO - Found BibTeX data source 'references.bib'
-[270] Biber.pm:2939> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[270] Biber.pm:2945> INFO - Sorting 'entry' list '' keys
-[270] Biber.pm:2949> INFO - No sort tailoring available for locale 'English_United States.1252'
-[282] Biber.pm:2939> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[282] Biber.pm:2945> INFO - Sorting 'entry' list 'none' keys
-[283] Biber.pm:2949> INFO - No sort tailoring available for locale 'English_United States.1252'
-[293] bbl.pm:482> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[295] bbl.pm:555> INFO - Output to main.bbl
-[296] Biber.pm:105> INFO - WARNINGS: 1
+[233] Utils.pm:169> WARN - I didn't find a database entry for 'bookProgrammingComputerVisionwithPython' (section 0)
+[275] Biber.pm:2939> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[276] Biber.pm:2945> INFO - Sorting 'entry' list '' keys
+[276] Biber.pm:2949> INFO - No sort tailoring available for locale 'English_United States.1252'
+[288] Biber.pm:2939> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[288] Biber.pm:2945> INFO - Sorting 'entry' list 'none' keys
+[288] Biber.pm:2949> INFO - No sort tailoring available for locale 'English_United States.1252'
+[303] bbl.pm:482> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[307] bbl.pm:555> INFO - Output to main.bbl
+[307] Biber.pm:105> INFO - WARNINGS: 2

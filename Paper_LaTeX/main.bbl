@@ -31,6 +31,7 @@
       \field{labelalpha}{Ble14}
       \field{sortinit}{0}
       \field{labeltitle}{Point Cloud support in Blender: What's already there and what does the community need}
+      \field{extraalpha}{1}
       \field{title}{Point Cloud support in Blender: What's already there and what does the community need}
       \field{urlday}{24}
       \field{urlmonth}{01}
@@ -57,6 +58,70 @@
       \field{volume}{07 / 14}
       \field{year}{2014}
       \field{pages}{8\bibrangedash 9}
+    \endentry
+    \entry{ytQtOpenGL}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \strng{fullhash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \field{labelalpha}{Enz14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{title}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=jTHvFGjy5uA&list=PLHlHFavas54e0-05vZcZ0wNGhnpRyFmLc
+      \endverb
+    \endentry
+    \entry{webBlenderArtistsBlendExport}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64e88accfc6fb8b42adcaeb498d70796}
+      \strng{fullhash}{64e88accfc6fb8b42adcaeb498d70796}
+      \field{labelalpha}{Ble14}
+      \field{sortinit}{0}
+      \field{labeltitle}{[C++/Qt]: Export .blend with procedurally generated mesh?}
+      \field{extraalpha}{2}
+      \field{title}{[C++/Qt]: Export .blend with procedurally generated mesh?}
+      \field{urlday}{24}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{webMysteryOfTheBlend}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=9d1c56cee47294f756427d2174409457}{Bakker}{B\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9d1c56cee47294f756427d2174409457}{Bakker}{B\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9d1c56cee47294f756427d2174409457}
+      \strng{fullhash}{9d1c56cee47294f756427d2174409457}
+      \field{labelalpha}{Bak09}
+      \field{sortinit}{0}
+      \field{labeltitle}{The mystery of the blend\newlineThe blender file-format explained}
+      \field{title}{The mystery of the blend\newlineThe blender file-format explained}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://www.atmind.nl/blender/mystery_ot_blend.html
+      \endverb
     \endentry
     \entry{latexcompanion}{book}{}
       \name{labelname}{3}{}{%
@@ -139,6 +204,7 @@
       \field{labelalpha}{Ble14}
       \field{sortinit}{0}
       \field{labeltitle}{Point Cloud support in Blender: What's already there and what does the community need}
+      \field{extraalpha}{1}
       \field{title}{Point Cloud support in Blender: What's already there and what does the community need}
       \field{urlday}{24}
       \field{urlmonth}{01}
@@ -165,6 +231,70 @@
       \field{volume}{07 / 14}
       \field{year}{2014}
       \field{pages}{8\bibrangedash 9}
+    \endentry
+    \entry{ytQtOpenGL}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \strng{fullhash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \field{labelalpha}{Enz14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{title}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=jTHvFGjy5uA&list=PLHlHFavas54e0-05vZcZ0wNGhnpRyFmLc
+      \endverb
+    \endentry
+    \entry{webBlenderArtistsBlendExport}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64e88accfc6fb8b42adcaeb498d70796}
+      \strng{fullhash}{64e88accfc6fb8b42adcaeb498d70796}
+      \field{labelalpha}{Ble14}
+      \field{sortinit}{0}
+      \field{labeltitle}{[C++/Qt]: Export .blend with procedurally generated mesh?}
+      \field{extraalpha}{2}
+      \field{title}{[C++/Qt]: Export .blend with procedurally generated mesh?}
+      \field{urlday}{24}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{webMysteryOfTheBlend}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=9d1c56cee47294f756427d2174409457}{Bakker}{B\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9d1c56cee47294f756427d2174409457}{Bakker}{B\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9d1c56cee47294f756427d2174409457}
+      \strng{fullhash}{9d1c56cee47294f756427d2174409457}
+      \field{labelalpha}{Bak09}
+      \field{sortinit}{0}
+      \field{labeltitle}{The mystery of the blend\newlineThe blender file-format explained}
+      \field{title}{The mystery of the blend\newlineThe blender file-format explained}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://www.atmind.nl/blender/mystery_ot_blend.html
+      \endverb
     \endentry
     \entry{latexcompanion}{book}{}
       \name{labelname}{3}{}{%
@@ -234,6 +364,7 @@
       \endverb
     \endentry
   \endsortlist
+  \missing{bookProgrammingComputerVisionwithPython}
 \endrefsection
 \endinput
 

@@ -88,6 +88,12 @@ Etiam non volutpat diam. Nam ac consectetur felis. Ut nec mi dictum, lobortis ma
 \subsection{Saving textures}
 
 
+\subsection{OpenGL Point Cloud Viewer}
+
+This russian video tutorial was very helpful with the basic setup with the Qt framework.
+
+\cite{ytQtOpenGL}
+
 \subsection{Performance Optimization}
 
 
@@ -99,4 +105,18 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra
 
 \subsection{Mesh Exporter}
 
-Aliquam at varius elit. Suspendisse viverra ex a ipsum scelerisque condimentum. Nam ac neque luctus, ullamcorper neque sit amet, tincidunt felis. Maecenas id orci rutrum, tincidunt nisl non, aliquam sapien. Aenean vestibulum erat ut nisl vehicula, quis rutrum eros fermentum. Maecenas ut arcu elit. Cras vestibulum pharetra facilisis. Quisque non elit iaculis leo dignissim faucibus. Etiam fringilla tortor nibh, sit amet volutpat diam consequat ac. Sed consectetur metus quis suscipit sollicitudin. Morbi imperdiet scelerisque nunc, in dapibus lacus. Praesent ullamcorper condimentum augue vitae finibus. 
+There are different formats, one had to be chosen that supported at least vertices and faces.
+
+\subsubsection{.obj}
+
+The .obj format is the most popular and can be one of the easiest to understand file formats to save 3D geometry with not only points, but vertices, normals, texture coordinates and much more. It was the first choice when testing mesh exporting from the converter software and examining it in Blender.
+
+\subsubsection{.blend}
+
+A personal goal for this research was to implement a .blend export feature to allow for a native importing of the panorama mesh into Blender. However, this goal was not reached in this project. As it turned out, exporting the binary Blender file format was quite complicated, due to it's versatile structure. An experienced Blender Developer, Jeroen Bakker, stated in 2009 “When implementing loading and saving blend-files in a custom tool the difficulty is the opposite. In a custom tool loading a blend-file is easy, and saving a blend-file is difficult.” \parencite[see]{webMysteryOfTheBlend}. At least implementing it with the limited time for the thesis it was not feasable.
+
+
+
+\subsubsection{custom format}
+
+Even the Blender community suggested to not use the .blend format directly, but rather try a custom binary format. \parencite[compare]{webBlenderArtistsBlendExport}
