@@ -1948,19 +1948,22 @@
     <bcf:citekey order="1">webBlenderArtistsPointCloudSupport</bcf:citekey>
     <bcf:citekey order="2">dp_lidar</bcf:citekey>
     <bcf:citekey order="3">bookProgrammingComputerVisionwithPython</bcf:citekey>
-    <bcf:citekey order="4">ytQtOpenGL</bcf:citekey>
-    <bcf:citekey order="5">webMysteryOfTheBlend</bcf:citekey>
-    <bcf:citekey order="6">webBlenderArtistsBlendExport</bcf:citekey>
-    <bcf:citekey order="7">dp_lidar</bcf:citekey>
-    <bcf:citekey order="8">dp_lidar</bcf:citekey>
-    <bcf:citekey order="9">dp_lidar</bcf:citekey>
-    <bcf:citekey order="10">latexcompanion</bcf:citekey>
-    <bcf:citekey order="11">latexcompanion</bcf:citekey>
-    <bcf:citekey order="12">latexcompanion</bcf:citekey>
-    <bcf:citekey order="13">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="4">bookBayerischeBiographische</bcf:citekey>
+    <bcf:citekey order="5">afWiederaufbauDesPellerhofes</bcf:citekey>
+    <bcf:citekey order="6">afPellerhausMagazin01</bcf:citekey>
+    <bcf:citekey order="7">afPellerhausMagazin02</bcf:citekey>
+    <bcf:citekey order="8">afPellerhausMagazin03</bcf:citekey>
+    <bcf:citekey order="9">bookAcademiaNorica</bcf:citekey>
+    <bcf:citekey order="10">ytQtOpenGL</bcf:citekey>
+    <bcf:citekey order="11">webMysteryOfTheBlend</bcf:citekey>
+    <bcf:citekey order="12">webBlenderArtistsBlendExport</bcf:citekey>
+    <bcf:citekey order="13">dp_lidar</bcf:citekey>
     <bcf:citekey order="14">dp_lidar</bcf:citekey>
-    <bcf:citekey order="15">ytLaTeX</bcf:citekey>
-    <bcf:citekey order="15">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="15">dp_lidar</bcf:citekey>
+    <bcf:citekey order="16">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="17">dp_lidar</bcf:citekey>
+    <bcf:citekey order="18">ytLaTeX</bcf:citekey>
+    <bcf:citekey order="18">webLaTeX-Tutorial</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

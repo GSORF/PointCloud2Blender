@@ -80,16 +80,16 @@ As this only gives the meter to one specific point, it is necessary to keep meas
 
 In this work the LiDAR scanner Faro Focus 3D is being used. It is capable of capturing 976,000 points per second with a vertical and horizontal field of view of 305 and 360 degrees, respectively\footnote{Techsheet Faro Focus 3D: http://www2.faro.com/site/resources/share/944}. For allowing a better registration it can also use GPS for localization and a barometer for height measurement. The measured points can be colored with a built-in camera of around 70 Megapixels. The price for the Focus 3D totals at 61,404.37 Euro\footnote{http://surveyequipment.com/faro-focus-3d-x-330-laser-scanner/}.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.25]{Pellerhaus_FirstGlance.jpg}
+	\caption{LiDAR Scanner Point Cloud of the Pellerhaus}
+	\label{fig:LiDAR_PointCloud}
+\end{figure}
+
 Besides using a stationary device, portable devices are also available. Recently a new technology has been revealed by Csiro and is called \textit{Zebedee}. This handheld laser scanner can be used in challenging environments where a stationary device would require several scans to cover the whole area (e.g. caves, staircases) while the operator is walking. It samples over 40,000 range measurements every second and consists of a 2D laser scanner mounted on a spring system\footnote{http://www.csiro.au/Organisation-Structure/Divisions/Computational-Informatics/Zebedee-3D-mapping.aspx}. Especially the visual effects field has a great use for this device, since the environments can vary a lot during video shootings and a 3D mesh representation is ubiquitous today. The price for the ZEB1 handheld laser scanner is 17,000 Euro\footnote{Source: Personal contact to sales team}.
 
 Although measuring with laser technology can be found in household devices as an alternative for tape measuring, it is still quite complicated to reverse engineer such devices to get the raw distance reading. Fortunately a group of engineers tried to bridge the gap by starting a crowd funding campaign for a low-cost laser range finder, called the LiDAR-Lite\footnote{http://pulsedlight3d.com/}. It has a total range of 40 meters with a resolution of 1 cm. During this research this sensor is being used with a custom arduino build to examine how it can be used as a cheap alternative to the examples mentioned in the beginning. The price for one module is at 82 Euro.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.4]{graph_a.png}
-	\caption{LiDAR Scanner Point Cloud}
-	\label{fig:LiDAR}
-\end{figure}
 
 \subsection{Ultrasonic}
 
@@ -99,7 +99,7 @@ In contrast to LiDAR, most ultrasonic sensors are cheap, but generally are not u
 
 \subsection{Photogrammetry}
 
-Photogrammetry (also referred to as multi-view reconstruction) is a technique from the Computer Vision field and presents a cost-effective alternative to laser scanning. A real 3D object can be reconstructed as a virtual 3D model by using photographs of the scene and feeding them into such software. This works by detecting image features (for example by using Harris Corner Detector or SIFT algorithms), matching those between image pairs, computing the respective camera positions and re-projecting the reconstructed 3D points to get a point cloud representation of the real photograph\parencite[compare][p10]{bookProgrammingComputerVisionwithPython}.
+Photogrammetry (also referred to as multi-view reconstruction) is a technique from the Computer Vision field and presents a cost-effective alternative to laser scanning. A real 3D object can be reconstructed as a virtual 3D model by using photographs of the scene and feeding them into such software. This works by detecting image features (for example by using Harris Corner Detector or SIFT algorithms), matching those between image pairs, computing the respective camera positions and re-projecting the reconstructed 3D points to get a point cloud representation of the real photograph\parencite[compare][p29]{bookProgrammingComputerVisionwithPython}.
 The computer vision algorithms get better each day and there is plenty of software using them.
 
 \begin{figure}[h]
@@ -128,7 +128,7 @@ The computer vision algorithms get better each day and there is plenty of softwa
 	\label{fig:multiview reconstruction historic stereo}
 \end{figure}
 
-Photogrammetry will be used in this project to try to reconstruct surfaces from historical images. Fortunately stereographic image pairs are provided through the Altstadtfreunde Nürnberg e.V. By matching the laser scanner data with the Photogrammetry output a good groundwork is expected to be done for the final surface reconstruction.
+Photogrammetry will be used in this project to try reconstructing surfaces from historical images. Fortunately stereographic image pairs are provided through the Altstadtfreunde Nürnberg e.V. By matching the laser scanner data with the Photogrammetry output a good groundwork is expected to be done for the final surface reconstruction.
 
 \subsection{Google Maps (R) }
 
@@ -154,4 +154,4 @@ If all other methods fail, there is still the chance to get a reconstruction don
 
 \section{Defining the scope of this research}
 
-Although this work uses a combination of several techniques (briefly presented above), the main focus is put on examination if panoramic projection of laser scanner point clouds will be an aid for 3D reconstruction or not. This will be evaluated by using the result in a real world use case of using the reconstructed mesh in the design process.
+Although this work uses a combination of several techniques (briefly presented above), the main focus is put on examination if panoramic projection of laser scanner point clouds will be an aid for 3D reconstruction or not. This will be evaluated by using the result from the converter in a real world use case of using the reconstructed mesh in the design process.

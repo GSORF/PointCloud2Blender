@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  10 MAR 2015 23:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  11 MAR 2015 23:37
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -906,18 +906,18 @@ File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\declaration.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -928,18 +928,11 @@ Package biblatex Warning: File 'main.bbl' is wrong format version - expected 2.
 4.
 
 Package biblatex Info: ... file 'main.bbl' found.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.bbl
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.bbl)
+Package biblatex Info: Reference section=0 on input line 39.
+Package biblatex Info: Reference segment=0 on input line 39.
 
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                bookProgrammingComputerVisionwithPython
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 37.
-Package biblatex Info: Reference segment=0 on input line 37.
- (D:\miktex-portable\tex\context\base\supp-pdf.mkii
+(D:\miktex-portable\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count293
 \scratchdimen=\dimen167
@@ -1123,30 +1116,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 81.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 81.
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[12] <images/Pellerhaus_FirstGlance.jpg, id=59, 1445.4pt x 782.925pt>
+File: images/Pellerhaus_FirstGlance.jpg Graphic file (type jpg)
+
+<use images/Pellerhaus_FirstGlance.jpg>
+Package pdftex.def Info: images/Pellerhaus_FirstGlance.jpg used on input line 8
+5.
+(pdftex.def)             Requested size: 361.34912pt x 195.73077pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 [][]\T1/cmr/m/n/10 http://www.csiro.au/Organisation-Structure/Divisions/Computa
 tional-Informatics/Zebedee-
  []
 
-<images/graph_a.png, id=59, 867.24pt x 578.16pt>
-File: images/graph_a.png Graphic file (type png)
- <use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png used on input line 89.
-(pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 96--96
 [][]\T1/cmr/m/n/10 http://www.sensorsmag.com/sensors/acoustic-ultrasound/choosi
 ng-ultrasonic-sensor-
  []
 
-
-Underfull \vbox (badness 2027) has occurred while \output is active []
-
- [13 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>]
-<images/graph1.png, id=66, 867.24pt x 578.16pt>
+[13 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Pellerhaus_FirstGlanc
+e.jpg>] <images/graph1.png, id=66, 867.24pt x 578.16pt>
 File: images/graph1.png Graphic file (type png)
- <use images/graph1.png>
+
+<use images/graph1.png>
 Package pdftex.def Info: images/graph1.png used on input line 109.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1184,98 +1177,1070 @@ Demo\OT1/cmr/m/n/10.95 )$|
 
 [14 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph1.png> <I:/BA_So
 ftware/PointCloud2Blender/Paper_LaTeX/images/graph2.png> <I:/BA_Software/PointC
-loud2Blender/Paper_LaTeX/images/graph3.png>]) [15] [16]
-Chapter 2.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter01.tex
-File: images/graph_a.png Graphic file (type png)
-
-<use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png used on input line 13.
-(pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
- [17
+loud2Blender/Paper_LaTeX/images/graph3.png>]) [15] [16
 
 ]
+Chapter 2.
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter01.tex
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ... 14th to 17th century, which started as a 
+                                                  cultural movement in Ital...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...ry, which started as a cultural movement 
+                                                  in Italy in the Late Medi...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ... as a cultural movement in Italy in the 
+                                                  Late Medieval period and ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...nt in Italy in the Late Medieval period 
+                                                  and later spread to the re...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...not  made in an uniform fashion. The word 
+                                                  Renaissance, literally mea...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...naissance scholars employed the humanist 
+                                                  method in study, and searc...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...cally, Renaissance architecture followed 
+                                                  Gothic architecture and w...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...chitecture followed Gothic architecture 
+                                                  and was succeeded by Baro...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...othic architecture and was succeeded by 
+                                                  Baroque architecture.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 "Renaissance style places emphasis on 
+                                            symmetry, proportion, geometry...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ance style places emphasis on symmetry, 
+                                                  proportion, geometry and...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...aces emphasis on symmetry, proportion, 
+                                                  geometry and the regulari...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...sis on symmetry, proportion, geometry 
+                                                  and the regularity of part...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ... are demonstrated in the architecture of 
+                                                  classical antiquity and i...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...the architecture of classical antiquity 
+                                                  and in particular ancient...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ... classical antiquity and in particular 
+                                                  ancient Roman architecture...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...amples remained. Orderly arrangements of 
+                                                  columns, pilasters and ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ained. Orderly arrangements of columns, 
+                                                  pilasters and lintels, a...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...rly arrangements of columns, pilasters 
+                                                  and lintels, as well as t...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...rrangements of columns, pilasters and 
+                                                  lintels, as well as the us...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...se of semicircular arches, hemispherical 
+                                                  domes, niches and aedic...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...micircular arches, hemispherical domes, 
+                                                  niches and aedicules re...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ar arches, hemispherical domes, niches 
+                                                  and aedicules replaced t...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ches, hemispherical domes, niches and 
+                                                  aedicules replaced the mo...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...pherical domes, niches and aedicules 
+                                                  replaced the more complex ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...tional systems and irregular profiles of 
+                                                  medieval buildings."
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...tems and irregular profiles of medieval 
+                                                  buildings."
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ... German philosophers and artists such as 
+                                                  Albrecht Dürer and Joha...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...ers and artists such as Albrecht Dürer 
+                                                  and Johannes Reuchlin wh...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...nd artists such as Albrecht Dürer and 
+                                                  Johannes Reuchlin who vis...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 ...�Albrecht Dürer and Johannes Reuchlin 
+                                                  who visited Italy.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...hitecture is Landshut Residence. In 1536 
+                                                  Louis X, Duke of Bavaria ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...dence. In 1536 Louis X, Duke of Bavaria 
+                                                  laid the foundation stone ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ... inner city of Landshut. It was begun in 
+                                                  German Renaissance style ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...hut. It was begun in German Renaissance 
+                                                  style under the architect ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...n Germany is the Augsburg Town Hall. The 
+                                                  Town Hall of Augsburg is ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...rg Town Hall. The Town Hall of Augsburg 
+                                                  is the administrative cent...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...ugsburg is the administrative centre of 
+                                                  Augsburg, Bavaria, Germa...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ... the administrative centre of Augsburg, 
+                                                  Bavaria, Germany, and one...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...istrative centre of Augsburg, Bavaria, 
+                                                  Germany, and one of the mo...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...ost significant secular buildings of the 
+                                                  Renaissance style north o...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...ular buildings of the Renaissance style 
+                                                  north of the Alps. It was...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ... of the Renaissance style north of the 
+                                                  Alps. It was designed and ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ... the Alps. It was designed and built by 
+                                                  Elias Holl, Stadtbaumeiste...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...as Holl, Stadtbaumeister (Master Builder 
+                                                  of the town), in 1615–16...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 ...tural importance, it is protected by the 
+                                                  Hague Convention for the P...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...t church built between 1583 and 1597 by  
+                                                  William V, Duke of Bavaria...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 ...rmous influence on Southern German early 
+                                                  Baroque architecture. This...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...naissance architecture in Germany is the 
+                                                  Weser Renaissance, with pr...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...nce, with prominent examples such as the 
+                                                  City Hall of Bremen and...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...rominent examples such as the City Hall 
+                                                  of Bremen and the Juleu...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...nent examples such as the City Hall of 
+                                                  Bremen and the Juleum i...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...mples such as the City Hall of Bremen 
+                                                  and the Juleum in Helst...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...h as the City Hall of Bremen and the 
+                                                  Juleum in Helstedt.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ... City Hall of Bremen and the Juleum 
+                                                  in Helstedt.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...ty Hall of Bremen and the Juleum in 
+                                                  Helstedt.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 Between the start of the 
+                               Reformation and the Thirty Years War, the ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 Between the start of the Reformation 
+                                            and the Thirty Years War, the ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...n the start of the Reformation and the 
+                                                  Thirty Years War, the Wes...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...�Reformation and the Thirty Years War, 
+                                                  the Weser region experienc...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ... that stretched westwards to the city of 
+                                                  Osnabrück and eastwards ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...hed westwards to the city of Osnabrück 
+                                                  and eastwards as far as W...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ... of Osnabrück and eastwards as far as 
+                                                  Wolfsburg.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ...r and the means were not available for a 
+                                                  baroque transformation su...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:  not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 ... means were not available for a baroque 
+                                                  transformation such as tha...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
+
+(D:\miktex-portable\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 42.
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--62
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 63--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 75--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--81
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+<images/graph_a.png, id=97, 867.24pt x 578.16pt>
+File: images/graph_a.png Graphic file (type png)
+ <use images/graph_a.png>
+Package pdftex.def Info: images/graph_a.png used on input line 103.
+(pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
+
+[22 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>]
 File: images/graph1.png Graphic file (type png)
- <use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 37.
+
+<use images/graph1.png>
+Package pdftex.def Info: images/graph1.png used on input line 126.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 44.
+Package pdftex.def Info: images/graph2.png used on input line 133.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph3.png Graphic file (type png)
-
-<use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 51.
+ <use images/graph3.png>
+Package pdftex.def Info: images/graph3.png used on input line 140.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
-) [18]
+)
+[23] [24
+
+]
 Chapter 3.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter02.tex
+<images/UseCaseDiagram_PC2B.png, id=107, 1027.84pt x 607.26875pt>
+File: images/UseCaseDiagram_PC2B.png Graphic file (type png)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use images/UseCaseDiagram_PC2B.png>
+Package pdftex.def Info: images/UseCaseDiagram_PC2B.png used on input line 10.
+(pdftex.def)             Requested size: 411.12872pt x 242.9032pt.
+ [25 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/UseCaseDiagram_PC2B.
+png (PNG copy)>]
+<images/PellerhausLaserScan.jpg, id=112, 536.0025pt x 803.0pt>
+File: images/PellerhausLaserScan.jpg Graphic file (type jpg)
 
-[19
-
-]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[20]) [21] [22]
+<use images/PellerhausLaserScan.jpg>
+Package pdftex.def Info: images/PellerhausLaserScan.jpg used on input line 22.
+(pdftex.def)             Requested size: 214.3972pt x 321.1943pt.
+ [26 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PellerhausLaserScan.
+jpg>] [27]) [28]
 Chapter 4.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter03.tex [23
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter03.tex [29
 
 ]
-[24]) [25] [26
+[30]) [31] [32
 
 ]
 Chapter 5.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/conclusion.tex [27])
-[28]
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/conclusion.tex [33])
+[34]
 Appendix A.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 3.
-) [29
+) [35
 
 ]
-[30
+[36
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 68.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 70.
  (D:\miktex-portable\tex\latex\base\t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-! Undefined control sequence.
-<argument> The mystery of the blend\newlineThe 
-                                               blender file-format explained
-l.69 
+
+! Package inputenc Error: Unicode char \u8:̈ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 
      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-Overfull \hbox (8.31625pt too wide) in paragraph at lines 69--69
+Overfull \hbox (5.13786pt too wide) in paragraph at lines 71--71
 \T1/cmtt/m/n/12 1 & list = PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC$ \T1/cmr/m/n/12 (
 Re-trieved 01/23/2015). 
  []
 
-[31] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
+[37] [38] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\declaration.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.aux))
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 20892 strings out of 493921
- 411268 string characters out of 3139244
- 780846 words of memory out of 3000000
- 23771 multiletter control sequences out of 15000+200000
- 26453 words of font info for 58 fonts, out of 3000000 for 9000
+ 20935 strings out of 493921
+ 412341 string characters out of 3139244
+ 785115 words of memory out of 3000000
+ 23806 multiletter control sequences out of 15000+200000
+ 26708 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,11n,89p,1268b,952s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,11n,89p,1268b,956s stack positions out of 5000i,500n,10000p,200000b,50000s
  <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecti0800.pk> <D:\mikt
 ex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <D:\miktex-portable
 \fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <D:\miktex-portable\fonts\pk\l
@@ -1292,12 +2257,13 @@ i600\ecti1200.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm12
 miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <D:\miktex-port
 able\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <D:\miktex-portable\fonts\
 pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><D:/miktex-portable/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/miktex-
-portable/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (31 pages, 485583 bytes).
+/amsfonts/cm/cmbsy10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/mikte
+x-portable/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/miktex-portable/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (38 pages, 1549354 bytes).
 PDF statistics:
- 826 PDF objects out of 1000 (max. 8388607)
+ 877 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
