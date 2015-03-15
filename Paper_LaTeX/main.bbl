@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \sortlist{entry}{none}
+  \sortlist{entry}{}
     \entry{webBlenderArtistsPointCloudSupport}{online}{}
       \name{labelname}{1}{}{%
         {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
@@ -81,16 +81,24 @@
       \field{year}{2012}
     \endentry
     \entry{bookBayerischeBiographische}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=9e3d08da949486a148469ea06adeccdc}{Gruyter}{G\bibinitperiod}{De}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9e3d08da949486a148469ea06adeccdc}{Gruyter}{G\bibinitperiod}{De}{D\bibinitperiod}{}{}{}{}}%
+      }
       \list{location}{1}{%
         {Berlin}%
       }
       \list{publisher}{1}{%
         {De Gruyter}%
       }
-      \field{labelalpha}{05}
+      \strng{namehash}{9e3d08da949486a148469ea06adeccdc}
+      \strng{fullhash}{9e3d08da949486a148469ea06adeccdc}
+      \field{labelalpha}{Gru05}
       \field{sortinit}{0}
-      \field{labeltitle}{Große Bayerische Biographische Enzyklopäd̈die}
-      \field{title}{Große Bayerische Biographische Enzyklopäd̈die}
+      \field{labeltitle}{Große Bayerische Biographische Enzyklopädie}
+      \field{title}{Große Bayerische Biographische Enzyklopädie}
       \field{urlday}{11}
       \field{urlmonth}{03}
       \field{urlyear}{2015}
@@ -98,34 +106,6 @@
       \field{pages}{2128}
       \verb{url}
       \verb http://www.degruyter.com/view/product/62595
-      \endverb
-    \endentry
-    \entry{bookAcademiaNorica}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}{Mährle}{M\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}{Mährle}{M\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Berlin}%
-      }
-      \list{publisher}{1}{%
-        {Franz Steiner Verlag}%
-      }
-      \strng{namehash}{3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}
-      \strng{fullhash}{3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}
-      \field{labelalpha}{Mäh00}
-      \field{sortinit}{0}
-      \field{labeltitle}{Academia Norica}
-      \field{title}{Academia Norica}
-      \field{urlday}{11}
-      \field{urlmonth}{03}
-      \field{urlyear}{2015}
-      \field{year}{2000}
-      \field{pages}{39\bibrangedash 40}
-      \verb{url}
-      \verb http://www.steiner-verlag.de/titel/51429.html
       \endverb
     \endentry
     \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
@@ -203,6 +183,335 @@
       \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
       \field{title}{Pellerhaus Magazin 03}
       \field{year}{2014}
+    \endentry
+    \entry{bookAcademiaNorica}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}{Mährle}{M\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}{Mährle}{M\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Franz Steiner Verlag}%
+      }
+      \strng{namehash}{3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}
+      \strng{fullhash}{3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}
+      \field{labelalpha}{Mäh00}
+      \field{sortinit}{0}
+      \field{labeltitle}{Academia Norica}
+      \field{title}{Academia Norica}
+      \field{urlday}{11}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2000}
+      \field{pages}{39\bibrangedash 40}
+      \verb{url}
+      \verb http://www.steiner-verlag.de/titel/51429.html
+      \endverb
+    \endentry
+    \entry{ytQtOpenGL}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \strng{fullhash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \field{labelalpha}{Enz14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{title}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=jTHvFGjy5uA&list=PLHlHFavas54e0-05vZcZ0wNGhnpRyFmLc
+      \endverb
+    \endentry
+    \entry{webMysteryOfTheBlend}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=9d1c56cee47294f756427d2174409457}{Bakker}{B\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9d1c56cee47294f756427d2174409457}{Bakker}{B\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9d1c56cee47294f756427d2174409457}
+      \strng{fullhash}{9d1c56cee47294f756427d2174409457}
+      \field{labelalpha}{Bak09}
+      \field{sortinit}{0}
+      \field{labeltitle}{The mystery of the blend\\ The blender file-format explained}
+      \field{title}{The mystery of the blend\\ The blender file-format explained}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2009}
+      \verb{url}
+      \verb http://www.atmind.nl/blender/mystery_ot_blend.html
+      \endverb
+    \endentry
+    \entry{webBlenderArtistsBlendExport}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64e88accfc6fb8b42adcaeb498d70796}
+      \strng{fullhash}{64e88accfc6fb8b42adcaeb498d70796}
+      \field{labelalpha}{Ble14}
+      \field{sortinit}{0}
+      \field{labeltitle}{[C++/Qt]: Export .blend with procedurally generated mesh?}
+      \field{extraalpha}{2}
+      \field{title}{[C++/Qt]: Export .blend with procedurally generated mesh?}
+      \field{urlday}{03}
+      \field{urlmonth}{11}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{webLaTeX-Tutorial}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \strng{fullhash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \field{labelalpha}{Vel15}
+      \field{sortinit}{0}
+      \field{labeltitle}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{title}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.latex-tutorial.com/
+      \endverb
+    \endentry
+    \entry{ytLaTeX}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d6f38aa6ad3d750ce68ecda1441d3ce6}{ShareLaTeX}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d6f38aa6ad3d750ce68ecda1441d3ce6}{ShareLaTeX}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d6f38aa6ad3d750ce68ecda1441d3ce6}
+      \strng{fullhash}{d6f38aa6ad3d750ce68ecda1441d3ce6}
+      \field{labelalpha}{Sha13}
+      \field{sortinit}{0}
+      \field{labeltitle}{Youtube: How to Write a Thesis in \LaTeX{} (parts 1 to 5)}
+      \field{title}{Youtube: How to Write a Thesis in \LaTeX{} (parts 1 to 5)}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=gFAQd0ueIMc&index=1&list=PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC
+      \endverb
+    \endentry
+  \endsortlist
+  \sortlist{entry}{none}
+    \entry{webBlenderArtistsPointCloudSupport}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64e88accfc6fb8b42adcaeb498d70796}
+      \strng{fullhash}{64e88accfc6fb8b42adcaeb498d70796}
+      \field{labelalpha}{Ble14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Point Cloud support in Blender: What's already there and what does the community need}
+      \field{extraalpha}{1}
+      \field{title}{Point Cloud support in Blender: What's already there and what does the community need}
+      \field{urlday}{24}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://blenderartists.org/forum/showthread.php?349851-Point-Cloud-support-in-Blender-What-s-already-there-and-what-does-the-community-need
+      \endverb
+    \endentry
+    \entry{dp_lidar}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=6b0efb34d5a93bb6915b1107f3f74ccf}{Schroeder}{S\bibinitperiod}{Rayk}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=6b0efb34d5a93bb6915b1107f3f74ccf}{Schroeder}{S\bibinitperiod}{Rayk}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{6b0efb34d5a93bb6915b1107f3f74ccf}
+      \strng{fullhash}{6b0efb34d5a93bb6915b1107f3f74ccf}
+      \field{labelalpha}{Sch14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Was kann eigentlich dieser LIDAR-Scanner? (German) [What is this LIDAR-Scanner capable of?]}
+      \field{journaltitle}{Digital Production}
+      \field{title}{Was kann eigentlich dieser LIDAR-Scanner? (German) [What is this LIDAR-Scanner capable of?]}
+      \field{volume}{07 / 14}
+      \field{year}{2014}
+      \field{pages}{8\bibrangedash 9}
+    \endentry
+    \entry{bookProgrammingComputerVisionwithPython}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=1f7d54b6e0e61ab60bee9b978ee5e1d3}{Solem}{S\bibinitperiod}{Jan\bibnamedelima Erik}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=1f7d54b6e0e61ab60bee9b978ee5e1d3}{Solem}{S\bibinitperiod}{Jan\bibnamedelima Erik}{J\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Sebastopol, CA 95472}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{1f7d54b6e0e61ab60bee9b978ee5e1d3}
+      \strng{fullhash}{1f7d54b6e0e61ab60bee9b978ee5e1d3}
+      \field{labelalpha}{Sol12}
+      \field{sortinit}{0}
+      \field{labeltitle}{Programming Computer Vision with Python}
+      \field{title}{Programming Computer Vision with Python}
+      \field{year}{2012}
+    \endentry
+    \entry{bookBayerischeBiographische}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=9e3d08da949486a148469ea06adeccdc}{Gruyter}{G\bibinitperiod}{De}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9e3d08da949486a148469ea06adeccdc}{Gruyter}{G\bibinitperiod}{De}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter}%
+      }
+      \strng{namehash}{9e3d08da949486a148469ea06adeccdc}
+      \strng{fullhash}{9e3d08da949486a148469ea06adeccdc}
+      \field{labelalpha}{Gru05}
+      \field{sortinit}{0}
+      \field{labeltitle}{Große Bayerische Biographische Enzyklopädie}
+      \field{title}{Große Bayerische Biographische Enzyklopädie}
+      \field{urlday}{11}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2005}
+      \field{pages}{2128}
+      \verb{url}
+      \verb http://www.degruyter.com/view/product/62595
+      \endverb
+    \endentry
+    \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
+      \name{labelname}{1}{}{%
+        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
+      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
+      \field{labelalpha}{eV}
+      \field{sortinit}{0}
+      \field{labeltitle}{Wiederaufbau des Pellerhofes}
+      \field{booktitle}{Pellerhaus Magazin}
+      \field{origlanguage}{german}
+      \field{title}{Wiederaufbau des Pellerhofes}
+    \endentry
+    \entry{afPellerhausMagazin01}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
+      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
+      \field{labelalpha}{eV12}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 01}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 01}
+      \field{year}{2012}
+    \endentry
+    \entry{afPellerhausMagazin02}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
+      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
+      \field{labelalpha}{eV13}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 02}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 02}
+      \field{year}{2013}
+    \endentry
+    \entry{afPellerhausMagazin03}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
+      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
+      \field{labelalpha}{eV14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 03}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 03}
+      \field{year}{2014}
+    \endentry
+    \entry{bookAcademiaNorica}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}{Mährle}{M\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}{Mährle}{M\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Franz Steiner Verlag}%
+      }
+      \strng{namehash}{3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}
+      \strng{fullhash}{3fa2e80cf8aa4ca5e0afcfc6a88ec9c9}
+      \field{labelalpha}{Mäh00}
+      \field{sortinit}{0}
+      \field{labeltitle}{Academia Norica}
+      \field{title}{Academia Norica}
+      \field{urlday}{11}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2000}
+      \field{pages}{39\bibrangedash 40}
+      \verb{url}
+      \verb http://www.steiner-verlag.de/titel/51429.html
+      \endverb
     \endentry
     \entry{ytQtOpenGL}{online}{}
       \name{labelname}{1}{}{%

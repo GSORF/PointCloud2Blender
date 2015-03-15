@@ -110,14 +110,15 @@ This russian video tutorial was very helpful with the basic setup with the Qt fr
 
 \cite{ytQtOpenGL}
 
-\subsection{Performance Optimization}
-
-
 \subsection{Meshing}
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula.
+Using the current pixel inside two for-loops in combination with the neighboring pixels to the right, bottom-right and bottom makes up a quad, which can be textured.
 
+\subsection{Texture Coordinates and Normals}
 
+Texture Coordinates go from 0.0 to 1.0 in the x and y direction, respectively. Usually the texture coordinate axes are referred to as s and t. By dividing the current coordinate by the width and the height of the image, respectively, the coordinates can be normalized.
+
+Calculating normals is accomplished by using the cross product of the two vectors forming the current quad.
 
 \subsection{Mesh Exporter}
 
@@ -136,3 +137,36 @@ A personal goal for this research was to implement a .blend export feature to al
 \subsubsection{custom format}
 
 Even the Blender community suggested to not use the .blend format directly, but rather try a custom binary format. \parencite[compare]{webBlenderArtistsBlendExport}
+
+
+\subsection{Optimizations}
+
+The initial algorithms and approaches had some flaws, which needed to get eliminated to get a clean mesh out of the converter. Those are presented as follows:
+
+\subsubsection{Flip horizontal direction of panorama}
+
+The panorama is flipped horizontally.
+
+\subsubsection{Panorama pixel depth testing}
+
+It can happen that two points from the point cloud happen to result in the same pixel in the 2D panorama. This might result in a noisy image result, if not handled with care. To avoid any errors, it is important to take only the closest point to the camera, instead of letting every point override the corresponding pixel in the image.
+
+\subsubsection{Panorama noise reduction}
+
+Since there is only a limited number of points, the panorama texture gets quite noisy, especially with a higher resolution option set in the converter. A harsh change from light gray to black values in the depth map will result in a noisy 3D structure as well.
+To solve this issue, the image is blurred by a user setting or automatically (TODO!).
+
+\subsubsection{Remove doubles}
+
+The meshing technique resulted in a very high point count for the .obj file. Example: For a 4x resolution panorama with 2,198,528 vertices, using the "remove doubles" option in Blender 3D automatically removed 2,100,716 vertices.
+Solution: several passes for vertices, texture coordinates and normals (TODO!).
+
+\subsubsection{3D Distortion}
+
+The generated 3D mesh from the 2D panorama results in a distorted one, the more it touches the top.
+Solution: None yet.
+
+\subsubsection{Tiling}
+
+Due to the higher resolution meshes having several megabytes in size and taking some time to import in Blender, this has to be optimized somehow.
+Solution: Create tiles when higher resolution is set. E.g. with a 4x resolution, create four tiles (that's four seperate .obj files).
