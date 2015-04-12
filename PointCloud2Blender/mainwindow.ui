@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>830</width>
-    <height>663</height>
+    <width>953</width>
+    <height>727</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,29 +24,75 @@
     <item>
      <layout class="QVBoxLayout" name="layoutContent">
       <item>
-       <widget class="QLabel" name="lblChooseFile">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="text">
-         <string>Please choose your point cloud file (e.g. &quot;.xyz&quot;) and press &quot;Import&quot;:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="layoutChooseFile">
+       <layout class="QVBoxLayout" name="layoutFileImport">
         <item>
-         <widget class="QLineEdit" name="txtFilePathImport"/>
-        </item>
-        <item>
-         <widget class="QPushButton" name="btnFileOpenDialog">
+         <widget class="QLabel" name="lblChooseFile">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="text">
-           <string>choose...</string>
+           <string>Please choose your point cloud file (e.g. &quot;.xyz&quot;) and press &quot;Import&quot;:</string>
           </property>
          </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="layoutChooseFile">
+          <item>
+           <widget class="QLineEdit" name="txtFilePathImport"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnFileOpenDialog">
+            <property name="text">
+             <string>choose...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="layoutOriginalResolution">
+          <item>
+           <widget class="QLabel" name="lblHorizontalResolution">
+            <property name="text">
+             <string>Horizontal resolution:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblOriginalHorizontalResolution">
+            <property name="text">
+             <string>&lt;unknown&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblVerticalResolution">
+            <property name="text">
+             <string>Vertical resolution:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblOriginalVerticalResolution">
+            <property name="text">
+             <string>&lt;unknown&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDeterminePanoramaResolution">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>determine resolution</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </item>
@@ -195,89 +241,165 @@
           <property name="title">
            <string>Panorama resolution</string>
           </property>
-          <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <layout class="QVBoxLayout" name="verticalLayout">
            <item>
-            <widget class="QPushButton" name="btnPanoramaResolutionX1">
-             <property name="text">
-              <string>x1</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="checked">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
+            <layout class="QHBoxLayout" name="layoutResolutionPreset">
+             <item>
+              <widget class="QPushButton" name="btnPanoramaResolutionX1">
+               <property name="text">
+                <string>x1</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnPanoramaResolutionX2">
+               <property name="text">
+                <string>x2</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnPanoramaResolutionX4">
+               <property name="text">
+                <string>x4</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnPanoramaResolutionX8">
+               <property name="text">
+                <string>x8</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnPanoramaResolutionX16">
+               <property name="text">
+                <string>x16</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
            <item>
-            <widget class="QPushButton" name="btnPanoramaResolutionX2">
-             <property name="text">
-              <string>x2</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="btnPanoramaResolutionX4">
-             <property name="text">
-              <string>x4</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="btnPanoramaResolutionX8">
-             <property name="text">
-              <string>x8</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="btnPanoramaResolutionX16">
-             <property name="text">
-              <string>x16</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>true</bool>
-             </property>
-             <property name="flat">
-              <bool>true</bool>
-             </property>
-            </widget>
+            <layout class="QHBoxLayout" name="layoutResolutionCustom">
+             <item>
+              <widget class="QPushButton" name="btnPanoramaResolutionCustom">
+               <property name="text">
+                <string>custom</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblPanoramaResolutionHorizontal">
+               <property name="text">
+                <string>horizontal:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="sbResolutionHorizontal">
+               <property name="maximum">
+                <number>10000</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblPanoramaResolutionVertical">
+               <property name="text">
+                <string>vertical:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="sbResolutionVertical">
+               <property name="maximum">
+                <number>10000</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblPanoramaResolutionDividedBy">
+               <property name="text">
+                <string>divided by:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="sbResolutionDivisor">
+               <property name="minimum">
+                <number>1</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lblPanoramaResolutionCustomFinal">
+               <property name="text">
+                <string>= ( 0 x 0 )</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
           </layout>
          </widget>
@@ -331,11 +453,11 @@
         <item>
          <layout class="QHBoxLayout" name="layoutDistanceProjection">
           <item>
-           <widget class="QGroupBox" name="gpProjectionType">
+           <widget class="QGroupBox" name="gpMaximumDistance">
             <property name="title">
-             <string>Projection Type</string>
+             <string>Maximum scan distance</string>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
              <item>
               <widget class="QDoubleSpinBox" name="sbMaxDistance">
                <property name="minimum">
@@ -363,11 +485,11 @@
            </widget>
           </item>
           <item>
-           <widget class="QGroupBox" name="gpMaximumDistance">
+           <widget class="QGroupBox" name="gpProjectionType">
             <property name="title">
-             <string>Maximum scan distance</string>
+             <string>Projection Type</string>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
              <item>
               <widget class="QPushButton" name="btnProjectionTypeEquirectangular">
                <property name="text">
@@ -441,6 +563,9 @@
         <property name="value">
          <number>0</number>
         </property>
+        <property name="invertedAppearance">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -457,10 +582,13 @@
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
-           <string/>
+           <string>Depth Map</string>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </item>
@@ -476,10 +604,13 @@
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
-           <string/>
+           <string>Color Map</string>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </item>
@@ -501,7 +632,7 @@
              <bool>false</bool>
             </property>
             <property name="text">
-             <string>Export mesh (.obj?)...</string>
+             <string>Export mesh (.obj)...</string>
             </property>
            </widget>
           </item>
@@ -534,7 +665,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>830</width>
+     <width>953</width>
      <height>25</height>
     </rect>
    </property>

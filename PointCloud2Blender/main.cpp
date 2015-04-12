@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
 
     a.setOrganizationName("AK Productions");
     a.setApplicationName("PointCloud2Blender");
+    a.setApplicationVersion("0.1");
 
     //get argument list
     QStringList args = QCoreApplication::arguments();
