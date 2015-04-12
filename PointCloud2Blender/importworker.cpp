@@ -1,10 +1,12 @@
 #include "importworker.h"
 
-ImportWorker::ImportWorker(QString fileName, QObject *parent) :
+ImportWorker::ImportWorker(Panorama3D *panorama, GLWidget *glWidget, QString fileName, bool analyze, QObject *parent) :
     QObject(parent)
 {
     //Take the filename and determine the filetype (in the beginning just .xyz)
 
+    this->panorama = panorama;
+    this->glWidget = glWidget;
     this->fileName = fileName;
     if(this->fileName.endsWith(".xyz"))
     {
@@ -18,6 +20,13 @@ ImportWorker::ImportWorker(QString fileName, QObject *parent) :
     {
         this->fileType = PLY;
     }
+    this->analyze = analyze;
+
+    this->updateTimer.setInterval(10000);
+    this->updateTimer.start();
+    connect(&this->updateTimer, SIGNAL(timeout()), this->panorama, SLOT(refreshTextureMapsGUI()));
+
+    this->setAutoDelete(false);
 
 }
 
@@ -44,7 +53,8 @@ void ImportWorker::run()
     break;
     }
 
-
+    this->updateTimer.stop();
+    this->deleteLater();
 }
 
 void ImportWorker::import_XYZ_Ascii_File()
@@ -104,7 +114,8 @@ void ImportWorker::import_XYZ_Ascii_File()
 
 
         //send the current point over to the panorama data container
-        emit newPoint( _newPoint );
+        panorama->addPoint( _newPoint );
+        glWidget->addPoint( _newPoint, panorama->getTranslationVector() );
         emit importStatus(percent);
 
 
@@ -297,12 +308,19 @@ void ImportWorker::import_PLY_File()
                         else
                             _newPoint.b = 0;
                         if(property_alpha)
+                        {
                             //TODO: implement alpha value?
+                        }
 
                         currentVertex++;
+
+                        //send the current point over to the panorama data container and 3D viewer:
+                        panorama->addPoint( _newPoint );
+                        glWidget->addPoint( _newPoint, panorama->getTranslationVector() );
+
+
                     }
 
-                    emit newPoint(_newPoint);
                 }
                 else
                 {
@@ -311,8 +329,6 @@ void ImportWorker::import_PLY_File()
             }
         }
 
-        //send the current point over to the panorama data container
-        emit newPoint( _newPoint );
         emit importStatus(percent);
 
 

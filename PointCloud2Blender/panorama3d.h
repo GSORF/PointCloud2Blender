@@ -7,6 +7,7 @@
 #include <QImage>
 #include <QDir>
 #include <QVector3D>
+#include <QColor>
 
 #include "importworker.h"
 
@@ -20,6 +21,25 @@ public:
     float x,y,z;
     //Color Data
     quint16 r,g,b;
+
+    Point3D()
+    {
+        this->x = 0.0f;
+        this->y = 0.0f;
+        this->z = 0.0f;
+    }
+
+    bool isNull()
+    {
+        if(this->x == 0.0f && this->y == 0.0f && this->z == 0.0f)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
     QString toString()
     {
@@ -69,9 +89,13 @@ private:
     float minY;
     float maxY;
 
-    void project(float theta, float phi, float &x, float &y);
-
 public:
+    bool convertToSpherical(Point3D &point, float &theta, float &phi, float &radius);
+    void project(float theta, float phi, float &x, float &y);
+    void unprojectPanorama3D(int x, int y, Point3D &projectedPoint);
+
+    QVector3D getTranslationVector();
+
     QImage panoramaDepth;
     QImage panoramaColor;
 
@@ -81,6 +105,7 @@ signals:
 
 public slots:
     void addPoint(Point3D point);
+    void refreshTextureMapsGUI();
 
 
 };

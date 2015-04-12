@@ -32,6 +32,10 @@ class MainWindow : public QMainWindow
 
     Panorama3D::Orientation orientation;
     quint8 resolution;
+    int originalHorizontalResolution;
+    int originalVerticalResolution;
+    int customPanoramaWidth;
+    int customPanoramaHeight;
     QVector3D translation;
     Panorama3D::ProjectionType projectionType;
     float maxDistance;
@@ -53,6 +57,7 @@ private:
     Ui::MainWindow *ui;
 
     void generateMenus();
+    void calculateCustomResolution(int horizontal, int vertical, int divisor);
 
 public slots:
     void showFileOpenDialog();
@@ -60,11 +65,10 @@ public slots:
     void startFileImport();
     void openRecentFile();
     void updateImportStatus(int percent);
+    void updateMeshingStatus(int percent);
 
     void updateDepthMap(QImage *depthMap);
     void updateColorMap(QImage *colorMap);
-
-    void newPoint(Point3D _newPoint);
 
     //Callbacks for Panorama settings:
     void onClickUpVectorLeftX();
@@ -85,6 +89,13 @@ public slots:
     void onClickProjectionTypeEquirectangular();
     void onClickProjectionTypeCylindrical();
     void onClickProjectionTypeMercator();
+
+    void onChangeResolutionHorizontal(int value);
+    void onChangeResolutionVertical(int value);
+    void onChangeResolutionDivisor(int value);
+    void onClickPanoramaResolutionCustom();
+    void onClickDeterminePanoramaResolution();
+    void onChangeImportPath(QString path);
 
 
 

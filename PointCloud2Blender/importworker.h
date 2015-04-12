@@ -10,8 +10,11 @@
 
 #include "panorama3d.h"
 #include "glmesh.h"
+#include "glwidget.h"
 
 class Point3D;
+class Panorama3D;
+class GLWidget;
 
 class ImportWorker : public QObject, public QRunnable
 {
@@ -25,7 +28,7 @@ public:
     };
 
 
-    explicit ImportWorker(QString fileName, QObject *parent = 0);
+    explicit ImportWorker(Panorama3D *panorama, GLWidget *glWidget, QString fileName, bool analyze, QObject *parent = 0);
     ~ImportWorker();
 
     void run();
@@ -33,9 +36,12 @@ public:
     void import_XYZ_Binary_File();
     void import_PLY_File();
 
-
+    Panorama3D *panorama;
+    GLWidget *glWidget;
+    QTimer updateTimer;
     FileType fileType;
     QString fileName;
+    bool analyze;
 
 
 

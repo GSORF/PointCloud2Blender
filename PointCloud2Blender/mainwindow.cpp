@@ -20,6 +20,13 @@ MainWindow::MainWindow(QWidget *parent) :
     maxDistance = 60.0f;
     projectionType = Panorama3D::EQUIRECTANGULAR;
 
+    originalHorizontalResolution = 0;
+    originalVerticalResolution = 0;
+    customPanoramaWidth = 0;
+    customPanoramaHeight = 0;
+
+    calculateCustomResolution(360*resolution, 180*resolution, 1);
+
     //Connect gui elements:
     connect(ui->btnFileOpenDialog, SIGNAL(clicked()), this, SLOT(showFileOpenDialog()));
     connect(ui->btnImport, SIGNAL(clicked()), this, SLOT(startFileImport()));
@@ -42,6 +49,13 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->btnProjectionTypeCylindrical, SIGNAL(clicked()), this, SLOT(onClickProjectionTypeCylindrical()));
     connect(ui->btnProjectionTypeMercator, SIGNAL(clicked()), this, SLOT(onClickProjectionTypeMercator()));
 
+    connect(ui->sbResolutionHorizontal, SIGNAL(valueChanged(int)), this, SLOT(onChangeResolutionHorizontal(int)));
+    connect(ui->sbResolutionVertical, SIGNAL(valueChanged(int)), this, SLOT(onChangeResolutionVertical(int)));
+    connect(ui->sbResolutionDivisor, SIGNAL(valueChanged(int)), this, SLOT(onChangeResolutionDivisor(int)));
+    connect(ui->btnPanoramaResolutionCustom, SIGNAL(clicked()), this, SLOT(onClickPanoramaResolutionCustom()));
+    connect(ui->btnDeterminePanoramaResolution, SIGNAL(clicked()), this, SLOT(onClickDeterminePanoramaResolution()));
+
+    connect(ui->txtFilePathImport, SIGNAL(textChanged(QString)), this, SLOT(onChangeImportPath(QString)));
 
     generateMenus();
 }
@@ -49,13 +63,10 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
-    importer = NULL;
-    delete importer;
 
     //Note: Delete menus?
-    delete panorama;
-
-    delete mesher;
+    if(panorama != NULL)
+        delete panorama;
 }
 
 void MainWindow::processCommandLine(QString inputFile, QString translation, QString up, int resolution, float distance, QString projection)
@@ -161,13 +172,20 @@ void MainWindow::generateMenus()
 
 }
 
+void MainWindow::calculateCustomResolution(int horizontal, int vertical, int divisor)
+{
+    customPanoramaWidth = horizontal / divisor;
+    customPanoramaHeight = vertical / divisor;
+    ui->lblPanoramaResolutionCustomFinal->setText("=(" + QString::number(customPanoramaWidth) + " x " + QString::number(customPanoramaHeight) + ")");
+}
+
 void MainWindow::showFileOpenDialog()
 {
     //The following filetypes are selectable
-    QString fileFormat = "XYZ Ascii Files (*xyz);;XYZ Binary Files (*xyb);;PLY Ascii Files (*ply);;All Files (*.*)";
+    QString fileFormat = "All Files (*.*);;XYZ Ascii Files (*xyz);;XYZ Binary Files (*xyb);;PLY Ascii Files (*ply)";
     QString fileName = "";
 
-    fileName = QFileDialog::getOpenFileName(this, "Please specify your point cloud file", QDir::homePath(), fileFormat);
+    fileName = QFileDialog::getOpenFileName(this, "Please specify your point cloud file", QDir::currentPath() + "/../TestData", fileFormat);
 
     setFilePath(fileName);
 }
@@ -192,17 +210,20 @@ void MainWindow::startFileImport()
 {
     qDebug() << "MainWindow::startFileImport()";
 
-    importer = new ImportWorker(ui->txtFilePathImport->text());
+    ui->canvasGL->pointCloudMesh->reset(false);
+
+    setStatusTip("Importing...");
+
+    //delete panorama
+    panorama = new Panorama3D(translation, orientation, resolution, maxDistance, projectionType, this);
+    connect(panorama, SIGNAL(updateDepthMap(QImage*)), this, SLOT(updateDepthMap(QImage*)), Qt::QueuedConnection);
+    connect(panorama, SIGNAL(updateColorMap(QImage*)), this, SLOT(updateColorMap(QImage*)), Qt::QueuedConnection);
+
+    //delete importer
+    importer = new ImportWorker(panorama, ui->canvasGL, ui->txtFilePathImport->text(), false);
     connect(importer, SIGNAL(importStatus(int)), this, SLOT(updateImportStatus(int)));
     connect(importer, SIGNAL(showInfoMessage(QString)), this, SLOT(showInfoMessage(QString)));
     connect(importer, SIGNAL(showErrorMessage(QString)), this, SLOT(showErrorMessage(QString)));
-
-    panorama = new Panorama3D(translation, orientation, resolution, maxDistance, projectionType, this);
-    connect(panorama, SIGNAL(updateDepthMap(QImage*)), this, SLOT(updateDepthMap(QImage*)));
-    connect(panorama, SIGNAL(updateColorMap(QImage*)), this, SLOT(updateColorMap(QImage*)));
-    //Connect the importer Thread with the main data container that holds panorama information (or more general: the 3D Point Cloud), (Name: Panorama3D)
-    connect(importer, SIGNAL(newPoint(Point3D)), panorama, SLOT(addPoint(Point3D)));
-    connect(importer, SIGNAL(newPoint(Point3D)), this, SLOT(newPoint(Point3D)));
 
     threadPool.start(importer);
 }
@@ -225,12 +246,24 @@ void MainWindow::updateImportStatus(int percent)
     if(percent >= 100)
     {
         ui->prbImportStatus->setValue(0);
+        setStatusTip("Saving panoramas...");
         panorama->finished();
         ui->canvasGL->pointCloudMesh->finished();
 
-        mesher = new MeshWorker(panorama, this);
-        connect(mesher, SIGNAL(addPoint(Point3D)), this, SLOT(newPoint(Point3D)));
+        setStatusTip("Meshing...");
+        mesher = new MeshWorker(panorama, ui->canvasGL, this);
+        connect(mesher, SIGNAL(meshingStatus(int)), this, SLOT(updateMeshingStatus(int)));
         threadPool.start(mesher);
+    }
+}
+
+void MainWindow::updateMeshingStatus(int percent)
+{
+    ui->prbImportStatus->setValue(percent);
+
+    if(percent >= 100)
+    {
+        QMessageBox::information(this, "Meshing complete!", "The meshing process has finished. You can see the result in the 3D viewer and you can use the generated .obj file in Blender. Have fun!", QMessageBox::Ok);
     }
 }
 
@@ -244,16 +277,6 @@ void MainWindow::updateColorMap(QImage *colorMap)
 {
     ui->lblPanoramaColor->setPixmap( QPixmap::fromImage(*colorMap) );
     this->repaint();
-}
-
-void MainWindow::newPoint(Point3D _newPoint)
-{
-    _newPoint.x += translation.x();
-    _newPoint.y += translation.y();
-    _newPoint.z += translation.z();
-
-    ui->canvasGL->pointCloudMesh->addPoint(_newPoint);
-    ui->canvasGL->update();
 }
 
 void MainWindow::onClickUpVectorLeftX()
@@ -289,26 +312,31 @@ void MainWindow::onClickUpVectorRightZ()
 void MainWindow::onClickPanoramaResolutionX1()
 {
     resolution = 1;
+    calculateCustomResolution(360*resolution, 180*resolution, 1);
 }
 
 void MainWindow::onClickPanoramaResolutionX2()
 {
     resolution = 2;
+    calculateCustomResolution(360*resolution, 180*resolution, 1);
 }
 
 void MainWindow::onClickPanoramaResolutionX4()
 {
     resolution = 4;
+    calculateCustomResolution(360*resolution, 180*resolution, 1);
 }
 
 void MainWindow::onClickPanoramaResolutionX8()
 {
     resolution = 8;
+    calculateCustomResolution(360*resolution, 180*resolution, 1);
 }
 
 void MainWindow::onClickPanoramaResolutionX16()
 {
     resolution = 16;
+    calculateCustomResolution(360*resolution, 180*resolution, 1);
 }
 
 void MainWindow::onChangeTranslationVectorX(double x)
@@ -344,6 +372,48 @@ void MainWindow::onClickProjectionTypeCylindrical()
 void MainWindow::onClickProjectionTypeMercator()
 {
     this->projectionType = Panorama3D::MERCATOR;
+}
+
+void MainWindow::onChangeResolutionHorizontal(int value)
+{
+    calculateCustomResolution(value, ui->sbResolutionVertical->value(), ui->sbResolutionDivisor->value());
+}
+
+void MainWindow::onChangeResolutionVertical(int value)
+{
+    calculateCustomResolution(ui->sbResolutionHorizontal->value(), value, ui->sbResolutionDivisor->value());
+}
+
+void MainWindow::onChangeResolutionDivisor(int value)
+{
+    calculateCustomResolution(ui->sbResolutionHorizontal->value(), ui->sbResolutionVertical->value(), value);
+}
+
+void MainWindow::onClickPanoramaResolutionCustom()
+{
+    calculateCustomResolution(ui->sbResolutionHorizontal->value(), ui->sbResolutionVertical->value(), ui->sbResolutionDivisor->value());
+}
+
+void MainWindow::onClickDeterminePanoramaResolution()
+{
+    //TODO: Start import worker with "Analyze" flag. It will read the first few lines,
+    //determine a min deltaPhi and deltaTheta,
+    //divide 360 and 180 by those values respectively (degrees!)
+    //and return the newly determined width and height to the GUI
+}
+
+void MainWindow::onChangeImportPath(QString path)
+{
+    QFile checkFile(path);
+
+    if(!path.isEmpty() && checkFile.exists())
+    {
+        ui->btnDeterminePanoramaResolution->setEnabled(true);
+    }
+    else
+    {
+        ui->btnDeterminePanoramaResolution->setEnabled(false);
+    }
 }
 
 void MainWindow::onClickExportPanoramas()

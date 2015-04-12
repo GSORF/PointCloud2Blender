@@ -6,6 +6,8 @@
 
 //Note: TODO: Fix Ubuntu issue with "QOpenGLWidget" not available! (on QT 5.4) ...
 
+class GLMesh;
+
 class GLWidget : public QGLWidget
 {
 public:
@@ -13,6 +15,7 @@ public:
     ~GLWidget();
 
     GLMesh *pointCloudMesh;
+    void addPoint(Point3D newPoint, QVector3D translationVector);
 
 protected:
     void initializeGL();

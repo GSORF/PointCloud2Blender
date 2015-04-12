@@ -20,11 +20,26 @@ GLWidget::~GLWidget()
     doneCurrent();
 }
 
+void GLWidget::addPoint(Point3D newPoint, QVector3D translationVector)
+{
+    newPoint.x += translationVector.x();
+    newPoint.y += translationVector.y();
+    newPoint.z += translationVector.z();
+
+    this->pointCloudMesh->addPoint(newPoint);
+    this->update();
+}
+
 
 
 void GLWidget::initializeGL()
 {
     glClearColor( .1f, .1f, .2f, 1.0f );
+
+    //Bugfix: Wrong Z-Sorting:
+    glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_LESS);
+    glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
 
     QOpenGLShader vertexShader( QOpenGLShader::Vertex );
     vertexShader.compileSourceFile(":/shaders/shaders/vertexshader.vert");
@@ -56,7 +71,7 @@ void GLWidget::resizeGL(int w, int h)
 
 void GLWidget::paintGL()
 {
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     if(!shaderProgram.bind())
         return;
@@ -114,16 +129,16 @@ void GLWidget::keyPressEvent(QKeyEvent *event)
     switch(event->key())
     {
     case Qt::Key_Up:
-        cameraYPosition += 0.5f;
-        break;
-    case Qt::Key_Down:
         cameraYPosition -= 0.5f;
         break;
+    case Qt::Key_Down:
+        cameraYPosition += 0.5f;
+        break;
     case Qt::Key_Left:
-        cameraXPosition -= 0.5f;
+        cameraXPosition += 0.5f;
         break;
     case Qt::Key_Right:
-        cameraXPosition += 0.5f;
+        cameraXPosition -= 0.5f;
         break;
     }
 

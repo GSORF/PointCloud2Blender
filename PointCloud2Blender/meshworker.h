@@ -16,22 +16,21 @@ class MeshWorker : public QObject, public QRunnable
 {
     Q_OBJECT
 public:
-    MeshWorker(Panorama3D *panorama, QObject *parent = 0);
+    MeshWorker(Panorama3D *panorama, GLWidget *glWidget, QObject *parent = 0);
     ~MeshWorker();
 
     void run();
 
     Panorama3D *panorama;
+    GLWidget *glWidget;
 
     bool meshing;
 
     int maxTiles;
     int currentTile;
 
-    void projectPanorama3D(int x, int y, Point3D &projectedPoint);
-
 signals:
-    void addPoint(Point3D newPoint);
+    void meshingStatus(int percent);
 };
 
 #endif // MESHWORKER_H

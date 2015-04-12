@@ -21,8 +21,6 @@ GLMesh::~GLMesh()
 
 void GLMesh::draw()
 {
-    glPointSize(5.0);
-
     shaderProgram->setAttributeArray(vertexAttribute, vertices.data(), 3);
     shaderProgram->setAttributeArray(colorAttribute, colors.data(), 3);
 
