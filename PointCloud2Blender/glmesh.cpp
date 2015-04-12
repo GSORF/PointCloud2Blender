@@ -8,6 +8,7 @@ GLMesh::GLMesh(QOpenGLShaderProgram *shaderProgram, int vertexAttr, int colorAtt
 
     maxVertices = 3000000;
     currentVertex = 0;
+    meshed = false;
 
     initVertices();
     initColors();
@@ -20,7 +21,7 @@ GLMesh::~GLMesh()
 
 void GLMesh::draw()
 {
-    glPointSize(5);
+    glPointSize(5.0);
 
     shaderProgram->setAttributeArray(vertexAttribute, vertices.data(), 3);
     shaderProgram->setAttributeArray(colorAttribute, colors.data(), 3);
@@ -28,14 +29,36 @@ void GLMesh::draw()
     shaderProgram->enableAttributeArray( vertexAttribute );
     shaderProgram->enableAttributeArray( colorAttribute );
 
-    glDrawArrays( GL_POINTS, 0, vertices.size() / 3);
+    if(meshed)
+    {
+        glDrawArrays( GL_QUADS, 0, vertices.size() / 3);
+    }
+    else
+    {
+        glDrawArrays( GL_POINTS, 0, vertices.size() / 3);
+    }
 
     shaderProgram->disableAttributeArray( vertexAttribute );
     shaderProgram->disableAttributeArray( colorAttribute );
 }
 
-void GLMesh::reset()
+void GLMesh::reset(bool meshed)
 {
+    this->meshed = meshed;
+
+    for(unsigned int i = 0; i < (vertices.size() / 3); i+=3)
+    {
+        vertices[i*3 + 0] = 0.0f;
+        vertices[i*3 + 1] = 0.0f;
+        vertices[i*3 + 2] = 0.0f;
+    }
+    for(unsigned int i = 0; i < (colors.size() / 3); i+=3)
+    {
+        colors[i*3 + 0] = 0.0f;
+        colors[i*3 + 1] = 0.0f;
+        colors[i*3 + 2] = 0.0f;
+    }
+
     currentVertex = 0;
 }
 
@@ -43,11 +66,6 @@ void GLMesh::addPoint(Point3D &newPoint)
 {
     if(currentVertex < maxVertices)
     {
-        if(currentVertex % 20000 == 0)
-        {
-            qDebug() << "currentVertex = " << currentVertex;
-        }
-
         vertices[currentVertex*3 + 0] = newPoint.x;
         vertices[currentVertex*3 + 1] = newPoint.y;
         vertices[currentVertex*3 + 2] = newPoint.z;
@@ -60,7 +78,7 @@ void GLMesh::addPoint(Point3D &newPoint)
     }
     else
     {
-        reset();
+        reset(meshed);
     }
 }
 
@@ -70,7 +88,7 @@ void GLMesh::finished()
     //initiate a draw command or make all vertices visible
 
     //for now, just reset
-    reset();
+    reset(true);
 }
 
 void GLMesh::initVertices()

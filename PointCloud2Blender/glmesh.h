@@ -14,7 +14,7 @@ public:
 
     void draw();
 
-    void reset();
+    void reset(bool meshed);
     void addPoint(Point3D &newPoint);
     void finished();
 
@@ -24,6 +24,7 @@ private:
 
     int maxVertices;
     int currentVertex;
+    bool meshed;
 
     std::vector<float> vertices;
     std::vector<float> colors;
