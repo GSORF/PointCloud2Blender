@@ -25,6 +25,7 @@ private:
     int maxVertices;
     int currentVertex;
     bool meshed;
+    bool lines;
 
     std::vector<float> vertices;
     std::vector<float> colors;

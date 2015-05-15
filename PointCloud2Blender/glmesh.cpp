@@ -9,6 +9,7 @@ GLMesh::GLMesh(QOpenGLShaderProgram *shaderProgram, int vertexAttr, int colorAtt
     maxVertices = 3000000;
     currentVertex = 0;
     meshed = false;
+    lines = true;
 
     initVertices();
     initColors();
@@ -27,14 +28,22 @@ void GLMesh::draw()
     shaderProgram->enableAttributeArray( vertexAttribute );
     shaderProgram->enableAttributeArray( colorAttribute );
 
-    if(meshed)
+    if(lines)
     {
-        glDrawArrays( GL_QUADS, 0, vertices.size() / 3);
+        glDrawArrays( GL_LINES, 0, vertices.size() / 3);
     }
     else
     {
-        glDrawArrays( GL_POINTS, 0, vertices.size() / 3);
+        if(meshed)
+        {
+            glDrawArrays( GL_QUADS, 0, vertices.size() / 3);
+        }
+        else
+        {
+            glDrawArrays( GL_POINTS, 0, vertices.size() / 3);
+        }
     }
+
 
     shaderProgram->disableAttributeArray( vertexAttribute );
     shaderProgram->disableAttributeArray( colorAttribute );
@@ -43,14 +52,15 @@ void GLMesh::draw()
 void GLMesh::reset(bool meshed)
 {
     this->meshed = meshed;
+    currentVertex = 0;
 
-    for(unsigned int i = 0; i < (vertices.size() / 3); i+=3)
+    for(unsigned int i = currentVertex; i < (vertices.size() / 3); i+=3)
     {
         vertices[i*3 + 0] = 0.0f;
         vertices[i*3 + 1] = 0.0f;
         vertices[i*3 + 2] = 0.0f;
     }
-    for(unsigned int i = 0; i < (colors.size() / 3); i+=3)
+    for(unsigned int i = currentVertex; i < (colors.size() / 3); i+=3)
     {
         colors[i*3 + 0] = 0.0f;
         colors[i*3 + 1] = 0.0f;
@@ -62,6 +72,11 @@ void GLMesh::reset(bool meshed)
 
 void GLMesh::addPoint(Point3D &newPoint)
 {
+    if(lines)
+    {
+        lines = false;
+    }
+
     if(currentVertex < maxVertices)
     {
         vertices[currentVertex*3 + 0] = newPoint.x;
@@ -93,36 +108,54 @@ void GLMesh::initVertices()
 {
     vertices.resize(3000000*3);
 
-    //First: Up
+    //First: X-Axis
     vertices[0] = 0.0f;
-    vertices[1] = 2.0f;
+    vertices[1] = 0.0f;
     vertices[2] = 0.0f;
-
-    //Second: Right
     vertices[3] = 2.0f;
-    vertices[4] = -2.0f;
+    vertices[4] = 0.0f;
     vertices[5] = 0.0f;
 
-    //Third: Left
-    vertices[6] = -2.0f;
-    vertices[7] = -2.0f;
+    //Second: Y-Axis
+    vertices[6] = 0.0f;
+    vertices[7] = 0.0f;
     vertices[8] = 0.0f;
+    vertices[9] = 0.0f;
+    vertices[10] = 2.0f;
+    vertices[11] = 0.0f;
+
+    //Third: Z-Axis
+    vertices[12] = 0.0f;
+    vertices[13] = 0.0f;
+    vertices[14] = 0.0f;
+    vertices[15] = 0.0f;
+    vertices[16] = 0.0f;
+    vertices[17] = 2.0f;
 }
 
 void GLMesh::initColors()
 {
     colors.resize(3000000*3);
 
-    colors[0] = 0.0f;
+    colors[0] = 1.0f;
     colors[1] = 0.0f;
-    colors[2] = 1.0f;
-
-    colors[3] = 0.0f;
-    colors[4] = 1.0f;
+    colors[2] = 0.0f;
+    colors[3] = 1.0f;
+    colors[4] = 0.0f;
     colors[5] = 0.0f;
 
-    colors[6] = 1.0f;
-    colors[7] = 0.0f;
+    colors[6] = 0.0f;
+    colors[7] = 1.0f;
     colors[8] = 0.0f;
+    colors[9] = 0.0f;
+    colors[10] = 1.0f;
+    colors[11] = 0.0f;
+
+    colors[12] = 0.0f;
+    colors[13] = 0.0f;
+    colors[14] = 1.0f;
+    colors[15] = 0.0f;
+    colors[16] = 0.0f;
+    colors[17] = 1.0f;
 }
 
