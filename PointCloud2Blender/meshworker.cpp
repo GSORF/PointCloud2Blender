@@ -1,6 +1,6 @@
 #include "meshworker.h"
 
-MeshWorker::MeshWorker(Panorama3D *panorama, GLWidget *glWidget, QObject *parent) : QObject(parent)
+MeshWorker::MeshWorker(Panorama3D *panorama, GLWidget *glWidget, float normalAngleThreshold, QObject *parent) : QObject(parent)
 {
     this->panorama = panorama;
     this->glWidget = glWidget;
@@ -8,6 +8,8 @@ MeshWorker::MeshWorker(Panorama3D *panorama, GLWidget *glWidget, QObject *parent
     this->meshing = false;
     this->maxTiles = 1;
     this->currentTile = 0;
+
+    this->normalAngleThreshold = normalAngleThreshold;
 
     //Preventing crash due to unhandled signals from mesher
     this->setAutoDelete(false);
@@ -138,21 +140,33 @@ void MeshWorker::run()
                             v4.z = (v1.z + v2.z + v3.z) / 3.0f;
                         }
 
-                        //Generate normal vector:
+                        //Generate normal vectors (one for each triangle):
                         QVector3D v1v2(v2.x - v1.x, v2.y - v1.y, v2.z - v1.z);
                         QVector3D v1v4(v4.x - v1.x, v4.y - v1.y, v4.z - v1.z);
-                        QVector3D normal = QVector3D::crossProduct(v1v2, v1v4);
-                        float area = normal.length();
-                        normal.normalize();
+                        QVector3D v3v2(v2.x - v3.x, v2.y - v3.y, v2.z - v3.z);
+                        QVector3D v3v4(v4.x - v3.x, v4.y - v3.y, v4.z - v3.z);
+                        QVector3D normal1 = QVector3D::crossProduct(v1v2, v1v4);
+                        QVector3D normal2 = QVector3D::crossProduct(v3v2, v3v4);
+                        float area1 = normal1.length() / 2.0f;
+                        float area2 = normal2.length() / 2.0f;
 
                         //Measure the angle between normal and v1:
                         QVector3D myV1(-v1.x, -v1.y, -v1.z);
-                        float angle = QVector3D::dotProduct(myV1, normal);
-                        qRadiansToDegrees(angle);
+                        normal1.normalize();
+                        normal2.normalize();
+                        myV1.normalize();
 
-                        if( qAbs(angle) < .4f || area == 0)
+                        float cosine_of_angle1 = QVector3D::dotProduct(myV1, normal1);
+                        float cosine_of_angle2 = QVector3D::dotProduct(myV1, normal2);
+
+
+                        if( qAbs( cosine_of_angle1 ) < qAbs( qCos(normalAngleThreshold) ) || qAbs( cosine_of_angle2 ) < qAbs( qCos(normalAngleThreshold) ) )
                         {
-                            //qDebug() << "face discarded";
+                            //qDebug() << "face discarded due to bad angle";
+                        }
+                        else if( area1 < 0.005f || area2 < 0.005f)
+                        {
+                            //qDebug() << "face discarded due to almost degenerate face";
                         }
                         else
                         {

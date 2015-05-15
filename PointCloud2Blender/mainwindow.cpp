@@ -308,7 +308,7 @@ void MainWindow::setOriginalResolution(int horizontalResolution)
     qint64 duration = (QDateTime::currentMSecsSinceEpoch() - startTime) / 1000;
     float minutes = duration / 60.0f;
 
-    QMessageBox::information(this, "File analyzed!", "Analyzing the file took " + QString::number(minutes, 'f', 2) + " minutes.\nThe original resolution of the point cloud probably was:\n" + QString::number(originalHorizontalResolution) + "by" + QString::number(originalVerticalResolution) +" Points.", QMessageBox::Ok);
+    QMessageBox::information(this, "File analyzed!", "Analyzing the file took " + QString::number(minutes, 'f', 2) + " minutes.\nThe original resolution of the point cloud probably was:\n" + QString::number(originalHorizontalResolution) + " by " + QString::number(originalVerticalResolution) +" Points.", QMessageBox::Ok);
 
 }
 

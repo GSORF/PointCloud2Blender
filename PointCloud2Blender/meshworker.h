@@ -16,7 +16,7 @@ class MeshWorker : public QObject, public QRunnable
 {
     Q_OBJECT
 public:
-    MeshWorker(Panorama3D *panorama, GLWidget *glWidget, QObject *parent = 0);
+    MeshWorker(Panorama3D *panorama, GLWidget *glWidget, float normalAngleThreshold, QObject *parent = 0);
     ~MeshWorker();
 
     void run();
@@ -28,6 +28,8 @@ public:
 
     int maxTiles;
     int currentTile;
+
+    float normalAngleThreshold;
 
 signals:
     void meshingStatus(int percent);
