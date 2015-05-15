@@ -70,14 +70,15 @@ public:
         MERCATOR
     };
 
-    explicit Panorama3D(QVector3D translationVector, Orientation upVector, quint8 resolution, float maxDistance, ProjectionType projectionType, QObject *parent = 0);
+    explicit Panorama3D(QVector3D translationVector, Orientation upVector, const int mapWidth, const int mapHeight, float maxDistance, ProjectionType projectionType, QObject *parent = 0);
     void finished();
 
 private:
     QVector3D translationVector;
     Orientation upVector;
 public:
-    quint8 resolution;
+    int mapWidth;
+    int mapHeight;
 private:
     float maxDistance;
     ProjectionType projectionType;
@@ -98,6 +99,7 @@ public:
 
     QImage panoramaDepth;
     QImage panoramaColor;
+    QVector<float> floatDepthMap; //TODO!
 
 signals:
     void updateDepthMap(QImage *depthMap);

@@ -34,6 +34,7 @@ class MainWindow : public QMainWindow
     quint8 resolution;
     int originalHorizontalResolution;
     int originalVerticalResolution;
+    bool analyzingOriginalResolution;
     int customPanoramaWidth;
     int customPanoramaHeight;
     QVector3D translation;
@@ -41,6 +42,7 @@ class MainWindow : public QMainWindow
     float maxDistance;
 
     QSettings settings;
+    qint64 startTime;
 
     QMenu *menuFile;
     QAction *actOpen;
@@ -66,6 +68,7 @@ public slots:
     void openRecentFile();
     void updateImportStatus(int percent);
     void updateMeshingStatus(int percent);
+    void setOriginalResolution(int horizontalResolution);
 
     void updateDepthMap(QImage *depthMap);
     void updateColorMap(QImage *colorMap);

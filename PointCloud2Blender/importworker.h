@@ -35,6 +35,7 @@ public:
     void import_XYZ_Ascii_File();
     void import_XYZ_Binary_File();
     void import_PLY_File();
+    bool determineOriginalResolution(Point3D newPoint);
 
     Panorama3D *panorama;
     GLWidget *glWidget;
@@ -42,12 +43,15 @@ public:
     FileType fileType;
     QString fileName;
     bool analyze;
+    QVector<int> histogram_horizontal_angles;
+    float angle_accuracy;
 
 
 
 signals:
     void newPoint(Point3D point);
     void importStatus(int percent);
+    void originalResolution(int horizontal);
 
     void showInfoMessage(QString message);
     void showErrorMessage(QString message);

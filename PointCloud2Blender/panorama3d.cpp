@@ -1,16 +1,18 @@
 #include "panorama3d.h"
 
-Panorama3D::Panorama3D(QVector3D translationVector, Orientation upVector, quint8 resolution, float maxDistance, ProjectionType projectionType, QObject *parent) :
+Panorama3D::Panorama3D(QVector3D translationVector, Orientation upVector, const int mapWidth, const int mapHeight, float maxDistance, ProjectionType projectionType, QObject *parent) :
     QObject(parent)
 {
     this->translationVector = translationVector;
     this->upVector = upVector;
-    this->resolution = resolution;
+    this->mapWidth = mapWidth;
+    this->mapHeight = mapHeight;
     this->maxDistance = maxDistance;
     this->projectionType = projectionType;
 
-    panoramaDepth = QImage(360 * resolution, 180 * resolution, QImage::Format_ARGB32);
-    panoramaColor = QImage(360 * resolution, 180 * resolution, QImage::Format_ARGB32);
+    panoramaDepth = QImage(mapWidth, mapHeight, QImage::Format_ARGB32);
+    panoramaColor = QImage(mapWidth, mapHeight, QImage::Format_ARGB32);
+    floatDepthMap.resize(mapWidth * mapHeight);
 
     minRadius = 500;
     maxRadius = 0;
@@ -104,8 +106,8 @@ void Panorama3D::unprojectPanorama3D(int x, int y, Point3D &projectedPoint)
     QColor colorValue = QColor( this->panoramaColor.pixel(x,y) );
     int z_depth = depthValue.value();
 
-    float degree_horizontal = x / this->resolution;
-    float degree_vertical = y / this->resolution;
+    float degree_horizontal = x / (mapWidth / 360.0f);
+    float degree_vertical = y / (mapHeight / 180.0f);
     float radian_horizontal = qDegreesToRadians(degree_horizontal);
     float radian_vertical = qDegreesToRadians(degree_vertical);
 
@@ -183,17 +185,17 @@ void Panorama3D::addPoint(Point3D point)
 
     //Bugfix: Repeated gradients in DepthImage result in non-contigous depth:
     //TODO: BETTER in future, save as float instead of int!
-    QColor depthMapValue = QColor( panoramaDepth.pixel(x*resolution, y*resolution));
+    QColor depthMapValue = QColor( panoramaDepth.pixel(x*(mapWidth / 360.0f), y*(mapHeight / 180.0f)));
     if( depthMapValue.value() != 0 && depthMapValue.value() < depthValue.value())
     {
         return;
     }
 
-    panoramaDepth.setPixel(x*resolution, y*resolution, depthValue.rgba());
+    panoramaDepth.setPixel(x*(mapWidth / 360.0f), y*(mapHeight / 180.0f), depthValue.rgba());
 
     //Color image:
     QColor colorValue = QColor( qRgba( point.r, point.g, point.b, 255 ));
-    panoramaColor.setPixel(x*resolution, y*resolution, colorValue.rgba());
+    panoramaColor.setPixel(x*(mapWidth / 360.0f), y*(mapHeight / 180.0f), colorValue.rgba());
 }
 
 void Panorama3D::refreshTextureMapsGUI()

@@ -23,8 +23,23 @@ ImportWorker::ImportWorker(Panorama3D *panorama, GLWidget *glWidget, QString fil
     this->analyze = analyze;
 
     this->updateTimer.setInterval(10000);
-    this->updateTimer.start();
-    connect(&this->updateTimer, SIGNAL(timeout()), this->panorama, SLOT(refreshTextureMapsGUI()));
+
+    if(analyze)
+    {
+        //angle accuracy must be <= than (360/maxHorizontalScannerResolution/4)
+
+        angle_accuracy = 360.0f/30000.0f/4.0f;
+        float n = 360.0f / angle_accuracy;
+
+        histogram_horizontal_angles.resize(n);
+        histogram_horizontal_angles.fill(0);
+
+    }
+    else
+    {
+        this->updateTimer.start();
+        connect(&this->updateTimer, SIGNAL(timeout()), this->panorama, SLOT(refreshTextureMapsGUI()));
+    }
 
     this->setAutoDelete(false);
 
@@ -32,7 +47,7 @@ ImportWorker::ImportWorker(Panorama3D *panorama, GLWidget *glWidget, QString fil
 
 ImportWorker::~ImportWorker()
 {
-
+    this->updateTimer.stop();
 }
 
 void ImportWorker::run()
@@ -53,7 +68,26 @@ void ImportWorker::run()
     break;
     }
 
-    this->updateTimer.stop();
+    if(analyze)
+    {
+        //Count histogram values
+        int resolution = 0;
+        for(int i = 0; i < histogram_horizontal_angles.size(); i++)
+        {
+            if(histogram_horizontal_angles.at(i) != 0)
+            {
+                resolution++;
+            }
+        }
+
+        emit originalResolution(resolution);
+    }
+    else
+    {
+        this->updateTimer.stop();
+    }
+
+
     this->deleteLater();
 }
 
@@ -113,9 +147,17 @@ void ImportWorker::import_XYZ_Ascii_File()
         }
 
 
-        //send the current point over to the panorama data container
-        panorama->addPoint( _newPoint );
-        glWidget->addPoint( _newPoint, panorama->getTranslationVector() );
+        if(analyze)
+        {
+            if(determineOriginalResolution( _newPoint )) break;
+        }
+        else
+        {
+            //send the current point over to the panorama data container
+            panorama->addPoint( _newPoint );
+            glWidget->addPoint( _newPoint, panorama->getTranslationVector() );
+        }
+
         emit importStatus(percent);
 
 
@@ -314,10 +356,17 @@ void ImportWorker::import_PLY_File()
 
                         currentVertex++;
 
-                        //send the current point over to the panorama data container and 3D viewer:
-                        panorama->addPoint( _newPoint );
-                        glWidget->addPoint( _newPoint, panorama->getTranslationVector() );
+                        if(analyze)
+                        {
+                            if(determineOriginalResolution( _newPoint )) break;
+                        }
+                        else
+                        {
+                            //send the current point over to the panorama data container and 3D viewer:
+                            panorama->addPoint( _newPoint );
+                            glWidget->addPoint( _newPoint, panorama->getTranslationVector() );
 
+                        }
 
                     }
 
@@ -340,4 +389,38 @@ void ImportWorker::import_PLY_File()
 
     //after importing send a finished signal
     emit importStatus(100);
+}
+
+bool ImportWorker::determineOriginalResolution(Point3D newPoint)
+{
+    float theta, phi, radius;
+
+    this->panorama->convertToSpherical(newPoint, theta, phi, radius);
+
+    float alpha = qRadiansToDegrees(theta);
+
+    float index = 0;
+
+    if(alpha >= angle_accuracy)
+    {
+        index = alpha / angle_accuracy;
+    }
+
+    //Sanity check:
+    if(index >= 0 && index < histogram_horizontal_angles.size() )
+    {
+        //increment histogram value depending on horizontal angle
+        histogram_horizontal_angles[ qFloor(index) ]++;
+    }
+    else
+    {
+        /*
+       qDebug() << "ERROR:";
+       qDebug() << "alpha=" << alpha << "accuracy=" << angle_accuracy << "alpha/accuracy" << alpha/angle_accuracy;
+       qDebug() << "Histogram Size=" << histogram_horizontal_angles.size() << "index=" << index << "floor(index)=" << qFloor(index);
+       */
+    }
+
+    //continue analyzing
+    return false;
 }

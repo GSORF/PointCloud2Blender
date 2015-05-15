@@ -360,7 +360,7 @@
              <item>
               <widget class="QSpinBox" name="sbResolutionHorizontal">
                <property name="maximum">
-                <number>10000</number>
+                <number>150000</number>
                </property>
               </widget>
              </item>
@@ -374,7 +374,7 @@
              <item>
               <widget class="QSpinBox" name="sbResolutionVertical">
                <property name="maximum">
-                <number>10000</number>
+                <number>150000</number>
                </property>
               </widget>
              </item>
