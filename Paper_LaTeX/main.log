@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  15 MAR 2015 09:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  21 MAY 2015 23:05
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -893,31 +893,89 @@ Normal \count register pool exhausted, switching to extended pool.
 \gtt@left@slot=\count289
 \gtt@right@slot=\count290
 )
+(D:\miktex-portable\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip66
+
+For additional information on amsmath, use the `?' option.
+(D:\miktex-portable\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(D:\miktex-portable\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks30
+\ex@=\dimen167
+))
+(D:\miktex-portable\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen168
+)
+(D:\miktex-portable\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count291
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count292
+\leftroot@=\count293
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count294
+\DOTSCASE@=\count295
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box39
+\strutbox@=\box40
+\big@size=\dimen169
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count296
+\c@MaxMatrixCols=\count297
+\dotsspace@=\muskip11
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
+\tag@help=\toks31
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
+\andhelp@=\toks32
+\eqnshift@=\dimen170
+\alignsep@=\dimen171
+\tagshift@=\dimen172
+\tagwidth@=\dimen173
+\totwidth@=\dimen174
+\lineht@=\dimen175
+\@envbody=\toks33
+\multlinegap=\skip67
+\multlinetaggap=\skip68
+\mathdisplay@stack=\toks34
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (D:\miktex-portable\tex\latex\biblatex\lbx\english.lbx
 File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count291
-\@quotereset=\count292
+\@quotelevel=\count303
+\@quotereset=\count304
 
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\declaration.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -929,22 +987,22 @@ Package biblatex Warning: File 'main.bbl' is wrong format version - expected 2.
 
 Package biblatex Info: ... file 'main.bbl' found.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.bbl)
-Package biblatex Info: Reference section=0 on input line 42.
-Package biblatex Info: Reference segment=0 on input line 42.
+Package biblatex Info: Reference section=0 on input line 43.
+Package biblatex Info: Reference segment=0 on input line 43.
 
 (D:\miktex-portable\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
-\scratchdimen=\dimen167
-\scratchbox=\box39
-\nofMPsegments=\count294
-\nofMParguments=\count295
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count296
-\MPscratchDim=\dimen168
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count305
+\scratchdimen=\dimen176
+\scratchbox=\box41
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen177
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks36
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -996,14 +1054,7 @@ Package pdftex.def Info: images/TH_Nuernberg_Logo.png used on input line 27.
 
 {D:/miktex-portable/pdftex/config/pdftex.map} <I:/BA_Software/PointCloud2Blende
 r/Paper_LaTeX/images/TH_Nuernberg_Logo.png>]) (I:\BA_Software\PointCloud2Blende
-r\Paper_LaTeX\declaration.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 15.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 15.
-) [2
+r\Paper_LaTeX\declaration.tex) [2
 
 ]
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.tex) [3
@@ -1112,10 +1163,6 @@ Overfull \hbox (18.99388pt too wide) in paragraph at lines 44--69
 [][]\T1/cmr/m/n/12 -01-01[] 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 81.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 81.
 [12] <images/Pellerhaus_FirstGlance.jpg, id=59, 1445.4pt x 782.925pt>
 File: images/Pellerhaus_FirstGlance.jpg Graphic file (type jpg)
 
@@ -1142,8 +1189,6 @@ File: images/graph1.png Graphic file (type png)
 <use images/graph1.png>
 Package pdftex.def Info: images/graph1.png used on input line 109.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 110.
 
 Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []\T1/cmr/m/n/10.95 (a) |$\OML/cmm/m/it/10.95 OpenSource \OT1/cmr/m/n/10.95 :
@@ -1305,16 +1350,13 @@ Chapter 5.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/conclusion.tex [35])
 [36]
 Appendix A.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 3.
-) [37
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex) [37
 
 ]
 [38
 
 ]
-Overfull \hbox (5.13786pt too wide) in paragraph at lines 74--74
+Overfull \hbox (5.13786pt too wide) in paragraph at lines 75--75
 \T1/cmtt/m/n/12 1 & list = PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC$ \T1/cmr/m/n/12 (
 Re-trieved 01/23/2015). 
  []
@@ -1326,13 +1368,13 @@ Re-trieved 01/23/2015).
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 20935 strings out of 493921
- 412372 string characters out of 3139244
- 782115 words of memory out of 3000000
- 23806 multiletter control sequences out of 15000+200000
- 26708 words of font info for 59 fonts, out of 3000000 for 9000
+ 21529 strings out of 493921
+ 418965 string characters out of 3139244
+ 791551 words of memory out of 3000000
+ 24382 multiletter control sequences out of 15000+200000
+ 28284 words of font info for 66 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,12n,89p,1268b,956s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,89p,1268b,958s stack positions out of 5000i,500n,10000p,200000b,50000s
  <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecti0800.pk> <D:\mikt
 ex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <D:\miktex-portable
 \fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <D:\miktex-portable\fonts\pk\l
@@ -1352,10 +1394,12 @@ pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><D:/miktex-portable/fonts/type1/public
 /amsfonts/cm/cmbsy10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmm
 i10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/mikte
 x-portable/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/miktex-portable/fonts/t
-ype1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (40 pages, 1552905 bytes).
+ype1/public/amsfonts/cm/cmr12.pfb><D:/miktex-portable/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
+:/miktex-portable/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (40 pages, 1577812 bytes).
 PDF statistics:
- 886 PDF objects out of 1000 (max. 8388607)
+ 898 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

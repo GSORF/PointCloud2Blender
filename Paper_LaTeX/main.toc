@@ -64,9 +64,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}Projecting 3D points onto a 2D plane}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Saving textures}{27}
+\contentsline {subsection}{\numberline {3.3.3}Saving textures}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}OpenGL Point Cloud Viewer}{27}
+\contentsline {subsection}{\numberline {3.3.4}OpenGL Point Cloud Viewer}{28}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.5}Meshing}{28}
 \defcounter {refsection}{0}\relax 
@@ -80,7 +80,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{custom format}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.8}Optimizations}{28}
+\contentsline {subsection}{\numberline {3.3.8}Optimizations}{29}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Flip horizontal direction of panorama}{29}
 \defcounter {refsection}{0}\relax 
