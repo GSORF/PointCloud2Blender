@@ -212,6 +212,62 @@
       \verb http://www.steiner-verlag.de/titel/51429.html
       \endverb
     \endentry
+    \entry{Gschwandtner11b}{incollection}{}
+      \name{labelname}{4}{}{%
+        {{hash=73dd84a9ef3956ccae9a530877082d59}{Gschwandtner}{G\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=83db5b47402562741351291060243713}{Kwitt}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=9a3267f4f8aa39086f9b8dc39df134d4}{Uhl}{U\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=e3212a42fa00b39b266f54e11534687f}{Pree}{P\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=73dd84a9ef3956ccae9a530877082d59}{Gschwandtner}{G\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=83db5b47402562741351291060243713}{Kwitt}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=9a3267f4f8aa39086f9b8dc39df134d4}{Uhl}{U\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=e3212a42fa00b39b266f54e11534687f}{Pree}{P\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{12}{}{%
+        {{hash=841fed534c8d9df7d15bb6bceffdd967}{Bebis}{B\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=306e1840f3e9ffde5f1a736befe3168f}{Boyle}{B\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=c302a205d04df281e26654b279b28108}{Parvin}{P\bibinitperiod}{Bahram}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=f55ce36fbbd6713d96120f753a7df2b4}{Koracin}{K\bibinitperiod}{Darko}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=7d19e678c72662459bbdb25f3e207dee}{Wang}{W\bibinitperiod}{Song}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=739df0ebbf7e52dae13168920baff41d}{Kyungnam}{K\bibinitperiod}{Kim}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=2c1666b95d0d145f88398b62f00aede5}{Benes}{B\bibinitperiod}{Bedrich}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=511c2cdfaf4a83e37b2294a4f99ea709}{Moreland}{M\bibinitperiod}{Kenneth}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=f05dd07b22240da321c56a97d3228cd0}{Borst}{B\bibinitperiod}{Christoph}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=fa4d89bb3624eac13064542fddccb5cd}{DiVerdi}{D\bibinitperiod}{Stephen}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=837ca0165e011d917ecd569005b1c0b4}{Yi-Jen}{Y\bibinithyphendelim J\bibinitperiod}{Chiang}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=95392d186f15eb472a862aba4ea11b80}{Ming}{M\bibinitperiod}{Jiang}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin / Heidelberg}%
+      }
+      \strng{namehash}{6c17ffe4bd00a07aebedf3c1a17c7ab1}
+      \strng{fullhash}{a31289ac4e665a45096daf96e91f946f}
+      \field{labelalpha}{Gsc+11}
+      \field{sortinit}{0}
+      \field{labeltitle}{{BlenSor: Blender Sensor Simulation Toolbox Advances in Visual Computing}}
+      \field{abstract}{{This paper introduces a novel software package for the simulation of various types of range scanners. The goal is to provide researchers in the fields of obstacle detection, range data segmentation, obstacle tracking or surface reconstruction with a versatile and powerful software package that is easy to use and allows to focus on algorithmic improvements rather than on building the software framework around it. The simulation environment and the actual simulations can be efficiently distributed with a single compact file. Our proposed approach facilitates easy regeneration of published results, hereby highlighting the value of reproducible research.}}
+      \field{chapter}{20}
+      \field{isbn}{978-3-642-24030-0}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{{BlenSor: Blender Sensor Simulation Toolbox Advances in Visual Computing}}
+      \field{urlday}{31}
+      \field{urlmonth}{05}
+      \field{urlyear}{2015}
+      \field{volume}{6939}
+      \field{year}{2011}
+      \field{pages}{199\bibrangedash 208}
+      \verb{doi}
+      \verb 10.1007/978-3-642-24031-7\_20
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-642-24031-7%5C_20
+      \endverb
+    \endentry
     \entry{ytQtOpenGL}{online}{}
       \name{labelname}{1}{}{%
         {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
@@ -511,6 +567,62 @@
       \field{pages}{39\bibrangedash 40}
       \verb{url}
       \verb http://www.steiner-verlag.de/titel/51429.html
+      \endverb
+    \endentry
+    \entry{Gschwandtner11b}{incollection}{}
+      \name{labelname}{4}{}{%
+        {{hash=73dd84a9ef3956ccae9a530877082d59}{Gschwandtner}{G\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=83db5b47402562741351291060243713}{Kwitt}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=9a3267f4f8aa39086f9b8dc39df134d4}{Uhl}{U\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=e3212a42fa00b39b266f54e11534687f}{Pree}{P\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=73dd84a9ef3956ccae9a530877082d59}{Gschwandtner}{G\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=83db5b47402562741351291060243713}{Kwitt}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=9a3267f4f8aa39086f9b8dc39df134d4}{Uhl}{U\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=e3212a42fa00b39b266f54e11534687f}{Pree}{P\bibinitperiod}{Wolfgang}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{12}{}{%
+        {{hash=841fed534c8d9df7d15bb6bceffdd967}{Bebis}{B\bibinitperiod}{George}{G\bibinitperiod}{}{}{}{}}%
+        {{hash=306e1840f3e9ffde5f1a736befe3168f}{Boyle}{B\bibinitperiod}{Richard}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=c302a205d04df281e26654b279b28108}{Parvin}{P\bibinitperiod}{Bahram}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=f55ce36fbbd6713d96120f753a7df2b4}{Koracin}{K\bibinitperiod}{Darko}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=7d19e678c72662459bbdb25f3e207dee}{Wang}{W\bibinitperiod}{Song}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=739df0ebbf7e52dae13168920baff41d}{Kyungnam}{K\bibinitperiod}{Kim}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=2c1666b95d0d145f88398b62f00aede5}{Benes}{B\bibinitperiod}{Bedrich}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=511c2cdfaf4a83e37b2294a4f99ea709}{Moreland}{M\bibinitperiod}{Kenneth}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=f05dd07b22240da321c56a97d3228cd0}{Borst}{B\bibinitperiod}{Christoph}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=fa4d89bb3624eac13064542fddccb5cd}{DiVerdi}{D\bibinitperiod}{Stephen}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=837ca0165e011d917ecd569005b1c0b4}{Yi-Jen}{Y\bibinithyphendelim J\bibinitperiod}{Chiang}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=95392d186f15eb472a862aba4ea11b80}{Ming}{M\bibinitperiod}{Jiang}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin / Heidelberg}%
+      }
+      \strng{namehash}{6c17ffe4bd00a07aebedf3c1a17c7ab1}
+      \strng{fullhash}{a31289ac4e665a45096daf96e91f946f}
+      \field{labelalpha}{Gsc+11}
+      \field{sortinit}{0}
+      \field{labeltitle}{{BlenSor: Blender Sensor Simulation Toolbox Advances in Visual Computing}}
+      \field{abstract}{{This paper introduces a novel software package for the simulation of various types of range scanners. The goal is to provide researchers in the fields of obstacle detection, range data segmentation, obstacle tracking or surface reconstruction with a versatile and powerful software package that is easy to use and allows to focus on algorithmic improvements rather than on building the software framework around it. The simulation environment and the actual simulations can be efficiently distributed with a single compact file. Our proposed approach facilitates easy regeneration of published results, hereby highlighting the value of reproducible research.}}
+      \field{chapter}{20}
+      \field{isbn}{978-3-642-24030-0}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{{BlenSor: Blender Sensor Simulation Toolbox Advances in Visual Computing}}
+      \field{urlday}{31}
+      \field{urlmonth}{05}
+      \field{urlyear}{2015}
+      \field{volume}{6939}
+      \field{year}{2011}
+      \field{pages}{199\bibrangedash 208}
+      \verb{doi}
+      \verb 10.1007/978-3-642-24031-7\_20
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-642-24031-7%5C_20
       \endverb
     \endentry
     \entry{ytQtOpenGL}{online}{}

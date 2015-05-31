@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  21 MAY 2015 23:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  31 MAY 2015 21:07
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -1300,22 +1300,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <images/graph_a.png, id=98, 867.24pt x 578.16pt>
 File: images/graph_a.png Graphic file (type png)
  <use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png used on input line 106.
+Package pdftex.def Info: images/graph_a.png used on input line 107.
 (pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
 
 [22 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>]
 File: images/graph1.png Graphic file (type png)
 
 <use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 129.
+Package pdftex.def Info: images/graph1.png used on input line 125.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 136.
+Package pdftex.def Info: images/graph2.png used on input line 132.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 143.
+Package pdftex.def Info: images/graph3.png used on input line 139.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 )
 [23] [24
@@ -1323,58 +1323,81 @@ Package pdftex.def Info: images/graph3.png used on input line 143.
 ]
 Chapter 3.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter02.tex
-<images/UseCaseDiagram_PC2B.png, id=108, 1027.84pt x 607.26875pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+<images/UseCaseDiagram_PC2B.png, id=112, 1027.84pt x 607.26875pt>
 File: images/UseCaseDiagram_PC2B.png Graphic file (type png)
 
 <use images/UseCaseDiagram_PC2B.png>
-Package pdftex.def Info: images/UseCaseDiagram_PC2B.png used on input line 10.
+Package pdftex.def Info: images/UseCaseDiagram_PC2B.png used on input line 15.
 (pdftex.def)             Requested size: 411.12872pt x 242.9032pt.
- [25 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/UseCaseDiagram_PC2B.
-png (PNG copy)>]
+
 <images/PellerhausLaserScan.jpg, id=113, 536.0025pt x 803.0pt>
 File: images/PellerhausLaserScan.jpg Graphic file (type jpg)
 
 <use images/PellerhausLaserScan.jpg>
-Package pdftex.def Info: images/PellerhausLaserScan.jpg used on input line 22.
+Package pdftex.def Info: images/PellerhausLaserScan.jpg used on input line 31.
 (pdftex.def)             Requested size: 214.3972pt x 321.1943pt.
- [26 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PellerhausLaserScan.
-jpg>] [27] [28]) [29] [30
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/UseCaseDiagram_PC2B.
+png (PNG copy)>] [27 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Pell
+erhausLaserScan.jpg>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28] [29] [30]) [31] [32
 
 ]
 Chapter 4.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter03.tex [31]
-[32]) [33] [34
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter03.tex [33]
+[34]) [35] [36
 
 ]
 Chapter 5.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/conclusion.tex [35])
-[36]
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/conclusion.tex [37])
+[38]
 Appendix A.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex) [37
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex) [39
 
 ]
-[38
+[40
 
 ]
-Overfull \hbox (5.13786pt too wide) in paragraph at lines 75--75
+Overfull \hbox (7.0967pt too wide) in paragraph at lines 75--75
+\T1/cmr/m/n/12 Vol. 6939. Lec-ture Notes in Com-puter Sci-ence. Berlin, Hei-del
+-berg: Springer
+ []
+
+[41]
+Overfull \hbox (10.01718pt too wide) in paragraph at lines 75--75
 \T1/cmtt/m/n/12 1 & list = PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC$ \T1/cmr/m/n/12 (
 Re-trieved 01/23/2015). 
  []
 
-[39] [40] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
+[42] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\declaration.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.aux))
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 21529 strings out of 493921
- 418965 string characters out of 3139244
- 791551 words of memory out of 3000000
- 24382 multiletter control sequences out of 15000+200000
+ 21532 strings out of 493921
+ 419058 string characters out of 3139244
+ 791567 words of memory out of 3000000
+ 24385 multiletter control sequences out of 15000+200000
  28284 words of font info for 66 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,12n,89p,1268b,958s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,89p,1268b,989s stack positions out of 5000i,500n,10000p,200000b,50000s
  <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecti0800.pk> <D:\mikt
 ex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <D:\miktex-portable
 \fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <D:\miktex-portable\fonts\pk\l
@@ -1397,9 +1420,9 @@ x-portable/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/miktex-portable/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb><D:/miktex-portable/fonts/type1/public/amsfon
 ts/cm/cmr8.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
 :/miktex-portable/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (40 pages, 1577812 bytes).
+Output written on main.pdf (42 pages, 1587328 bytes).
 PDF statistics:
- 898 PDF objects out of 1000 (max. 8388607)
+ 913 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
