@@ -67,9 +67,11 @@ A more efficient approach would be to develop a new modifier in C/C++ that integ
 
 \section{Prototype}
 
+The working title of the converter software was defined as "PointCloud2Blender", PC2B in short, because this was the main goal of the software project.
+
 \subsection{Point Cloud Importer}
 
-A crucial part of the converter software is the ability to import point clouds saved as files. There is a huge amount of file types that can accomodate such a data structure. Points can be stored in ASCII or Binary form. Importing binary formats requires to know the exact structure of the file and the bytes used for certain values. Documentation was limited for many of the file formats, so using ASCII files was a better choice from the beginning. Initially it was planned to only import the .xyz file format, since this is a very simple file format that can be exported in ASCII form from the proprietary Faro SCENE 5 software which is needed for preprocessing the raw point cloud stream produced by the Faro Focus 3D.\\
+A crucial part of the PC2B converter software is the ability to import point clouds saved as files. There is a huge amount of file types that can accomodate such a data structure. Points can be stored in ASCII or Binary form. Importing binary formats requires to know the exact structure of the file and the bytes used for certain values. Documentation was limited for many of the file formats, so using ASCII files was a better choice from the beginning. Initially it was planned to only import the .xyz file format, since this is a very simple file format that can be exported in ASCII form from the proprietary Faro SCENE 5 software which is needed for preprocessing the raw point cloud stream produced by the Faro Focus 3D.\\
 During development it turned out that support for the .ply file format is desirable, since scientific websites that provide models (see) widely provide this file type. Also Blender can export a 3D model to this file format. This fact was extremly useful for testing the algorithm, which is described later.
 
 \subsubsection{Point Cloud data formats}
@@ -139,6 +141,9 @@ Working with such file structures like in our case is very easy. See \ref{tab:xy
 	\label{tab:xyz_ply_file_structure}
 \end{table}
 
+\subsection{Determine original point cloud resolution}
+
+Users of PC2B have the option to determine the resolution of the 3D panorama. It can either be set to fixed multiples of 360 by 180 pixels or set to a custom resolution. We have implemented an algorithm to help the user find the best resolution for his particular point cloud. It works as follows:
 
 \subsection{Projecting 3D points onto a 2D plane}
 

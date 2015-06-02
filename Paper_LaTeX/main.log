@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  31 MAY 2015 21:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  2 JUN 2015 23:57
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -1264,32 +1264,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--65
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-Underfull \hbox (badness 10000) in paragraph at lines 66--73
+File: images/graph1.png Graphic file (type png)
+
+<use images/graph1.png>
+Package pdftex.def Info: images/graph1.png used on input line 71.
+(pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
+File: images/graph2.png Graphic file (type png)
+ <use images/graph2.png>
+Package pdftex.def Info: images/graph2.png used on input line 78.
+(pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
+File: images/graph3.png Graphic file (type png)
+ <use images/graph3.png>
+Package pdftex.def Info: images/graph3.png used on input line 85.
+(pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 78--84
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--84
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--111
 
  []
 
@@ -1300,32 +1314,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <images/graph_a.png, id=98, 867.24pt x 578.16pt>
 File: images/graph_a.png Graphic file (type png)
  <use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png used on input line 107.
+Package pdftex.def Info: images/graph_a.png used on input line 132.
 (pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
 
-[22 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>]
-File: images/graph1.png Graphic file (type png)
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: images/graph_a.png Graphic file (type png)
+<use images/graph_a.png>
+Package pdftex.def Info: images/graph_a.png used on input line 144.
+(pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: images/graph1.png Graphic file (type png)
 <use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 125.
+Package pdftex.def Info: images/graph1.png used on input line 162.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 132.
+Package pdftex.def Info: images/graph2.png used on input line 169.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 139.
+Package pdftex.def Info: images/graph3.png used on input line 176.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
-)
-[23] [24
 
-]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+[23 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>]
+[24]
 Chapter 3.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter02.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25]
+ [25
+
+]
 <images/UseCaseDiagram_PC2B.png, id=112, 1027.84pt x 607.26875pt>
 File: images/UseCaseDiagram_PC2B.png Graphic file (type png)
 
@@ -1391,10 +1422,10 @@ Re-trieved 01/23/2015).
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 21532 strings out of 493921
- 419058 string characters out of 3139244
- 791567 words of memory out of 3000000
- 24385 multiletter control sequences out of 15000+200000
+ 21540 strings out of 493921
+ 419260 string characters out of 3139244
+ 791652 words of memory out of 3000000
+ 24393 multiletter control sequences out of 15000+200000
  28284 words of font info for 66 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,12n,89p,1268b,989s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1420,9 +1451,9 @@ x-portable/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/miktex-portable/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb><D:/miktex-portable/fonts/type1/public/amsfon
 ts/cm/cmr8.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
 :/miktex-portable/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (42 pages, 1587328 bytes).
+Output written on main.pdf (42 pages, 1590570 bytes).
 PDF statistics:
- 913 PDF objects out of 1000 (max. 8388607)
+ 915 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
