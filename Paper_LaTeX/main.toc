@@ -42,7 +42,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Types of projections}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Converting: From point cloud to Blender 3D}{25}
+\contentsline {chapter}{\numberline {3}Conversion: From point cloud to Blender 3D}{25}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Concept}{25}
 \defcounter {refsection}{0}\relax 
@@ -100,23 +100,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Modeling the current Pellerhaus facade}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Using the converter}{33}
+\contentsline {subsection}{\numberline {4.1.1}Using the PC2B converter software}{33}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Using UAV references with photogrammetry}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Modeling the original Pellerhaus facade}{34}
+\contentsline {section}{\numberline {4.2}Modeling the historic Pellerhaus facade}{34}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}Using historic images as guide}{34}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Using historic stereoscopic images with photogrammetry}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Modeling the destructed Pellerhaus}{34}
+\contentsline {section}{\numberline {4.3}Modeling the destructed Pellerhaus}{35}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Animating between the states}{35}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}Lighting and Rendering}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Animating between the states}{35}
+\contentsline {section}{\numberline {4.6}Stereoscopic Rendering as anaglyph 3d}{35}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusion and Future Work}{37}
 \defcounter {refsection}{0}\relax 

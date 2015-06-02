@@ -1,14 +1,16 @@
+The generated mesh may still need additional cleanup and detail. The topology is dependend on the used meshing algorithm, naturally. The laser scanner beam cannot sample reflective or transparent structures. It can only provide a great reference for manual tracing.
+
 \section{Modeling the current Pellerhaus facade}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit interdum sagittis. Nulla facilisi. Pellentesque laoreet tincidunt semper. Pellentesque pellentesque lectus id arcu interdum cursus ut ac dui. Etiam feugiat nisl ac odio suscipit pretium venenatis eget diam. Morbi molestie ipsum sit amet sapien rutrum luctus. Proin ac dolor ut metus laoreet aliquam non id nunc. Curabitur non efficitur dolor. Donec iaculis, dui et porta iaculis, magna tellus placerat ex, sed porta sem ligula ac augue. Fusce vitae sagittis ex. Pellentesque faucibus cursus elit, et faucibus velit cursus in. Nam lobortis id neque id hendrerit. Fusce et dolor nisi\parencite{dp_lidar}.
+The lower part of the Pellerhaus facade is very similar, almost identical, to the historic one. Thus modeling the modern facade based on LiDAR, photogrammetry and photographic reference appeared to make sense.
 
-\subsection{Using the converter}
+\subsection{Using the PC2B converter software}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit interdum sagittis. Nulla facilisi. Pellentesque laoreet tincidunt semper. Pellentesque pellentesque lectus id arcu interdum cursus ut ac dui. Etiam feugiat nisl ac odio suscipit pretium venenatis eget diam. Morbi molestie ipsum sit amet sapien rutrum luctus. Proin ac dolor ut metus laoreet aliquam non id nunc. Curabitur non efficitur dolor. Donec iaculis, dui et porta iaculis, magna tellus placerat ex, sed porta sem ligula ac augue. Fusce vitae sagittis ex. Pellentesque faucibus cursus elit, et faucibus velit cursus in. Nam lobortis id neque id hendrerit. Fusce et dolor nisi\parencite{dp_lidar}.
+Firstly, the LiDAR data was preprocesed in PC2B. We created five scans on location, so all scans have been preprocessed and imported into Blender.\parencite{dp_lidar}.
 
 \subsection{Using UAV references with photogrammetry}
 
-Unmanned Aerial Vehicles (UAV's or simply drones) are getting affordable, even very good quality models. In our research we use the DJI Phantom 2 to create photographic references from the Pellerhaus Nürnberg.
+Unmanned Aerial Vehicles (UAV's or simply drones) are getting affordable, even very good quality models. In our research we use the DJI Phantom 2 with a GoPro Hero 4 Black mounted on a 3-axis DJI Zenmuse H3-3D Gimbal to create photographic aerial references of the Pellerhaus Nürnberg.
 
 Flying a drone inside the city center of Nuremberg is not as easy, as it might be assumed at first. Before even being able to take off with a UAV, German law requires a general permission for just entering the air space. In addition every UAV pilot needs an UAV insurance.
 
@@ -16,18 +18,23 @@ Regarding the usage of drones in the city center, there are more restrictions. T
 
 Luckily there are some laws that permit video shoots and taking photos. For example the Freedom of panorama (§ 59, German Urheberrechtsgesetz) allows taking photos from pavements and roads permanently located in a public place.
 
-\section{Modeling the original Pellerhaus facade}
+In total we made three flights on location. It was planned to use the second flight for single photos shot in an interval of 1 second whereas the other two flights are videos in 4K. Unfortunately, it turned out that the third flight wasn't recorded at all and the second flight was captured as a video file. Luckily we noticed the third video missing while still on location, having a bit of battery life left and about one hour left to use the air space, so we made at least two impressive aerial shots before ending the mission.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec non auctor sem, sit amet fringilla purus. Phasellus eu orci et nibh lobortis faucibus id vel lorem. Aliquam ut diam id mi aliquam finibus eu id neque. Nam consequat efficitur mi sed maximus. Nullam egestas neque enim. Nulla nec eleifend mauris, eget sollicitudin velit. Quisque ultricies feugiat neque ut condimentum. Aliquam vehicula faucibus sapien non convallis. Nullam consectetur sagittis sollicitudin. Nulla mollis laoreet metus et consectetur.
+With having video files instead of still images, those needed to be exported as stil frames to be able to be processed by software. We tried both the free "Visual SfM" and commercial "Agisoft Photoscan Pro" software solutions to generate additional colored meshes of the Pellerhaus. The total processing time of about 20 hours for Visual SfM and 40 hours for Photoscan to get a 3D point cloud from the images. Comparing the results we noticed that Visual SfM generated a bend facade while Photoscan Pro kept it very straight. Although not recommended in (), we used a GoPro camera with a short focal length and thus a strong lens distortion for 3d reconstruction. We can confirm, that the use of this camera is not a good choice, since the radial distortion can produce errors in the feature matching phase of photogrammetry. Still the output should be a good reference for the rough shape of the reconstructed object. If available, LiDAR data should be used for accurate building reconstruction.
+
+\section{Modeling the historic Pellerhaus facade}
+
+Based on the modern facade it was possible to get a good feel for the size of the Pellerhaus in the renaissance. Still the main parts above the ground floor of the facade differ dramatically from the modern one. They can only be extracted from photographs.
 
 \subsection{Using historic images as guide}
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec non auctor sem, sit amet fringilla purus. Phasellus eu orci et nibh lobortis faucibus id vel lorem. Aliquam ut diam id mi aliquam finibus eu id neque. Nam consequat efficitur mi sed maximus. Nullam egestas neque enim. Nulla nec eleifend mauris, eget sollicitudin velit. Quisque ultricies feugiat neque ut condimentum. Aliquam vehicula faucibus sapien non convallis. Nullam consectetur sagittis sollicitudin. Nulla mollis laoreet metus et consectetur.
+It is a huge luck that the Pellerhaus history has been documented by an enormous amount of pictures. A big load of about 190 pictures has been provided for free through the Altstadtfreunde Nürnberg e.V. association, not including about 100 additional pictures depicting the space in front of the building.
+
+Those pictures can be traced in Blender.
 
 \subsection{Using historic stereoscopic images with photogrammetry}
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec non auctor sem, sit amet fringilla purus. Phasellus eu orci et nibh lobortis faucibus id vel lorem. Aliquam ut diam id mi aliquam finibus eu id neque. Nam consequat efficitur mi sed maximus. Nullam egestas neque enim. Nulla nec eleifend mauris, eget sollicitudin velit. Quisque ultricies feugiat neque ut condimentum. Aliquam vehicula faucibus sapien non convallis. Nullam consectetur sagittis sollicitudin. Nulla mollis laoreet metus et consectetur.
-
+Although the historic pictures have already been a blessing, there are two images aquired by stereophotography. Trying to feed the left and right image into photogrammetry software, respectively, gives a nice 3d representation of the historic facade already. Of course, little details are still missing.
 
 
 %\parencite{einstein}
@@ -43,18 +50,17 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 \section{Modeling the destructed Pellerhaus}
 
-Etiam non volutpat diam. Nam ac consectetur felis. Ut nec mi dictum, lobortis mauris quis, dapibus ligula. Nulla porttitor diam sed mauris dapibus posuere. Fusce pellentesque odio at nisl placerat porta. Donec urna risus, iaculis vitae justo quis, tempus ullamcorper diam. Integer eu gravida est. Phasellus eu ex tincidunt urna tempus pulvinar in in metus. Mauris tempus magna ac finibus suscipit. Praesent malesuada magna nibh, at rutrum felis semper a\parencite[compare][]{webLaTeX-Tutorial}.
-
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras quis pharetra libero. Pellentesque consectetur, quam vel ultrices finibus, sem enim consectetur mi, in dictum tellus leo eu ante. Maecenas consequat egestas erat, in vestibulum velit pulvinar ac. Suspendisse ullamcorper augue sapien, ac suscipit nulla dictum in. Nam sit amet congue ipsum. Aenean non felis malesuada, feugiat lectus a, tincidunt quam. Fusce nec quam egestas, vulputate est in, commodo nisi. Phasellus id nunc sit amet quam iaculis ornare eu id libero. Ut tempor nisi sed est pretium auctor. Donec in nunc turpis. Integer non tristique dolor. Curabitur a elit mollis urna finibus scelerisque sit amet vel erat. Nullam nec maximus erat. Duis ante mi, posuere ut lobortis nec, posuere eu ligula\parencite[e.g.][page300]{dp_lidar}.
+The modeling process is finished with the creation of the destructed Pellerhaus, which basically only consists of the base floor.[compare][]{webLaTeX-Tutorial}.
 
 \section{Animating between the states}
 
-Aliquam at varius elit. Suspendisse viverra ex a ipsum scelerisque condimentum. Nam ac neque luctus, ullamcorper neque sit amet, tincidunt felis. Maecenas id orci rutrum, tincidunt nisl non, aliquam sapien. Aenean vestibulum erat ut nisl vehicula, quis rutrum eros fermentum. Maecenas ut arcu elit. Cras vestibulum pharetra facilisis. Quisque non elit iaculis leo dignissim faucibus. Etiam fringilla tortor nibh, sit amet volutpat diam consequat ac. Sed consectetur metus quis suscipit sollicitudin. Morbi imperdiet scelerisque nunc, in dapibus lacus. Praesent ullamcorper condimentum augue vitae finibus. 
+Since the created models are very similar in size, it is possible to animate a simple fade between them.
+A more interesting solution is a fracturing simulation, though.
 
 \section{Lighting and Rendering}
 
-Aliquam at varius elit. Suspendisse viverra ex a ipsum scelerisque condimentum. Nam ac neque luctus, ullamcorper neque sit amet, tincidunt felis. Maecenas id orci rutrum, tincidunt nisl non, aliquam sapien. Aenean vestibulum erat ut nisl vehicula, quis rutrum eros fermentum. Maecenas ut arcu elit. Cras vestibulum pharetra facilisis. Quisque non elit iaculis leo dignissim faucibus. Etiam fringilla tortor nibh, sit amet volutpat diam consequat ac. Sed consectetur metus quis suscipit sollicitudin. Morbi imperdiet scelerisque nunc, in dapibus lacus. Praesent ullamcorper condimentum augue vitae finibus. 
+The models need to be evenly lit.
 
-\section{Animating between the states}
+\section{Stereoscopic Rendering as anaglyph 3d}
 
-Aliquam at varius elit. Suspendisse viverra ex a ipsum scelerisque condimentum. Nam ac neque luctus, ullamcorper neque sit amet, tincidunt felis. Maecenas id orci rutrum, tincidunt nisl non, aliquam sapien. Aenean vestibulum erat ut nisl vehicula, quis rutrum eros fermentum. Maecenas ut arcu elit. Cras vestibulum pharetra facilisis. Quisque non elit iaculis leo dignissim faucibus. Etiam fringilla tortor nibh, sit amet volutpat diam consequat ac. Sed consectetur metus quis suscipit sollicitudin. Morbi imperdiet scelerisque nunc, in dapibus lacus. Praesent ullamcorper condimentum augue vitae finibus. 
+For a better presentation, the scene can also be visualized in stereoscopic 3d. Through the newly implemented stereo feature in Blender this is now a hassle-free process.

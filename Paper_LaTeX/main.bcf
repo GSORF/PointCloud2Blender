@@ -1959,11 +1959,8 @@
     <bcf:citekey order="12">webMysteryOfTheBlend</bcf:citekey>
     <bcf:citekey order="13">webBlenderArtistsBlendExport</bcf:citekey>
     <bcf:citekey order="14">dp_lidar</bcf:citekey>
-    <bcf:citekey order="15">dp_lidar</bcf:citekey>
-    <bcf:citekey order="16">webLaTeX-Tutorial</bcf:citekey>
-    <bcf:citekey order="17">dp_lidar</bcf:citekey>
-    <bcf:citekey order="18">ytLaTeX</bcf:citekey>
-    <bcf:citekey order="18">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="15">ytLaTeX</bcf:citekey>
+    <bcf:citekey order="15">webLaTeX-Tutorial</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

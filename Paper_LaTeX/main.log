@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  2 JUN 2015 23:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  3 JUN 2015 01:28
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -1391,7 +1391,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ]
 Chapter 4.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter03.tex [33]
-[34]) [35] [36
+[34])
+Overfull \hbox (3.01016pt too wide) in paragraph at lines 66--66
+[]\T1/cmr/m/n/12 For a bet-ter pre-sen-ta-tion, the scene can also be vi-su-al-
+ized in stereo-scopic 3d. Through
+ []
+
+[35] [36
 
 ]
 Chapter 5.
@@ -1419,12 +1425,20 @@ Re-trieved 01/23/2015).
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\declaration.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  21540 strings out of 493921
  419260 string characters out of 3139244
- 791652 words of memory out of 3000000
+ 791651 words of memory out of 3000000
  24393 multiletter control sequences out of 15000+200000
  28284 words of font info for 66 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1451,7 +1465,7 @@ x-portable/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/miktex-portable/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb><D:/miktex-portable/fonts/type1/public/amsfon
 ts/cm/cmr8.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D
 :/miktex-portable/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (42 pages, 1590570 bytes).
+Output written on main.pdf (42 pages, 1591125 bytes).
 PDF statistics:
  915 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
