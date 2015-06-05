@@ -145,13 +145,55 @@ Working with such file structures like in our case is very easy. See \ref{tab:xy
 
 Users of PC2B have the option to determine the resolution of the 3D panorama. It can either be set to fixed multiples of 360 by 180 pixels or set to a custom resolution. We have implemented an algorithm to help the user find the best resolution for his particular point cloud. It works as follows:
 
-\subsection{Projecting 3D points onto a 2D plane}
+\subsection{Coordinate system representations}
+
+We can express points in different coordinate systems. For example cartesian, cylindrical and spherical.
+
+Almost all point cloud files use a cartesian coordinate system (at least the ones we are using). To get the coordinate of a point in an image plane from a point in cartesian space, we simply convert its coordinate space from cartesian to spherical. We then have the points horizontal position in a range of 360 degrees and its vertical position in a range of 180 degrees. In that way we create the image files from the point samples and then use those images to convert back to the cartesian space.
+
+\subsection{Converting from cartesian to spherical and vice versa}
+
+To convert from Cartesian space to spherical coordinates, we use the following equation:
+
+$$radius = \sqrt{ (x^2 + y^2 + z^2) } $$
+$$\theta = {\rm atan2} \left(y , x\right) + \pi$$
+$$\phi = \cos^{-1} (z / radius)$$
+
+(see \parencite{Pharr:2010:PBR:1854996}, page 114)
+
+
+Conversely, to get from spherical to cartesian coordinates, we use:
+
+$$x = r * \sin \theta * \cos \phi$$
+$$y = r * \sin \theta * \sin \phi$$
+$$z = r * \cos \theta$$
+
+(see \parencite{Pharr:2010:PBR:1854996}, page 114)
 
 This is inside the text $\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$.
 
 
 And this is a separate formula:
 $$\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$$
+
+\subsection{Types of projections}
+
+To convert from Cartesian space to spherical coordinates, we have the option to use various projection types, as already briefly introduced in \ref{section_types_of_projections}.
+
+\subsubsection{Equirectangular projection}
+
+$$\theta = $$
+$$\theta = $$
+
+\subsubsection{Cylindrical projection}
+
+$$\theta = $$
+$$\theta = $$
+
+\subsubsection{Mercator projection}
+
+$$\theta = $$
+$$\theta = $$
 
 
 \subsection{Saving textures}

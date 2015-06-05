@@ -268,6 +268,31 @@
       \verb http://dx.doi.org/10.1007/978-3-642-24031-7%5C_20
       \endverb
     \endentry
+    \entry{Pharr:2010:PBR:1854996}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=c69ff00a5e1719a4ad2dddd6254ac3c9}{Pharr}{P\bibinitperiod}{Matt}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=51e2894a269d907342539becd626aaed}{Humphreys}{H\bibinitperiod}{Greg}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=c69ff00a5e1719a4ad2dddd6254ac3c9}{Pharr}{P\bibinitperiod}{Matt}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=51e2894a269d907342539becd626aaed}{Humphreys}{H\bibinitperiod}{Greg}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers Inc.}%
+      }
+      \strng{namehash}{a8e065d16cfaaca97f67d5068e42b3a0}
+      \strng{fullhash}{a8e065d16cfaaca97f67d5068e42b3a0}
+      \field{labelalpha}{PH10}
+      \field{sortinit}{0}
+      \field{labeltitle}{Physically Based Rendering, Second Edition: From Theory To Implementation}
+      \field{edition}{2nd}
+      \field{isbn}{0123750792, 9780123750792}
+      \field{title}{Physically Based Rendering, Second Edition: From Theory To Implementation}
+      \field{year}{2010}
+    \endentry
     \entry{ytQtOpenGL}{online}{}
       \name{labelname}{1}{}{%
         {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
@@ -332,27 +357,6 @@
       \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
       \endverb
     \endentry
-    \entry{webLaTeX-Tutorial}{online}{}
-      \name{labelname}{1}{}{%
-        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{e0b6dee7f6a412f341d701f754f2b5fe}
-      \strng{fullhash}{e0b6dee7f6a412f341d701f754f2b5fe}
-      \field{labelalpha}{Vel15}
-      \field{sortinit}{0}
-      \field{labeltitle}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
-      \field{title}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
-      \field{urlday}{23}
-      \field{urlmonth}{01}
-      \field{urlyear}{2015}
-      \field{year}{2015}
-      \verb{url}
-      \verb http://www.latex-tutorial.com/
-      \endverb
-    \endentry
     \entry{ytLaTeX}{online}{}
       \name{labelname}{1}{}{%
         {{hash=d6f38aa6ad3d750ce68ecda1441d3ce6}{ShareLaTeX}{S\bibinitperiod}{}{}{}{}{}{}}%
@@ -372,6 +376,27 @@
       \field{year}{2013}
       \verb{url}
       \verb https://www.youtube.com/watch?v=gFAQd0ueIMc&index=1&list=PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC
+      \endverb
+    \endentry
+    \entry{webLaTeX-Tutorial}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \strng{fullhash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \field{labelalpha}{Vel15}
+      \field{sortinit}{0}
+      \field{labeltitle}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{title}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.latex-tutorial.com/
       \endverb
     \endentry
   \endsortlist
@@ -625,6 +650,31 @@
       \verb http://dx.doi.org/10.1007/978-3-642-24031-7%5C_20
       \endverb
     \endentry
+    \entry{Pharr:2010:PBR:1854996}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=c69ff00a5e1719a4ad2dddd6254ac3c9}{Pharr}{P\bibinitperiod}{Matt}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=51e2894a269d907342539becd626aaed}{Humphreys}{H\bibinitperiod}{Greg}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=c69ff00a5e1719a4ad2dddd6254ac3c9}{Pharr}{P\bibinitperiod}{Matt}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=51e2894a269d907342539becd626aaed}{Humphreys}{H\bibinitperiod}{Greg}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers Inc.}%
+      }
+      \strng{namehash}{a8e065d16cfaaca97f67d5068e42b3a0}
+      \strng{fullhash}{a8e065d16cfaaca97f67d5068e42b3a0}
+      \field{labelalpha}{PH10}
+      \field{sortinit}{0}
+      \field{labeltitle}{Physically Based Rendering, Second Edition: From Theory To Implementation}
+      \field{edition}{2nd}
+      \field{isbn}{0123750792, 9780123750792}
+      \field{title}{Physically Based Rendering, Second Edition: From Theory To Implementation}
+      \field{year}{2010}
+    \endentry
     \entry{ytQtOpenGL}{online}{}
       \name{labelname}{1}{}{%
         {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
@@ -689,27 +739,6 @@
       \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
       \endverb
     \endentry
-    \entry{webLaTeX-Tutorial}{online}{}
-      \name{labelname}{1}{}{%
-        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{e0b6dee7f6a412f341d701f754f2b5fe}
-      \strng{fullhash}{e0b6dee7f6a412f341d701f754f2b5fe}
-      \field{labelalpha}{Vel15}
-      \field{sortinit}{0}
-      \field{labeltitle}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
-      \field{title}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
-      \field{urlday}{23}
-      \field{urlmonth}{01}
-      \field{urlyear}{2015}
-      \field{year}{2015}
-      \verb{url}
-      \verb http://www.latex-tutorial.com/
-      \endverb
-    \endentry
     \entry{ytLaTeX}{online}{}
       \name{labelname}{1}{}{%
         {{hash=d6f38aa6ad3d750ce68ecda1441d3ce6}{ShareLaTeX}{S\bibinitperiod}{}{}{}{}{}{}}%
@@ -729,6 +758,27 @@
       \field{year}{2013}
       \verb{url}
       \verb https://www.youtube.com/watch?v=gFAQd0ueIMc&index=1&list=PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC
+      \endverb
+    \endentry
+    \entry{webLaTeX-Tutorial}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e0b6dee7f6a412f341d701f754f2b5fe}{Vellage}{V\bibinitperiod}{Claudio}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \strng{fullhash}{e0b6dee7f6a412f341d701f754f2b5fe}
+      \field{labelalpha}{Vel15}
+      \field{sortinit}{0}
+      \field{labeltitle}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{title}{\LaTeX Tutorial – Interactive Lessons, Code Examples – For Beginners:}
+      \field{urlday}{23}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.latex-tutorial.com/
       \endverb
     \endentry
   \endsortlist

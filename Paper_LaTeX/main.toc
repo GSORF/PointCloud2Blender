@@ -64,37 +64,47 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.2}Determine original point cloud resolution}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Projecting 3D points onto a 2D plane}{28}
+\contentsline {subsection}{\numberline {3.3.3}Coordinate system representations}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Saving textures}{29}
+\contentsline {subsection}{\numberline {3.3.4}Converting from cartesian to spherical and vice versa}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.5}OpenGL Point Cloud Viewer}{29}
+\contentsline {subsection}{\numberline {3.3.5}Types of projections}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.6}Meshing}{29}
+\contentsline {subsubsection}{Equirectangular projection}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.7}Texture Coordinates and Normals}{29}
+\contentsline {subsubsection}{Cylindrical projection}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.8}Mesh Exporter}{30}
+\contentsline {subsubsection}{Mercator projection}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{.obj}{30}
+\contentsline {subsection}{\numberline {3.3.6}Saving textures}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{.blend}{30}
+\contentsline {subsection}{\numberline {3.3.7}OpenGL Point Cloud Viewer}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{custom format}{30}
+\contentsline {subsection}{\numberline {3.3.8}Meshing}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.9}Optimizations}{30}
+\contentsline {subsection}{\numberline {3.3.9}Texture Coordinates and Normals}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Flip horizontal direction of panorama}{30}
+\contentsline {subsection}{\numberline {3.3.10}Mesh Exporter}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Panorama pixel depth testing}{30}
+\contentsline {subsubsection}{.obj}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Panorama noise reduction}{31}
+\contentsline {subsubsection}{.blend}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Remove doubles}{31}
+\contentsline {subsubsection}{custom format}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{3D Distortion}{31}
+\contentsline {subsection}{\numberline {3.3.11}Optimizations}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Tiling}{31}
+\contentsline {subsubsection}{Flip horizontal direction of panorama}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Panorama pixel depth testing}{31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Panorama noise reduction}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Remove doubles}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{3D Distortion}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tiling}{32}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Production: Recreating the Pellerhaus from 1605}{33}
 \defcounter {refsection}{0}\relax 
@@ -133,6 +143,8 @@
 \contentsline {subsection}{\numberline {5.2.2}Integration in the Blender core}{38}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}3D Lenticular}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.4}Augmented Reality}{38}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendix Title}{39}
 \defcounter {refsection}{0}\relax 
