@@ -46,11 +46,13 @@ public:
     QVector<int> histogram_horizontal_angles;
     float angle_accuracy;
 
+    bool cancelThread;
 
+    void stopThread();
 
 signals:
     void newPoint(Point3D point);
-    void importStatus(int percent);
+    void importStatus(float percent);
     void originalResolution(int horizontal);
 
     void showInfoMessage(QString message);

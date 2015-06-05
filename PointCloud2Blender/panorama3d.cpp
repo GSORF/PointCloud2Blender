@@ -7,12 +7,12 @@ Panorama3D::Panorama3D(QVector3D translationVector, Orientation upVector, const 
     this->upVector = upVector;
     this->mapWidth = mapWidth;
     this->mapHeight = mapHeight;
+    this->mapFilename = QDateTime::currentDateTime().toString("hh_mm_ss");
     this->maxDistance = maxDistance;
     this->projectionType = projectionType;
 
     panoramaDepth = QImage(mapWidth, mapHeight, QImage::Format_ARGB32);
     panoramaColor = QImage(mapWidth, mapHeight, QImage::Format_ARGB32);
-    floatDepthMap.resize(mapWidth * mapHeight);
 
     minRadius = 500;
     maxRadius = 0;
@@ -26,8 +26,8 @@ void Panorama3D::finished()
 {
     qDebug() << "Saving panoramas into " << QDir::currentPath();
 
-    panoramaDepth.save(QDir::currentPath() + "/depthmap.jpg");
-    panoramaColor.save(QDir::currentPath() + "/colormap.jpg");
+    panoramaDepth.save(QDir::currentPath() + "/" + this->mapFilename + "_depthmap.jpg");
+    panoramaColor.save(QDir::currentPath() + "/" + this->mapFilename + "_colormap.jpg");
 
     //Update the images in the user interface
     refreshTextureMapsGUI();

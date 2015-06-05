@@ -79,6 +79,7 @@ private:
 public:
     int mapWidth;
     int mapHeight;
+    QString mapFilename;
 private:
     float maxDistance;
     ProjectionType projectionType;
@@ -99,7 +100,6 @@ public:
 
     QImage panoramaDepth;
     QImage panoramaColor;
-    QVector<float> floatDepthMap; //TODO!
 
 signals:
     void updateDepthMap(QImage *depthMap);

@@ -66,8 +66,8 @@ public slots:
     void setFilePath(QString fileName);
     void startFileImport();
     void openRecentFile();
-    void updateImportStatus(int percent);
-    void updateMeshingStatus(int percent);
+    void updateImportStatus(float percent);
+    void updateMeshingStatus(float percent);
     void setOriginalResolution(int horizontalResolution);
 
     void updateDepthMap(QImage *depthMap);

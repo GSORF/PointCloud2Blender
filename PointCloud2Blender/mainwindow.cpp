@@ -68,8 +68,15 @@ MainWindow::~MainWindow()
     delete ui;
 
     //Note: Delete menus?
+    if(importer != NULL)
+        importer->stopThread();
+    if(mesher != NULL)
+        mesher->stopThread();
+
     if(panorama != NULL)
         delete panorama;
+
+    threadPool.waitForDone(30000);
 }
 
 void MainWindow::processCommandLine(QString inputFile, QString translation, QString up, int resolution, float distance, QString projection)
@@ -179,7 +186,7 @@ void MainWindow::calculateCustomResolution(int horizontal, int vertical, int div
 {
     customPanoramaWidth = horizontal / divisor;
     customPanoramaHeight = vertical / divisor;
-    ui->lblPanoramaResolutionCustomFinal->setText("=(" + QString::number(customPanoramaWidth) + " x " + QString::number(customPanoramaHeight) + ")");
+    ui->lblPanoramaResolutionCustomFinal->setText("= (" + QString::number(customPanoramaWidth) + " x " + QString::number(customPanoramaHeight) + ")");
 }
 
 void MainWindow::showFileOpenDialog()
@@ -217,6 +224,9 @@ void MainWindow::startFileImport()
 
     ui->canvasGL->pointCloudMesh->reset(false);
 
+    ui->btnDeterminePanoramaResolution->setEnabled(false);
+    ui->btnImport->setEnabled(false);
+
     setStatusTip("Importing...");
 
     //delete panorama
@@ -230,7 +240,7 @@ void MainWindow::startFileImport()
 
     //delete importer
     importer = new ImportWorker(panorama, ui->canvasGL, ui->txtFilePathImport->text(), false);
-    connect(importer, SIGNAL(importStatus(int)), this, SLOT(updateImportStatus(int)));
+    connect(importer, SIGNAL(importStatus(float)), this, SLOT(updateImportStatus(float)));
     connect(importer, SIGNAL(showInfoMessage(QString)), this, SLOT(showInfoMessage(QString)));
     connect(importer, SIGNAL(showErrorMessage(QString)), this, SLOT(showErrorMessage(QString)));
 
@@ -248,11 +258,11 @@ void MainWindow::openRecentFile()
     }
 }
 
-void MainWindow::updateImportStatus(int percent)
+void MainWindow::updateImportStatus(float percent)
 {
     ui->prbImportStatus->setValue(percent);
 
-    if(percent >= 100)
+    if(percent >= 100.0f)
     {
         if(analyzingOriginalResolution)
         {
@@ -269,22 +279,23 @@ void MainWindow::updateImportStatus(int percent)
 
             setStatusTip("Meshing...");
             mesher = new MeshWorker(panorama, ui->canvasGL, ui->sbNormalAngle->value(), this);
-            connect(mesher, SIGNAL(meshingStatus(int)), this, SLOT(updateMeshingStatus(int)));
+            connect(mesher, SIGNAL(meshingStatus(float)), this, SLOT(updateMeshingStatus(float)));
             threadPool.start(mesher);
         }
 
     }
 }
 
-void MainWindow::updateMeshingStatus(int percent)
+void MainWindow::updateMeshingStatus(float percent)
 {
     ui->prbImportStatus->setValue(percent);
 
-    if(percent >= 100)
-    {
-        qint64 duration = (QDateTime::currentMSecsSinceEpoch() - startTime) / 1000;
-        float minutes = duration / 60.0f;
+    qint64 duration = (QDateTime::currentMSecsSinceEpoch() - startTime) / 1000;
+    qint64 minutes = duration / 60;
+    ui->prbImportStatus->setFormat("%p%");
 
+    if(percent >= 100.0f)
+    {
         QMessageBox::information(this, "Meshing complete!", "The meshing process has finished. This took " + QString::number(minutes, 'f', 2) + " minutes.\n\nYou can see the result in the 3D viewer and you can use the generated .obj file in Blender. Have fun!", QMessageBox::Ok);
     }
 }
@@ -300,10 +311,14 @@ void MainWindow::setOriginalResolution(int horizontalResolution)
     ui->sbResolutionHorizontal->setValue(originalHorizontalResolution);
     ui->sbResolutionVertical->setValue(originalVerticalResolution);
 
-    //TODO: Save as App-setting
+    //Save as App-setting
+    settings.setValue("import/originalHorizontalResolution", originalHorizontalResolution);
 
     //Recalculate resolution
     this->calculateCustomResolution(originalHorizontalResolution, originalVerticalResolution, 1);
+
+    ui->btnPanoramaResolutionCustom->setChecked(true);
+    //ui->btnImport->setEnabled(true);
 
     qint64 duration = (QDateTime::currentMSecsSinceEpoch() - startTime) / 1000;
     float minutes = duration / 60.0f;
@@ -454,7 +469,7 @@ void MainWindow::onClickDeterminePanoramaResolution()
     this->panorama = new Panorama3D(translation, orientation, customPanoramaWidth, customPanoramaHeight, maxDistance, projectionType, this);
     this->importer = new ImportWorker(this->panorama, ui->canvasGL, ui->txtFilePathImport->text(), true, this);
     connect(this->importer, SIGNAL(originalResolution(int)), this, SLOT(setOriginalResolution(int)));
-    connect(this->importer, SIGNAL(importStatus(int)), this, SLOT(updateImportStatus(int)));
+    connect(this->importer, SIGNAL(importStatus(float)), this, SLOT(updateImportStatus(float)));
 
     ui->lblOriginalHorizontalResolution->setText("analyzing...");
     ui->lblOriginalVerticalResolution->setText("analyzing...");

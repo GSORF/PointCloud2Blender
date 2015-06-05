@@ -11,6 +11,8 @@ MeshWorker::MeshWorker(Panorama3D *panorama, GLWidget *glWidget, float normalAng
 
     this->normalAngleThreshold = normalAngleThreshold;
 
+    this->cancelThread = false;
+
     //Preventing crash due to unhandled signals from mesher
     this->setAutoDelete(false);
 
@@ -32,14 +34,14 @@ void MeshWorker::run()
     int width = this->panorama->panoramaDepth.width();
     int height = this->panorama->panoramaDepth.height();
 
-    while(this->meshing)
+    while(this->meshing && !this->cancelThread)
     {
         for(; this->currentTile < this->maxTiles; this->currentTile++)
         {
             //qDebug() << "this->currentTile" << this->currentTile << "this->maxTiles" << this->maxTiles;
 
             QString filename_mtl, filename_obj;
-            filename_mtl = filename_obj = QDateTime::currentDateTime().toString("hh_mm_ss") + "_tile_" + QString::number(this->currentTile) + ".obj";
+            filename_mtl = filename_obj = this->panorama->mapFilename + "_tile_" + QString::number(this->currentTile) + ".obj";
             filename_mtl.replace("obj", "mtl");
 
             QFile file( QDir::currentPath() + "/" + filename_obj);
@@ -79,8 +81,12 @@ void MeshWorker::run()
 
             for(int x = 0; x < width; x++)
             {
+                if(this->cancelThread) break;
+
                 for(int y = 0; y < height; y++)
                 {
+                    if(this->cancelThread) break;
+
                     if(! QColor(this->panorama->panoramaDepth.pixel(x,y)).value() == 0)
                     {
                         //create quad clockwise:
@@ -191,7 +197,7 @@ void MeshWorker::run()
                             outputStream << "f -4/-4/ -3/-3/ -2/-2/ -1/-1/\n";
                         }
 
-                        int percent = (x * height + y * 1.0f) / (width*height) * 100.0f;
+                        float percent = (x * height + y * 1.0f) / (width*height) * 100.0f;
 
                         emit meshingStatus( percent );
 
@@ -232,7 +238,7 @@ void MeshWorker::run()
             }
 
             QTextStream outputStream2(&file2);
-            outputStream2 << "newmtl " << filename_mtl << "\n"
+            outputStream2 << "newmtl panorama\n"
                           << "Ns 10.0000\n"
                           << "Ni 1.5000\n"
                           << "d 1.0000\n"
@@ -243,16 +249,21 @@ void MeshWorker::run()
                           << "Kd 0.5880 0.5880 0.5880\n"
                           << "Ks 0.0000 0.0000 0.0000\n"
                           << "Ke 0.0000 0.0000 0.0000\n"
-                          << "map_Ka colormap.jpg\n";
+                          << "map_Kd " << this->panorama->mapFilename << "_colormap.jpg\n";
             file2.close();
         }
         this->meshing = false;
     }
 
-    emit meshingStatus( 100 );
+    emit meshingStatus( 100.0f );
     qDebug() << "Mesher just finished!";
 
     this->deleteLater();
 
+}
+
+void MeshWorker::stopThread()
+{
+    this->cancelThread = true;
 }
 

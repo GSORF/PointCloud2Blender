@@ -31,8 +31,12 @@ public:
 
     float normalAngleThreshold;
 
+    bool cancelThread;
+
+    void stopThread();
+
 signals:
-    void meshingStatus(int percent);
+    void meshingStatus(float percent);
 };
 
 #endif // MESHWORKER_H

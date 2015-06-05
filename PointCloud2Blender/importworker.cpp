@@ -29,7 +29,7 @@ ImportWorker::ImportWorker(Panorama3D *panorama, GLWidget *glWidget, QString fil
         //angle accuracy must be <= than (360/maxHorizontalScannerResolution/4)
 
         angle_accuracy = 360.0f/30000.0f/4.0f;
-        float n = 360.0f / angle_accuracy;
+        int n = qCeil(360.0f / angle_accuracy);
 
         histogram_horizontal_angles.resize(n);
         histogram_horizontal_angles.fill(0);
@@ -40,6 +40,8 @@ ImportWorker::ImportWorker(Panorama3D *panorama, GLWidget *glWidget, QString fil
         this->updateTimer.start();
         connect(&this->updateTimer, SIGNAL(timeout()), this->panorama, SLOT(refreshTextureMapsGUI()));
     }
+
+    this->cancelThread = false;
 
     this->setAutoDelete(false);
 
@@ -68,7 +70,7 @@ void ImportWorker::run()
     break;
     }
 
-    if(analyze)
+    if(analyze && !this->cancelThread)
     {
         //Count histogram values
         int resolution = 0;
@@ -102,14 +104,14 @@ void ImportWorker::import_XYZ_Ascii_File()
 
     qint64 totalSize = file.size();
     qint64 currentSize = 0;
-    quint16 percent = 0;
+    float percent = 0.0f;
 
     QTextStream inputStream(&file);
     QString line = inputStream.readLine();
 
     bool importerInfo = false;
 
-    while(!line.isNull())
+    while(!line.isNull() && !this->cancelThread)
     {
         currentSize += line.size();
 
@@ -120,6 +122,16 @@ void ImportWorker::import_XYZ_Ascii_File()
         //Process the line
         QStringList lineparts = line.split(" ");
 
+        if(lineparts.count() >= 3 && lineparts.count() < 6)
+        {
+            //Read only XYZ-Parts
+            _newPoint.x = lineparts[0].toFloat();
+            _newPoint.y = lineparts[1].toFloat();
+            _newPoint.z = lineparts[2].toFloat();
+            _newPoint.r = 128;
+            _newPoint.g = 128;
+            _newPoint.b = 128;
+        }
         if(lineparts.count() == 6)
         {
             //Probably Normal Faro Scene Export
@@ -168,7 +180,7 @@ void ImportWorker::import_XYZ_Ascii_File()
     file.close();
 
     //after importing send a finished signal
-    emit importStatus(100);
+    emit importStatus(100.0f);
 }
 
 void ImportWorker::import_XYZ_Binary_File()
@@ -194,7 +206,7 @@ void ImportWorker::import_PLY_File()
 
     qint64 totalSize = file.size();
     qint64 currentSize = 0;
-    quint16 percent = 0;
+    float percent = 0.0f;
 
     QTextStream inputStream(&file);
     QString line = inputStream.readLine();
@@ -233,10 +245,9 @@ void ImportWorker::import_PLY_File()
     end_header
 
     */
-    while(!line.isNull())
+    while(!line.isNull() && !this->cancelThread)
     {
         currentSize += line.size();
-
 
         Point3D _newPoint;
 
@@ -275,22 +286,22 @@ void ImportWorker::import_PLY_File()
                     property_z = true;
                     qDebug() << "PLY: HEADER property = z";
                 }
-                if(lineparts.at(2) == "red")
+                if(lineparts.at(2).contains("red"))
                 {
                     property_red = true;
                     qDebug() << "PLY: HEADER property = red";
                 }
-                if(lineparts.at(2) == "green")
+                if(lineparts.at(2).contains("green"))
                 {
                     property_green = true;
                     qDebug() << "PLY: HEADER property = green";
                 }
-                if(lineparts.at(2) == "blue")
+                if(lineparts.at(2).contains("blue"))
                 {
                     property_blue = true;
                     qDebug() << "PLY: HEADER property = blue";
                 }
-                if(lineparts.at(2) == "alpha")
+                if(lineparts.at(2).contains("alpha"))
                 {
                     property_alpha = true;
                     qDebug() << "PLY: HEADER property = alpha";
@@ -388,7 +399,7 @@ void ImportWorker::import_PLY_File()
     file.close();
 
     //after importing send a finished signal
-    emit importStatus(100);
+    emit importStatus(100.0f);
 }
 
 bool ImportWorker::determineOriginalResolution(Point3D newPoint)
@@ -397,30 +408,35 @@ bool ImportWorker::determineOriginalResolution(Point3D newPoint)
 
     this->panorama->convertToSpherical(newPoint, theta, phi, radius);
 
+    /*
+     * BUGFIX: floating-point imprecision leading to negative index
+     */
+    if(theta < angle_accuracy)
+    {
+        //theta = 0.0f;
+    }
+
     float alpha = qRadiansToDegrees(theta);
 
-    float index = 0;
+    int index = 0;
 
     if(alpha >= angle_accuracy)
     {
-        index = alpha / angle_accuracy;
+        index = qFloor(alpha / angle_accuracy);
     }
 
     //Sanity check:
     if(index >= 0 && index < histogram_horizontal_angles.size() )
     {
         //increment histogram value depending on horizontal angle
-        histogram_horizontal_angles[ qFloor(index) ]++;
-    }
-    else
-    {
-        /*
-       qDebug() << "ERROR:";
-       qDebug() << "alpha=" << alpha << "accuracy=" << angle_accuracy << "alpha/accuracy" << alpha/angle_accuracy;
-       qDebug() << "Histogram Size=" << histogram_horizontal_angles.size() << "index=" << index << "floor(index)=" << qFloor(index);
-       */
+        histogram_horizontal_angles[ index ]++;
     }
 
     //continue analyzing
     return false;
+}
+
+void ImportWorker::stopThread()
+{
+    this->cancelThread = true;
 }
