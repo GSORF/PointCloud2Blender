@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  5 JUN 2015 12:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  15 JUN 2015 15:54
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -1057,11 +1057,20 @@ r/Paper_LaTeX/images/TH_Nuernberg_Logo.png>]) (I:\BA_Software\PointCloud2Blende
 r\Paper_LaTeX\declaration.tex) [2
 
 ]
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.tex) [3
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
 
 
-]
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--17
+
+ []
+
+) [3
+
+
+] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
@@ -1163,7 +1172,7 @@ Overfull \hbox (18.99388pt too wide) in paragraph at lines 44--69
 [][]\T1/cmr/m/n/12 -01-01[] 
  []
 
-[12] <images/Pellerhaus_FirstGlance.jpg, id=59, 1445.4pt x 782.925pt>
+[12] <images/Pellerhaus_FirstGlance.jpg, id=57, 1445.4pt x 782.925pt>
 File: images/Pellerhaus_FirstGlance.jpg Graphic file (type jpg)
 
 <use images/Pellerhaus_FirstGlance.jpg>
@@ -1183,7 +1192,7 @@ ng-ultrasonic-sensor-
  []
 
 [13 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Pellerhaus_FirstGlanc
-e.jpg>] <images/graph1.png, id=66, 867.24pt x 578.16pt>
+e.jpg>] <images/graph1.png, id=64, 867.24pt x 578.16pt>
 File: images/graph1.png Graphic file (type png)
 
 <use images/graph1.png>
@@ -1194,7 +1203,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--110
 []\T1/cmr/m/n/10.95 (a) |$\OML/cmm/m/it/10.95 OpenSource \OT1/cmr/m/n/10.95 :
  []
 
-<images/graph2.png, id=67, 867.24pt x 578.16pt>
+<images/graph2.png, id=65, 867.24pt x 578.16pt>
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
 Package pdftex.def Info: images/graph2.png used on input line 116.
@@ -1204,7 +1213,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []\T1/cmr/m/n/10.95 (b) |$\OML/cmm/m/it/10.95 Free \OT1/cmr/m/n/10.95 :
  []
 
-<images/graph3.png, id=68, 867.24pt x 578.16pt>
+<images/graph3.png, id=66, 867.24pt x 578.16pt>
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
 Package pdftex.def Info: images/graph3.png used on input line 123.
@@ -1311,7 +1320,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--111
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-<images/graph_a.png, id=98, 867.24pt x 578.16pt>
+<images/graph_a.png, id=96, 867.24pt x 578.16pt>
 File: images/graph_a.png Graphic file (type png)
  <use images/graph_a.png>
 Package pdftex.def Info: images/graph_a.png used on input line 132.
@@ -1368,14 +1377,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [25
 
 ]
-<images/UseCaseDiagram_PC2B.png, id=112, 1027.84pt x 607.26875pt>
+<images/UseCaseDiagram_PC2B.png, id=110, 1027.84pt x 607.26875pt>
 File: images/UseCaseDiagram_PC2B.png Graphic file (type png)
 
 <use images/UseCaseDiagram_PC2B.png>
 Package pdftex.def Info: images/UseCaseDiagram_PC2B.png used on input line 15.
 (pdftex.def)             Requested size: 411.12872pt x 242.9032pt.
 
-<images/PellerhausLaserScan.jpg, id=113, 536.0025pt x 803.0pt>
+<images/PellerhausLaserScan.jpg, id=111, 536.0025pt x 803.0pt>
 File: images/PellerhausLaserScan.jpg Graphic file (type jpg)
 
 <use images/PellerhausLaserScan.jpg>
@@ -1418,12 +1427,10 @@ Underfull \vbox (badness 2818) has occurred while \output is active []
  [37])
 [38]
 Appendix A.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex) [39
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex [39
 
-]
-[40
-
-]
+])
+[40]
 Overfull \hbox (7.0967pt too wide) in paragraph at lines 75--75
 \T1/cmr/m/n/12 Vol. 6939. Lec-ture Notes in Com-puter Sci-ence. Berlin, Hei-del
 -berg: Springer
@@ -1435,7 +1442,9 @@ Overfull \hbox (14.0285pt too wide) in paragraph at lines 75--75
 T1/cmr/m/n/12 : 0123750792, 9780123750792. 
  []
 
-[41]
+[41
+
+]
 Overfull \hbox (10.01718pt too wide) in paragraph at lines 75--75
 \T1/cmtt/m/n/12 1 & list = PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC$ \T1/cmr/m/n/12 (
 Re-trieved 01/23/2015). 
@@ -1448,11 +1457,11 @@ Re-trieved 01/23/2015).
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 21542 strings out of 493921
- 419323 string characters out of 3139244
- 792686 words of memory out of 3000000
- 24395 multiletter control sequences out of 15000+200000
- 28284 words of font info for 66 fonts, out of 3000000 for 9000
+ 21531 strings out of 493921
+ 419189 string characters out of 3139244
+ 791698 words of memory out of 3000000
+ 24388 multiletter control sequences out of 15000+200000
+ 25499 words of font info for 58 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,12n,89p,1268b,989s stack positions out of 5000i,500n,10000p,200000b,50000s
  <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecti0800.pk> <D:\mikt
@@ -1465,8 +1474,8 @@ pen\ec\dpi600\ecrm1000.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi6
 ktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <D:\miktex-portab
 le\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <D:\miktex-portable\fonts\pk
 \ljfour\jknappen\ec\dpi600\ecrm0800.pk> <D:\miktex-portable\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecbx1200.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dp
-i600\ecti1200.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm12
+appen\ec\dpi600\ecti1200.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dp
+i600\ecrm1200.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx12
 00.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk> <D:\
 miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <D:\miktex-port
 able\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2074.pk> <D:\miktex-portable\fonts\
@@ -1477,11 +1486,10 @@ x-portable/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/miktex-portable/fonts/
 type1/public/amsfonts/cm/cmr10.pfb><D:/miktex-portable/fonts/type1/public/amsfo
 nts/cm/cmr12.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmr8.pfb><D
 :/miktex-portable/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/miktex-portable
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/miktex-portable/fonts/type1/publi
-c/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (42 pages, 1614212 bytes).
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (42 pages, 1605904 bytes).
 PDF statistics:
- 931 PDF objects out of 1000 (max. 8388607)
+ 928 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -152,8 +152,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {A.1.1}\LaTeX }{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}Blender 3D}{39}
+\contentsline {subsection}{\numberline {A.1.2}Faro SCENE LT}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Programming libraries and frameworks}{39}
+\contentsline {subsection}{\numberline {A.1.3}Blender 3D}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Qt 5.4}{39}
+\contentsline {subsection}{\numberline {A.1.4}Meshlab}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.5}Visual SfM}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1.6}Agisoft Photoscan Professional}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Programming frameworks and libraries}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.1}Qt 5.4}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.2}OpenGL}{40}
