@@ -19,6 +19,109 @@
 
 \refsection{0}
   \sortlist{entry}{}
+    \entry{wiki:ParallaxBarrier}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Parallax barrier --- Wikipedia{,} The Free Encyclopedia}
+      \field{title}{Parallax barrier --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{19}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Parallax_barrier&oldid=612869363
+      \endverb
+    \endentry
+    \entry{OculusVR}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=71ed42fc43c3894817caaeeafbc5b266}{{Oculus\bibnamedelimb VR,\bibnamedelimb LLC}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=71ed42fc43c3894817caaeeafbc5b266}{{Oculus\bibnamedelimb VR,\bibnamedelimb LLC}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{71ed42fc43c3894817caaeeafbc5b266}
+      \strng{fullhash}{71ed42fc43c3894817caaeeafbc5b266}
+      \field{labelalpha}{Ocu15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Oculus - Oculus VR}
+      \field{title}{Oculus - Oculus VR}
+      \field{urlday}{19}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.oculus.com/en-us/
+      \endverb
+    \endentry
+    \entry{wiki:NaziPartyRallyGround}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Nazi party rally grounds --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{1}
+      \field{title}{Nazi party rally grounds --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{19}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Nazi_party_rally_grounds&oldid=664601942
+      \endverb
+    \endentry
+    \entry{StadtteilforumTafel6}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=2f2c109f2b226d06da13624a8f6e0dde}{{Stadtteilforum\bibnamedelimb Langwasser}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2f2c109f2b226d06da13624a8f6e0dde}{{Stadtteilforum\bibnamedelimb Langwasser}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{2f2c109f2b226d06da13624a8f6e0dde}
+      \strng{fullhash}{2f2c109f2b226d06da13624a8f6e0dde}
+      \field{labelalpha}{Sta15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Langwasser! Geschichte eines neuen Stadtteils}
+      \field{title}{Langwasser! Geschichte eines neuen Stadtteils}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://stadtteilforum.org/langwasser/langwasser-geschichte/tafel-6.html
+      \endverb
+    \endentry
+    \entry{Interest3DSoftware}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b5b58d51ebc2b4de38e11ce462509ec3}{{Google\bibnamedelimb Inc.}}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b5b58d51ebc2b4de38e11ce462509ec3}{{Google\bibnamedelimb Inc.}}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{b5b58d51ebc2b4de38e11ce462509ec3}
+      \strng{fullhash}{b5b58d51ebc2b4de38e11ce462509ec3}
+      \field{labelalpha}{Goo15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Google Search Trends: Blender, 3ds Max and Maya}
+      \field{title}{Google Search Trends: Blender, 3ds Max and Maya}
+      \field{urlday}{19}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.google.com/trends/explore#q=/m/0l1qq,%20/m/01tgyn,%20/m/0svhm&cmpt=q&tz=Etc/GMT-2
+      \endverb
+    \endentry
     \entry{webBlenderArtistsPointCloudSupport}{online}{}
       \name{labelname}{1}{}{%
         {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
@@ -41,6 +144,28 @@
       \verb http://blenderartists.org/forum/showthread.php?349851-Point-Cloud-support-in-Blender-What-s-already-there-and-what-does-the-community-need
       \endverb
     \endentry
+    \entry{wiki:SpeedOfLight}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Speed of light --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{2}
+      \field{title}{Speed of light --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{20}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Speed_of_light&oldid=667601477
+      \endverb
+    \endentry
     \entry{dp_lidar}{article}{}
       \name{labelname}{1}{}{%
         {{hash=6b0efb34d5a93bb6915b1107f3f74ccf}{Schroeder}{S\bibinitperiod}{Rayk}{R\bibinitperiod}{}{}{}{}}%
@@ -58,6 +183,48 @@
       \field{volume}{07 / 14}
       \field{year}{2014}
       \field{pages}{8\bibrangedash 9}
+    \endentry
+    \entry{faro_techsheet}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=a8cab6e2477318609ea8cb554115300e}{{FARO\bibnamedelimb Technologies\bibnamedelimb Inc}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a8cab6e2477318609ea8cb554115300e}{{FARO\bibnamedelimb Technologies\bibnamedelimb Inc}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{a8cab6e2477318609ea8cb554115300e}
+      \strng{fullhash}{a8cab6e2477318609ea8cb554115300e}
+      \field{labelalpha}{FAR13}
+      \field{sortinit}{0}
+      \field{labeltitle}{{FARO Focus3D Features, Benefits and Technical Specifications}}
+      \field{title}{{FARO Focus3D Features, Benefits and Technical Specifications}}
+      \field{urlday}{20}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://www2.faro.com/site/resources/share/944
+      \endverb
+    \endentry
+    \entry{zebedee_info}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=36f1ab03fd08e7db05936d4093b828ef}{{Victoria\bibnamedelimb Woollaston}}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=36f1ab03fd08e7db05936d4093b828ef}{{Victoria\bibnamedelimb Woollaston}}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{36f1ab03fd08e7db05936d4093b828ef}
+      \strng{fullhash}{36f1ab03fd08e7db05936d4093b828ef}
+      \field{labelalpha}{Vic14}
+      \field{sortinit}{0}
+      \field{labeltitle}{The 'Prometheus' scanner that can 3D can capture a crime scene in minutes}
+      \field{title}{The 'Prometheus' scanner that can 3D can capture a crime scene in minutes}
+      \field{urlday}{20}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.dailymail.co.uk/sciencetech/article-2562329/Prometheus-style-scanner-maps-crime-scenes-3D-rotated-tagged-without-damaging-evidence.html
+      \endverb
     \endentry
     \entry{bookProgrammingComputerVisionwithPython}{book}{}
       \name{labelname}{1}{}{%
@@ -80,47 +247,19 @@
       \field{title}{Programming Computer Vision with Python}
       \field{year}{2012}
     \endentry
-    \entry{bookBayerischeBiographische}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=9e3d08da949486a148469ea06adeccdc}{Gruyter}{G\bibinitperiod}{De}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=9e3d08da949486a148469ea06adeccdc}{Gruyter}{G\bibinitperiod}{De}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Berlin}%
-      }
-      \list{publisher}{1}{%
-        {De Gruyter}%
-      }
-      \strng{namehash}{9e3d08da949486a148469ea06adeccdc}
-      \strng{fullhash}{9e3d08da949486a148469ea06adeccdc}
-      \field{labelalpha}{Gru05}
-      \field{sortinit}{0}
-      \field{labeltitle}{Große Bayerische Biographische Enzyklopädie}
-      \field{title}{Große Bayerische Biographische Enzyklopädie}
-      \field{urlday}{11}
-      \field{urlmonth}{03}
-      \field{urlyear}{2015}
-      \field{year}{2005}
-      \field{pages}{2128}
-      \verb{url}
-      \verb http://www.degruyter.com/view/product/62595
-      \endverb
-    \endentry
     \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
       \name{labelname}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \list{language}{1}{%
         {german}%
       }
-      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \field{labelalpha}{eV}
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt}
       \field{sortinit}{0}
       \field{labeltitle}{Wiederaufbau des Pellerhofes}
       \field{booktitle}{Pellerhaus Magazin}
@@ -129,17 +268,17 @@
     \endentry
     \entry{afPellerhausMagazin01}{booklet}{}
       \name{labelname}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \list{language}{1}{%
         {german}%
       }
-      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \field{labelalpha}{eV12}
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt12}
       \field{sortinit}{0}
       \field{labeltitle}{Pellerhaus Magazin 01}
       \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
@@ -148,17 +287,17 @@
     \endentry
     \entry{afPellerhausMagazin02}{booklet}{}
       \name{labelname}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \list{language}{1}{%
         {german}%
       }
-      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \field{labelalpha}{eV13}
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt13}
       \field{sortinit}{0}
       \field{labeltitle}{Pellerhaus Magazin 02}
       \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
@@ -167,17 +306,17 @@
     \endentry
     \entry{afPellerhausMagazin03}{booklet}{}
       \name{labelname}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \list{language}{1}{%
         {german}%
       }
-      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \field{labelalpha}{eV14}
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt14}
       \field{sortinit}{0}
       \field{labeltitle}{Pellerhaus Magazin 03}
       \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
@@ -355,6 +494,36 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{bookBayerischeBiographische}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=ba56f92c6ef678253b80cfa67aa8cd5f}{Körner}{K\bibinitperiod}{Hans-Michael}{H\bibinithyphendelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=3cc86389747306d5e1224f297d60d391}{Jahn}{J\bibinitperiod}{Bruno}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=ba56f92c6ef678253b80cfa67aa8cd5f}{Körner}{K\bibinitperiod}{Hans-Michael}{H\bibinithyphendelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=3cc86389747306d5e1224f297d60d391}{Jahn}{J\bibinitperiod}{Bruno}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter}%
+      }
+      \strng{namehash}{52930375d0c923bda63bcde0b92d9884}
+      \strng{fullhash}{52930375d0c923bda63bcde0b92d9884}
+      \field{labelalpha}{KJ12}
+      \field{sortinit}{0}
+      \field{labeltitle}{Große Bayerische Biographische Enzyklopädie}
+      \field{title}{Große Bayerische Biographische Enzyklopädie}
+      \field{urlday}{11}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2012}
+      \field{pages}{2128}
+      \verb{url}
+      \verb http://www.degruyter.com/view/product/62595
       \endverb
     \endentry
     \entry{ytLaTeX}{online}{}
@@ -401,6 +570,109 @@
     \endentry
   \endsortlist
   \sortlist{entry}{none}
+    \entry{wiki:ParallaxBarrier}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Parallax barrier --- Wikipedia{,} The Free Encyclopedia}
+      \field{title}{Parallax barrier --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{19}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Parallax_barrier&oldid=612869363
+      \endverb
+    \endentry
+    \entry{OculusVR}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=71ed42fc43c3894817caaeeafbc5b266}{{Oculus\bibnamedelimb VR,\bibnamedelimb LLC}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=71ed42fc43c3894817caaeeafbc5b266}{{Oculus\bibnamedelimb VR,\bibnamedelimb LLC}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{71ed42fc43c3894817caaeeafbc5b266}
+      \strng{fullhash}{71ed42fc43c3894817caaeeafbc5b266}
+      \field{labelalpha}{Ocu15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Oculus - Oculus VR}
+      \field{title}{Oculus - Oculus VR}
+      \field{urlday}{19}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.oculus.com/en-us/
+      \endverb
+    \endentry
+    \entry{wiki:NaziPartyRallyGround}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Nazi party rally grounds --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{1}
+      \field{title}{Nazi party rally grounds --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{19}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Nazi_party_rally_grounds&oldid=664601942
+      \endverb
+    \endentry
+    \entry{StadtteilforumTafel6}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=2f2c109f2b226d06da13624a8f6e0dde}{{Stadtteilforum\bibnamedelimb Langwasser}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2f2c109f2b226d06da13624a8f6e0dde}{{Stadtteilforum\bibnamedelimb Langwasser}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{2f2c109f2b226d06da13624a8f6e0dde}
+      \strng{fullhash}{2f2c109f2b226d06da13624a8f6e0dde}
+      \field{labelalpha}{Sta15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Langwasser! Geschichte eines neuen Stadtteils}
+      \field{title}{Langwasser! Geschichte eines neuen Stadtteils}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://stadtteilforum.org/langwasser/langwasser-geschichte/tafel-6.html
+      \endverb
+    \endentry
+    \entry{Interest3DSoftware}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b5b58d51ebc2b4de38e11ce462509ec3}{{Google\bibnamedelimb Inc.}}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b5b58d51ebc2b4de38e11ce462509ec3}{{Google\bibnamedelimb Inc.}}{G\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{b5b58d51ebc2b4de38e11ce462509ec3}
+      \strng{fullhash}{b5b58d51ebc2b4de38e11ce462509ec3}
+      \field{labelalpha}{Goo15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Google Search Trends: Blender, 3ds Max and Maya}
+      \field{title}{Google Search Trends: Blender, 3ds Max and Maya}
+      \field{urlday}{19}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.google.com/trends/explore#q=/m/0l1qq,%20/m/01tgyn,%20/m/0svhm&cmpt=q&tz=Etc/GMT-2
+      \endverb
+    \endentry
     \entry{webBlenderArtistsPointCloudSupport}{online}{}
       \name{labelname}{1}{}{%
         {{hash=64e88accfc6fb8b42adcaeb498d70796}{(BlenderEi)}{(\bibinitperiod}{Adam\bibnamedelima Kalisz}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
@@ -423,6 +695,28 @@
       \verb http://blenderartists.org/forum/showthread.php?349851-Point-Cloud-support-in-Blender-What-s-already-there-and-what-does-the-community-need
       \endverb
     \endentry
+    \entry{wiki:SpeedOfLight}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Speed of light --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{2}
+      \field{title}{Speed of light --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{20}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Speed_of_light&oldid=667601477
+      \endverb
+    \endentry
     \entry{dp_lidar}{article}{}
       \name{labelname}{1}{}{%
         {{hash=6b0efb34d5a93bb6915b1107f3f74ccf}{Schroeder}{S\bibinitperiod}{Rayk}{R\bibinitperiod}{}{}{}{}}%
@@ -440,6 +734,48 @@
       \field{volume}{07 / 14}
       \field{year}{2014}
       \field{pages}{8\bibrangedash 9}
+    \endentry
+    \entry{faro_techsheet}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=a8cab6e2477318609ea8cb554115300e}{{FARO\bibnamedelimb Technologies\bibnamedelimb Inc}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a8cab6e2477318609ea8cb554115300e}{{FARO\bibnamedelimb Technologies\bibnamedelimb Inc}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{a8cab6e2477318609ea8cb554115300e}
+      \strng{fullhash}{a8cab6e2477318609ea8cb554115300e}
+      \field{labelalpha}{FAR13}
+      \field{sortinit}{0}
+      \field{labeltitle}{{FARO Focus3D Features, Benefits and Technical Specifications}}
+      \field{title}{{FARO Focus3D Features, Benefits and Technical Specifications}}
+      \field{urlday}{20}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://www2.faro.com/site/resources/share/944
+      \endverb
+    \endentry
+    \entry{zebedee_info}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=36f1ab03fd08e7db05936d4093b828ef}{{Victoria\bibnamedelimb Woollaston}}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=36f1ab03fd08e7db05936d4093b828ef}{{Victoria\bibnamedelimb Woollaston}}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{36f1ab03fd08e7db05936d4093b828ef}
+      \strng{fullhash}{36f1ab03fd08e7db05936d4093b828ef}
+      \field{labelalpha}{Vic14}
+      \field{sortinit}{0}
+      \field{labeltitle}{The 'Prometheus' scanner that can 3D can capture a crime scene in minutes}
+      \field{title}{The 'Prometheus' scanner that can 3D can capture a crime scene in minutes}
+      \field{urlday}{20}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.dailymail.co.uk/sciencetech/article-2562329/Prometheus-style-scanner-maps-crime-scenes-3D-rotated-tagged-without-damaging-evidence.html
+      \endverb
     \endentry
     \entry{bookProgrammingComputerVisionwithPython}{book}{}
       \name{labelname}{1}{}{%
@@ -462,47 +798,19 @@
       \field{title}{Programming Computer Vision with Python}
       \field{year}{2012}
     \endentry
-    \entry{bookBayerischeBiographische}{book}{}
-      \name{labelname}{1}{}{%
-        {{hash=9e3d08da949486a148469ea06adeccdc}{Gruyter}{G\bibinitperiod}{De}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=9e3d08da949486a148469ea06adeccdc}{Gruyter}{G\bibinitperiod}{De}{D\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Berlin}%
-      }
-      \list{publisher}{1}{%
-        {De Gruyter}%
-      }
-      \strng{namehash}{9e3d08da949486a148469ea06adeccdc}
-      \strng{fullhash}{9e3d08da949486a148469ea06adeccdc}
-      \field{labelalpha}{Gru05}
-      \field{sortinit}{0}
-      \field{labeltitle}{Große Bayerische Biographische Enzyklopädie}
-      \field{title}{Große Bayerische Biographische Enzyklopädie}
-      \field{urlday}{11}
-      \field{urlmonth}{03}
-      \field{urlyear}{2015}
-      \field{year}{2005}
-      \field{pages}{2128}
-      \verb{url}
-      \verb http://www.degruyter.com/view/product/62595
-      \endverb
-    \endentry
     \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
       \name{labelname}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \list{language}{1}{%
         {german}%
       }
-      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \field{labelalpha}{eV}
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt}
       \field{sortinit}{0}
       \field{labeltitle}{Wiederaufbau des Pellerhofes}
       \field{booktitle}{Pellerhaus Magazin}
@@ -511,17 +819,17 @@
     \endentry
     \entry{afPellerhausMagazin01}{booklet}{}
       \name{labelname}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \list{language}{1}{%
         {german}%
       }
-      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \field{labelalpha}{eV12}
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt12}
       \field{sortinit}{0}
       \field{labeltitle}{Pellerhaus Magazin 01}
       \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
@@ -530,17 +838,17 @@
     \endentry
     \entry{afPellerhausMagazin02}{booklet}{}
       \name{labelname}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \list{language}{1}{%
         {german}%
       }
-      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \field{labelalpha}{eV13}
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt13}
       \field{sortinit}{0}
       \field{labeltitle}{Pellerhaus Magazin 02}
       \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
@@ -549,17 +857,17 @@
     \endentry
     \entry{afPellerhausMagazin03}{booklet}{}
       \name{labelname}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=83fd0c7a906e29c3a9341bc816aaafd0}{e.V.}{e\bibinitperiod}{Altstadtfreunde}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
       \list{language}{1}{%
         {german}%
       }
-      \strng{namehash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \strng{fullhash}{83fd0c7a906e29c3a9341bc816aaafd0}
-      \field{labelalpha}{eV14}
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt14}
       \field{sortinit}{0}
       \field{labeltitle}{Pellerhaus Magazin 03}
       \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
@@ -737,6 +1045,36 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{bookBayerischeBiographische}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=ba56f92c6ef678253b80cfa67aa8cd5f}{Körner}{K\bibinitperiod}{Hans-Michael}{H\bibinithyphendelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=3cc86389747306d5e1224f297d60d391}{Jahn}{J\bibinitperiod}{Bruno}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=ba56f92c6ef678253b80cfa67aa8cd5f}{Körner}{K\bibinitperiod}{Hans-Michael}{H\bibinithyphendelim M\bibinitperiod}{}{}{}{}}%
+        {{hash=3cc86389747306d5e1224f297d60d391}{Jahn}{J\bibinitperiod}{Bruno}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter}%
+      }
+      \strng{namehash}{52930375d0c923bda63bcde0b92d9884}
+      \strng{fullhash}{52930375d0c923bda63bcde0b92d9884}
+      \field{labelalpha}{KJ12}
+      \field{sortinit}{0}
+      \field{labeltitle}{Große Bayerische Biographische Enzyklopädie}
+      \field{title}{Große Bayerische Biographische Enzyklopädie}
+      \field{urlday}{11}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2012}
+      \field{pages}{2128}
+      \verb{url}
+      \verb http://www.degruyter.com/view/product/62595
       \endverb
     \endentry
     \entry{ytLaTeX}{online}{}

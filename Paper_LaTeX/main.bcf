@@ -1945,24 +1945,33 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">webBlenderArtistsPointCloudSupport</bcf:citekey>
-    <bcf:citekey order="2">dp_lidar</bcf:citekey>
-    <bcf:citekey order="3">bookProgrammingComputerVisionwithPython</bcf:citekey>
-    <bcf:citekey order="4">bookBayerischeBiographische</bcf:citekey>
-    <bcf:citekey order="5">afWiederaufbauDesPellerhofes</bcf:citekey>
-    <bcf:citekey order="6">afPellerhausMagazin01</bcf:citekey>
-    <bcf:citekey order="7">afPellerhausMagazin02</bcf:citekey>
-    <bcf:citekey order="8">afPellerhausMagazin03</bcf:citekey>
-    <bcf:citekey order="9">bookAcademiaNorica</bcf:citekey>
-    <bcf:citekey order="10">Gschwandtner11b</bcf:citekey>
-    <bcf:citekey order="11">Pharr:2010:PBR:1854996</bcf:citekey>
-    <bcf:citekey order="12">Pharr:2010:PBR:1854996</bcf:citekey>
-    <bcf:citekey order="13">ytQtOpenGL</bcf:citekey>
-    <bcf:citekey order="14">webMysteryOfTheBlend</bcf:citekey>
-    <bcf:citekey order="15">webBlenderArtistsBlendExport</bcf:citekey>
-    <bcf:citekey order="16">dp_lidar</bcf:citekey>
-    <bcf:citekey order="17">ytLaTeX</bcf:citekey>
-    <bcf:citekey order="17">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="1">wiki:ParallaxBarrier</bcf:citekey>
+    <bcf:citekey order="2">OculusVR</bcf:citekey>
+    <bcf:citekey order="3">wiki:NaziPartyRallyGround</bcf:citekey>
+    <bcf:citekey order="4">StadtteilforumTafel6</bcf:citekey>
+    <bcf:citekey order="5">Interest3DSoftware</bcf:citekey>
+    <bcf:citekey order="6">webBlenderArtistsPointCloudSupport</bcf:citekey>
+    <bcf:citekey order="7">wiki:SpeedOfLight</bcf:citekey>
+    <bcf:citekey order="8">dp_lidar</bcf:citekey>
+    <bcf:citekey order="9">faro_techsheet</bcf:citekey>
+    <bcf:citekey order="10">zebedee_info</bcf:citekey>
+    <bcf:citekey order="11">bookProgrammingComputerVisionwithPython</bcf:citekey>
+    <bcf:citekey order="12">afWiederaufbauDesPellerhofes</bcf:citekey>
+    <bcf:citekey order="13">afPellerhausMagazin01</bcf:citekey>
+    <bcf:citekey order="14">afPellerhausMagazin02</bcf:citekey>
+    <bcf:citekey order="15">afPellerhausMagazin03</bcf:citekey>
+    <bcf:citekey order="16">bookAcademiaNorica</bcf:citekey>
+    <bcf:citekey order="17">Gschwandtner11b</bcf:citekey>
+    <bcf:citekey order="18">Pharr:2010:PBR:1854996</bcf:citekey>
+    <bcf:citekey order="19">Pharr:2010:PBR:1854996</bcf:citekey>
+    <bcf:citekey order="20">ytQtOpenGL</bcf:citekey>
+    <bcf:citekey order="21">webMysteryOfTheBlend</bcf:citekey>
+    <bcf:citekey order="22">webBlenderArtistsBlendExport</bcf:citekey>
+    <bcf:citekey order="23">dp_lidar</bcf:citekey>
+    <bcf:citekey order="24">bookBayerischeBiographische</bcf:citekey>
+    <bcf:citekey order="25">bookBayerischeBiographische</bcf:citekey>
+    <bcf:citekey order="26">ytLaTeX</bcf:citekey>
+    <bcf:citekey order="26">webLaTeX-Tutorial</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

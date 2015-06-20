@@ -1,6 +1,6 @@
 \documentclass[12pt, twoside, titlepage]{book}
 
-\title{Visualization of laser scanner point cloud as 3D panorama}
+\title{Visualization of laser scanner point clouds as 3D panorama}
 \author{Adam Kalisz}
 \date{July 2015}
 
@@ -11,6 +11,7 @@
 \DefineBibliographyStrings{english}{%
 	urlseen = {Retrieved},
 }
+\usepackage{csquotes}
 
 %Language specific encoding:
 \usepackage[utf8]{inputenc}
@@ -28,7 +29,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[RO, LE]{Visualization of laser scanner point cloud as 3D panorama}
+\fancyhead[RO, LE]{Visualization of laser scanner point clouds as 3D panorama}
 \fancyfoot{}
 \fancyfoot[LE, RO]{\thepage}
 \fancyfoot[LO, CE]{Chapter \thechapter}
@@ -50,11 +51,20 @@
 	\include{abstract}
 	\include{acknowledgements}
 
+	\pagestyle{plain}
 	\tableofcontents
 	
-	\listoffigures
-	\listoftables
 	
+	\listoffigures
+	\clearpage
+	
+	\listoftables
+	\clearpage
+	
+
+	\thispagestyle{plain}
+	
+	\pagestyle{fancy}
 	\chapter{Introduction}
 	\input{chapters/introduction}
 	\chapter{Background Research}
@@ -68,9 +78,10 @@
 	
 	
 	\appendix
-	\chapter{Appendix Title}
+	\chapter{Appendix}
 	\input{chapters/appendix}
 	
+	\pagestyle{plain}
 	\printbibliography
 		
 

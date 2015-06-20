@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  15 JUN 2015 16:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  20 JUN 2015 03:35
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -274,10 +274,29 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (D:\miktex-portable\tex\latex\biblatex\biblatex.cfg
 File: biblatex.cfg 
 )))
+(D:\miktex-portable\tex\latex\csquotes\csquotes.sty
+Package: csquotes 2015/04/15 v5.1e context-sensitive quotations (JAW)
+\csq@reset=\count207
+\csq@gtype=\count208
+\csq@glevel=\count209
+\csq@qlevel=\count210
+\csq@maxlvl=\count211
+\csq@tshold=\count212
+\csq@ltx@everypar=\toks15
+
+(D:\miktex-portable\tex\latex\csquotes\csquotes.def
+File: csquotes.def 2015/04/15 v5.1e csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(D:\miktex-portable\tex\latex\csquotes\csquotes.cfg
+File: csquotes.cfg 
+))
 (D:\miktex-portable\tex\latex\base\inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
 (D:\miktex-portable\tex\latex\base\utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -514,7 +533,7 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (D:\miktex-portable\tex\latex\pdftex-def\pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count207
+\Gread@gobject=\count213
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -533,9 +552,9 @@ Package ifvtex Info: VTeX not detected.
 (D:\miktex-portable\tex\generic\ifxetex\ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count208
-\Gm@cntv=\count209
-\c@Gm@tempcnt=\count210
+\Gm@cnth=\count214
+\Gm@cntv=\count215
+\c@Gm@tempcnt=\count216
 \Gm@bindingoffset=\dimen105
 \Gm@wd@mp=\dimen106
 \Gm@odd@mp=\dimen107
@@ -544,7 +563,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen110
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
-\Gm@dimlist=\toks17
+\Gm@dimlist=\toks18
 
 (D:\miktex-portable\tex\latex\geometry\geometry.cfg))
 (D:\miktex-portable\tex\latex\caption\caption.sty
@@ -561,12 +580,12 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen118
 \caption@hangindent=\dimen119
 )
-\c@ContinuedFloat=\count211
+\c@ContinuedFloat=\count217
 )
 (D:\miktex-portable\tex\latex\caption\subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count212
-\c@subtable=\count213
+\c@subfigure=\count218
+\c@subtable=\count219
 )
 (D:\miktex-portable\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip57
@@ -586,7 +605,7 @@ Package: pgfgantt 2013/06/01 v4.0 Draw Gantt diagrams with TikZ
 (D:\miktex-portable\tex\latex\pgf\basiclayer\pgf.sty
 (D:\miktex-portable\tex\latex\pgf\utilities\pgfrcs.sty
 (D:\miktex-portable\tex\generic\pgf\utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks18
+\pgfutil@everybye=\toks19
 \pgfutil@tempdima=\dimen120
 \pgfutil@tempdimb=\dimen121
 
@@ -608,11 +627,11 @@ Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
 (D:\miktex-portable\tex\generic\pgf\utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks19
-\pgfkeys@temptoks=\toks20
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
 
 (D:\miktex-portable\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks21
+\pgfkeys@tmptoks=\toks22
 ))
 \pgf@x=\dimen122
 \pgf@y=\dimen123
@@ -624,13 +643,13 @@ Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 \pgf@yc=\dimen129
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count214
-\c@pgf@countb=\count215
-\c@pgf@countc=\count216
-\c@pgf@countd=\count217
-\t@pgf@toka=\toks22
-\t@pgf@tokb=\toks23
-\t@pgf@tokc=\toks24
+\c@pgf@counta=\count220
+\c@pgf@countb=\count221
+\c@pgf@countc=\count222
+\c@pgf@countd=\count223
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
 
 (D:\miktex-portable\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -645,8 +664,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 (D:\miktex-portable\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count218
-\pgfsyssoftpath@bigbuffer@items=\count219
+\pgfsyssoftpath@smallbuffer@items=\count224
+\pgfsyssoftpath@bigbuffer@items=\count225
 )
 (D:\miktex-portable\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -676,11 +695,11 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (D:\miktex-portable\tex\generic\pgf\math\pgfmathutil.code.tex)
 (D:\miktex-portable\tex\generic\pgf\math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen130
-\pgfmath@count=\count220
+\pgfmath@count=\count226
 \pgfmath@box=\box27
-\pgfmath@toks=\toks25
-\pgfmath@stack@operand=\toks26
-\pgfmath@stack@operation=\toks27
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
 )
 (D:\miktex-portable\tex\generic\pgf\math\pgfmathfunctions.code.tex
 (D:\miktex-portable\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
@@ -692,7 +711,7 @@ x) (D:\miktex-portable\tex\generic\pgf\math\pgfmathfunctions.random.code.tex)
 (D:\miktex-portable\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
 (D:\miktex-portable\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.co
 de.tex))) (D:\miktex-portable\tex\generic\pgf\math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count221
+\c@pgfmathroundto@lastzeros=\count227
 ))
 (D:\miktex-portable\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
@@ -726,7 +745,7 @@ File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box28
 \pgf@hbox=\box29
 \pgf@layerbox@main=\box30
-\pgf@picture@serial@count=\count222
+\pgf@picture@serial@count=\count228
 )
 (D:\miktex-portable\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
@@ -753,7 +772,7 @@ File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
 (D:\miktex-portable\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen154
-\pgf@sys@shading@range@num=\count223
+\pgf@sys@shading@range@num=\count229
 )
 (D:\miktex-portable\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -797,15 +816,15 @@ Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 (D:\miktex-portable\tex\generic\pgf\math\pgfmath.code.tex)
 \pgffor@iter=\dimen157
 \pgffor@skip=\dimen158
-\pgffor@stack=\toks28
-\pgffor@toks=\toks29
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
 ))
 (D:\miktex-portable\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
 Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 
 (D:\miktex-portable\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count224
+\pgf@plot@mark@count=\count230
 \pgfplotmarksize=\dimen159
 )
 \tikz@lastx=\dimen160
@@ -818,18 +837,19 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \tikz@figbox@bg=\box34
 \tikz@tempbox=\box35
 \tikz@tempbox@bg=\box36
-\tikztreelevel=\count225
-\tikznumberofchildren=\count226
-\tikznumberofcurrentchild=\count227
-\tikz@fig@count=\count228
+\tikztreelevel=\count231
+\tikznumberofchildren=\count232
+\tikznumberofcurrentchild=\count233
+Normal \count register pool exhausted, switching to extended pool.
+\tikz@fig@count=\count277
 
 (D:\miktex-portable\tex\generic\pgf\modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count229
-\pgfmatrixcurrentcolumn=\count230
-\pgf@matrix@numberofcolumns=\count231
+\pgfmatrixcurrentrow=\count278
+\pgfmatrixcurrentcolumn=\count279
+\pgf@matrix@numberofcolumns=\count280
 )
-\tikz@expandcount=\count232
+\tikz@expandcount=\count281
 
 (D:\miktex-portable\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytop
 aths.code.tex
@@ -875,23 +895,22 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.0 (rcs-revision 1.1)
 )) (D:\miktex-portable\tex\latex\pgf\utilities\pgfcalendar.sty
 (D:\miktex-portable\tex\generic\pgf\utilities\pgfcalendar.code.tex
 File: pgfcalendar.code.tex 2007/07/23 v3.0.0 (rcs-revision 1.11)
-\pgfcalendarcurrentjulian=\count233
+\pgfcalendarcurrentjulian=\count282
 ))
-Normal \count register pool exhausted, switching to extended pool.
-\gtt@currentline=\count277
-\gtt@lasttitleline=\count278
-\gtt@currgrid=\count279
-\gtt@chartwidth=\count280
-\gtt@lasttitleslot=\count281
-\gtt@elementid=\count282
-\gtt@today@slot=\count283
-\gtt@startjulian=\count284
-\gtt@endjulian=\count285
-\gtt@calendar@slots=\count286
-\gtt@calendar@weeknumber=\count287
-\gtt@calendar@startofweek=\count288
-\gtt@left@slot=\count289
-\gtt@right@slot=\count290
+\gtt@currentline=\count283
+\gtt@lasttitleline=\count284
+\gtt@currgrid=\count285
+\gtt@chartwidth=\count286
+\gtt@lasttitleslot=\count287
+\gtt@elementid=\count288
+\gtt@today@slot=\count289
+\gtt@startjulian=\count290
+\gtt@endjulian=\count291
+\gtt@calendar@slots=\count292
+\gtt@calendar@weeknumber=\count293
+\gtt@calendar@startofweek=\count294
+\gtt@left@slot=\count295
+\gtt@right@slot=\count296
 )
 (D:\miktex-portable\tex\latex\amsmath\amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
@@ -903,7 +922,7 @@ Package: amstext 2000/06/29 v2.01
 
 (D:\miktex-portable\tex\latex\amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks30
+\@emptytoks=\toks31
 \ex@=\dimen167
 ))
 (D:\miktex-portable\tex\latex\amsmath\amsbsy.sty
@@ -913,13 +932,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (D:\miktex-portable\tex\latex\amsmath\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count291
+\inf@bad=\count297
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count292
-\leftroot@=\count293
+\uproot@=\count298
+\leftroot@=\count299
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count294
-\DOTSCASE@=\count295
+\classnum@=\count300
+\DOTSCASE@=\count301
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -928,26 +947,26 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen169
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count296
-\c@MaxMatrixCols=\count297
+\macc@depth=\count302
+\c@MaxMatrixCols=\count303
 \dotsspace@=\muskip11
-\c@parentequation=\count298
-\dspbrk@lvl=\count299
-\tag@help=\toks31
-\row@=\count300
-\column@=\count301
-\maxfields@=\count302
-\andhelp@=\toks32
+\c@parentequation=\count304
+\dspbrk@lvl=\count305
+\tag@help=\toks32
+\row@=\count306
+\column@=\count307
+\maxfields@=\count308
+\andhelp@=\toks33
 \eqnshift@=\dimen170
 \alignsep@=\dimen171
 \tagshift@=\dimen172
 \tagwidth@=\dimen173
 \totwidth@=\dimen174
 \lineht@=\dimen175
-\@envbody=\toks33
+\@envbody=\toks34
 \multlinegap=\skip67
 \multlinetaggap=\skip68
-\mathdisplay@stack=\toks34
+\mathdisplay@stack=\toks35
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -957,25 +976,27 @@ Package biblatex Info: ... file 'english.lbx' found.
 (D:\miktex-portable\tex\latex\biblatex\lbx\english.lbx
 File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count303
-\@quotereset=\count304
 
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 44.
+
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\declaration.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -987,22 +1008,22 @@ Package biblatex Warning: File 'main.bbl' is wrong format version - expected 2.
 
 Package biblatex Info: ... file 'main.bbl' found.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.bbl)
-Package biblatex Info: Reference section=0 on input line 43.
-Package biblatex Info: Reference segment=0 on input line 43.
+Package biblatex Info: Reference section=0 on input line 44.
+Package biblatex Info: Reference segment=0 on input line 44.
 
 (D:\miktex-portable\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
+\scratchcounter=\count309
 \scratchdimen=\dimen176
 \scratchbox=\box41
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count308
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count312
 \MPscratchDim=\dimen177
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks36
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks37
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1093,6 +1114,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
 ])
 \tf@toc=\write5
+ [6]
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.lof)
+\tf@lof=\write6
+ [7
+
+] [8
+
+
+]
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.lot)
+\tf@lot=\write7
+ [9] [10
+
+
+]
+Chapter 1.
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/introduction.tex
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1100,23 +1146,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.lof)
-\tf@lof=\write6
- [7
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
-] [8
+ []
 
-]
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.lot)
-\tf@lot=\write7
- [9] [10
-
-]
-Chapter 1.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/introduction.tex
-[11]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 45.
- (D:\miktex-portable\tex\latex\base\t1cmss.fd
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 50.
+(D:\miktex-portable\tex\latex\base\t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 Missing character: There is no - in font nullfont!
@@ -1167,84 +1203,89 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
 
-Overfull \hbox (18.99388pt too wide) in paragraph at lines 44--69
-[][]\T1/cmr/m/n/12 -01-01[] 
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
  []
 
-[12] <images/Pellerhaus_FirstGlance.jpg, id=57, 1445.4pt x 782.925pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+[13] <images/Pellerhaus_FirstGlance.jpg, id=63, 1445.4pt x 782.925pt>
 File: images/Pellerhaus_FirstGlance.jpg Graphic file (type jpg)
 
 <use images/Pellerhaus_FirstGlance.jpg>
-Package pdftex.def Info: images/Pellerhaus_FirstGlance.jpg used on input line 8
-5.
+Package pdftex.def Info: images/Pellerhaus_FirstGlance.jpg used on input line 9
+0.
 (pdftex.def)             Requested size: 361.34912pt x 195.73077pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-[][]\T1/cmr/m/n/10 http://www.csiro.au/Organisation-Structure/Divisions/Computa
-tional-Informatics/Zebedee-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+ [14 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Pellerhaus_FirstGlan
+ce.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
 [][]\T1/cmr/m/n/10 http://www.sensorsmag.com/sensors/acoustic-ultrasound/choosi
 ng-ultrasonic-sensor-
  []
 
-[13 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Pellerhaus_FirstGlanc
-e.jpg>] <images/graph1.png, id=64, 867.24pt x 578.16pt>
+<images/graph1.png, id=70, 867.24pt x 578.16pt>
 File: images/graph1.png Graphic file (type png)
-
-<use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 109.
+ <use images/graph1.png>
+Package pdftex.def Info: images/graph1.png used on input line 114.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
 []\T1/cmr/m/n/10.95 (a) |$\OML/cmm/m/it/10.95 OpenSource \OT1/cmr/m/n/10.95 :
  []
 
-<images/graph2.png, id=65, 867.24pt x 578.16pt>
+<images/graph2.png, id=71, 867.24pt x 578.16pt>
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 116.
+Package pdftex.def Info: images/graph2.png used on input line 121.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 []\T1/cmr/m/n/10.95 (b) |$\OML/cmm/m/it/10.95 Free \OT1/cmr/m/n/10.95 :
  []
 
-<images/graph3.png, id=66, 867.24pt x 578.16pt>
+<images/graph3.png, id=72, 867.24pt x 578.16pt>
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 123.
+Package pdftex.def Info: images/graph3.png used on input line 128.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
 []\T1/cmr/m/n/10.95 (c) |$\OML/cmm/m/it/10.95 Commercial \OT1/cmr/m/n/10.95 :
  []
 
 
-Overfull \hbox (19.16776pt too wide) in paragraph at lines 124--124
+Overfull \hbox (19.16776pt too wide) in paragraph at lines 129--129
 \OML/cmm/m/it/10.95 AgisoftPhotoscanPro\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 
 Demo\OT1/cmr/m/n/10.95 )$| 
  []
 
-[14 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph1.png> <I:/BA_So
+[15 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph1.png> <I:/BA_So
 ftware/PointCloud2Blender/Paper_LaTeX/images/graph2.png> <I:/BA_Software/PointC
-loud2Blender/Paper_LaTeX/images/graph3.png>]) [15] [16
+loud2Blender/Paper_LaTeX/images/graph3.png>] [16]) [17] [18
 
 ]
 Chapter 2.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter01.tex [17]
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter01.tex [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
-Underfull \hbox (badness 10000) in paragraph at lines 34--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--40
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
 
  []
 
@@ -1252,139 +1293,98 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 41.
 (D:\miktex-portable\tex\latex\base\t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
-
-(D:\miktex-portable\tex\latex\base\omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 45.
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--65
+Underfull \hbox (badness 10000) in paragraph at lines 49--57
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--65
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
+[21]
 File: images/graph1.png Graphic file (type png)
-
-<use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 71.
+ <use images/graph1.png>
+Package pdftex.def Info: images/graph1.png used on input line 63.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 78.
+Package pdftex.def Info: images/graph2.png used on input line 70.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 85.
+Package pdftex.def Info: images/graph3.png used on input line 77.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--100
+Underfull \hbox (badness 10000) in paragraph at lines 85--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--100
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--104
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 97--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--111
+Underfull \vbox (badness 2961) has occurred while \output is active []
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--111
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-<images/graph_a.png, id=96, 867.24pt x 578.16pt>
+ [23]
+<images/graph_a.png, id=105, 867.24pt x 578.16pt>
 File: images/graph_a.png Graphic file (type png)
  <use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png used on input line 132.
+Package pdftex.def Info: images/graph_a.png used on input line 124.
 (pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: images/graph_a.png Graphic file (type png)
+
 <use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png used on input line 144.
+Package pdftex.def Info: images/graph_a.png used on input line 136.
 (pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (49.85568pt too wide) in paragraph at lines 156--157
+Overfull \hbox (49.85568pt too wide) in paragraph at lines 148--149
 []\T1/cmr/m/n/12 Only equirect-an-gu-lar pro-vides a 100 per-cent cov-er-age! (
 see $\T1/cmtt/m/n/12 http : / / www . cambridgeincolour .
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-Overfull \hbox (14.86887pt too wide) in paragraph at lines 158--159
+Overfull \hbox (14.86887pt too wide) in paragraph at lines 150--151
 \T1/cmr/m/n/12 info $\T1/cmtt/m/n/12 http : / / www . progonos . com / furuti /
  MapProj / Normal / CartDef / MapDef / mapDef .
  []
 
 File: images/graph1.png Graphic file (type png)
 <use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 165.
+Package pdftex.def Info: images/graph1.png used on input line 157.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 172.
+Package pdftex.def Info: images/graph2.png used on input line 164.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 179.
+Package pdftex.def Info: images/graph3.png used on input line 171.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 
+[24 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>])
+[25] [26
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [23 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>]
-[24]
+]
 Chapter 3.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter02.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25
-
-]
-<images/UseCaseDiagram_PC2B.png, id=110, 1027.84pt x 607.26875pt>
+ [27]
+<images/UseCaseDiagram_PC2B.png, id=119, 1027.84pt x 607.26875pt>
 File: images/UseCaseDiagram_PC2B.png Graphic file (type png)
 
 <use images/UseCaseDiagram_PC2B.png>
 Package pdftex.def Info: images/UseCaseDiagram_PC2B.png used on input line 15.
 (pdftex.def)             Requested size: 411.12872pt x 242.9032pt.
 
-<images/PellerhausLaserScan.jpg, id=111, 536.0025pt x 803.0pt>
+<images/PellerhausLaserScan.jpg, id=120, 536.0025pt x 803.0pt>
 File: images/PellerhausLaserScan.jpg Graphic file (type jpg)
 
 <use images/PellerhausLaserScan.jpg>
@@ -1400,77 +1400,126 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/UseCaseDiagram_PC2B.
-png (PNG copy)>] [27 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Pell
+ [28 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/UseCaseDiagram_PC2B.
+png (PNG copy)>] [29 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Pell
 erhausLaserScan.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28] [29] [30] [31]) [32]
+[30] [31] [32] [33]) [34]
 Chapter 4.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter03.tex [33
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter03.tex [35
 
 ]
-[34])
-Overfull \hbox (3.01016pt too wide) in paragraph at lines 66--66
+[36])
+Overfull \hbox (3.01016pt too wide) in paragraph at lines 66--76
 []\T1/cmr/m/n/12 For a bet-ter pre-sen-ta-tion, the scene can also be vi-su-al-
 ized in stereo-scopic 3d. Through
  []
 
-[35] [36
+[37] [38
 
 ]
 Chapter 5.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/conclusion.tex
 Underfull \vbox (badness 2818) has occurred while \output is active []
 
- [37])
-[38]
-Appendix A.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex [39
-
-])
+ [39])
 [40]
-Overfull \hbox (7.0967pt too wide) in paragraph at lines 75--75
-\T1/cmr/m/n/12 Vol. 6939. Lec-ture Notes in Com-puter Sci-ence. Berlin, Hei-del
--berg: Springer
+Appendix A.
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/appendix.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+(D:\miktex-portable\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 17.
+
+Overfull \hbox (6.2968pt too wide) in paragraph at lines 17--17
+[]\T1/cmr/m/n/12 LITERATUR: Wil-helm Schwem-mer: J.W. der Äl-tere und der Jün-g
+ere. In: Fränkische
  []
 
 
-Overfull \hbox (14.0285pt too wide) in paragraph at lines 75--75
-\T1/cmr/m/n/12 Mor-gan Kauf-mann Pub-lish-ers Inc., 2010. \T1/cmr/m/sc/12 isbn\
-T1/cmr/m/n/12 : 0123750792, 9780123750792. 
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+
  []
 
 [41
 
 ]
-Overfull \hbox (10.01718pt too wide) in paragraph at lines 75--75
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+
+ []
+
+[42]) [43] [44
+
+]
+Overfull \hbox (3.84369pt too wide) in paragraph at lines 86--86
+\T1/cmtt/m/n/12 Nazi _ party _ rally _ grounds & oldid = 664601942$ \T1/cmr/m/n
+/12 (Re-trieved 06/19/2015). 
+ []
+
+
+Overfull \hbox (11.06969pt too wide) in paragraph at lines 86--86
+\T1/cmr/m/it/12 teils\T1/cmr/m/n/12 . 2015. \T1/cmr/m/sc/12 url\T1/cmr/m/n/12 :
+ $\T1/cmtt/m/n/12 http : / / stadtteilforum . org / langwasser / langwasser -[]
+
+ []
+
+[45]
+Overfull \hbox (7.0967pt too wide) in paragraph at lines 86--86
+\T1/cmr/m/n/12 Vol. 6939. Lec-ture Notes in Com-puter Sci-ence. Berlin, Hei-del
+-berg: Springer
+ []
+
+
+Overfull \hbox (14.0285pt too wide) in paragraph at lines 86--86
+\T1/cmr/m/n/12 Mor-gan Kauf-mann Pub-lish-ers Inc., 2010. \T1/cmr/m/sc/12 isbn\
+T1/cmr/m/n/12 : 0123750792, 9780123750792. 
+ []
+
+
+Overfull \hbox (10.01718pt too wide) in paragraph at lines 86--86
 \T1/cmtt/m/n/12 1 & list = PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC$ \T1/cmr/m/n/12 (
 Re-trieved 01/23/2015). 
  []
 
-[42] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
+[46] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\declaration.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.aux))
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 21531 strings out of 493921
- 419189 string characters out of 3139244
- 791698 words of memory out of 3000000
- 24388 multiletter control sequences out of 15000+200000
+ 22037 strings out of 493921
+ 427361 string characters out of 3139244
+ 808267 words of memory out of 3000000
+ 24886 multiletter control sequences out of 15000+200000
  25499 words of font info for 58 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,12n,89p,1268b,989s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,89p,1568b,1014s stack positions out of 5000i,500n,10000p,200000b,50000s
  <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecti0800.pk> <D:\mikt
 ex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <D:\miktex-portable
 \fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <D:\miktex-portable\fonts\pk\l
 jfour\jknappen\ec\dpi600\ectt1200.pk> <D:\miktex-portable\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecrm1000.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi6
-00\ecrm0700.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440
-.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <D:\mi
+pen\ec\dpi600\ecrm1095.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi6
+00\ecrm1000.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700
+.pk> <D:\miktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <D:\mi
 ktex-portable\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <D:\miktex-portab
 le\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <D:\miktex-portable\fonts\pk
 \ljfour\jknappen\ec\dpi600\ecrm0800.pk> <D:\miktex-portable\fonts\pk\ljfour\jkn
@@ -1483,13 +1532,14 @@ pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><D:/miktex-portable/fonts/type1/public
 /amsfonts/cm/cmbsy10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cme
 x10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/mikte
 x-portable/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/miktex-portable/fonts/
-type1/public/amsfonts/cm/cmr10.pfb><D:/miktex-portable/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmr8.pfb><D
-:/miktex-portable/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/miktex-portable
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (42 pages, 1606043 bytes).
+type1/public/amsfonts/cm/cmmi8.pfb><D:/miktex-portable/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/miktex-portable/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/miktex-portable/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (46 pages, 1625550 bytes).
 PDF statistics:
- 928 PDF objects out of 1000 (max. 8388607)
+ 945 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
