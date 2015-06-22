@@ -205,6 +205,27 @@
       \verb http://www2.faro.com/site/resources/share/944
       \endverb
     \endentry
+    \entry{survey_equipment}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=5eed4f9b9d195b77b5d8959b54366b6d}{{Opti-cal\bibnamedelimb Survey\bibnamedelimb Equipment\bibnamedelimb Ltd.}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=5eed4f9b9d195b77b5d8959b54366b6d}{{Opti-cal\bibnamedelimb Survey\bibnamedelimb Equipment\bibnamedelimb Ltd.}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{5eed4f9b9d195b77b5d8959b54366b6d}
+      \strng{fullhash}{5eed4f9b9d195b77b5d8959b54366b6d}
+      \field{labelalpha}{Opt15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Opti-cal Survey Equipment - FARO Focus 3D X 330 Laser Scanner}}
+      \field{title}{{Opti-cal Survey Equipment - FARO Focus 3D X 330 Laser Scanner}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://surveyequipment.com/faro-focus-3d-x-330-laser-scanner/
+      \endverb
+    \endentry
     \entry{zebedee_info}{online}{}
       \name{labelname}{1}{}{%
         {{hash=36f1ab03fd08e7db05936d4093b828ef}{{Victoria\bibnamedelimb Woollaston}}{V\bibinitperiod}{}{}{}{}{}{}}%
@@ -224,6 +245,90 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.dailymail.co.uk/sciencetech/article-2562329/Prometheus-style-scanner-maps-crime-scenes-3D-rotated-tagged-without-damaging-evidence.html
+      \endverb
+    \endentry
+    \entry{pulsedlight}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=a6eb65babaa30bb4140f5d778768548d}{{PulsedLight}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a6eb65babaa30bb4140f5d778768548d}{{PulsedLight}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{a6eb65babaa30bb4140f5d778768548d}
+      \strng{fullhash}{a6eb65babaa30bb4140f5d778768548d}
+      \field{labelalpha}{Pul15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{PulsedLight | PulsedLight}}
+      \field{title}{{PulsedLight | PulsedLight}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://pulsedlight3d.com/
+      \endverb
+    \endentry
+    \entry{vegapuls}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d14384f344b44eea481b1914a8aa5864}{{VEGA\bibnamedelimb Grieshaber\bibnamedelimb KG}}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d14384f344b44eea481b1914a8aa5864}{{VEGA\bibnamedelimb Grieshaber\bibnamedelimb KG}}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d14384f344b44eea481b1914a8aa5864}
+      \strng{fullhash}{d14384f344b44eea481b1914a8aa5864}
+      \field{labelalpha}{VEG15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Radarsensor zur kontinuierlichen Füllstandmessung von Schüttgut – VEGAPULS 69}}
+      \field{title}{{Radarsensor zur kontinuierlichen Füllstandmessung von Schüttgut – VEGAPULS 69}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.vega.com/de-DE/home_de/Produkte/Produktkatalog/F%C3%83%C2%BCllstand/Radar/VEGAPULS%2069
+      \endverb
+    \endentry
+    \entry{sensorsmag}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=76bf4171ccecf562e34e415e6daf29d0}{{Sensors\bibnamedelimb Magazine}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=76bf4171ccecf562e34e415e6daf29d0}{{Sensors\bibnamedelimb Magazine}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{76bf4171ccecf562e34e415e6daf29d0}
+      \strng{fullhash}{76bf4171ccecf562e34e415e6daf29d0}
+      \field{labelalpha}{Sen15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Choosing an Ultrasonic Sensor for Proximity or Distance Measurement Part 1: Acoustic Considerations | Sensors}}
+      \field{title}{{Choosing an Ultrasonic Sensor for Proximity or Distance Measurement Part 1: Acoustic Considerations | Sensors}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.sensorsmag.com/sensors/acoustic-ultrasound/choosing-ultrasonic-sensor-proximity-or-distance-measurement-825
+      \endverb
+    \endentry
+    \entry{yt_smalldesktoplaser}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b6a6e288ccfce6b8a2598bbffb4a2e69}{{Huy\bibnamedelimb Dinh}}{H\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b6a6e288ccfce6b8a2598bbffb4a2e69}{{Huy\bibnamedelimb Dinh}}{H\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{b6a6e288ccfce6b8a2598bbffb4a2e69}
+      \strng{fullhash}{b6a6e288ccfce6b8a2598bbffb4a2e69}
+      \field{labelalpha}{Huy13}
+      \field{sortinit}{0}
+      \field{labeltitle}{{VGU.EXCELSIOR - Ultrasonic 3D Scanner - Vietnam MCU Contest 2013}}
+      \field{title}{{VGU.EXCELSIOR - Ultrasonic 3D Scanner - Vietnam MCU Contest 2013}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=saWWhEYQxTg
       \endverb
     \endentry
     \entry{bookProgrammingComputerVisionwithPython}{book}{}
@@ -246,6 +351,90 @@
       \field{labeltitle}{Programming Computer Vision with Python}
       \field{title}{Programming Computer Vision with Python}
       \field{year}{2012}
+    \endentry
+    \entry{google_maps}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=92e04290e976f39b9dbd1d64a34928b3}{{Ricardo\bibnamedelimb Zamora}}{R\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=92e04290e976f39b9dbd1d64a34928b3}{{Ricardo\bibnamedelimb Zamora}}{R\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{92e04290e976f39b9dbd1d64a34928b3}
+      \strng{fullhash}{92e04290e976f39b9dbd1d64a34928b3}
+      \field{labelalpha}{Ric14}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Google Maps 3D}}
+      \field{title}{{Google Maps 3D}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=5iolZU8LwPU
+      \endverb
+    \endentry
+    \entry{f4map}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e7e0e72401a9f2718ed0f39f2861d702}{{F4}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e7e0e72401a9f2718ed0f39f2861d702}{{F4}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{e7e0e72401a9f2718ed0f39f2861d702}
+      \strng{fullhash}{e7e0e72401a9f2718ed0f39f2861d702}
+      \field{labelalpha}{F414}
+      \field{sortinit}{0}
+      \field{labeltitle}{{F4map Demo - Interactive 3D map}}
+      \field{title}{{F4map Demo - Interactive 3D map}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://demo.f4map.com/#lat=49.4559869&lon=11.0762814&zoom=18
+      \endverb
+    \endentry
+    \entry{openstreetmap_wiki}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=886e7df44ed76b26c846d551d9c422a2}{{OpenStreetMap\bibnamedelimb Wiki}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=886e7df44ed76b26c846d551d9c422a2}{{OpenStreetMap\bibnamedelimb Wiki}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{886e7df44ed76b26c846d551d9c422a2}
+      \strng{fullhash}{886e7df44ed76b26c846d551d9c422a2}
+      \field{labelalpha}{Ope15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Indoor Mapping – OpenStreetMap Wiki}}
+      \field{title}{{Indoor Mapping – OpenStreetMap Wiki}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://wiki.openstreetmap.org/wiki/Indoor_Mapping
+      \endverb
+    \endentry
+    \entry{drones_lidar}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=78d6686fa572daf08ef0016f76f2f0c7}{{Shen,\bibnamedelimb Shaojie\bibnamedelimb and\bibnamedelimb Michael,\bibnamedelimb Nathan\bibnamedelimb and\bibnamedelimb Kumar,\bibnamedelimb Vijay}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=78d6686fa572daf08ef0016f76f2f0c7}{{Shen,\bibnamedelimb Shaojie\bibnamedelimb and\bibnamedelimb Michael,\bibnamedelimb Nathan\bibnamedelimb and\bibnamedelimb Kumar,\bibnamedelimb Vijay}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{78d6686fa572daf08ef0016f76f2f0c7}
+      \strng{fullhash}{78d6686fa572daf08ef0016f76f2f0c7}
+      \field{labelalpha}{She10}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Autonomous Aerial Navigation in Confined Indoor Environments}}
+      \field{title}{{Autonomous Aerial Navigation in Confined Indoor Environments}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2010}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=IMSozUpFFkU
+      \endverb
     \endentry
     \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
       \name{labelname}{1}{}{%
@@ -756,6 +945,27 @@
       \verb http://www2.faro.com/site/resources/share/944
       \endverb
     \endentry
+    \entry{survey_equipment}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=5eed4f9b9d195b77b5d8959b54366b6d}{{Opti-cal\bibnamedelimb Survey\bibnamedelimb Equipment\bibnamedelimb Ltd.}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=5eed4f9b9d195b77b5d8959b54366b6d}{{Opti-cal\bibnamedelimb Survey\bibnamedelimb Equipment\bibnamedelimb Ltd.}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{5eed4f9b9d195b77b5d8959b54366b6d}
+      \strng{fullhash}{5eed4f9b9d195b77b5d8959b54366b6d}
+      \field{labelalpha}{Opt15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Opti-cal Survey Equipment - FARO Focus 3D X 330 Laser Scanner}}
+      \field{title}{{Opti-cal Survey Equipment - FARO Focus 3D X 330 Laser Scanner}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://surveyequipment.com/faro-focus-3d-x-330-laser-scanner/
+      \endverb
+    \endentry
     \entry{zebedee_info}{online}{}
       \name{labelname}{1}{}{%
         {{hash=36f1ab03fd08e7db05936d4093b828ef}{{Victoria\bibnamedelimb Woollaston}}{V\bibinitperiod}{}{}{}{}{}{}}%
@@ -775,6 +985,90 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.dailymail.co.uk/sciencetech/article-2562329/Prometheus-style-scanner-maps-crime-scenes-3D-rotated-tagged-without-damaging-evidence.html
+      \endverb
+    \endentry
+    \entry{pulsedlight}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=a6eb65babaa30bb4140f5d778768548d}{{PulsedLight}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a6eb65babaa30bb4140f5d778768548d}{{PulsedLight}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{a6eb65babaa30bb4140f5d778768548d}
+      \strng{fullhash}{a6eb65babaa30bb4140f5d778768548d}
+      \field{labelalpha}{Pul15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{PulsedLight | PulsedLight}}
+      \field{title}{{PulsedLight | PulsedLight}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://pulsedlight3d.com/
+      \endverb
+    \endentry
+    \entry{vegapuls}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d14384f344b44eea481b1914a8aa5864}{{VEGA\bibnamedelimb Grieshaber\bibnamedelimb KG}}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d14384f344b44eea481b1914a8aa5864}{{VEGA\bibnamedelimb Grieshaber\bibnamedelimb KG}}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d14384f344b44eea481b1914a8aa5864}
+      \strng{fullhash}{d14384f344b44eea481b1914a8aa5864}
+      \field{labelalpha}{VEG15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Radarsensor zur kontinuierlichen Füllstandmessung von Schüttgut – VEGAPULS 69}}
+      \field{title}{{Radarsensor zur kontinuierlichen Füllstandmessung von Schüttgut – VEGAPULS 69}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.vega.com/de-DE/home_de/Produkte/Produktkatalog/F%C3%83%C2%BCllstand/Radar/VEGAPULS%2069
+      \endverb
+    \endentry
+    \entry{sensorsmag}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=76bf4171ccecf562e34e415e6daf29d0}{{Sensors\bibnamedelimb Magazine}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=76bf4171ccecf562e34e415e6daf29d0}{{Sensors\bibnamedelimb Magazine}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{76bf4171ccecf562e34e415e6daf29d0}
+      \strng{fullhash}{76bf4171ccecf562e34e415e6daf29d0}
+      \field{labelalpha}{Sen15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Choosing an Ultrasonic Sensor for Proximity or Distance Measurement Part 1: Acoustic Considerations | Sensors}}
+      \field{title}{{Choosing an Ultrasonic Sensor for Proximity or Distance Measurement Part 1: Acoustic Considerations | Sensors}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.sensorsmag.com/sensors/acoustic-ultrasound/choosing-ultrasonic-sensor-proximity-or-distance-measurement-825
+      \endverb
+    \endentry
+    \entry{yt_smalldesktoplaser}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b6a6e288ccfce6b8a2598bbffb4a2e69}{{Huy\bibnamedelimb Dinh}}{H\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b6a6e288ccfce6b8a2598bbffb4a2e69}{{Huy\bibnamedelimb Dinh}}{H\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{b6a6e288ccfce6b8a2598bbffb4a2e69}
+      \strng{fullhash}{b6a6e288ccfce6b8a2598bbffb4a2e69}
+      \field{labelalpha}{Huy13}
+      \field{sortinit}{0}
+      \field{labeltitle}{{VGU.EXCELSIOR - Ultrasonic 3D Scanner - Vietnam MCU Contest 2013}}
+      \field{title}{{VGU.EXCELSIOR - Ultrasonic 3D Scanner - Vietnam MCU Contest 2013}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=saWWhEYQxTg
       \endverb
     \endentry
     \entry{bookProgrammingComputerVisionwithPython}{book}{}
@@ -797,6 +1091,90 @@
       \field{labeltitle}{Programming Computer Vision with Python}
       \field{title}{Programming Computer Vision with Python}
       \field{year}{2012}
+    \endentry
+    \entry{google_maps}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=92e04290e976f39b9dbd1d64a34928b3}{{Ricardo\bibnamedelimb Zamora}}{R\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=92e04290e976f39b9dbd1d64a34928b3}{{Ricardo\bibnamedelimb Zamora}}{R\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{92e04290e976f39b9dbd1d64a34928b3}
+      \strng{fullhash}{92e04290e976f39b9dbd1d64a34928b3}
+      \field{labelalpha}{Ric14}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Google Maps 3D}}
+      \field{title}{{Google Maps 3D}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=5iolZU8LwPU
+      \endverb
+    \endentry
+    \entry{f4map}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e7e0e72401a9f2718ed0f39f2861d702}{{F4}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e7e0e72401a9f2718ed0f39f2861d702}{{F4}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{e7e0e72401a9f2718ed0f39f2861d702}
+      \strng{fullhash}{e7e0e72401a9f2718ed0f39f2861d702}
+      \field{labelalpha}{F414}
+      \field{sortinit}{0}
+      \field{labeltitle}{{F4map Demo - Interactive 3D map}}
+      \field{title}{{F4map Demo - Interactive 3D map}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://demo.f4map.com/#lat=49.4559869&lon=11.0762814&zoom=18
+      \endverb
+    \endentry
+    \entry{openstreetmap_wiki}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=886e7df44ed76b26c846d551d9c422a2}{{OpenStreetMap\bibnamedelimb Wiki}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=886e7df44ed76b26c846d551d9c422a2}{{OpenStreetMap\bibnamedelimb Wiki}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{886e7df44ed76b26c846d551d9c422a2}
+      \strng{fullhash}{886e7df44ed76b26c846d551d9c422a2}
+      \field{labelalpha}{Ope15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Indoor Mapping – OpenStreetMap Wiki}}
+      \field{title}{{Indoor Mapping – OpenStreetMap Wiki}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://wiki.openstreetmap.org/wiki/Indoor_Mapping
+      \endverb
+    \endentry
+    \entry{drones_lidar}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=78d6686fa572daf08ef0016f76f2f0c7}{{Shen,\bibnamedelimb Shaojie\bibnamedelimb and\bibnamedelimb Michael,\bibnamedelimb Nathan\bibnamedelimb and\bibnamedelimb Kumar,\bibnamedelimb Vijay}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=78d6686fa572daf08ef0016f76f2f0c7}{{Shen,\bibnamedelimb Shaojie\bibnamedelimb and\bibnamedelimb Michael,\bibnamedelimb Nathan\bibnamedelimb and\bibnamedelimb Kumar,\bibnamedelimb Vijay}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{78d6686fa572daf08ef0016f76f2f0c7}
+      \strng{fullhash}{78d6686fa572daf08ef0016f76f2f0c7}
+      \field{labelalpha}{She10}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Autonomous Aerial Navigation in Confined Indoor Environments}}
+      \field{title}{{Autonomous Aerial Navigation in Confined Indoor Environments}}
+      \field{urlday}{22}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2010}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=IMSozUpFFkU
+      \endverb
     \endentry
     \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
       \name{labelname}{1}{}{%

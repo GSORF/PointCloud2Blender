@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  20 JUN 2015 03:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  22 JUN 2015 06:21
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -1234,11 +1234,6 @@ Package pdftex.def Info: images/Pellerhaus_FirstGlance.jpg used on input line 9
 (pdftex.def)             Requested size: 361.34912pt x 195.73077pt.
  [14 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Pellerhaus_FirstGlan
 ce.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-[][]\T1/cmr/m/n/10 http://www.sensorsmag.com/sensors/acoustic-ultrasound/choosi
-ng-ultrasonic-sensor-
- []
-
 <images/graph1.png, id=70, 867.24pt x 578.16pt>
 File: images/graph1.png Graphic file (type png)
  <use images/graph1.png>
@@ -1275,9 +1270,12 @@ Overfull \hbox (19.16776pt too wide) in paragraph at lines 129--129
 Demo\OT1/cmr/m/n/10.95 )$| 
  []
 
-[15 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph1.png> <I:/BA_So
-ftware/PointCloud2Blender/Paper_LaTeX/images/graph2.png> <I:/BA_Software/PointC
-loud2Blender/Paper_LaTeX/images/graph3.png>] [16]) [17] [18
+
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
+ [15 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph1.png> <I:/BA_S
+oftware/PointCloud2Blender/Paper_LaTeX/images/graph2.png> <I:/BA_Software/Point
+Cloud2Blender/Paper_LaTeX/images/graph3.png>]) [16] [17] [18
 
 ]
 Chapter 2.
@@ -1293,82 +1291,81 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 41.
 (D:\miktex-portable\tex\latex\base\t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 49--57
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 
  []
 
 [21]
 File: images/graph1.png Graphic file (type png)
  <use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 63.
+Package pdftex.def Info: images/graph1.png used on input line 68.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 70.
+Package pdftex.def Info: images/graph2.png used on input line 75.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 77.
+Package pdftex.def Info: images/graph3.png used on input line 82.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--92
+Underfull \hbox (badness 10000) in paragraph at lines 90--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 97--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--108
 
  []
 
 
-Underfull \vbox (badness 2961) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
 <images/graph_a.png, id=105, 867.24pt x 578.16pt>
 File: images/graph_a.png Graphic file (type png)
  <use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png used on input line 124.
+Package pdftex.def Info: images/graph_a.png used on input line 129.
 (pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
 File: images/graph_a.png Graphic file (type png)
 
 <use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png used on input line 136.
+Package pdftex.def Info: images/graph_a.png used on input line 141.
 (pdftex.def)             Requested size: 346.88986pt x 231.2599pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (49.85568pt too wide) in paragraph at lines 148--149
+Overfull \hbox (49.85568pt too wide) in paragraph at lines 153--154
 []\T1/cmr/m/n/12 Only equirect-an-gu-lar pro-vides a 100 per-cent cov-er-age! (
 see $\T1/cmtt/m/n/12 http : / / www . cambridgeincolour .
  []
 
-
-Overfull \hbox (14.86887pt too wide) in paragraph at lines 150--151
+[24 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>]
+Overfull \hbox (14.86887pt too wide) in paragraph at lines 155--156
 \T1/cmr/m/n/12 info $\T1/cmtt/m/n/12 http : / / www . progonos . com / furuti /
  MapProj / Normal / CartDef / MapDef / mapDef .
  []
 
 File: images/graph1.png Graphic file (type png)
 <use images/graph1.png>
-Package pdftex.def Info: images/graph1.png used on input line 157.
+Package pdftex.def Info: images/graph1.png used on input line 162.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph2.png Graphic file (type png)
  <use images/graph2.png>
-Package pdftex.def Info: images/graph2.png used on input line 164.
+Package pdftex.def Info: images/graph2.png used on input line 169.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
 File: images/graph3.png Graphic file (type png)
  <use images/graph3.png>
-Package pdftex.def Info: images/graph3.png used on input line 171.
+Package pdftex.def Info: images/graph3.png used on input line 176.
 (pdftex.def)             Requested size: 128.0387pt x 85.35284pt.
-
-[24 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/graph_a.png>])
+)
 [25] [26
 
 ]
@@ -1481,7 +1478,20 @@ Overfull \hbox (11.06969pt too wide) in paragraph at lines 86--86
 
  []
 
+
+Overfull \hbox (18.29224pt too wide) in paragraph at lines 86--86
+[]\T1/cmr/m/n/12 PulsedLight. \T1/cmr/m/it/12 Puls-ed-Light | Puls-ed-Light\T1/
+cmr/m/n/12 . 2015. \T1/cmr/m/sc/12 url\T1/cmr/m/n/12 : $\T1/cmtt/m/n/12 http : 
+/ / pulsedlight3d .
+ []
+
 [45]
+Overfull \hbox (11.52321pt too wide) in paragraph at lines 86--86
+\T1/cmtt/m/n/12 choosing -[] ultrasonic -[] sensor -[] proximity -[] or -[] dis
+tance -[] measurement -[]
+ []
+
+
 Overfull \hbox (7.0967pt too wide) in paragraph at lines 86--86
 \T1/cmr/m/n/12 Vol. 6939. Lec-ture Notes in Com-puter Sci-ence. Berlin, Hei-del
 -berg: Springer
@@ -1493,23 +1503,23 @@ Overfull \hbox (14.0285pt too wide) in paragraph at lines 86--86
 T1/cmr/m/n/12 : 0123750792, 9780123750792. 
  []
 
-
+[46]
 Overfull \hbox (10.01718pt too wide) in paragraph at lines 86--86
 \T1/cmtt/m/n/12 1 & list = PLCRFsOKSM7eNGNghvT6QdzsDYwSTZxqjC$ \T1/cmr/m/n/12 (
 Re-trieved 01/23/2015). 
  []
 
-[46] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
+[47] (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.aux
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\declaration.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\abstract.aux)
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\acknowledgements.aux))
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 22037 strings out of 493921
- 427361 string characters out of 3139244
- 808267 words of memory out of 3000000
- 24886 multiletter control sequences out of 15000+200000
+ 22046 strings out of 493921
+ 427571 string characters out of 3139244
+ 808387 words of memory out of 3000000
+ 24895 multiletter control sequences out of 15000+200000
  25499 words of font info for 58 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,12n,89p,1568b,1014s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1537,9 +1547,9 @@ nts/cm/cmr10.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/miktex-portable/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/miktex-portable/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (46 pages, 1625550 bytes).
+Output written on main.pdf (47 pages, 1610877 bytes).
 PDF statistics:
- 945 PDF objects out of 1000 (max. 8388607)
+ 895 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

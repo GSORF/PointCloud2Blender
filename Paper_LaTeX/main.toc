@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}3D Panorama}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Types of projections}{24}
+\contentsline {section}{\numberline {2.3}Types of projections}{25}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Conversion: From point cloud to Blender 3D}{27}
 \defcounter {refsection}{0}\relax 
