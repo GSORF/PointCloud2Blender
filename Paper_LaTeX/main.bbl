@@ -195,8 +195,8 @@
       \strng{fullhash}{a8cab6e2477318609ea8cb554115300e}
       \field{labelalpha}{FAR13}
       \field{sortinit}{0}
-      \field{labeltitle}{{FARO Focus3D Features, Benefits and Technical Specifications}}
-      \field{title}{{FARO Focus3D Features, Benefits and Technical Specifications}}
+      \field{labeltitle}{{FARO Focus\textsuperscript{3D} Features, Benefits and Technical Specifications}}
+      \field{title}{{FARO Focus\textsuperscript{3D} Features, Benefits and Technical Specifications}}
       \field{urlday}{20}
       \field{urlmonth}{06}
       \field{urlyear}{2015}
@@ -351,6 +351,130 @@
       \field{labeltitle}{Programming Computer Vision with Python}
       \field{title}{Programming Computer Vision with Python}
       \field{year}{2012}
+    \endentry
+    \entry{blender_rebranding}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=aab0779caed6e7ed142670b0d345528d}{{Blender\bibnamedelimb Foundation}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=aab0779caed6e7ed142670b0d345528d}{{Blender\bibnamedelimb Foundation}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{aab0779caed6e7ed142670b0d345528d}
+      \strng{fullhash}{aab0779caed6e7ed142670b0d345528d}
+      \field{labelalpha}{Ble15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Re-branding Blender - blender.org - Home of the Blender project - Free and Open 3D Creation Software}}
+      \field{title}{{Re-branding Blender - blender.org - Home of the Blender project - Free and Open 3D Creation Software}}
+      \field{urlday}{24}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.blender.org/press/re-branding-blender/
+      \endverb
+    \endentry
+    \entry{calibration_of_action_cameras}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=ca17503485a608f456369e475c30ede0}{Balletti}{B\bibinitperiod}{Caterina}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=ab53ea3c016d73d0c6d8d017f93326ab}{Guerra}{G\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=be005d736317f4c6f73bb9af7b38c24e}{Tsioukas}{T\bibinitperiod}{Vassilios}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=8108f11241933e133cf81ae2cb4720de}{Vernier}{V\bibinitperiod}{Paolo}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=ca17503485a608f456369e475c30ede0}{Balletti}{B\bibinitperiod}{Caterina}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=ab53ea3c016d73d0c6d8d017f93326ab}{Guerra}{G\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=be005d736317f4c6f73bb9af7b38c24e}{Tsioukas}{T\bibinitperiod}{Vassilios}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=8108f11241933e133cf81ae2cb4720de}{Vernier}{V\bibinitperiod}{Paolo}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{df3cd0a43071ee37e6e0de9b87f4edd4}
+      \strng{fullhash}{d88994780da7da478bcdfa5b8a4494b7}
+      \field{labelalpha}{Bal+14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Calibration of Action Cameras for Photogrammetric Purposes}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{9}
+      \field{title}{Calibration of Action Cameras for Photogrammetric Purposes}
+      \field{volume}{14}
+      \field{year}{2014}
+      \field{pages}{17471}
+      \verb{doi}
+      \verb 10.3390/s140917471
+      \endverb
+      \verb{url}
+      \verb http://www.mdpi.com/1424-8220/14/9/17471
+      \endverb
+    \endentry
+    \entry{wiki:Triangulation}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Triangulation --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{3}
+      \field{title}{Triangulation --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Triangulation&oldid=663507003
+      \endverb
+    \endentry
+    \entry{kinectfusion}{inproceedings}{}
+      \name{labelname}{10}{}{%
+        {{hash=ebe14968489553c5a363813b778f2928}{Newcombe}{N\bibinitperiod}{Richard\bibnamedelima A.}{R\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d80a2a01693de3631decaa652d4d3f}{Izadi}{I\bibinitperiod}{Shahram}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=e4282a8b050f6ec88f43896369f6fe38}{Hilliges}{H\bibinitperiod}{Otmar}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=23c72b179d65cca0461f33a964f1f98b}{Molyneaux}{M\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=4bbde8a08938e282b6bd70ea30ba2b09}{Kim}{K\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=d1b136f9f7ca4aed6317c62255ffa521}{Davison}{D\bibinitperiod}{Andrew\bibnamedelima J.}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d0d21ff02dda6c0a7d09ef7436bd329b}{Kohli}{K\bibinitperiod}{Pushmeet}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=3b90a1e3dad54d8cb1230eec501fdf04}{Shotton}{S\bibinitperiod}{Jamie}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=16c2fad85c202f0f60f5d77854ca1cd8}{Hodges}{H\bibinitperiod}{Steve}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=8eb0347090bee0e3077a241bdad85387}{Fitzgibbon}{F\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{10}{}{%
+        {{hash=ebe14968489553c5a363813b778f2928}{Newcombe}{N\bibinitperiod}{Richard\bibnamedelima A.}{R\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d80a2a01693de3631decaa652d4d3f}{Izadi}{I\bibinitperiod}{Shahram}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=e4282a8b050f6ec88f43896369f6fe38}{Hilliges}{H\bibinitperiod}{Otmar}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=23c72b179d65cca0461f33a964f1f98b}{Molyneaux}{M\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=4bbde8a08938e282b6bd70ea30ba2b09}{Kim}{K\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=d1b136f9f7ca4aed6317c62255ffa521}{Davison}{D\bibinitperiod}{Andrew\bibnamedelima J.}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d0d21ff02dda6c0a7d09ef7436bd329b}{Kohli}{K\bibinitperiod}{Pushmeet}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=3b90a1e3dad54d8cb1230eec501fdf04}{Shotton}{S\bibinitperiod}{Jamie}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=16c2fad85c202f0f60f5d77854ca1cd8}{Hodges}{H\bibinitperiod}{Steve}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=8eb0347090bee0e3077a241bdad85387}{Fitzgibbon}{F\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{ea53013b1db86482cb4573dab899984d}
+      \strng{fullhash}{da9c816eb303e2d6ef5d13aaf9525c4b}
+      \field{labelalpha}{New+11}
+      \field{sortinit}{0}
+      \field{labeltitle}{KinectFusion: Real-time Dense Surface Mapping and Tracking}
+      \field{booktitle}{Proceedings of the 2011 10th IEEE International Symposium on Mixed and Augmented Reality}
+      \field{isbn}{978-1-4577-2183-0}
+      \field{series}{ISMAR '11}
+      \field{title}{KinectFusion: Real-time Dense Surface Mapping and Tracking}
+      \field{year}{2011}
+      \field{pages}{127\bibrangedash 136}
+      \verb{doi}
+      \verb 10.1109/ISMAR.2011.6092378
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/ISMAR.2011.6092378
+      \endverb
     \endentry
     \entry{google_maps}{online}{}
       \name{labelname}{1}{}{%
@@ -935,8 +1059,8 @@
       \strng{fullhash}{a8cab6e2477318609ea8cb554115300e}
       \field{labelalpha}{FAR13}
       \field{sortinit}{0}
-      \field{labeltitle}{{FARO Focus3D Features, Benefits and Technical Specifications}}
-      \field{title}{{FARO Focus3D Features, Benefits and Technical Specifications}}
+      \field{labeltitle}{{FARO Focus\textsuperscript{3D} Features, Benefits and Technical Specifications}}
+      \field{title}{{FARO Focus\textsuperscript{3D} Features, Benefits and Technical Specifications}}
       \field{urlday}{20}
       \field{urlmonth}{06}
       \field{urlyear}{2015}
@@ -1091,6 +1215,130 @@
       \field{labeltitle}{Programming Computer Vision with Python}
       \field{title}{Programming Computer Vision with Python}
       \field{year}{2012}
+    \endentry
+    \entry{blender_rebranding}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=aab0779caed6e7ed142670b0d345528d}{{Blender\bibnamedelimb Foundation}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=aab0779caed6e7ed142670b0d345528d}{{Blender\bibnamedelimb Foundation}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{aab0779caed6e7ed142670b0d345528d}
+      \strng{fullhash}{aab0779caed6e7ed142670b0d345528d}
+      \field{labelalpha}{Ble15}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Re-branding Blender - blender.org - Home of the Blender project - Free and Open 3D Creation Software}}
+      \field{title}{{Re-branding Blender - blender.org - Home of the Blender project - Free and Open 3D Creation Software}}
+      \field{urlday}{24}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.blender.org/press/re-branding-blender/
+      \endverb
+    \endentry
+    \entry{calibration_of_action_cameras}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=ca17503485a608f456369e475c30ede0}{Balletti}{B\bibinitperiod}{Caterina}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=ab53ea3c016d73d0c6d8d017f93326ab}{Guerra}{G\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=be005d736317f4c6f73bb9af7b38c24e}{Tsioukas}{T\bibinitperiod}{Vassilios}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=8108f11241933e133cf81ae2cb4720de}{Vernier}{V\bibinitperiod}{Paolo}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=ca17503485a608f456369e475c30ede0}{Balletti}{B\bibinitperiod}{Caterina}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=ab53ea3c016d73d0c6d8d017f93326ab}{Guerra}{G\bibinitperiod}{Francesco}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=be005d736317f4c6f73bb9af7b38c24e}{Tsioukas}{T\bibinitperiod}{Vassilios}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=8108f11241933e133cf81ae2cb4720de}{Vernier}{V\bibinitperiod}{Paolo}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{df3cd0a43071ee37e6e0de9b87f4edd4}
+      \strng{fullhash}{d88994780da7da478bcdfa5b8a4494b7}
+      \field{labelalpha}{Bal+14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Calibration of Action Cameras for Photogrammetric Purposes}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{number}{9}
+      \field{title}{Calibration of Action Cameras for Photogrammetric Purposes}
+      \field{volume}{14}
+      \field{year}{2014}
+      \field{pages}{17471}
+      \verb{doi}
+      \verb 10.3390/s140917471
+      \endverb
+      \verb{url}
+      \verb http://www.mdpi.com/1424-8220/14/9/17471
+      \endverb
+    \endentry
+    \entry{wiki:Triangulation}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Triangulation --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{3}
+      \field{title}{Triangulation --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Triangulation&oldid=663507003
+      \endverb
+    \endentry
+    \entry{kinectfusion}{inproceedings}{}
+      \name{labelname}{10}{}{%
+        {{hash=ebe14968489553c5a363813b778f2928}{Newcombe}{N\bibinitperiod}{Richard\bibnamedelima A.}{R\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d80a2a01693de3631decaa652d4d3f}{Izadi}{I\bibinitperiod}{Shahram}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=e4282a8b050f6ec88f43896369f6fe38}{Hilliges}{H\bibinitperiod}{Otmar}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=23c72b179d65cca0461f33a964f1f98b}{Molyneaux}{M\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=4bbde8a08938e282b6bd70ea30ba2b09}{Kim}{K\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=d1b136f9f7ca4aed6317c62255ffa521}{Davison}{D\bibinitperiod}{Andrew\bibnamedelima J.}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d0d21ff02dda6c0a7d09ef7436bd329b}{Kohli}{K\bibinitperiod}{Pushmeet}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=3b90a1e3dad54d8cb1230eec501fdf04}{Shotton}{S\bibinitperiod}{Jamie}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=16c2fad85c202f0f60f5d77854ca1cd8}{Hodges}{H\bibinitperiod}{Steve}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=8eb0347090bee0e3077a241bdad85387}{Fitzgibbon}{F\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{10}{}{%
+        {{hash=ebe14968489553c5a363813b778f2928}{Newcombe}{N\bibinitperiod}{Richard\bibnamedelima A.}{R\bibinitperiod\bibinitdelim A\bibinitperiod}{}{}{}{}}%
+        {{hash=19d80a2a01693de3631decaa652d4d3f}{Izadi}{I\bibinitperiod}{Shahram}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=e4282a8b050f6ec88f43896369f6fe38}{Hilliges}{H\bibinitperiod}{Otmar}{O\bibinitperiod}{}{}{}{}}%
+        {{hash=23c72b179d65cca0461f33a964f1f98b}{Molyneaux}{M\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=4bbde8a08938e282b6bd70ea30ba2b09}{Kim}{K\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=d1b136f9f7ca4aed6317c62255ffa521}{Davison}{D\bibinitperiod}{Andrew\bibnamedelima J.}{A\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=d0d21ff02dda6c0a7d09ef7436bd329b}{Kohli}{K\bibinitperiod}{Pushmeet}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=3b90a1e3dad54d8cb1230eec501fdf04}{Shotton}{S\bibinitperiod}{Jamie}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=16c2fad85c202f0f60f5d77854ca1cd8}{Hodges}{H\bibinitperiod}{Steve}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=8eb0347090bee0e3077a241bdad85387}{Fitzgibbon}{F\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Washington, DC, USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{ea53013b1db86482cb4573dab899984d}
+      \strng{fullhash}{da9c816eb303e2d6ef5d13aaf9525c4b}
+      \field{labelalpha}{New+11}
+      \field{sortinit}{0}
+      \field{labeltitle}{KinectFusion: Real-time Dense Surface Mapping and Tracking}
+      \field{booktitle}{Proceedings of the 2011 10th IEEE International Symposium on Mixed and Augmented Reality}
+      \field{isbn}{978-1-4577-2183-0}
+      \field{series}{ISMAR '11}
+      \field{title}{KinectFusion: Real-time Dense Surface Mapping and Tracking}
+      \field{year}{2011}
+      \field{pages}{127\bibrangedash 136}
+      \verb{doi}
+      \verb 10.1109/ISMAR.2011.6092378
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/ISMAR.2011.6092378
+      \endverb
     \endentry
     \entry{google_maps}{online}{}
       \name{labelname}{1}{}{%

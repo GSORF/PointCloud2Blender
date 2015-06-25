@@ -4,25 +4,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.1}{\ignorespaces LiDAR Scanner Point Cloud of the Pellerhaus\relax }}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Multiview Reconstruction from historic stereo pairs\relax }}{15}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Multi-view reconstruction point clouds generated from 356 photos\relax }}{16}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The Evolution of the Pellerhaus\relax }}{22}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The Evolution of the Pellerhaus\relax }}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces 2D Panorama of the Pellerhaus\relax }}{24}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 2D Panorama of the Pellerhaus\relax }}{26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 3D Panorama Sphere\relax }}{25}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 3D Panorama Sphere\relax }}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Three example projections\relax }}{25}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Three example projections\relax }}{27}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram\relax }}{30}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Scanning with Faro Focus 3D\relax }}{31}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram\relax }}{28}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A description\relax }}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Scanning with Faro Focus 3D\relax }}{29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The Pellerhaus modeled manually\relax }}{39}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The Pellerhaus modeled manually\relax }}{40}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
