@@ -560,81 +560,92 @@
       \verb https://www.youtube.com/watch?v=IMSozUpFFkU
       \endverb
     \endentry
-    \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
+    \entry{art_patronage_google}{online}{}
       \name{labelname}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=9cf2773d3f460c256dfc08a612f4eacc}{{Georgina\bibnamedelimb Voss}}{G\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=9cf2773d3f460c256dfc08a612f4eacc}{{Georgina\bibnamedelimb Voss}}{G\bibinitperiod}{}{}{}{}{}{}}%
       }
-      \list{language}{1}{%
-        {german}%
-      }
-      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \field{labelalpha}{Alt}
+      \strng{namehash}{9cf2773d3f460c256dfc08a612f4eacc}
+      \strng{fullhash}{9cf2773d3f460c256dfc08a612f4eacc}
+      \field{labelalpha}{Geo14}
       \field{sortinit}{0}
-      \field{labeltitle}{Wiederaufbau des Pellerhofes}
-      \field{booktitle}{Pellerhaus Magazin}
-      \field{origlanguage}{german}
-      \field{title}{Wiederaufbau des Pellerhofes}
-    \endentry
-    \entry{afPellerhausMagazin01}{booklet}{}
-      \name{labelname}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {german}%
-      }
-      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \field{labelalpha}{Alt12}
-      \field{sortinit}{0}
-      \field{labeltitle}{Pellerhaus Magazin 01}
-      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
-      \field{title}{Pellerhaus Magazin 01}
-      \field{year}{2012}
-    \endentry
-    \entry{afPellerhausMagazin02}{booklet}{}
-      \name{labelname}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {german}%
-      }
-      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \field{labelalpha}{Alt13}
-      \field{sortinit}{0}
-      \field{labeltitle}{Pellerhaus Magazin 02}
-      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
-      \field{title}{Pellerhaus Magazin 02}
-      \field{year}{2013}
-    \endentry
-    \entry{afPellerhausMagazin03}{booklet}{}
-      \name{labelname}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {german}%
-      }
-      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \field{labelalpha}{Alt14}
-      \field{sortinit}{0}
-      \field{labeltitle}{Pellerhaus Magazin 03}
-      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
-      \field{title}{Pellerhaus Magazin 03}
+      \field{labeltitle}{{DevArt: Google's powerful new move to arts patronage | Science | The Guardian}}
+      \field{title}{{DevArt: Google's powerful new move to arts patronage | Science | The Guardian}}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
       \field{year}{2014}
+      \verb{url}
+      \verb http://www.theguardian.com/science/political-science/2014/feb/28/devart-googles-powerful-new-move-to-arts-patronage
+      \endverb
+    \endentry
+    \entry{wiki:Ancient_greek_roman_principles}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Greco-Roman world --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{4}
+      \field{title}{Greco-Roman world --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Greco-Roman_world&oldid=654515334
+      \endverb
+    \endentry
+    \entry{wiki:Renaissance}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Renaissance architecture --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{5}
+      \field{title}{Renaissance architecture --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Renaissance_architecture&oldid=665879352
+      \endverb
+    \endentry
+    \entry{wiki:GermanRenaissance}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{German Renaissance --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{6}
+      \field{title}{German Renaissance --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{26}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=German_Renaissance&oldid=645400210
+      \endverb
     \endentry
     \entry{bookAcademiaNorica}{book}{}
       \name{labelname}{1}{}{%
@@ -662,6 +673,215 @@
       \field{pages}{39\bibrangedash 40}
       \verb{url}
       \verb http://www.steiner-verlag.de/titel/51429.html
+      \endverb
+    \endentry
+    \entry{afPellerhausMagazin02}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt13}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 02}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 02}
+      \field{year}{2013}
+    \endentry
+    \entry{afPellerhausMagazin01}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt12}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 01}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 01}
+      \field{year}{2012}
+    \endentry
+    \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
+      \name{labelname}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt}
+      \field{sortinit}{0}
+      \field{labeltitle}{Wiederaufbau des Pellerhofes}
+      \field{booktitle}{Pellerhaus Magazin}
+      \field{origlanguage}{german}
+      \field{title}{Wiederaufbau des Pellerhofes}
+    \endentry
+    \entry{afPellerhausMagazin03}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 03}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 03}
+      \field{year}{2014}
+    \endentry
+    \entry{wiki:Panorama}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Panorama --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{7}
+      \field{title}{Panorama --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Panorama&oldid=665030494
+      \endverb
+    \endentry
+    \entry{wiki:CircleVision}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Circle-Vision 360 --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{8}
+      \field{title}{Circle-Vision 360 --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Circle-Vision_360%C3%82%C2%B0&oldid=666618020
+      \endverb
+    \endentry
+    \entry{kolorGoPro}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=964b03e43158eb5a767f54a629526707}{{Kolor\bibnamedelimb Team}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=964b03e43158eb5a767f54a629526707}{{Kolor\bibnamedelimb Team}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{964b03e43158eb5a767f54a629526707}
+      \strng{fullhash}{964b03e43158eb5a767f54a629526707}
+      \field{labelalpha}{Kol15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Kolor | Image-stitching, virtual tour, 360-degree video experts}
+      \field{title}{Kolor | Image-stitching, virtual tour, 360-degree video experts}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.kolor.com/
+      \endverb
+    \endentry
+    \entry{googleATAPHelp}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d95f7bd06569f285e46d17ad97fc5fc0}{{CGMeetup}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d95f7bd06569f285e46d17ad97fc5fc0}{{CGMeetup}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d95f7bd06569f285e46d17ad97fc5fc0}
+      \strng{fullhash}{d95f7bd06569f285e46d17ad97fc5fc0}
+      \field{labelalpha}{CGM15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Google ATAP 'HELP' Behind The ScenesComputer Graphics and Digital Art Community for Artist: Job, Tutorial, Art, Concept Art, Portfolio}
+      \field{title}{Google ATAP 'HELP' Behind The ScenesComputer Graphics and Digital Art Community for Artist: Job, Tutorial, Art, Concept Art, Portfolio}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.cgmeetup.net/home/google-atap-help-behind-the-scenes/
+      \endverb
+    \endentry
+    \entry{panoramaProblem}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=0d827272538ef6e0014cb4bfd95c7987}{{Carlos\bibnamedelimb Alberto\bibnamedelimb Furuti}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=0d827272538ef6e0014cb4bfd95c7987}{{Carlos\bibnamedelimb Alberto\bibnamedelimb Furuti}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{0d827272538ef6e0014cb4bfd95c7987}
+      \strng{fullhash}{0d827272538ef6e0014cb4bfd95c7987}
+      \field{labelalpha}{Car14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Map Projections: Mapping Definitions and Concepts}
+      \field{title}{Map Projections: Mapping Definitions and Concepts}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.progonos.com/furuti/MapProj/Normal/CartDef/MapDef/mapDef.html
+      \endverb
+    \endentry
+    \entry{houshiar2015a}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=dc7ae9389b76b9de8b3aa88208fbd2c1}{Houshiar}{H\bibinitperiod}{HamidReza}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=e71170bab88b2a00f70df4096b9b6b67}{Borrmann}{B\bibinitperiod}{Dorit}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=a242b1e83766d97039c1863c0d2d0cfe}{Elseberg}{E\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=490c7a8d6199fbc87b6ea4dff87f8c54}{Nüchter}{N\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=dc7ae9389b76b9de8b3aa88208fbd2c1}{Houshiar}{H\bibinitperiod}{HamidReza}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=e71170bab88b2a00f70df4096b9b6b67}{Borrmann}{B\bibinitperiod}{Dorit}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=a242b1e83766d97039c1863c0d2d0cfe}{Elseberg}{E\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=490c7a8d6199fbc87b6ea4dff87f8c54}{Nüchter}{N\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0f4e5ee8937e7b7866543a6d3f39337c}
+      \strng{fullhash}{7b13c5d492ba09ac3d7dab52bf54dd81}
+      \field{labelalpha}{Hou+15}
+      \field{sortinit}{0}
+      \field{labeltitle}{A Study of Projections for Key Point Based Registration of Panoramic Terrestrial 3D Laser Scans}
+      \field{booktitle}{Journal of Geo-spatial Information Science}
+      \field{title}{A Study of Projections for Key Point Based Registration of Panoramic Terrestrial 3D Laser Scans}
+      \field{year}{2015}
+      \field{pages}{11\bibrangedash 31}
+      \verb{doi}
+      \verb 10.1080/10095020.2015.1017913
       \endverb
     \endentry
     \entry{Gschwandtner11b}{incollection}{}
@@ -807,6 +1027,27 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{freedomOfPanoramaUnderAttack}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=419856f94895d3811a869f2645ffa7df}{{Owen\bibnamedelimb Blacker}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=419856f94895d3811a869f2645ffa7df}{{Owen\bibnamedelimb Blacker}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{419856f94895d3811a869f2645ffa7df}
+      \strng{fullhash}{419856f94895d3811a869f2645ffa7df}
+      \field{labelalpha}{Owe15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Freedom of Panorama is under attack — Vantage — Medium}
+      \field{title}{Freedom of Panorama is under attack — Vantage — Medium}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://medium.com/vantage/freedom-of-panorama-is-under-attack-6cc5353b4f65
       \endverb
     \endentry
     \entry{bookBayerischeBiographische}{book}{}
@@ -1424,81 +1665,92 @@
       \verb https://www.youtube.com/watch?v=IMSozUpFFkU
       \endverb
     \endentry
-    \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
+    \entry{art_patronage_google}{online}{}
       \name{labelname}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=9cf2773d3f460c256dfc08a612f4eacc}{{Georgina\bibnamedelimb Voss}}{G\bibinitperiod}{}{}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=9cf2773d3f460c256dfc08a612f4eacc}{{Georgina\bibnamedelimb Voss}}{G\bibinitperiod}{}{}{}{}{}{}}%
       }
-      \list{language}{1}{%
-        {german}%
-      }
-      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \field{labelalpha}{Alt}
+      \strng{namehash}{9cf2773d3f460c256dfc08a612f4eacc}
+      \strng{fullhash}{9cf2773d3f460c256dfc08a612f4eacc}
+      \field{labelalpha}{Geo14}
       \field{sortinit}{0}
-      \field{labeltitle}{Wiederaufbau des Pellerhofes}
-      \field{booktitle}{Pellerhaus Magazin}
-      \field{origlanguage}{german}
-      \field{title}{Wiederaufbau des Pellerhofes}
-    \endentry
-    \entry{afPellerhausMagazin01}{booklet}{}
-      \name{labelname}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {german}%
-      }
-      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \field{labelalpha}{Alt12}
-      \field{sortinit}{0}
-      \field{labeltitle}{Pellerhaus Magazin 01}
-      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
-      \field{title}{Pellerhaus Magazin 01}
-      \field{year}{2012}
-    \endentry
-    \entry{afPellerhausMagazin02}{booklet}{}
-      \name{labelname}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {german}%
-      }
-      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \field{labelalpha}{Alt13}
-      \field{sortinit}{0}
-      \field{labeltitle}{Pellerhaus Magazin 02}
-      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
-      \field{title}{Pellerhaus Magazin 02}
-      \field{year}{2013}
-    \endentry
-    \entry{afPellerhausMagazin03}{booklet}{}
-      \name{labelname}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {german}%
-      }
-      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
-      \field{labelalpha}{Alt14}
-      \field{sortinit}{0}
-      \field{labeltitle}{Pellerhaus Magazin 03}
-      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
-      \field{title}{Pellerhaus Magazin 03}
+      \field{labeltitle}{{DevArt: Google's powerful new move to arts patronage | Science | The Guardian}}
+      \field{title}{{DevArt: Google's powerful new move to arts patronage | Science | The Guardian}}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
       \field{year}{2014}
+      \verb{url}
+      \verb http://www.theguardian.com/science/political-science/2014/feb/28/devart-googles-powerful-new-move-to-arts-patronage
+      \endverb
+    \endentry
+    \entry{wiki:Ancient_greek_roman_principles}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Greco-Roman world --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{4}
+      \field{title}{Greco-Roman world --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Greco-Roman_world&oldid=654515334
+      \endverb
+    \endentry
+    \entry{wiki:Renaissance}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Renaissance architecture --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{5}
+      \field{title}{Renaissance architecture --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{25}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Renaissance_architecture&oldid=665879352
+      \endverb
+    \endentry
+    \entry{wiki:GermanRenaissance}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{German Renaissance --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{6}
+      \field{title}{German Renaissance --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{26}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=German_Renaissance&oldid=645400210
+      \endverb
     \endentry
     \entry{bookAcademiaNorica}{book}{}
       \name{labelname}{1}{}{%
@@ -1526,6 +1778,215 @@
       \field{pages}{39\bibrangedash 40}
       \verb{url}
       \verb http://www.steiner-verlag.de/titel/51429.html
+      \endverb
+    \endentry
+    \entry{afPellerhausMagazin02}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt13}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 02}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 02}
+      \field{year}{2013}
+    \endentry
+    \entry{afPellerhausMagazin01}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt12}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 01}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 01}
+      \field{year}{2012}
+    \endentry
+    \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
+      \name{labelname}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt}
+      \field{sortinit}{0}
+      \field{labeltitle}{Wiederaufbau des Pellerhofes}
+      \field{booktitle}{Pellerhaus Magazin}
+      \field{origlanguage}{german}
+      \field{title}{Wiederaufbau des Pellerhofes}
+    \endentry
+    \entry{afPellerhausMagazin03}{booklet}{}
+      \name{labelname}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {german}%
+      }
+      \strng{namehash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \strng{fullhash}{19d8d83b10578da3f8f3d265cbd072f3}
+      \field{labelalpha}{Alt14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Pellerhaus Magazin 03}
+      \field{subtitle}{Ein Magazin der Altstadtfreunde zum Wiederaufbau des Pellerhofes}
+      \field{title}{Pellerhaus Magazin 03}
+      \field{year}{2014}
+    \endentry
+    \entry{wiki:Panorama}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Panorama --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{7}
+      \field{title}{Panorama --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Panorama&oldid=665030494
+      \endverb
+    \endentry
+    \entry{wiki:CircleVision}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Circle-Vision 360 --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{8}
+      \field{title}{Circle-Vision 360 --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Circle-Vision_360%C3%82%C2%B0&oldid=666618020
+      \endverb
+    \endentry
+    \entry{kolorGoPro}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=964b03e43158eb5a767f54a629526707}{{Kolor\bibnamedelimb Team}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=964b03e43158eb5a767f54a629526707}{{Kolor\bibnamedelimb Team}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{964b03e43158eb5a767f54a629526707}
+      \strng{fullhash}{964b03e43158eb5a767f54a629526707}
+      \field{labelalpha}{Kol15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Kolor | Image-stitching, virtual tour, 360-degree video experts}
+      \field{title}{Kolor | Image-stitching, virtual tour, 360-degree video experts}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.kolor.com/
+      \endverb
+    \endentry
+    \entry{googleATAPHelp}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d95f7bd06569f285e46d17ad97fc5fc0}{{CGMeetup}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d95f7bd06569f285e46d17ad97fc5fc0}{{CGMeetup}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d95f7bd06569f285e46d17ad97fc5fc0}
+      \strng{fullhash}{d95f7bd06569f285e46d17ad97fc5fc0}
+      \field{labelalpha}{CGM15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Google ATAP 'HELP' Behind The ScenesComputer Graphics and Digital Art Community for Artist: Job, Tutorial, Art, Concept Art, Portfolio}
+      \field{title}{Google ATAP 'HELP' Behind The ScenesComputer Graphics and Digital Art Community for Artist: Job, Tutorial, Art, Concept Art, Portfolio}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.cgmeetup.net/home/google-atap-help-behind-the-scenes/
+      \endverb
+    \endentry
+    \entry{panoramaProblem}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=0d827272538ef6e0014cb4bfd95c7987}{{Carlos\bibnamedelimb Alberto\bibnamedelimb Furuti}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=0d827272538ef6e0014cb4bfd95c7987}{{Carlos\bibnamedelimb Alberto\bibnamedelimb Furuti}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{0d827272538ef6e0014cb4bfd95c7987}
+      \strng{fullhash}{0d827272538ef6e0014cb4bfd95c7987}
+      \field{labelalpha}{Car14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Map Projections: Mapping Definitions and Concepts}
+      \field{title}{Map Projections: Mapping Definitions and Concepts}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.progonos.com/furuti/MapProj/Normal/CartDef/MapDef/mapDef.html
+      \endverb
+    \endentry
+    \entry{houshiar2015a}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=dc7ae9389b76b9de8b3aa88208fbd2c1}{Houshiar}{H\bibinitperiod}{HamidReza}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=e71170bab88b2a00f70df4096b9b6b67}{Borrmann}{B\bibinitperiod}{Dorit}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=a242b1e83766d97039c1863c0d2d0cfe}{Elseberg}{E\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=490c7a8d6199fbc87b6ea4dff87f8c54}{Nüchter}{N\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=dc7ae9389b76b9de8b3aa88208fbd2c1}{Houshiar}{H\bibinitperiod}{HamidReza}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=e71170bab88b2a00f70df4096b9b6b67}{Borrmann}{B\bibinitperiod}{Dorit}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=a242b1e83766d97039c1863c0d2d0cfe}{Elseberg}{E\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=490c7a8d6199fbc87b6ea4dff87f8c54}{Nüchter}{N\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0f4e5ee8937e7b7866543a6d3f39337c}
+      \strng{fullhash}{7b13c5d492ba09ac3d7dab52bf54dd81}
+      \field{labelalpha}{Hou+15}
+      \field{sortinit}{0}
+      \field{labeltitle}{A Study of Projections for Key Point Based Registration of Panoramic Terrestrial 3D Laser Scans}
+      \field{booktitle}{Journal of Geo-spatial Information Science}
+      \field{title}{A Study of Projections for Key Point Based Registration of Panoramic Terrestrial 3D Laser Scans}
+      \field{year}{2015}
+      \field{pages}{11\bibrangedash 31}
+      \verb{doi}
+      \verb 10.1080/10095020.2015.1017913
       \endverb
     \endentry
     \entry{Gschwandtner11b}{incollection}{}
@@ -1671,6 +2132,27 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{freedomOfPanoramaUnderAttack}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=419856f94895d3811a869f2645ffa7df}{{Owen\bibnamedelimb Blacker}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=419856f94895d3811a869f2645ffa7df}{{Owen\bibnamedelimb Blacker}}{O\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{419856f94895d3811a869f2645ffa7df}
+      \strng{fullhash}{419856f94895d3811a869f2645ffa7df}
+      \field{labelalpha}{Owe15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Freedom of Panorama is under attack — Vantage — Medium}
+      \field{title}{Freedom of Panorama is under attack — Vantage — Medium}
+      \field{urlday}{27}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://medium.com/vantage/freedom-of-panorama-is-under-attack-6cc5353b4f65
       \endverb
     \endentry
     \entry{bookBayerischeBiographische}{book}{}

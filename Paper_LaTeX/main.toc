@@ -36,144 +36,146 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Renaissance}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Architects}{23}
+\contentsline {subsection}{\numberline {2.1.2}Pellerhaus}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Pellerhaus}{23}
+\contentsline {subsection}{\numberline {2.1.3}Architects of the Pellerhaus N\IeC {\"u}rnberg}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}3D Panorama}{26}
+\contentsline {section}{\numberline {2.2}3D Panorama}{27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Types of projections}{27}
+\contentsline {subsection}{\numberline {2.2.1}Creating panoramas}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Conversion: From point cloud to Blender 3D}{29}
+\contentsline {subsection}{\numberline {2.2.2}Types of projections}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Concept}{29}
+\contentsline {chapter}{\numberline {3}Conversion: From point cloud to Blender 3D}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Use case diagram}{30}
+\contentsline {section}{\numberline {3.1}Concept}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Laser scanning on location}{30}
+\contentsline {subsection}{\numberline {3.1.1}Use case diagram}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Generating data and testing algorithms}{31}
+\contentsline {subsection}{\numberline {3.1.2}Laser scanning on location}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}BlenSor}{31}
+\contentsline {section}{\numberline {3.2}Generating data and testing algorithms}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Test-Addon for Blender}{31}
+\contentsline {subsection}{\numberline {3.2.1}BlenSor}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Prototype}{32}
+\contentsline {subsection}{\numberline {3.2.2}Test-Addon for Blender}{34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Point Cloud Importer}{32}
+\contentsline {section}{\numberline {3.3}Prototype}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Point Cloud data formats}{32}
+\contentsline {subsection}{\numberline {3.3.1}Point Cloud Importer}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Determine original point cloud resolution}{32}
+\contentsline {subsubsection}{Point Cloud data formats}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Coordinate system representations}{32}
+\contentsline {subsection}{\numberline {3.3.2}Determine original point cloud resolution}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Converting from cartesian to spherical and vice versa}{33}
+\contentsline {subsection}{\numberline {3.3.3}Coordinate system representations}{35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.5}Types of projections}{34}
+\contentsline {subsection}{\numberline {3.3.4}Converting from cartesian to spherical and vice versa}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Equirectangular projection}{34}
+\contentsline {subsection}{\numberline {3.3.5}Types of projections}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Cylindrical projection}{34}
+\contentsline {subsubsection}{Equirectangular projection}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Mercator projection}{34}
+\contentsline {subsubsection}{Cylindrical projection}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.6}Saving textures}{34}
+\contentsline {subsubsection}{Mercator projection}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.7}OpenGL Point Cloud Viewer}{34}
+\contentsline {subsection}{\numberline {3.3.6}Saving textures}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.8}Meshing}{34}
+\contentsline {subsection}{\numberline {3.3.7}OpenGL Point Cloud Viewer}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.9}Texture Coordinates and Normals}{35}
+\contentsline {subsection}{\numberline {3.3.8}Meshing}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.10}Mesh Exporter}{35}
+\contentsline {subsection}{\numberline {3.3.9}Texture Coordinates and Normals}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{.obj}{35}
+\contentsline {subsection}{\numberline {3.3.10}Mesh Exporter}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{.blend}{35}
+\contentsline {subsubsection}{.obj}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{custom format}{35}
+\contentsline {subsubsection}{.blend}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.11}Optimizations}{35}
+\contentsline {subsubsection}{custom format}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Flip horizontal direction of panorama}{35}
+\contentsline {subsection}{\numberline {3.3.11}Optimizations}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Panorama pixel depth testing}{35}
+\contentsline {subsubsection}{Flip horizontal direction of panorama}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Panorama noise reduction}{36}
+\contentsline {subsubsection}{Panorama pixel depth testing}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Remove doubles}{36}
+\contentsline {subsubsection}{Panorama noise reduction}{38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{3D Distortion}{36}
+\contentsline {subsubsection}{Remove doubles}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Tiling}{36}
+\contentsline {subsubsection}{3D Distortion}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Production: Recreating the Pellerhaus from 1605}{37}
+\contentsline {subsubsection}{Tiling}{39}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Modeling the current Pellerhaus facade}{37}
+\contentsline {chapter}{\numberline {4}Production: Recreating the Pellerhaus from 1605}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Using the PC2B converter software}{37}
+\contentsline {section}{\numberline {4.1}Modeling the current Pellerhaus facade}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Using UAV references with photogrammetry}{37}
+\contentsline {subsection}{\numberline {4.1.1}Using the PC2B converter software}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Modeling the historic Pellerhaus facade}{38}
+\contentsline {subsection}{\numberline {4.1.2}Using UAV references with photogrammetry}{41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Using historic images as guide}{38}
+\contentsline {section}{\numberline {4.2}Modeling the historic Pellerhaus facade}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Using historic stereoscopic images with photogrammetry}{38}
+\contentsline {subsection}{\numberline {4.2.1}Using historic images as guide}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}The finished models}{39}
+\contentsline {subsection}{\numberline {4.2.2}Using historic stereoscopic images with photogrammetry}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Animating between the states}{39}
+\contentsline {section}{\numberline {4.3}The finished models}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Lighting and Rendering}{39}
+\contentsline {section}{\numberline {4.4}Animating between the states}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Stereoscopic Rendering as anaglyph 3d}{40}
+\contentsline {section}{\numberline {4.5}Lighting and Rendering}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{41}
+\contentsline {section}{\numberline {4.6}Stereoscopic Rendering as anaglyph 3d}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Conclusion}{41}
+\contentsline {chapter}{\numberline {5}Conclusion and Future Work}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Mesh generation}{41}
+\contentsline {section}{\numberline {5.1}Conclusion}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Handling non-LiDAR-Data}{41}
+\contentsline {subsection}{\numberline {5.1.1}Mesh generation}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Future Work}{42}
+\contentsline {subsection}{\numberline {5.1.2}Handling non-LiDAR-Data}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Realtime Conversion}{42}
+\contentsline {section}{\numberline {5.2}Future Work}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Integration in the Blender core}{42}
+\contentsline {subsection}{\numberline {5.2.1}Realtime Conversion}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}3D Lenticular}{42}
+\contentsline {subsection}{\numberline {5.2.2}Integration in the Blender core}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Augmented Reality}{42}
+\contentsline {subsection}{\numberline {5.2.3}3D Lenticular}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{43}
+\contentsline {subsection}{\numberline {5.2.4}Augmented Reality}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Pellerhaus Architect Biography}{43}
+\contentsline {chapter}{\numberline {A}Appendix}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}German}{43}
+\contentsline {section}{\numberline {A.1}Pellerhaus Architect Biography}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}English}{43}
+\contentsline {subsection}{\numberline {A.1.1}German}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Software used}{44}
+\contentsline {subsection}{\numberline {A.1.2}English}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}\LaTeX }{44}
+\contentsline {section}{\numberline {A.2}Software used}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Faro SCENE LT}{44}
+\contentsline {subsection}{\numberline {A.2.1}\LaTeX }{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.3}Blender 3D}{44}
+\contentsline {subsection}{\numberline {A.2.2}Faro SCENE LT}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.4}Meshlab}{44}
+\contentsline {subsection}{\numberline {A.2.3}Blender 3D}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.5}Visual SfM}{44}
+\contentsline {subsection}{\numberline {A.2.4}Meshlab}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.6}CMP-MVS}{45}
+\contentsline {subsection}{\numberline {A.2.5}Visual SfM}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.7}Agisoft Photoscan Professional}{45}
+\contentsline {subsection}{\numberline {A.2.6}CMP-MVS}{49}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Programming frameworks and libraries}{45}
+\contentsline {subsection}{\numberline {A.2.7}Agisoft Photoscan Professional}{49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.1}Qt 5.4}{45}
+\contentsline {section}{\numberline {A.3}Programming frameworks and libraries}{49}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.2}OpenGL}{45}
+\contentsline {subsection}{\numberline {A.3.1}Qt 5.4}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3.2}OpenGL}{49}
