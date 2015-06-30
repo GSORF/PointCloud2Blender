@@ -152,7 +152,7 @@ In simple words this means that we can create a two-dimensional image containing
 	\label{fig:2d_panorama}
 \end{figure}
 
-The image above was generated with the custom PointCloud2Blender (PC2B) converter software which will be discussed in detail in the next chapter. A two-dimensional panorama image depicts a full horizontal and vertical view of the location where it was taken from. Please note, that the example above is not a full vertical view. The reason being, this image was generated from a point cloud of a laser scanner. Due to the tripod on which the scanner was mounted on, the lower part of the scan is useless and therefore has been omitted by the scanning device.
+The image above was generated with the custom PointCloud2Blender (PC2B) converter software which will be discussed in detail in the next chapter. A two-dimensional panorama image depicts a full horizontal and vertical view of the location where it was taken from. Please note, that the example above is not a full vertical view. The reason being, this image was generated from a point cloud created by a laser scanner. Due to the tripod on which the scanner was mounted on, the lower part of the scan is useless and therefore has been omitted by the scanning device.
 
 This two-dimensional panorama can now be converted to a three-dimensional panorama by simply mapping it onto a sphere, as shown here:
 
@@ -186,7 +186,7 @@ Placing a virtual camera in the center of the sphere, makes it possible to visua
 
 To create panoramic images it is necessary to map a three-dimensional environment onto a two-dimensional plane. This is accomplished by computing the spherical coordinates of every point in three-dimensional space. Without going into too much technical detail, we can either define a point in 3D space with its x, y and z coordinate (known as the cartesian coordinates) or with their horizontal angle displacement, vertical angle displacement and distance from the origin (which is known as spherical coordinates). The latter can be imagined as rotating and scaling a unit sphere until it intersects the point.
 
-To clarify the process a little further, we will do a visual example. Consider the 3D point A at {$(1.0, 1.0, 1.41421)$}  in cartesian coordinates {$(x, y, z)$}. We need to align the x-axis of a unit sphere, labeled Point B, with point A (Figure \ref{fig:visual_coordinate_conversion_1}). To do so, we first rotate the sphere along its local z-axis by 45 degrees (Figure \ref{fig:visual_coordinate_conversion_2}). Secondly, we rotate it along its local y-axis by 45 degrees (Figure \ref{fig:visual_coordinate_conversion_3}). Finally we scale the unit sphere by 2 to align both points with each other (Figure \ref{fig:visual_coordinate_conversion_4}). Now we have calculated the spherical coordinates {$(\theta, \varphi, r)$} which are now expressed as {$(45.0, 45.0, 2.0)$}. This process is visualized below:
+To clarify the process a little further, we will do a visual example. Consider the 3D point A at {$(1.0, 1.0, 1.41421)$}  in cartesian coordinates {$(x, y, z)$}. We need to align the x-axis of a unit sphere, labeled Point B, with point A (Figure \ref{fig:visual_coordinate_conversion_1}). To do so, we first rotate the sphere along its local z-axis by 45 degrees (Figure \ref{fig:visual_coordinate_conversion_2}). Secondly, we rotate it along its local y-axis by 45 degrees (Figure \ref{fig:visual_coordinate_conversion_3}). Finally we scale the unit sphere by 2 to align both points with each other (Figure \ref{fig:visual_coordinate_conversion_4}). Now we have calculated the spherical coordinates {$(\theta, \varphi, radius)$} which are now expressed as {$(45.0, 45.0, 2.0)$}. This process is visualized below:
 
 \begin{figure}[h]
 	\centering
@@ -222,7 +222,7 @@ To clarify the process a little further, we will do a visual example. Consider t
 	\label{fig:converting_cartesian_to_spherical}
 \end{figure}
 
-The final image can be formed by mapping these spherical coordinates {$(\theta, \varphi, r)$} to the image coordinates {$(x, y)$}. This is called panoramic projection.
+The final image can be formed by mapping these spherical coordinates {$(\theta, \varphi, radius)$} to the image coordinates {$(x, y)$}. This is called panoramic projection.
 
 There is a set of various types of projections used for panorama generation. A subset of them is introduced in the following section.
 
@@ -256,8 +256,7 @@ Lastly, the mercator projection is a mapping that preserves angles locally (conf
 	\hfill
 	\begin{subfigure}[b]{0.3\textwidth}
 		\centering
-		%\includegraphics[width=\textwidth]{projection_type_mercator.jpg}
-		\includegraphics[width=\textwidth]{graph_a}
+		\includegraphics[width=\textwidth]{projection_type_mercator.jpg}
 		\caption{Mercator}
 		\label{fig:mercator}
 	\end{subfigure}
@@ -265,4 +264,4 @@ Lastly, the mercator projection is a mapping that preserves angles locally (conf
 	\label{fig:three_projections}
 \end{figure}
 
-One of the most spread types is the equirectangular projection (see Figure \ref{fig:equirectangular}). Furthermore it does not apply any transformation or scaling. During testing it proved as the only useful projection, since the other projections caused a lot of points to stretch into negative infinity. Due to this reason we use it primarily in this project.
+We have observed that the equirectangular projection is suited best for our purpose (see Figure \ref{fig:equirectangular}). It is one of the most spread types and provides a full coverage of the scene. Furthermore it does not apply any transformation or scaling. During testing it proved as the only useful projection, since the other projections caused a lot of points to stretch into negative infinity. Due to this reason we use it primarily in this project.

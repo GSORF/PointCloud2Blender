@@ -4,7 +4,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.1}{\ignorespaces LiDAR Scanner Point Cloud of the Pellerhaus\relax }}{14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Multi-view reconstruction point clouds generated from 356 photos\relax }}{16}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Multi-view reconstruction point clouds generated from 356 photos\relax }}{19}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -24,17 +24,29 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram\relax }}{33}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram\relax }}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Scanning with Faro Focus 3D\relax }}{34}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Scanning with FARO Focus\textsuperscript {3D}\relax }}{33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Custom Blender Addon\relax }}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Sample generated point cloud files\relax }}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Panoramic images generated from the imported point cloud\relax }}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces PC2B Meshing Algorithm\relax }}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces PC2B Normal filtering concept\relax }}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The generated mesh before and after normal filtering in PC2B\relax }}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces PC2B OpenGL Viewer\relax }}{40}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A description\relax }}{43}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A description\relax }}{45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The Pellerhaus modeled manually\relax }}{43}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The Pellerhaus modeled manually\relax }}{44}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The Pellerhaus modeled manually\relax }}{45}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

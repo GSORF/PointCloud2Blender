@@ -884,6 +884,45 @@
       \verb 10.1080/10095020.2015.1017913
       \endverb
     \endentry
+    \entry{Shewchuk02constraineddelaunay}{inproceedings}{}
+      \name{labelname}{1}{}{%
+        {{hash=eb086bafa609a33eb2558aeee67f070a}{Shewchuk}{S\bibinitperiod}{Jonathan\bibnamedelima Richard}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=eb086bafa609a33eb2558aeee67f070a}{Shewchuk}{S\bibinitperiod}{Jonathan\bibnamedelima Richard}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eb086bafa609a33eb2558aeee67f070a}
+      \strng{fullhash}{eb086bafa609a33eb2558aeee67f070a}
+      \field{labelalpha}{She02}
+      \field{sortinit}{0}
+      \field{labeltitle}{Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery}
+      \field{booktitle}{In Eleventh International Meshing Roundtable}
+      \field{title}{Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery}
+      \field{year}{2002}
+      \field{pages}{193\bibrangedash 204}
+    \endentry
+    \entry{wiki:CoordinateSystem}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Coordinate system --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{9}
+      \field{title}{Coordinate system --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{29}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Coordinate_system&oldid=662627300
+      \endverb
+    \endentry
     \entry{Gschwandtner11b}{incollection}{}
       \name{labelname}{4}{}{%
         {{hash=73dd84a9ef3956ccae9a530877082d59}{Gschwandtner}{G\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
@@ -938,6 +977,27 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1007/978-3-642-24031-7%5C_20
+      \endverb
+    \endentry
+    \entry{Stanford_repo}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=075a9c540b4ae8444d86113c2e29f2a1}{{Stanford\bibnamedelimb Computer\bibnamedelimb Graphics\bibnamedelimb Laboratory}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=075a9c540b4ae8444d86113c2e29f2a1}{{Stanford\bibnamedelimb Computer\bibnamedelimb Graphics\bibnamedelimb Laboratory}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{075a9c540b4ae8444d86113c2e29f2a1}
+      \strng{fullhash}{075a9c540b4ae8444d86113c2e29f2a1}
+      \field{labelalpha}{Sta14}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Stanford 3D Scanning Repository}
+      \field{title}{The Stanford 3D Scanning Repository}
+      \field{urlday}{28}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://graphics.stanford.edu/data/3Dscanrep/
       \endverb
     \endentry
     \entry{Pharr:2010:PBR:1854996}{book}{}
@@ -1989,6 +2049,45 @@
       \verb 10.1080/10095020.2015.1017913
       \endverb
     \endentry
+    \entry{Shewchuk02constraineddelaunay}{inproceedings}{}
+      \name{labelname}{1}{}{%
+        {{hash=eb086bafa609a33eb2558aeee67f070a}{Shewchuk}{S\bibinitperiod}{Jonathan\bibnamedelima Richard}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=eb086bafa609a33eb2558aeee67f070a}{Shewchuk}{S\bibinitperiod}{Jonathan\bibnamedelima Richard}{J\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{eb086bafa609a33eb2558aeee67f070a}
+      \strng{fullhash}{eb086bafa609a33eb2558aeee67f070a}
+      \field{labelalpha}{She02}
+      \field{sortinit}{0}
+      \field{labeltitle}{Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery}
+      \field{booktitle}{In Eleventh International Meshing Roundtable}
+      \field{title}{Constrained Delaunay Tetrahedralizations and Provably Good Boundary Recovery}
+      \field{year}{2002}
+      \field{pages}{193\bibrangedash 204}
+    \endentry
+    \entry{wiki:CoordinateSystem}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Coordinate system --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{9}
+      \field{title}{Coordinate system --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{29}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Coordinate_system&oldid=662627300
+      \endverb
+    \endentry
     \entry{Gschwandtner11b}{incollection}{}
       \name{labelname}{4}{}{%
         {{hash=73dd84a9ef3956ccae9a530877082d59}{Gschwandtner}{G\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
@@ -2043,6 +2142,27 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1007/978-3-642-24031-7%5C_20
+      \endverb
+    \endentry
+    \entry{Stanford_repo}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=075a9c540b4ae8444d86113c2e29f2a1}{{Stanford\bibnamedelimb Computer\bibnamedelimb Graphics\bibnamedelimb Laboratory}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=075a9c540b4ae8444d86113c2e29f2a1}{{Stanford\bibnamedelimb Computer\bibnamedelimb Graphics\bibnamedelimb Laboratory}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{075a9c540b4ae8444d86113c2e29f2a1}
+      \strng{fullhash}{075a9c540b4ae8444d86113c2e29f2a1}
+      \field{labelalpha}{Sta14}
+      \field{sortinit}{0}
+      \field{labeltitle}{The Stanford 3D Scanning Repository}
+      \field{title}{The Stanford 3D Scanning Repository}
+      \field{urlday}{28}
+      \field{urlmonth}{06}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://graphics.stanford.edu/data/3Dscanrep/
       \endverb
     \endentry
     \entry{Pharr:2010:PBR:1854996}{book}{}

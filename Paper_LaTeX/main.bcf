@@ -1985,18 +1985,20 @@
     <bcf:citekey order="38">googleATAPHelp</bcf:citekey>
     <bcf:citekey order="39">panoramaProblem</bcf:citekey>
     <bcf:citekey order="40">houshiar2015a</bcf:citekey>
-    <bcf:citekey order="41">Gschwandtner11b</bcf:citekey>
-    <bcf:citekey order="42">Pharr:2010:PBR:1854996</bcf:citekey>
-    <bcf:citekey order="43">Pharr:2010:PBR:1854996</bcf:citekey>
-    <bcf:citekey order="44">ytQtOpenGL</bcf:citekey>
-    <bcf:citekey order="45">webMysteryOfTheBlend</bcf:citekey>
-    <bcf:citekey order="46">webBlenderArtistsBlendExport</bcf:citekey>
-    <bcf:citekey order="47">dp_lidar</bcf:citekey>
-    <bcf:citekey order="48">freedomOfPanoramaUnderAttack</bcf:citekey>
-    <bcf:citekey order="49">bookBayerischeBiographische</bcf:citekey>
-    <bcf:citekey order="50">bookBayerischeBiographische</bcf:citekey>
-    <bcf:citekey order="51">ytLaTeX</bcf:citekey>
-    <bcf:citekey order="51">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="41">Shewchuk02constraineddelaunay</bcf:citekey>
+    <bcf:citekey order="42">wiki:CoordinateSystem</bcf:citekey>
+    <bcf:citekey order="43">Gschwandtner11b</bcf:citekey>
+    <bcf:citekey order="44">Stanford_repo</bcf:citekey>
+    <bcf:citekey order="45">Pharr:2010:PBR:1854996</bcf:citekey>
+    <bcf:citekey order="46">houshiar2015a</bcf:citekey>
+    <bcf:citekey order="47">ytQtOpenGL</bcf:citekey>
+    <bcf:citekey order="48">webMysteryOfTheBlend</bcf:citekey>
+    <bcf:citekey order="49">webBlenderArtistsBlendExport</bcf:citekey>
+    <bcf:citekey order="50">freedomOfPanoramaUnderAttack</bcf:citekey>
+    <bcf:citekey order="51">bookBayerischeBiographische</bcf:citekey>
+    <bcf:citekey order="52">bookBayerischeBiographische</bcf:citekey>
+    <bcf:citekey order="53">ytLaTeX</bcf:citekey>
+    <bcf:citekey order="53">webLaTeX-Tutorial</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
