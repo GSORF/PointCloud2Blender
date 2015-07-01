@@ -37,39 +37,65 @@ Körner, Hans-Michael and Jahn, Bruno (2012, p.2128) \parencite{bookBayerischeBi
 \section{Software used}
 
 \subsection{\LaTeX}
-This paper was written in \LaTeX. On Windows, TeXstudio in conjunction with MikTeX (both portable versions) have been used for visual creation of the document. I decided to switch from the free version Adobe InDesign CS 2.0 to \LaTeX in favor of it being cross-platform and hoping to make it easier to publish the thesis online in the future. Since I have never worked with \LaTeX before, various tutorials \parencite{ytLaTeX,webLaTeX-Tutorial} on the internet have been a great help.
+This paper was written in \LaTeX. On Windows, TeXstudio in conjunction with MikTeX (both portable versions) have been used for visual creation of the document. The author decided to switch from the free Adobe InDesign CS 2.0 version to \LaTeX in favor of it being cross-platform and the hope to make it easier to publish the thesis online in the future. Since the author has never worked with \LaTeX before, various tutorials \parencite{ytLaTeX,webLaTeX-Tutorial} on the internet have been a great help to get started with the writing process.
 
-\subsection{Faro SCENE LT}
-For preprocessing of the raw laser scanner point cloud. \url{http://www.faro.com/faro-3d-app-center/stand-alone-apps/scene-lt}
+\subsection{FARO SCENE LT}
+The FARO Focus\textsuperscript{3D} laser scanner creates proprietary files of every scan. Those raw laser scanner point cloud files need to be preprocessed in the FARO SCENE software tool. FARO offers two versions of their software. The usual FARO SCENE software needs to be purchased. We use the free version which is called FARO SCENE LT, which only allows to export the point clouds in grayscale. More information about FARO SCENE LT can be found in \parencite{appendix_faro_scene_lt}.
 
 \subsection{Blender 3D}
-To cleanup the generated mesh, retopologize it and create the 3D animations of the Pellerhaus, Blender was used. \url{http://blender.org}
+Blender is a free and open source 3D creation suite. It is used as the primary 3D application in this research, mainly to inspect the generated meshes from PC2B and to create the 3D models of the Pellerhaus. More information about Blender can be found in \parencite{appendix_blender}.
 
 \subsection{Meshlab}
-For converting binary test files to ASCII. \url{http://meshlab.sourceforge.net/}
+Meshlab is an open source tool which can import and export a lot of file formats. We use it to convert binary test files to ASCII files if they need to get opened in our custom software. More information about Meshlab can be found in \parencite{appendix_meshlab}.
 
 \subsection{Visual SfM}
 \label{appendix_visual_sfm}
-For creating 3D models from images for free. \url{http://ccwu.me/vsfm/}
+Visual SfM is a free photogrammetry tool. We use it to generate 3D models from multiple images for free. More information about Visual SfM can be found in \parencite{appendix_visualsfm}.
 
 \subsection{CMP-MVS}
-For creating dense reconstruction based on camera parameters. \url{http://ptak.felk.cvut.cz/sfmservice/websfm.pl?menu=cmpmvs}
+CMP-MVS can create dense point clouds with photogrammetry algorithms based on camera parameters and scene descriptions. Those files can be generated in Visual SfM and passed on to CMP-MVS to create higher quality models. More information about CMP-MVS can be found in \parencite{appendix_cmp-mvs}.
 
-\subsection{Agisoft Photoscan Professional}
-For creating 3D models from images with a 30-day test period. Mostly historic stereo pairs have been processed well. \url{http://ccwu.me/vsfm/}
-
-
-
+\subsection{AgiSoft PhotoScan Professional}
+A commercial alternative to Visual SfM to create 3D models from images via photogrammetry. The AgiSoft PhotoScan Professional Edition can be purchased for 3.264,25 Euro. We have used a 30-day test period in this research. More information about PhotoScan can be found in \parencite{appendix_agisoft_photoscan}.
 
 
 \section{Programming frameworks and libraries}
 
 \subsection{Qt 5.4}
 
-Qt is an open source framework ...
+Qt (pronounced "cute") is an open source C++ framework that offers a wide range of features. It provides cross-platform support for user interfaces, image manipulation, graphics drawing and much more. It was the perfect framework for this research due to its mature feature set. More information about Qt can be found in \parencite{appendix_qt}.
 
 \subsection{OpenGL}
 
-The Open Graphics Library (OpenGL) is an abstraction layer for accessing graphics hardware on a high level. The current version supports the programmable function pipeline, where vertex and fragment shaders provide a rich set of ways to manipulate the final pixel on the output device, e.g. computer screens. ...
+The Open Graphics Library (OpenGL) is an abstraction layer for accessing graphics hardware on a high level on almost any operating system and programming language. The current version supports the programmable function pipeline, where vertex and fragment shaders provide a rich set of ways to manipulate the final pixel on the output device, e.g. computer screens. We use OpenGL in this project to draw millions of points and the final mesh generated from them. More information about OpenGL can be found in \parencite{appendix_opengl}.
 
+\section{Delaunay Tetrahedralization Texture Maps}
+\label{appendix_delaunay_texture_maps}
 
+Those texture maps are generated in Visual SfM with the Delaunay Tetrahedralization algorithm.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Delaunay_Tetrahedralization_texture_map_1.jpg}
+		\caption{Big UV islands}
+		\label{fig:appendix_dt_1}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Delaunay_Tetrahedralization_texture_map_2.jpg}
+		\caption{Medium UV islands}
+		\label{fig:appendix_dt_2}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Delaunay_Tetrahedralization_texture_map_3.jpg}
+		\caption{Small UV islands}
+		\label{fig:appendix_dt_3}
+	\end{subfigure}
+	\caption{Texture maps generated with Delaunay Tetrahedralization}
+	\label{fig:appendix_dt}
+\end{figure}

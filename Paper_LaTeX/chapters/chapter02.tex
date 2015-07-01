@@ -227,9 +227,18 @@ After the panorama images have been created, the depthmap image is used for mesh
 
 Each of the four vertices is converted back from the image plane to the cartesian coordinate system and contributes to build up the 3D surface. This process is repeated until every pixel of the image has been processed.
 
-\subsection{Texture Coordinates and Normals}
+\subsection{Texture Coordinates and Normals}  \label{section_texture_coordinates_and_normals}
 
 While the mesh is being generated, Texture Coordinates and Normals are being calculated, too. Texture Coordinates vary from 0.0 to 1.0 in the x and y direction, respectively. Real time computer graphics denote the texture coordinate axes as s and t, 3D software applications tend to name them u and v. By dividing the current pixel coordinate on the image plane by the width and height of the image, respectively, the coordinates can be normalized to get the texture coordinate. 3D Applications use the texture coordinate information to properly map an image texture (in our case the colormap) onto the 3D surface.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{PC2B_TextureCoordinates.jpg}
+	\caption{PC2B Texture Coordinates}
+	\label{fig:pc2b_texture_coordinates}
+\end{figure}
+
 
 Calculating normals is accomplished by determining the cross product of the two vectors forming the current quad. It may happen that a polygon will get distorted at locations where the depth image values change quickly. Hence, the four-sided polygon is divided into two triangles and normals are generated for each of them. Normals are very useful to test certain properties of the mesh. This research uses normals to determine if a face is oriented perpendicular to the center of the panorama. Computing the dot product of a normal and a vector from the origin to the face returns the cosine of the angle between those two vectors. This is used in PC2B to discard polygons which would normally distort the mesh, as shown here:
 
@@ -297,18 +306,22 @@ Even the Blender community suggested to not use the .blend format directly, but 
 
 The initial algorithms and approaches had some flaws, which needed to get eliminated to get a clean mesh out of the converter. On the contrary, there are still some issues with the converter software which we would like to address briefly:
 
+\subsubsection{Various import settings}
+
+The point cloud file, which is going to be meshed, could need some minor adjustments, such as a predefined translation along a 3D vector or it might have a different orientation. In addition, the maximum scan distance or the normal angle threshold for discarding normals (see \ref{section_texture_coordinates_and_normals}) could need tweaking. Those settings are exposed to the user in PC2B.
+
 \subsubsection{Panorama pixel depth testing}
 
 It might happen that two or more points from the point cloud fall into the same pixel in the 2D panorama. On the one hand this might result in a noisy image. On the other hand, this affects the generated mesh, if not handled with care. To avoid any errors, it is important to take only the closest point to the camera, instead of just letting every 3D point override the corresponding pixel in the image. This is implemented in the converter software.
 
 \subsubsection{Panorama flipped horizontally}
 
-The panorama images are currently flipped horizontally. This is not a big issue, since the texture coordinates are created based on this images and therefore the texture is applied correctly. However, this might be something to consider fixing.
+The panorama images are currently flipped horizontally. This is not a big issue, since the texture coordinates are created based on these images and therefore the texture is applied correctly, eventually. However, this might be something to consider changing.
 
 \subsubsection{Panorama noise reduction}
 
-Since there is only a limited number of points, the panorama texture gets quite noisy, especially with a higher resolution option set in the converter. A distinct change from light to dark gray values in the depth map will result in a noisy 3D surface as well.
-To solve this issue, the image pixels could either be formed by averaging the values or blurred by a user-defined amount.
+Since there is only a limited number of points, the panorama texture can get quite noisy or gaps can occur, especially with a higher resolution option set in the converter. A distinct change from light to dark gray values in the depth map will result in a noisy 3D surface as well.
+To solve this issue, the image pixels could either be formed by averaging the values in a certain region or blurred by a user-defined amount.
 
 \subsubsection{Remove doubles}
 

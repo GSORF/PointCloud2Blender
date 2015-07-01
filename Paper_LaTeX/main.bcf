@@ -1995,10 +1995,23 @@
     <bcf:citekey order="48">webMysteryOfTheBlend</bcf:citekey>
     <bcf:citekey order="49">webBlenderArtistsBlendExport</bcf:citekey>
     <bcf:citekey order="50">freedomOfPanoramaUnderAttack</bcf:citekey>
-    <bcf:citekey order="51">bookBayerischeBiographische</bcf:citekey>
-    <bcf:citekey order="52">bookBayerischeBiographische</bcf:citekey>
-    <bcf:citekey order="53">ytLaTeX</bcf:citekey>
-    <bcf:citekey order="53">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="51">calibration_of_action_cameras</bcf:citekey>
+    <bcf:citekey order="52">anja_eichhorn</bcf:citekey>
+    <bcf:citekey order="53">3dprinting_materials</bcf:citekey>
+    <bcf:citekey order="54">wiki:lenticular_printing</bcf:citekey>
+    <bcf:citekey order="55">ytTimeTraveler</bcf:citekey>
+    <bcf:citekey order="56">bookBayerischeBiographische</bcf:citekey>
+    <bcf:citekey order="57">bookBayerischeBiographische</bcf:citekey>
+    <bcf:citekey order="58">ytLaTeX</bcf:citekey>
+    <bcf:citekey order="58">webLaTeX-Tutorial</bcf:citekey>
+    <bcf:citekey order="59">appendix_faro_scene_lt</bcf:citekey>
+    <bcf:citekey order="60">appendix_blender</bcf:citekey>
+    <bcf:citekey order="61">appendix_meshlab</bcf:citekey>
+    <bcf:citekey order="62">appendix_visualsfm</bcf:citekey>
+    <bcf:citekey order="63">appendix_cmp-mvs</bcf:citekey>
+    <bcf:citekey order="64">appendix_agisoft_photoscan</bcf:citekey>
+    <bcf:citekey order="65">appendix_qt</bcf:citekey>
+    <bcf:citekey order="66">appendix_opengl</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

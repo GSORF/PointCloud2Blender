@@ -364,6 +364,7 @@
       \field{labelalpha}{Ble15}
       \field{sortinit}{0}
       \field{labeltitle}{{Re-branding Blender - blender.org - Home of the Blender project - Free and Open 3D Creation Software}}
+      \field{extraalpha}{1}
       \field{title}{{Re-branding Blender - blender.org - Home of the Blender project - Free and Open 3D Creation Software}}
       \field{urlday}{24}
       \field{urlmonth}{06}
@@ -1110,6 +1111,90 @@
       \verb https://medium.com/vantage/freedom-of-panorama-is-under-attack-6cc5353b4f65
       \endverb
     \endentry
+    \entry{anja_eichhorn}{unpublished}{}
+      \name{labelname}{1}{}{%
+        {{hash=1cc0dc1dacc78c523db1dbe4c9434c69}{Eichhorn}{E\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=1cc0dc1dacc78c523db1dbe4c9434c69}{Eichhorn}{E\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {German}%
+      }
+      \strng{namehash}{1cc0dc1dacc78c523db1dbe4c9434c69}
+      \strng{fullhash}{1cc0dc1dacc78c523db1dbe4c9434c69}
+      \field{labelalpha}{Eic15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Selbstständige Navigation eines autonomen Roboters mittels 3D-Tiefensensor}
+      \field{day}{16}
+      \field{month}{10}
+      \field{title}{Selbstständige Navigation eines autonomen Roboters mittels 3D-Tiefensensor}
+      \field{year}{2015}
+    \endentry
+    \entry{3dprinting_materials}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f55409fcb5988e00e2e54d91df332486}{{Shapeways\bibnamedelimb Inc.}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f55409fcb5988e00e2e54d91df332486}{{Shapeways\bibnamedelimb Inc.}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{f55409fcb5988e00e2e54d91df332486}
+      \strng{fullhash}{f55409fcb5988e00e2e54d91df332486}
+      \field{labelalpha}{Sha15}
+      \field{sortinit}{0}
+      \field{labeltitle}{3D Printing Materials Comparison Sheet}
+      \field{title}{3D Printing Materials Comparison Sheet}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.shapeways.com/materials/material-options
+      \endverb
+    \endentry
+    \entry{wiki:lenticular_printing}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Lenticular printing --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{10}
+      \field{title}{Lenticular printing --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Lenticular_printing&oldid=657839036
+      \endverb
+    \endentry
+    \entry{ytTimeTraveler}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=100115f3b0ff437873f113bc2c387a84}{{Timetraveler\bibnamedelimb augmented\bibnamedelimb Ltd.}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=100115f3b0ff437873f113bc2c387a84}{{Timetraveler\bibnamedelimb augmented\bibnamedelimb Ltd.}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{100115f3b0ff437873f113bc2c387a84}
+      \strng{fullhash}{100115f3b0ff437873f113bc2c387a84}
+      \field{labelalpha}{Tim14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Timetraveler The Berlin Wall App}
+      \field{title}{Timetraveler The Berlin Wall App}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?t=75&v=CY9f6UJZlmM
+      \endverb
+    \endentry
     \entry{bookBayerischeBiographische}{book}{}
       \name{labelname}{2}{}{%
         {{hash=ba56f92c6ef678253b80cfa67aa8cd5f}{Körner}{K\bibinitperiod}{Hans-Michael}{H\bibinithyphendelim M\bibinitperiod}{}{}{}{}}%
@@ -1180,6 +1265,175 @@
       \field{year}{2015}
       \verb{url}
       \verb http://www.latex-tutorial.com/
+      \endverb
+    \endentry
+    \entry{appendix_faro_scene_lt}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=11f7b1f5fd42a9b03a4f8de3bdbae7f2}{{Faro}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=11f7b1f5fd42a9b03a4f8de3bdbae7f2}{{Faro}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{11f7b1f5fd42a9b03a4f8de3bdbae7f2}
+      \strng{fullhash}{11f7b1f5fd42a9b03a4f8de3bdbae7f2}
+      \field{labelalpha}{Far15}
+      \field{sortinit}{0}
+      \field{labeltitle}{SCENE LT}
+      \field{title}{SCENE LT}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.faro.com/faro-3d-app-center/stand-alone-apps/scene-lt
+      \endverb
+    \endentry
+    \entry{appendix_blender}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=aab0779caed6e7ed142670b0d345528d}{{Blender\bibnamedelimb Foundation}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=aab0779caed6e7ed142670b0d345528d}{{Blender\bibnamedelimb Foundation}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{aab0779caed6e7ed142670b0d345528d}
+      \strng{fullhash}{aab0779caed6e7ed142670b0d345528d}
+      \field{labelalpha}{Ble15}
+      \field{sortinit}{0}
+      \field{labeltitle}{blender.org - Home of the Blender project - Free and Open 3D Creation Software}
+      \field{extraalpha}{2}
+      \field{title}{blender.org - Home of the Blender project - Free and Open 3D Creation Software}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://blender.org
+      \endverb
+    \endentry
+    \entry{appendix_meshlab}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=445ad4d7017e04c0f760f7e2039db4d3}{{Paolo\bibnamedelimb Cignoni}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=445ad4d7017e04c0f760f7e2039db4d3}{{Paolo\bibnamedelimb Cignoni}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{445ad4d7017e04c0f760f7e2039db4d3}
+      \strng{fullhash}{445ad4d7017e04c0f760f7e2039db4d3}
+      \field{labelalpha}{Pao14}
+      \field{sortinit}{0}
+      \field{labeltitle}{MeshLab}
+      \field{title}{MeshLab}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://meshlab.sourceforge.net/
+      \endverb
+    \endentry
+    \entry{appendix_visualsfm}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d0023066233e35b10585e63f565e43f3}{{Changchang\bibnamedelimb Wu}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d0023066233e35b10585e63f565e43f3}{{Changchang\bibnamedelimb Wu}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d0023066233e35b10585e63f565e43f3}
+      \strng{fullhash}{d0023066233e35b10585e63f565e43f3}
+      \field{labelalpha}{Cha15}
+      \field{sortinit}{0}
+      \field{labeltitle}{VisualSFM : A Visual Structure from Motion System}
+      \field{title}{VisualSFM : A Visual Structure from Motion System}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://ccwu.me/vsfm/
+      \endverb
+    \endentry
+    \entry{appendix_cmp-mvs}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=32e14e1fc706ed4d13a51b1de6cbe3b7}{{Jancosek,\bibnamedelimb Michal\bibnamedelimb and\bibnamedelimb Pajdla,\bibnamedelimb Tomas}}{J\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=32e14e1fc706ed4d13a51b1de6cbe3b7}{{Jancosek,\bibnamedelimb Michal\bibnamedelimb and\bibnamedelimb Pajdla,\bibnamedelimb Tomas}}{J\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{32e14e1fc706ed4d13a51b1de6cbe3b7}
+      \strng{fullhash}{32e14e1fc706ed4d13a51b1de6cbe3b7}
+      \field{labelalpha}{Jan12}
+      \field{sortinit}{0}
+      \field{labeltitle}{CMP SfM Web Service}
+      \field{title}{CMP SfM Web Service}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://ptak.felk.cvut.cz/sfmservice/websfm.pl?menu=cmpmvs
+      \endverb
+    \endentry
+    \entry{appendix_agisoft_photoscan}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e90fa707cb0247275de443fa3aa747a0}{{Agisoft\bibnamedelimb LLC}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e90fa707cb0247275de443fa3aa747a0}{{Agisoft\bibnamedelimb LLC}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{e90fa707cb0247275de443fa3aa747a0}
+      \strng{fullhash}{e90fa707cb0247275de443fa3aa747a0}
+      \field{labelalpha}{Agi14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Agisoft PhotoScan}
+      \field{title}{Agisoft PhotoScan}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.agisoft.com
+      \endverb
+    \endentry
+    \entry{appendix_qt}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=a291b8e8b76a09867551689e8fae949d}{{The\bibnamedelimb Qt\bibnamedelimb Company}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a291b8e8b76a09867551689e8fae949d}{{The\bibnamedelimb Qt\bibnamedelimb Company}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{a291b8e8b76a09867551689e8fae949d}
+      \strng{fullhash}{a291b8e8b76a09867551689e8fae949d}
+      \field{labelalpha}{The15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Qt | Cross-platform application and UI development framework}
+      \field{title}{Qt | Cross-platform application and UI development framework}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.qt.io
+      \endverb
+    \endentry
+    \entry{appendix_opengl}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=0faf2bb66d311b66c3177e318f91f551}{{Khronos\bibnamedelimb Group}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=0faf2bb66d311b66c3177e318f91f551}{{Khronos\bibnamedelimb Group}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{0faf2bb66d311b66c3177e318f91f551}
+      \strng{fullhash}{0faf2bb66d311b66c3177e318f91f551}
+      \field{labelalpha}{Khr15}
+      \field{sortinit}{0}
+      \field{labeltitle}{OpenGL - The Industry Standard for High Performance Graphics}
+      \field{title}{OpenGL - The Industry Standard for High Performance Graphics}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.opengl.org
       \endverb
     \endentry
   \endsortlist
@@ -1529,6 +1783,7 @@
       \field{labelalpha}{Ble15}
       \field{sortinit}{0}
       \field{labeltitle}{{Re-branding Blender - blender.org - Home of the Blender project - Free and Open 3D Creation Software}}
+      \field{extraalpha}{1}
       \field{title}{{Re-branding Blender - blender.org - Home of the Blender project - Free and Open 3D Creation Software}}
       \field{urlday}{24}
       \field{urlmonth}{06}
@@ -2275,6 +2530,90 @@
       \verb https://medium.com/vantage/freedom-of-panorama-is-under-attack-6cc5353b4f65
       \endverb
     \endentry
+    \entry{anja_eichhorn}{unpublished}{}
+      \name{labelname}{1}{}{%
+        {{hash=1cc0dc1dacc78c523db1dbe4c9434c69}{Eichhorn}{E\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=1cc0dc1dacc78c523db1dbe4c9434c69}{Eichhorn}{E\bibinitperiod}{Anja}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {German}%
+      }
+      \strng{namehash}{1cc0dc1dacc78c523db1dbe4c9434c69}
+      \strng{fullhash}{1cc0dc1dacc78c523db1dbe4c9434c69}
+      \field{labelalpha}{Eic15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Selbstständige Navigation eines autonomen Roboters mittels 3D-Tiefensensor}
+      \field{day}{16}
+      \field{month}{10}
+      \field{title}{Selbstständige Navigation eines autonomen Roboters mittels 3D-Tiefensensor}
+      \field{year}{2015}
+    \endentry
+    \entry{3dprinting_materials}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=f55409fcb5988e00e2e54d91df332486}{{Shapeways\bibnamedelimb Inc.}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=f55409fcb5988e00e2e54d91df332486}{{Shapeways\bibnamedelimb Inc.}}{S\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{f55409fcb5988e00e2e54d91df332486}
+      \strng{fullhash}{f55409fcb5988e00e2e54d91df332486}
+      \field{labelalpha}{Sha15}
+      \field{sortinit}{0}
+      \field{labeltitle}{3D Printing Materials Comparison Sheet}
+      \field{title}{3D Printing Materials Comparison Sheet}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.shapeways.com/materials/material-options
+      \endverb
+    \endentry
+    \entry{wiki:lenticular_printing}{misc}{}
+      \name{labelname}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{labelalpha}{Wik15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Lenticular printing --- Wikipedia{,} The Free Encyclopedia}
+      \field{extraalpha}{10}
+      \field{title}{Lenticular printing --- Wikipedia{,} The Free Encyclopedia}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Lenticular_printing&oldid=657839036
+      \endverb
+    \endentry
+    \entry{ytTimeTraveler}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=100115f3b0ff437873f113bc2c387a84}{{Timetraveler\bibnamedelimb augmented\bibnamedelimb Ltd.}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=100115f3b0ff437873f113bc2c387a84}{{Timetraveler\bibnamedelimb augmented\bibnamedelimb Ltd.}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{100115f3b0ff437873f113bc2c387a84}
+      \strng{fullhash}{100115f3b0ff437873f113bc2c387a84}
+      \field{labelalpha}{Tim14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Timetraveler The Berlin Wall App}
+      \field{title}{Timetraveler The Berlin Wall App}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?t=75&v=CY9f6UJZlmM
+      \endverb
+    \endentry
     \entry{bookBayerischeBiographische}{book}{}
       \name{labelname}{2}{}{%
         {{hash=ba56f92c6ef678253b80cfa67aa8cd5f}{Körner}{K\bibinitperiod}{Hans-Michael}{H\bibinithyphendelim M\bibinitperiod}{}{}{}{}}%
@@ -2345,6 +2684,175 @@
       \field{year}{2015}
       \verb{url}
       \verb http://www.latex-tutorial.com/
+      \endverb
+    \endentry
+    \entry{appendix_faro_scene_lt}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=11f7b1f5fd42a9b03a4f8de3bdbae7f2}{{Faro}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=11f7b1f5fd42a9b03a4f8de3bdbae7f2}{{Faro}}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{11f7b1f5fd42a9b03a4f8de3bdbae7f2}
+      \strng{fullhash}{11f7b1f5fd42a9b03a4f8de3bdbae7f2}
+      \field{labelalpha}{Far15}
+      \field{sortinit}{0}
+      \field{labeltitle}{SCENE LT}
+      \field{title}{SCENE LT}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.faro.com/faro-3d-app-center/stand-alone-apps/scene-lt
+      \endverb
+    \endentry
+    \entry{appendix_blender}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=aab0779caed6e7ed142670b0d345528d}{{Blender\bibnamedelimb Foundation}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=aab0779caed6e7ed142670b0d345528d}{{Blender\bibnamedelimb Foundation}}{B\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{aab0779caed6e7ed142670b0d345528d}
+      \strng{fullhash}{aab0779caed6e7ed142670b0d345528d}
+      \field{labelalpha}{Ble15}
+      \field{sortinit}{0}
+      \field{labeltitle}{blender.org - Home of the Blender project - Free and Open 3D Creation Software}
+      \field{extraalpha}{2}
+      \field{title}{blender.org - Home of the Blender project - Free and Open 3D Creation Software}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://blender.org
+      \endverb
+    \endentry
+    \entry{appendix_meshlab}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=445ad4d7017e04c0f760f7e2039db4d3}{{Paolo\bibnamedelimb Cignoni}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=445ad4d7017e04c0f760f7e2039db4d3}{{Paolo\bibnamedelimb Cignoni}}{P\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{445ad4d7017e04c0f760f7e2039db4d3}
+      \strng{fullhash}{445ad4d7017e04c0f760f7e2039db4d3}
+      \field{labelalpha}{Pao14}
+      \field{sortinit}{0}
+      \field{labeltitle}{MeshLab}
+      \field{title}{MeshLab}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://meshlab.sourceforge.net/
+      \endverb
+    \endentry
+    \entry{appendix_visualsfm}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=d0023066233e35b10585e63f565e43f3}{{Changchang\bibnamedelimb Wu}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=d0023066233e35b10585e63f565e43f3}{{Changchang\bibnamedelimb Wu}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{d0023066233e35b10585e63f565e43f3}
+      \strng{fullhash}{d0023066233e35b10585e63f565e43f3}
+      \field{labelalpha}{Cha15}
+      \field{sortinit}{0}
+      \field{labeltitle}{VisualSFM : A Visual Structure from Motion System}
+      \field{title}{VisualSFM : A Visual Structure from Motion System}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://ccwu.me/vsfm/
+      \endverb
+    \endentry
+    \entry{appendix_cmp-mvs}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=32e14e1fc706ed4d13a51b1de6cbe3b7}{{Jancosek,\bibnamedelimb Michal\bibnamedelimb and\bibnamedelimb Pajdla,\bibnamedelimb Tomas}}{J\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=32e14e1fc706ed4d13a51b1de6cbe3b7}{{Jancosek,\bibnamedelimb Michal\bibnamedelimb and\bibnamedelimb Pajdla,\bibnamedelimb Tomas}}{J\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{32e14e1fc706ed4d13a51b1de6cbe3b7}
+      \strng{fullhash}{32e14e1fc706ed4d13a51b1de6cbe3b7}
+      \field{labelalpha}{Jan12}
+      \field{sortinit}{0}
+      \field{labeltitle}{CMP SfM Web Service}
+      \field{title}{CMP SfM Web Service}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2012}
+      \verb{url}
+      \verb http://ptak.felk.cvut.cz/sfmservice/websfm.pl?menu=cmpmvs
+      \endverb
+    \endentry
+    \entry{appendix_agisoft_photoscan}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=e90fa707cb0247275de443fa3aa747a0}{{Agisoft\bibnamedelimb LLC}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=e90fa707cb0247275de443fa3aa747a0}{{Agisoft\bibnamedelimb LLC}}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{e90fa707cb0247275de443fa3aa747a0}
+      \strng{fullhash}{e90fa707cb0247275de443fa3aa747a0}
+      \field{labelalpha}{Agi14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Agisoft PhotoScan}
+      \field{title}{Agisoft PhotoScan}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb http://www.agisoft.com
+      \endverb
+    \endentry
+    \entry{appendix_qt}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=a291b8e8b76a09867551689e8fae949d}{{The\bibnamedelimb Qt\bibnamedelimb Company}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a291b8e8b76a09867551689e8fae949d}{{The\bibnamedelimb Qt\bibnamedelimb Company}}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{a291b8e8b76a09867551689e8fae949d}
+      \strng{fullhash}{a291b8e8b76a09867551689e8fae949d}
+      \field{labelalpha}{The15}
+      \field{sortinit}{0}
+      \field{labeltitle}{Qt | Cross-platform application and UI development framework}
+      \field{title}{Qt | Cross-platform application and UI development framework}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.qt.io
+      \endverb
+    \endentry
+    \entry{appendix_opengl}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=0faf2bb66d311b66c3177e318f91f551}{{Khronos\bibnamedelimb Group}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=0faf2bb66d311b66c3177e318f91f551}{{Khronos\bibnamedelimb Group}}{K\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{0faf2bb66d311b66c3177e318f91f551}
+      \strng{fullhash}{0faf2bb66d311b66c3177e318f91f551}
+      \field{labelalpha}{Khr15}
+      \field{sortinit}{0}
+      \field{labeltitle}{OpenGL - The Industry Standard for High Performance Graphics}
+      \field{title}{OpenGL - The Industry Standard for High Performance Graphics}
+      \field{urlday}{01}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.opengl.org
       \endverb
     \endentry
   \endsortlist
