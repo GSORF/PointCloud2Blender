@@ -59,6 +59,19 @@ A more efficient and elegant approach would be to develop a new modifier in C/C+
 
 The working title of this converter software was defined as "PointCloud2Blender", PC2B in short, because converting point clouds to a Blender compatible file format was the main goal of the software project. The prototype consists of three main parts. The importer, the 3D panorama and the mesher. Additionally an OpenGL viewer is implemented to visualize the data while it is being processed. A programming language and framework that provide the necessary performance and graphical user interface were needed. We decided to use C++ with Qt 5 for this task.
 
+\subsection{UML class diagram}
+
+PC2B was developed using object-oriented programming (OOP). To encapsulate certain properties and actions by creating and using objects, those are represented as classes in the source code. PC2B consists of several classes.\\
+Helper classes, such as \textit{Point3D} and \textit{FileType}, provide clear representations of entities while still being flexible for future extensions. Graphical User Interface (GUI) code is contained in \textit{MainWindow}, which inherits from \textit{QMainWindow}. This \textit{MainWindow} is made visible in an instance of a \textit{QApplication} when the program is launched and creates user interface elements as well as instances of PC2B's main components responsible for processing LiDAR data. One of those component parts is the \textit{ImportWorker} which inherits from \textit{QRunnable} and enables it to run on a separate thread in a \textit{QThreadPool}. This is important, because reading and parsing a 6 GB point cloud file can take several minutes which freezes the main GUI loop if on the same thread. The same applies to \textit{MeshWorker} which implements the meshing algorithm and exports the final textured mesh for use in 3D applications. The \textit{Panorama3D} class encapsulates methods to convert a 3D point to a 2D pixel and vice versa. Additionally, it stores the panorama images. Finally the OpenGL viewer is implemented in two classes, \textit{GLWidget} which inherits from \textit{QGLWidget}, and \textit{GLMesh}. While \textit{GLWidget} provides a canvas to draw 3D graphics onto it via OpenGL, \textit{GLMesh} represents the 3D point cloud mesh and groups every property such as vertices, colors and shaders.\\
+This relationship between individual objects is usually depicted in the Unified Modeling Language (UML) as a class diagram. Below is an example how a simplified UML class diagram for PC2B would look like:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{PC2B_UML_class_diagram.jpg}
+	\caption{PC2B UML class diagram (simplified)}
+	\label{fig:pc2b_uml_class_diagram}
+\end{figure}
+
 \subsection{Point Cloud Importer}
 
 A crucial part of the PC2B converter software is the ability to import point clouds saved as files. There is a huge amount of file types that can accomodate such a data structure. Points can be stored in ASCII, Binary or a hybrid form of both. ASCII files are human-readable, binary are not. Importing binary formats requires to know the exact structure of the file and the byte lengths used for certain values. This is important to avoid mixing and misinterpretation of data. A precise import functions needs to adhere to the exact file structure rules. Documentation was limited for many of the file formats, so using ASCII files was a better choice from the beginning. Initially it was planned to only import the .xyz file format, since this is a very simple file format that can be exported in ASCII form from the proprietary FARO SCENE 5 software which is needed for preprocessing the raw point cloud stream produced by the FARO Focus\textsuperscript{3D}.\\

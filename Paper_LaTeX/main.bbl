@@ -1103,12 +1103,33 @@
       \field{sortinit}{0}
       \field{labeltitle}{Freedom of Panorama is under attack — Vantage — Medium}
       \field{title}{Freedom of Panorama is under attack — Vantage — Medium}
-      \field{urlday}{27}
-      \field{urlmonth}{06}
+      \field{urlday}{10}
+      \field{urlmonth}{07}
       \field{urlyear}{2015}
       \field{year}{2015}
       \verb{url}
       \verb https://medium.com/vantage/freedom-of-panorama-is-under-attack-6cc5353b4f65
+      \endverb
+    \endentry
+    \entry{freedomOfPanoramaSaved}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=8903591279601a8859694e09bbd24017}{{Chris\bibnamedelimb Cheesman}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8903591279601a8859694e09bbd24017}{{Chris\bibnamedelimb Cheesman}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{8903591279601a8859694e09bbd24017}
+      \strng{fullhash}{8903591279601a8859694e09bbd24017}
+      \field{labelalpha}{Chr15}
+      \field{sortinit}{0}
+      \field{labeltitle}{European Parliament rejects ‘absurd’ EU plan to axe Freedom of Panorama - Amateur Photographer}
+      \field{title}{European Parliament rejects ‘absurd’ EU plan to axe Freedom of Panorama - Amateur Photographer}
+      \field{urlday}{10}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.amateurphotographer.co.uk/latest/photo-news/european-parliament-rejects-absurd-eu-plan-to-axe-freedom-of-panorama-55708
       \endverb
     \endentry
     \entry{anja_eichhorn}{unpublished}{}
@@ -2522,12 +2543,33 @@
       \field{sortinit}{0}
       \field{labeltitle}{Freedom of Panorama is under attack — Vantage — Medium}
       \field{title}{Freedom of Panorama is under attack — Vantage — Medium}
-      \field{urlday}{27}
-      \field{urlmonth}{06}
+      \field{urlday}{10}
+      \field{urlmonth}{07}
       \field{urlyear}{2015}
       \field{year}{2015}
       \verb{url}
       \verb https://medium.com/vantage/freedom-of-panorama-is-under-attack-6cc5353b4f65
+      \endverb
+    \endentry
+    \entry{freedomOfPanoramaSaved}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=8903591279601a8859694e09bbd24017}{{Chris\bibnamedelimb Cheesman}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8903591279601a8859694e09bbd24017}{{Chris\bibnamedelimb Cheesman}}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{8903591279601a8859694e09bbd24017}
+      \strng{fullhash}{8903591279601a8859694e09bbd24017}
+      \field{labelalpha}{Chr15}
+      \field{sortinit}{0}
+      \field{labeltitle}{European Parliament rejects ‘absurd’ EU plan to axe Freedom of Panorama - Amateur Photographer}
+      \field{title}{European Parliament rejects ‘absurd’ EU plan to axe Freedom of Panorama - Amateur Photographer}
+      \field{urlday}{10}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \verb{url}
+      \verb http://www.amateurphotographer.co.uk/latest/photo-news/european-parliament-rejects-absurd-eu-plan-to-axe-freedom-of-panorama-55708
       \endverb
     \endentry
     \entry{anja_eichhorn}{unpublished}{}

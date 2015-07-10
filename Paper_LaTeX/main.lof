@@ -4,66 +4,68 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.1}{\ignorespaces LiDAR Scanner Point Cloud of the Pellerhaus\relax }}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Multi-view reconstruction point clouds generated from 356 photos\relax }}{17}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Multi-view reconstruction point clouds generated from 356 photos\relax }}{14}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Pellerhaus around 1905\relax }}{22}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Pellerhaus around 1905\relax }}{20}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Pellerhaus 2015\relax }}{23}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Pellerhaus 2015\relax }}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The Evolution of the Pellerhaus\relax }}{23}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The Evolution of the Pellerhaus\relax }}{21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces 2D Panorama of the Pellerhaus\relax }}{26}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces 2D Panorama of the Pellerhaus\relax }}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Mapping a two-dimensional panorama onto a three-dimensional sphere\relax }}{26}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mapping a two-dimensional panorama onto a three-dimensional sphere\relax }}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Converting from cartesian to spherical coordinates, visually\relax }}{27}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Converting from cartesian to spherical coordinates, visually\relax }}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Three sample projection types used in PC2B\relax }}{28}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram\relax }}{30}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Scanning with FARO Focus\textsuperscript {3D}\relax }}{31}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Custom Blender Addon\relax }}{32}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Sample generated point cloud files\relax }}{33}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Panoramic images generated from the imported point cloud\relax }}{35}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces PC2B Meshing Algorithm\relax }}{36}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces PC2B Texture Coordinates\relax }}{37}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces PC2B Normal filtering concept\relax }}{37}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces The generated mesh before and after normal filtering in PC2B\relax }}{38}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces PC2B OpenGL Viewer\relax }}{38}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Three sample projection types used in PC2B\relax }}{26}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The manually registered LiDAR scans of the Pellerhaus\relax }}{44}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram\relax }}{28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Early draft of the Pellerhaus facade of around 1601\relax }}{46}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Scanning with FARO Focus\textsuperscript {3D}\relax }}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Historic stereo pair from around 1876\relax }}{47}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Custom Blender Addon\relax }}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Automatic reconstruction results from historic stereo pairs\relax }}{47}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces PC2B UML class diagram (simplified)\relax }}{31}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces The finished 3D models of the Pellerhaus\relax }}{48}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sample generated point cloud files\relax }}{32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Panoramic images generated from the imported point cloud\relax }}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces PC2B Meshing Algorithm\relax }}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces PC2B Texture Coordinates\relax }}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces PC2B Normal filtering concept\relax }}{36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces The generated mesh before and after normal filtering in PC2B\relax }}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces PC2B OpenGL Viewer\relax }}{37}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of meshing in Photoscan vs. PC2B\relax }}{50}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The manually registered LiDAR scans of the Pellerhaus\relax }}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Meshing of Depth Cameras with PC2B\relax }}{51}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Early draft of the Pellerhaus facade of around 1601\relax }}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Cost-effective laser scanner for smartphones\relax }}{52}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Historic stereo pair from around 1876\relax }}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Automatic reconstruction results from historic stereo pairs\relax }}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The finished 3D models of the Pellerhaus\relax }}{46}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Texture maps generated with Delaunay Tetrahedralization\relax }}{58}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of meshing in Photoscan vs. PC2B\relax }}{48}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Meshing of Depth Cameras with PC2B\relax }}{49}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Cost-effective laser scanner for smartphones\relax }}{50}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Texture maps generated with Delaunay Tetrahedralization\relax }}{56}
