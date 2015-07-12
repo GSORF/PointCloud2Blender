@@ -37,20 +37,20 @@ Körner, Hans-Michael and Jahn, Bruno (2012, p.2128) \parencite{bookBayerischeBi
 \section{Software used}
 
 \subsection{\LaTeX}
-This paper was written in \LaTeX. On Windows, TeXstudio in conjunction with MikTeX (both portable versions) have been used for visual creation of the document. The author decided to switch from the free Adobe InDesign CS 2.0 version to \LaTeX in favor of it being cross-platform and the hope to make it easier to publish the thesis online in the future. Since the author has never worked with \LaTeX before, various tutorials \parencite{ytLaTeX,webLaTeX-Tutorial} on the internet have been a great help to get started with the writing process.
+This paper was written in \LaTeX. On Windows, TeXstudio in conjunction with MikTeX (both portable versions) have been used for visual creation of the document. The author decided to switch from the free Adobe InDesign CS 2.0 version to \LaTeX in favor of it being cross-platform and the hope of making it easier to publish the thesis online in the future. Since the author has never worked with \LaTeX before, various tutorials \parencite{ytLaTeX,webLaTeX-Tutorial} on the internet have been a great help to get started with the writing process.
 
 \subsection{FARO SCENE LT}
-The FARO Focus\textsuperscript{3D} laser scanner creates proprietary files of every scan. Those raw laser scanner point cloud files need to be preprocessed in the FARO SCENE software tool. FARO offers two versions of their software. The usual FARO SCENE software needs to be purchased. We use the free version which is called FARO SCENE LT, which only allows to export the point clouds in grayscale. More information about FARO SCENE LT can be found in \parencite{appendix_faro_scene_lt}.
+The FARO Focus\textsuperscript{3D} laser scanner creates proprietary files of every scan. Those raw laser scanner point cloud files need to be preprocessed in the FARO SCENE software tool. FARO offers two versions of their software. The usual FARO SCENE software needs to be purchased. We used the free version which is called FARO SCENE LT, which only allows exporting the point clouds in grayscale. More information about FARO SCENE LT can be found in \parencite{appendix_faro_scene_lt}.
 
 \subsection{Blender 3D}
 Blender is a free and open source 3D creation suite. It is used as the primary 3D application in this research, mainly to inspect the generated meshes from PC2B and to create the 3D models of the Pellerhaus. More information about Blender can be found in \parencite{appendix_blender}.
 
 \subsection{Meshlab}
-Meshlab is an open source tool which can import and export a lot of file formats. We use it to convert binary test files to ASCII files if they need to get opened in our custom software. More information about Meshlab can be found in \parencite{appendix_meshlab}.
+Meshlab is an open source tool which can import and export various file formats. We used it to convert binary test files to ASCII files if they need to get opened in our custom software. More information about Meshlab can be found in \parencite{appendix_meshlab}.
 
 \subsection{Visual SfM}
 \label{appendix_visual_sfm}
-Visual SfM is a free photogrammetry tool. We use it to generate 3D models from multiple images for free. More information about Visual SfM can be found in \parencite{appendix_visualsfm}.
+Visual SfM is a free photogrammetry tool. We used it to generate 3D models from multiple images for free. More information about Visual SfM can be found in \parencite{appendix_visualsfm}.
 
 \subsection{CMP-MVS}
 CMP-MVS can create dense point clouds with photogrammetry algorithms based on camera parameters and scene descriptions. Those files can be generated in Visual SfM and passed on to CMP-MVS to create higher quality models. More information about CMP-MVS can be found in \parencite{appendix_cmp-mvs}.
@@ -67,12 +67,12 @@ Qt (pronounced "cute") is an open source C++ framework that offers a wide range 
 
 \subsection{OpenGL}
 
-The Open Graphics Library (OpenGL) is an abstraction layer for accessing graphics hardware on a high level on almost any operating system and programming language. The current version supports the programmable function pipeline, where vertex and fragment shaders provide a rich set of ways to manipulate the final pixel on the output device, e.g. computer screens. We use OpenGL in this project to draw millions of points and the final mesh generated from them. More information about OpenGL can be found in \parencite{appendix_opengl}.
+The Open Graphics Library (OpenGL) is an abstraction layer for accessing graphics hardware on a high level on almost any operating system and programming language. The current version supports the programmable function pipeline, where vertex and fragment shaders provide a rich set of ways to manipulate the final pixel on the output device, e.g. computer screens. We used OpenGL in this project to draw millions of points and the final mesh generated from them. More information about OpenGL can be found in \parencite{appendix_opengl}.
 
 \section{Delaunay Tetrahedralization Texture Maps}
 \label{appendix_delaunay_texture_maps}
 
-Those texture maps are generated in Visual SfM with the Delaunay Tetrahedralization algorithm.
+These texture maps are generated in Visual SfM with the Delaunay Tetrahedralization algorithm.
 
 \begin{figure}[h]
 	\centering

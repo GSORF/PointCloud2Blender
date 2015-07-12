@@ -714,7 +714,7 @@
       \field{title}{Pellerhaus Magazin 01}
       \field{year}{2012}
     \endentry
-    \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
+    \entry{afWiederaufbauDesPellerhofes}{misc}{}
       \name{labelname}{1}{}{%
         {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
@@ -729,9 +729,8 @@
       \field{labelalpha}{Alt}
       \field{sortinit}{0}
       \field{labeltitle}{Wiederaufbau des Pellerhofes}
-      \field{booktitle}{Pellerhaus Magazin}
-      \field{origlanguage}{german}
       \field{title}{Wiederaufbau des Pellerhofes}
+      \warn{\item Datamodel: Entry 'afWiederaufbauDesPellerhofes' (references.bib): Invalid format 'publication date unknown' of date field 'date' - ignoring}
     \endentry
     \entry{afPellerhausMagazin03}{booklet}{}
       \name{labelname}{1}{}{%
@@ -2154,7 +2153,7 @@
       \field{title}{Pellerhaus Magazin 01}
       \field{year}{2012}
     \endentry
-    \entry{afWiederaufbauDesPellerhofes}{suppperiodical}{}
+    \entry{afWiederaufbauDesPellerhofes}{misc}{}
       \name{labelname}{1}{}{%
         {{hash=19d8d83b10578da3f8f3d265cbd072f3}{{Altstadtfreunde\bibnamedelimb e.V.}}{A\bibinitperiod}{}{}{}{}{}{}}%
       }
@@ -2169,9 +2168,8 @@
       \field{labelalpha}{Alt}
       \field{sortinit}{0}
       \field{labeltitle}{Wiederaufbau des Pellerhofes}
-      \field{booktitle}{Pellerhaus Magazin}
-      \field{origlanguage}{german}
       \field{title}{Wiederaufbau des Pellerhofes}
+      \warn{\item Datamodel: Entry 'afWiederaufbauDesPellerhofes' (references.bib): Invalid format 'publication date unknown' of date field 'date' - ignoring}
     \endentry
     \entry{afPellerhausMagazin03}{booklet}{}
       \name{labelname}{1}{}{%

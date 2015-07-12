@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  10 JUL 2015 08:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.22)  13 JUL 2015 00:31
 entering extended mode
 **main.tex
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.tex
@@ -1014,11 +1014,25 @@ Package biblatex Warning: File 'main.bbl' is wrong format version - expected 2.
 4.
 
 Package biblatex Info: ... file 'main.bbl' found.
-(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.bbl)
+(I:\BA_Software\PointCloud2Blender\Paper_LaTeX\main.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'afWiederaufbauDesPellerhofes':
+(biblatex)                - Datamodel: Entry 'afWiederaufbauDesPellerhofes' (re
+ferences.bib): Invalid format 'publication date unknown' of date field 'date' -
+ ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'afWiederaufbauDesPellerhofes':
+(biblatex)                - Datamodel: Entry 'afWiederaufbauDesPellerhofes' (re
+ferences.bib): Invalid format 'publication date unknown' of date field 'date' -
+ ignoring.
+
+)
 Package biblatex Info: Reference section=0 on input line 46.
 Package biblatex Info: Reference segment=0 on input line 46.
-
-(D:\miktex-portable\tex\context\base\supp-pdf.mkii
+ (D:\miktex-portable\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count310
 \scratchdimen=\dimen178
@@ -1227,7 +1241,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
  []
 
 
-Underfull \vbox (badness 7326) has occurred while \output is active []
+Underfull \vbox (badness 2111) has occurred while \output is active []
 
  [11]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
@@ -1248,7 +1262,7 @@ File: images/Photogrammetry_VisualSFM.jpg Graphic file (type jpg)
 
 <use images/Photogrammetry_VisualSFM.jpg>
 Package pdftex.def Info: images/Photogrammetry_VisualSFM.jpg used on input line
- 117.
+ 115.
 (pdftex.def)             Requested size: 341.43436pt x 192.0439pt.
 
 <images/Photogrammetry_Agisoft.jpg, id=70, 1927.2pt x 1084.05pt>
@@ -1256,13 +1270,13 @@ File: images/Photogrammetry_Agisoft.jpg Graphic file (type jpg)
 
 <use images/Photogrammetry_Agisoft.jpg>
 Package pdftex.def Info: images/Photogrammetry_Agisoft.jpg used on input line 1
-24.
+22.
 (pdftex.def)             Requested size: 341.43436pt x 192.0439pt.
  [14 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Photogrammetry_Visua
 lSFM.jpg> <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Photogrammetry_
 Agisoft.jpg>]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 140.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 138.
  [15]) [16]
 Chapter 2.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter01.tex [17
@@ -1287,6 +1301,11 @@ File: images/Pellerhaus_1905_AF.jpg Graphic file (type jpg)
 <use images/Pellerhaus_1905_AF.jpg>
 Package pdftex.def Info: images/Pellerhaus_1905_AF.jpg used on input line 52.
 (pdftex.def)             Requested size: 204.85802pt x 250.18379pt.
+
+Underfull \hbox (badness 2027) in paragraph at lines 60--61
+[][][]\T1/cmr/m/n/12 The house was com-mis-sioned to
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1347,26 +1366,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-<images/2d_panorama_grey.jpg, id=107, 1084.05pt x 542.025pt>
+[23] <images/2d_panorama_grey.jpg, id=110, 1084.05pt x 542.025pt>
 File: images/2d_panorama_grey.jpg Graphic file (type jpg)
 
 <use images/2d_panorama_grey.jpg>
-Package pdftex.def Info: images/2d_panorama_grey.jpg used on input line 150.
+Package pdftex.def Info: images/2d_panorama_grey.jpg used on input line 152.
 (pdftex.def)             Requested size: 433.61232pt x 216.80615pt.
 
-Overfull \hbox (6.82098pt too wide) in paragraph at lines 150--151
+Overfull \hbox (6.82098pt too wide) in paragraph at lines 152--153
  [][][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[23] <images/3DPanorama_UnitSphere.png, id=111, 2276.505pt x 2168.1pt>
+<images/3DPanorama_UnitSphere.png, id=111, 2276.505pt x 2168.1pt>
 File: images/3DPanorama_UnitSphere.png Graphic file (type png)
 
 <use images/3DPanorama_UnitSphere.png>
 Package pdftex.def Info: images/3DPanorama_UnitSphere.png used on input line 16
-5.
+7.
 (pdftex.def)             Requested size: 159.37163pt x 151.7825pt.
 
 <images/3DPanorama_DepthSphere.png, id=112, 3083.52pt x 2168.1pt>
@@ -1374,10 +1390,10 @@ File: images/3DPanorama_DepthSphere.png Graphic file (type png)
 
 <use images/3DPanorama_DepthSphere.png>
 Package pdftex.def Info: images/3DPanorama_DepthSphere.png used on input line 1
-72.
+74.
 (pdftex.def)             Requested size: 215.86845pt x 151.7825pt.
 
-Overfull \hbox (23.81366pt too wide) in paragraph at lines 172--173
+Overfull \hbox (23.81366pt too wide) in paragraph at lines 174--175
  [][][] 
  []
 
@@ -1390,10 +1406,10 @@ File: images/Visual_Coordinate_Conversion_1.jpg Graphic file (type jpg)
 
 <use images/Visual_Coordinate_Conversion_1.jpg>
 Package pdftex.def Info: images/Visual_Coordinate_Conversion_1.jpg used on inpu
-t line 195.
+t line 197.
 (pdftex.def)             Requested size: 104.33531pt x 76.42223pt.
 
-Overfull \hbox (1.90306pt too wide) in paragraph at lines 195--196
+Overfull \hbox (1.90306pt too wide) in paragraph at lines 197--198
  [][][] 
  []
 
@@ -1403,10 +1419,10 @@ File: images/Visual_Coordinate_Conversion_2.jpg Graphic file (type jpg)
 
 <use images/Visual_Coordinate_Conversion_2.jpg>
 Package pdftex.def Info: images/Visual_Coordinate_Conversion_2.jpg used on inpu
-t line 202.
+t line 204.
 (pdftex.def)             Requested size: 104.33531pt x 76.42223pt.
 
-Overfull \hbox (1.90306pt too wide) in paragraph at lines 202--203
+Overfull \hbox (1.90306pt too wide) in paragraph at lines 204--205
  [][][] 
  []
 
@@ -1416,10 +1432,10 @@ File: images/Visual_Coordinate_Conversion_3.jpg Graphic file (type jpg)
 
 <use images/Visual_Coordinate_Conversion_3.jpg>
 Package pdftex.def Info: images/Visual_Coordinate_Conversion_3.jpg used on inpu
-t line 209.
+t line 211.
 (pdftex.def)             Requested size: 104.33531pt x 76.42223pt.
 
-Overfull \hbox (1.90306pt too wide) in paragraph at lines 209--210
+Overfull \hbox (1.90306pt too wide) in paragraph at lines 211--212
  [][][] 
  []
 
@@ -1429,15 +1445,15 @@ File: images/Visual_Coordinate_Conversion_4.jpg Graphic file (type jpg)
 
 <use images/Visual_Coordinate_Conversion_4.jpg>
 Package pdftex.def Info: images/Visual_Coordinate_Conversion_4.jpg used on inpu
-t line 216.
+t line 218.
 (pdftex.def)             Requested size: 104.33531pt x 76.42223pt.
 
-Overfull \hbox (1.90306pt too wide) in paragraph at lines 216--217
+Overfull \hbox (1.90306pt too wide) in paragraph at lines 218--219
  [][][] 
  []
 
 
-Overfull \hbox (11.06062pt too wide) in paragraph at lines 225--226
+Overfull \hbox (11.06062pt too wide) in paragraph at lines 227--228
 [][]\T1/cmr/m/n/12 The fi-nal im-age can be formed by map-ping these spher-i-ca
 l co-or-di-nates $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ; '; radius\OT1/cmr/m/n/12
  )$
@@ -1448,28 +1464,28 @@ version_1.jpg> <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Visual_Coo
 rdinate_Conversion_2.jpg> <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images
 /Visual_Coordinate_Conversion_3.jpg> <I:/BA_Software/PointCloud2Blender/Paper_L
 aTeX/images/Visual_Coordinate_Conversion_4.jpg>]
-<images/projection_type_equirectangular.jpg, id=126, 1084.05pt x 542.025pt>
+<images/projection_type_equirectangular.jpg, id=127, 1084.05pt x 542.025pt>
 File: images/projection_type_equirectangular.jpg Graphic file (type jpg)
 
 <use images/projection_type_equirectangular.jpg>
 Package pdftex.def Info: images/projection_type_equirectangular.jpg used on inp
-ut line 245.
+ut line 247.
 (pdftex.def)             Requested size: 128.0387pt x 64.01463pt.
 
-<images/projection_type_cylindrical.jpg, id=127, 1084.05pt x 542.025pt>
+<images/projection_type_cylindrical.jpg, id=128, 1084.05pt x 542.025pt>
 File: images/projection_type_cylindrical.jpg Graphic file (type jpg)
 
 <use images/projection_type_cylindrical.jpg>
 Package pdftex.def Info: images/projection_type_cylindrical.jpg used on input l
-ine 252.
+ine 254.
 (pdftex.def)             Requested size: 128.0387pt x 64.01463pt.
 
-<images/projection_type_mercator.jpg, id=128, 1084.05pt x 542.025pt>
+<images/projection_type_mercator.jpg, id=129, 1084.05pt x 542.025pt>
 File: images/projection_type_mercator.jpg Graphic file (type jpg)
 
 <use images/projection_type_mercator.jpg>
 Package pdftex.def Info: images/projection_type_mercator.jpg used on input line
- 259.
+ 261.
 (pdftex.def)             Requested size: 128.0387pt x 64.01463pt.
 ) [26 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/projection_type_equ
 irectangular.jpg> <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/project
@@ -1479,7 +1495,7 @@ Chapter 3.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter02.tex [27
 
 ]
-<images/UseCaseDiagram_PC2B.png, id=135, 1027.84pt x 607.26875pt>
+<images/UseCaseDiagram_PC2B.png, id=136, 1027.84pt x 607.26875pt>
 File: images/UseCaseDiagram_PC2B.png Graphic file (type png)
 
 <use images/UseCaseDiagram_PC2B.png>
@@ -1487,22 +1503,25 @@ Package pdftex.def Info: images/UseCaseDiagram_PC2B.png used on input line 16.
 (pdftex.def)             Requested size: 411.12872pt x 242.9032pt.
  [28 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/UseCaseDiagram_PC2B.
 png (PNG copy)>]
-<images/PellerhausLaserScan.jpg, id=139, 536.0025pt x 803.0pt>
+<images/PellerhausLaserScan.jpg, id=140, 536.0025pt x 803.0pt>
 File: images/PellerhausLaserScan.jpg Graphic file (type jpg)
 
 <use images/PellerhausLaserScan.jpg>
 Package pdftex.def Info: images/PellerhausLaserScan.jpg used on input line 31.
 (pdftex.def)             Requested size: 214.3972pt x 321.1943pt.
+
+Underfull \vbox (badness 2564) has occurred while \output is active []
+
  [29 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PellerhausLaserScan.
 jpg>]
-<images/BlenderAddon.jpg, id=143, 2930.95pt x 831.105pt>
+<images/BlenderAddon.jpg, id=144, 2930.95pt x 831.105pt>
 File: images/BlenderAddon.jpg Graphic file (type jpg)
 
 <use images/BlenderAddon.jpg>
 Package pdftex.def Info: images/BlenderAddon.jpg used on input line 51.
 (pdftex.def)             Requested size: 426.79134pt x 121.02074pt.
  [30 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/BlenderAddon.jpg>]
-<images/PC2B_UML_class_diagram.jpg, id=147, 1955.305pt x 1446.40375pt>
+<images/PC2B_UML_class_diagram.jpg, id=148, 1955.305pt x 1446.40375pt>
 File: images/PC2B_UML_class_diagram.jpg Graphic file (type jpg)
 
 <use images/PC2B_UML_class_diagram.jpg>
@@ -1515,72 +1534,69 @@ am.jpg>] [32] [33]
 File: images/PC2B_colormap_grey.jpg Graphic file (type jpg)
 
 <use images/PC2B_colormap_grey.jpg>
-Package pdftex.def Info: images/PC2B_colormap_grey.jpg used on input line 213.
+Package pdftex.def Info: images/PC2B_colormap_grey.jpg used on input line 212.
 (pdftex.def)             Requested size: 192.0548pt x 96.02194pt.
 
 <images/PC2B_depthmap.jpg, id=161, 1084.05pt x 542.025pt>
 File: images/PC2B_depthmap.jpg Graphic file (type jpg)
 
 <use images/PC2B_depthmap.jpg>
-Package pdftex.def Info: images/PC2B_depthmap.jpg used on input line 220.
+Package pdftex.def Info: images/PC2B_depthmap.jpg used on input line 219.
 (pdftex.def)             Requested size: 192.0548pt x 96.02194pt.
- [34 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_colormap_grey.j
-pg> <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_depthmap.jpg>]
-<images/PC2B_Meshing.jpg, id=165, 2514.39375pt x 1992.44376pt>
-File: images/PC2B_Meshing.jpg Graphic file (type jpg)
-
-<use images/PC2B_Meshing.jpg>
-Package pdftex.def Info: images/PC2B_Meshing.jpg used on input line 236.
-(pdftex.def)             Requested size: 320.09349pt x 253.64558pt.
-
-<images/PC2B_TextureCoordinates.jpg, id=166, 1911.14pt x 1005.7575pt>
-File: images/PC2B_TextureCoordinates.jpg Graphic file (type jpg)
-
-<use images/PC2B_TextureCoordinates.jpg>
-Package pdftex.def Info: images/PC2B_TextureCoordinates.jpg used on input line 
-250.
-(pdftex.def)             Requested size: 426.79134pt x 224.59755pt.
- [35 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_Meshing.jpg>]
-<images/PC2B_Normals.jpg, id=170, 2514.39375pt x 1510.64375pt>
-File: images/PC2B_Normals.jpg Graphic file (type jpg)
-
-<use images/PC2B_Normals.jpg>
-Package pdftex.def Info: images/PC2B_Normals.jpg used on input line 260.
-(pdftex.def)             Requested size: 320.09349pt x 192.31064pt.
-
-<images/PC2B_Normals_off.png, id=171, 1927.2pt x 1084.05pt>
-File: images/PC2B_Normals_off.png Graphic file (type png)
-
-<use images/PC2B_Normals_off.png>
-Package pdftex.def Info: images/PC2B_Normals_off.png used on input line 272.
-(pdftex.def)             Requested size: 192.0548pt x 108.0309pt.
-
-<images/PC2B_Normals_on.png, id=172, 1927.2pt x 1084.05pt>
-File: images/PC2B_Normals_on.png Graphic file (type png)
-
-<use images/PC2B_Normals_on.png>
-Package pdftex.def Info: images/PC2B_Normals_on.png used on input line 279.
-(pdftex.def)             Requested size: 192.0548pt x 108.0309pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_TextureCoordinat
-es.jpg> <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_Normals.jpg>
-] <images/PC2B_OpenGL_Viewer.jpg, id=176, 975.645pt x 819.06pt>
+[34] <images/PC2B_Meshing.jpg, id=165, 2514.39375pt x 1992.44376pt>
+File: images/PC2B_Meshing.jpg Graphic file (type jpg)
+
+<use images/PC2B_Meshing.jpg>
+Package pdftex.def Info: images/PC2B_Meshing.jpg used on input line 235.
+(pdftex.def)             Requested size: 320.09349pt x 253.64558pt.
+ [35 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_colormap_grey.j
+pg> <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_depthmap.jpg> <I
+:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_Meshing.jpg>]
+<images/PC2B_TextureCoordinates.jpg, id=169, 1911.14pt x 1005.7575pt>
+File: images/PC2B_TextureCoordinates.jpg Graphic file (type jpg)
+
+<use images/PC2B_TextureCoordinates.jpg>
+Package pdftex.def Info: images/PC2B_TextureCoordinates.jpg used on input line 
+249.
+(pdftex.def)             Requested size: 426.79134pt x 224.59755pt.
+
+<images/PC2B_Normals.jpg, id=170, 2514.39375pt x 1510.64375pt>
+File: images/PC2B_Normals.jpg Graphic file (type jpg)
+
+<use images/PC2B_Normals.jpg>
+Package pdftex.def Info: images/PC2B_Normals.jpg used on input line 259.
+(pdftex.def)             Requested size: 320.09349pt x 192.31064pt.
+ [36 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_TextureCoordina
+tes.jpg> <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_Normals.jpg
+>]
+<images/PC2B_Normals_off.png, id=174, 1927.2pt x 1084.05pt>
+File: images/PC2B_Normals_off.png Graphic file (type png)
+
+<use images/PC2B_Normals_off.png>
+Package pdftex.def Info: images/PC2B_Normals_off.png used on input line 271.
+(pdftex.def)             Requested size: 192.0548pt x 108.0309pt.
+
+<images/PC2B_Normals_on.png, id=175, 1927.2pt x 1084.05pt>
+File: images/PC2B_Normals_on.png Graphic file (type png)
+
+<use images/PC2B_Normals_on.png>
+Package pdftex.def Info: images/PC2B_Normals_on.png used on input line 278.
+(pdftex.def)             Requested size: 192.0548pt x 108.0309pt.
+
+<images/PC2B_OpenGL_Viewer.jpg, id=176, 975.645pt x 819.06pt>
 File: images/PC2B_OpenGL_Viewer.jpg Graphic file (type jpg)
 
 <use images/PC2B_OpenGL_Viewer.jpg>
-Package pdftex.def Info: images/PC2B_OpenGL_Viewer.jpg used on input line 294.
+Package pdftex.def Info: images/PC2B_OpenGL_Viewer.jpg used on input line 293.
 (pdftex.def)             Requested size: 213.39566pt x 179.14394pt.
-
-Underfull \vbox (badness 1348) has occurred while \output is active []
-
  [37 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_Normals_off.png
 > <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_Normals_on.png> <I
 :/BA_Software/PointCloud2Blender/Paper_LaTeX/images/PC2B_OpenGL_Viewer.jpg>] [3
-8] [39])
-[40]
+8] [39]) [40]
 Chapter 4.
 (I:\BA_Software\PointCloud2Blender\Paper_LaTeX\chapters/chapter03.tex [41
 
@@ -1590,20 +1606,20 @@ File: images/Production_CombinedLaserScans.png Graphic file (type png)
 
 <use images/Production_CombinedLaserScans.png>
 Package pdftex.def Info: images/Production_CombinedLaserScans.png used on input
- line 18.
+ line 17.
 (pdftex.def)             Requested size: 426.79134pt x 240.04662pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
@@ -1612,12 +1628,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42 <I:/BA_Software/PointCloud2Blender/Paper_LaTeX/images/Production_CombinedL
 aserScans.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
@@ -1630,80 +1646,80 @@ t>
 File: images/Production_Pellerhaus_1601_Entwurf_6.jpg Graphic file (type jpg)
  <use images/Production_Pellerhaus_1601_Entwurf_6.jpg>
 Package pdftex.def Info: images/Production_Pellerhaus_1601_Entwurf_6.jpg used o
-n input line 59.
+n input line 58.
 (pdftex.def)             Requested size: 200.76175pt x 304.15407pt.
 
-Underfull \hbox (badness 2080) in paragraph at lines 67--68
-[][]\T1/cmr/m/n/12 It is a huge luck that the Peller-
+Underfull \hbox (badness 3758) in paragraph at lines 66--67
+[][]\T1/cmr/m/n/12 It is quite lucky that the Peller-
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 67--68
+Underfull \hbox (badness 3525) in paragraph at lines 66--67
 \T1/cmr/m/n/12 haus his-tory has been doc-u-mented
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 67--68
+Underfull \hbox (badness 1509) in paragraph at lines 66--67
 \T1/cmr/m/n/12 A fas-ci-nat-ing num-ber of about 190
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 67--68
+Underfull \hbox (badness 1748) in paragraph at lines 66--67
 \T1/cmr/m/n/12 pic-tures has been pro-vided for free
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 67--68
+Underfull \hbox (badness 3291) in paragraph at lines 66--67
 \T1/cmr/m/n/12 through the as-so-ci-a-tion Alt-stadt-fre-
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 67--68
+Underfull \hbox (badness 3240) in paragraph at lines 66--67
 \T1/cmr/m/n/12 unde Nürn-berg e.V., not in-clud-ing
  []
 
 
-Underfull \hbox (badness 7256) in paragraph at lines 67--68
+Underfull \hbox (badness 7256) in paragraph at lines 66--67
 \T1/cmr/m/n/12 about 100 ad-di-tional pic-tures de-
  []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 67--68
+Underfull \hbox (badness 4096) in paragraph at lines 66--67
 \T1/cmr/m/n/12 pict-ing the space in front of the
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 67--68
+Underfull \hbox (badness 5637) in paragraph at lines 66--67
 \T1/cmr/m/n/12 build-ing, to be used in this re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 69--70
+Underfull \hbox (badness 2111) in paragraph at lines 68--69
 \T1/cmr/m/n/12 drafts of the fa-cade, likely cre-ated
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 69--70
+Underfull \hbox (badness 1210) in paragraph at lines 68--69
 \T1/cmr/m/n/12 top views are best suited for mod-
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 69--70
+Underfull \hbox (badness 2042) in paragraph at lines 68--69
 \T1/cmr/m/n/12 el-ing, es-pe-cially when they are or-
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 69--70
+Underfull \hbox (badness 1975) in paragraph at lines 68--69
 \T1/cmr/m/n/12 thog-o-nal (not dis-torted by per-spec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
@@ -1715,7 +1731,7 @@ file (type jpg)
 
 <use images/Production_Pellerhaus_1876_Stereo_Christian_Koenig_AF.jpg>
 Package pdftex.def Info: images/Production_Pellerhaus_1876_Stereo_Christian_Koe
-nig_AF.jpg used on input line 80.
+nig_AF.jpg used on input line 79.
 (pdftex.def)             Requested size: 426.79134pt x 207.96706pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1727,14 +1743,14 @@ s_1601_Entwurf_6.jpg>]
 File: images/Production_StereoReconstruction_front.jpg Graphic file (type jpg)
  <use images/Production_StereoReconstruction_front.jpg>
 Package pdftex.def Info: images/Production_StereoReconstruction_front.jpg used 
-on input line 93.
+on input line 92.
 (pdftex.def)             Requested size: 192.0548pt x 108.0309pt.
 
 <images/Production_StereoReconstruction_side.jpg, id=210, 1927.2pt x 1084.05pt>
 File: images/Production_StereoReconstruction_side.jpg Graphic file (type jpg)
 <use images/Production_StereoReconstruction_side.jpg>
 Package pdftex.def Info: images/Production_StereoReconstruction_side.jpg used o
-n input line 100.
+n input line 99.
 (pdftex.def)             Requested size: 192.0548pt x 108.0309pt.
 
 Underfull \vbox (badness 4328) has occurred while \output is active []
@@ -1747,22 +1763,22 @@ loud2Blender/Paper_LaTeX/images/Production_StereoReconstruction_side.jpg>]
 File: images/Pellerhaus_3d_a.png Graphic file (type png)
 
 <use images/Pellerhaus_3d_a.png>
-Package pdftex.def Info: images/Pellerhaus_3d_a.png used on input line 120.
+Package pdftex.def Info: images/Pellerhaus_3d_a.png used on input line 119.
 (pdftex.def)             Requested size: 320.09349pt x 180.0515pt.
 
 <images/Pellerhaus_3d_b.png, id=215, 1927.2pt x 1084.05pt>
 File: images/Pellerhaus_3d_b.png Graphic file (type png)
 
 <use images/Pellerhaus_3d_b.png>
-Package pdftex.def Info: images/Pellerhaus_3d_b.png used on input line 127.
+Package pdftex.def Info: images/Pellerhaus_3d_b.png used on input line 126.
 (pdftex.def)             Requested size: 320.09349pt x 180.0515pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
@@ -1989,8 +2005,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  22389 strings out of 493921
- 438955 string characters out of 3139244
- 810806 words of memory out of 3000000
+ 438953 string characters out of 3139244
+ 811819 words of memory out of 3000000
  25197 multiletter control sequences out of 15000+200000
  26161 words of font info for 57 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -2019,9 +2035,9 @@ table/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/miktex-portable/fonts/type1
 m/cmr12.pfb><D:/miktex-portable/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/mik
 tex-portable/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/miktex-portable/font
 s/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (61 pages, 82566767 bytes).
+Output written on main.pdf (61 pages, 82568861 bytes).
 PDF statistics:
- 1088 PDF objects out of 1200 (max. 8388607)
+ 1089 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  243 words of extra memory for PDF output out of 10000 (max. 10000000)
 

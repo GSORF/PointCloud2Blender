@@ -58,7 +58,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}BlenSor}{29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Test-Addon for Blender}{29}
+\contentsline {subsection}{\numberline {3.2.2}Test-Add-on for Blender}{30}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Prototype}{30}
 \defcounter {refsection}{0}\relax 
@@ -68,7 +68,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Point Cloud data formats}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Determine original point cloud resolution}{33}
+\contentsline {subsection}{\numberline {3.3.3}Determination of original point cloud resolution}{33}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.4}Coordinate system representations}{33}
 \defcounter {refsection}{0}\relax 
