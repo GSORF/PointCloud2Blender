@@ -308,13 +308,13 @@ void MainWindow::updateMeshingStatus(float percent)
 {
     ui->prbImportStatus->setValue(percent);
 
-    qint64 duration = (QDateTime::currentMSecsSinceEpoch() - startTime);
-    qint64 minutes = duration / 60;
+    float duration = (QDateTime::currentMSecsSinceEpoch() - startTime) / 1000.0f;
+    float minutes = duration / 60.0f;
     ui->prbImportStatus->setFormat("%p%");
 
     if(percent >= 100.0f)
     {
-        QMessageBox::information(this, "Meshing complete!", "The meshing process has finished. This took " + QString::number(duration) + " milliseconds.\n\nYou can see the result in the 3D viewer and you can use the generated .obj file in Blender. Have fun!", QMessageBox::Ok);
+        QMessageBox::information(this, "Meshing complete!", "The meshing process has finished. This took " + QString::number(minutes, 'f', 2) + " minutes.\n\nYou can see the result in the 3D viewer and you can use the generated .obj file in Blender. Have fun!", QMessageBox::Ok);
         ui->btnImport->setEnabled(true);
     }
 }
@@ -339,7 +339,7 @@ void MainWindow::setOriginalResolution(int horizontalResolution)
     ui->btnPanoramaResolutionCustom->setChecked(true);
     //ui->btnImport->setEnabled(true);
 
-    qint64 duration = (QDateTime::currentMSecsSinceEpoch() - startTime) / 1000;
+    float duration = (QDateTime::currentMSecsSinceEpoch() - startTime) / 1000.0f;
     float minutes = duration / 60.0f;
 
     QMessageBox::information(this, "File analyzed!", "Analyzing the file took " + QString::number(minutes, 'f', 2) + " minutes.\nThe original resolution of the point cloud probably was:\n" + QString::number(originalHorizontalResolution) + " by " + QString::number(originalVerticalResolution) +" Points.", QMessageBox::Ok);
