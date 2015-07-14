@@ -55,27 +55,30 @@ Hence, a custom add-on for Blender was developed to test the equirectangular pro
 
 A more efficient and elegant approach would be to develop a new modifier in C/C++ that integrates directly into Blender and can perform mesh manipulation fast. Unfortunately diving into Blender Core Development is not very easy due to its huge code base. In addition the time constraint did not permit experimenting further with this approach. Overall, it was helpful for tweaking the algorithm.
 
-\section{Prototype}
+\pagebreak
 
-The working title of this converter software was defined as "PointCloud2Blender", PC2B in short, because converting point clouds to a Blender compatible file format was the main goal of the software project. The prototype consists of three main parts: the importer, the 3D panorama, and the mesher. Additionally, an OpenGL viewer is implemented to visualize the data while it is being processed. A programming language and framework that provide the necessary performance and graphical user interface were needed. We decided to use C++ with Qt 5 for this task.
+\section{How the conversion works}
 
-\subsection{UML class diagram}
+The working title of this converter software was defined as "PointCloud2Blender", PC2B in short, because converting point clouds to a Blender compatible file format was the main goal of the software project. The prototype consists of three main parts: the importer, the 3D panorama, and the mesher.
 
-PC2B was developed using object-oriented programming (OOP). To encapsulate certain properties and actions by creating and using objects, those are represented as classes in the source code. PC2B consists of several classes.\\
-Helper classes, such as \textit{Point3D} and \textit{FileType}, provide clear representations of entities while still being flexible for future extensions. Graphical User Interface (GUI) code is contained in \textit{MainWindow}, which inherits from \textit{QMainWindow}. This \textit{MainWindow} is made visible in an instance of a \textit{QApplication} when the program is launched and creates user interface elements as well as instances of PC2B's main components responsible for processing LiDAR data. One of those component parts is the \textit{ImportWorker} which inherits from \textit{QRunnable} and enables it to run on a separate thread in a \textit{QThreadPool}. This is important, because reading and parsing a 6 GB point cloud file can take several minutes which freezes the main GUI loop if on the same thread. The same applies to \textit{MeshWorker} which implements the meshing algorithm and exports the final textured mesh for use in 3D applications. The \textit{Panorama3D} class encapsulates methods to convert a 3D point to a 2D pixel and vice versa. Additionally, it stores the panorama images. Finally the OpenGL viewer is implemented in two classes, \textit{GLWidget} which inherits from \textit{QGLWidget}, and \textit{GLMesh}. While \textit{GLWidget} provides a canvas to draw 3D graphics onto it via OpenGL, \textit{GLMesh} represents the 3D point cloud mesh and groups every property such as vertices, colors and shaders.\\
-This relationship between individual objects is usually depicted in the Unified Modeling Language (UML) as a class diagram. Below is an example how a simplified UML class diagram for PC2B would look like:
+
+\subsection{Pipeline overview}
+
+We provide a high level overview of how the conversion works. The individual conversion stages are explained in more detail in the following sections.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1.0\textwidth]{PC2B_UML_class_diagram.jpg}
-	\caption{PC2B UML class diagram (simplified)}
-	\label{fig:pc2b_uml_class_diagram}
+	\includegraphics[width=1.0\textwidth]{pc2b_conversion_pipeline.png}
+	\caption{The stages of the conversion process}
+	\label{fig:pc2b_conversion_pipeline}
 \end{figure}
+
+When point cloud files are provided by the user, they are imported into PC2B. That is, the individual lines of the files are parsed and split up into small components, such as x, y, and z coordinate information. This is done in a separate module as soon as the user starts the conversion. Subsequently the imported three-dimensional points are projected onto a two-dimensional grid in order to prepare them for meshing in the next stage. The two-dimensional points are used for the creation of the mesh surface which is exported as a file format that can be imported into Blender.
 
 \subsection{Point Cloud Importer}
 
 A crucial part of the PC2B converter software is the ability to import point clouds saved as files. There is a huge amount of file types that can accomodate such a data structure. Points can be stored in ASCII, Binary or a hybrid form of both. ASCII files are human-readable, while binary are not. Importing binary formats requires one to know the exact structure of the file and the byte lengths used for certain values. This is important to avoid mixing and misinterpretation of data. A precise import function needs to adhere to the exact file structure rules. Documentation was limited for many of the file formats, so using ASCII files was a better choice from the beginning. Initially, it was decided to only import the .xyz file format, since this is a very simple file format that can be exported in ASCII form from the proprietary FARO SCENE 5 software which is needed for preprocessing the raw point cloud stream produced by the FARO Focus\textsuperscript{3D}.\\
-During development it turned out that support for the .ply file format is desirable, since scientific websites that provide models (see Stanford Computer Graphics Laboratory 2014 \parencite{Stanford_repo}) widely provide this file type. Also Blender can export a 3D model to this file format. This fact was extremely useful for testing the algorithm, which is described later.
+During development it turned out that support for the .ply file format is desirable, since scientific websites that provide models (see Stanford Computer Graphics Laboratory 2014 \parencite{Stanford_repo}) widely provide this file type. Also Blender can export a 3D model to this file format. This fact was extremely useful for testing the algorithm, because test data can be generated quickly.
 
 \subsubsection{Point Cloud data formats}
 
@@ -87,61 +90,61 @@ Working with such file structures, as in our case, is very easy (See Figure \ref
 	\begin{subtable}[b]{0.53\textwidth}
 		
 		\resizebox{\textwidth}{!}{%
-		\begin{tabular}{l}
-			-59.43620000 -31.36650000 302.80950000 59 46 55 \\
-			-60.34600000 -31.80190000 302.85280000 58 45 54 \\
-			-60.51810000 -31.88870000 302.71900000 58 45 54 \\
-			-59.50470000 -31.39880000 302.68240000 56 47 50 \\
-			-60.32350000 -31.79130000 302.89580000 59 46 54 \\
-			-59.40940000 -31.35360000 302.85200000 61 48 57 \\
-			-67.58220000 -29.73320000 302.12780000 73 55 58 \\
-			-67.51000000 -29.59980000 302.04520000 63 43 54 \\
-			-66.18880000 -29.78650000 299.88830000 100 87 80 \\
-			-67.54620000 -29.66590000 302.08650000 64 47 56 \\
-			-67.50660000 -29.59690000 302.00010000 62 43 51 \\
-			-67.51970000 -29.60540000 302.09000000 64 46 57 \\
-			...
-		\end{tabular}}
-		\caption{Sample .xyz file}
-		\label{tab:xyz_file}
-	\end{subtable}
-	\hfill
-	\begin{subtable}[b]{0.46\textwidth}
-		\resizebox{\textwidth}{!}{%
-		\begin{tabular}{l}
-			ply \\
-			format ascii 1.0 \\
-			comment VCGLIB generated \\
-			element vertex 2900882 \\
-			property float x \\
-			property float y \\
-			property float z \\
-			property uchar red \\
-			property uchar green \\
-			property uchar blue \\
-			element face 1473375 \\
-			property list uchar int vertex\_indices \\
-			end\_header \\
-			-37.037369 -0.850013 -1.831357 119 108 103 \\
-			-37.063740 -0.755348 -1.886383 130 118 113 \\
-			-37.446922 -0.902575 -2.421639 155 146 142 \\
-			-37.512043 -1.051430 -2.535675 135 125 122 \\
-			-37.546394 -0.904681 -2.498151 140 130 127 \\
-			-37.340092 -0.932499 -2.274875 138 128 124 \\
-			-37.292992 -0.973793 -2.336324 162 153 149 \\
-			-37.166294 -0.780378 -2.111366 138 127 121 \\
-			-37.341915 -0.864522 -2.316645 173 165 160 \\
-			-36.981441 -0.691213 -1.978962 127 114 108 \\
-			-36.918392 -0.767583 -1.994380 127 114 107 \\
-			-37.038353 -0.931582 -2.136851 134 122 117 \\
-			...
-			
-		\end{tabular}}
-		\caption{Sample .ply file}
-		\label{tab:ply_file}
-	\end{subtable}
-	\caption{Sample generated point cloud files}
-	\label{fig:xyz_ply_file_structure}
+			\begin{tabular}{l}
+				-59.43620000 -31.36650000 302.80950000 59 46 55 \\
+				-60.34600000 -31.80190000 302.85280000 58 45 54 \\
+				-60.51810000 -31.88870000 302.71900000 58 45 54 \\
+				-59.50470000 -31.39880000 302.68240000 56 47 50 \\
+				-60.32350000 -31.79130000 302.89580000 59 46 54 \\
+				-59.40940000 -31.35360000 302.85200000 61 48 57 \\
+				-67.58220000 -29.73320000 302.12780000 73 55 58 \\
+				-67.51000000 -29.59980000 302.04520000 63 43 54 \\
+				-66.18880000 -29.78650000 299.88830000 100 87 80 \\
+				-67.54620000 -29.66590000 302.08650000 64 47 56 \\
+				-67.50660000 -29.59690000 302.00010000 62 43 51 \\
+				-67.51970000 -29.60540000 302.09000000 64 46 57 \\
+				...
+			\end{tabular}}
+			\caption{Sample .xyz file}
+			\label{tab:xyz_file}
+		\end{subtable}
+		\hfill
+		\begin{subtable}[b]{0.46\textwidth}
+			\resizebox{\textwidth}{!}{%
+				\begin{tabular}{l}
+					ply \\
+					format ascii 1.0 \\
+					comment VCGLIB generated \\
+					element vertex 2900882 \\
+					property float x \\
+					property float y \\
+					property float z \\
+					property uchar red \\
+					property uchar green \\
+					property uchar blue \\
+					element face 1473375 \\
+					property list uchar int vertex\_indices \\
+					end\_header \\
+					-37.037369 -0.850013 -1.831357 119 108 103 \\
+					-37.063740 -0.755348 -1.886383 130 118 113 \\
+					-37.446922 -0.902575 -2.421639 155 146 142 \\
+					-37.512043 -1.051430 -2.535675 135 125 122 \\
+					-37.546394 -0.904681 -2.498151 140 130 127 \\
+					-37.340092 -0.932499 -2.274875 138 128 124 \\
+					-37.292992 -0.973793 -2.336324 162 153 149 \\
+					-37.166294 -0.780378 -2.111366 138 127 121 \\
+					-37.341915 -0.864522 -2.316645 173 165 160 \\
+					-36.981441 -0.691213 -1.978962 127 114 108 \\
+					-36.918392 -0.767583 -1.994380 127 114 107 \\
+					-37.038353 -0.931582 -2.136851 134 122 117 \\
+					...
+					
+				\end{tabular}}
+				\caption{Sample .ply file}
+				\label{tab:ply_file}
+			\end{subtable}
+			\caption{Sample generated point cloud files}
+			\label{fig:xyz_ply_file_structure}
 \end{figure}
 
 While the .xyz file type solely lists the x, y, z coordinates and optionally the red, green and blue color components, the .ply file type begins with a header describing how the file is structured. This has advantages, because we noticed that the .xyz file format is not documented. And to make things more complicated the free version of the proprietary FARO SCENE software, FARO SCENE LT, exports a different .xyz file than the paid version. With the free version two additional columns are added at the beginning of each row, such as the row and column number, and other settings can alter the file format even more. Those special cases are considered in the implementation of our prototype.
@@ -149,7 +152,7 @@ While the .xyz file type solely lists the x, y, z coordinates and optionally the
 
 \subsection{Determination of original point cloud resolution}
 
-Users of PC2B have the option to automatically determine the resolution of a 3D panorama based on the point cloud file. The 3D panorama resolution can either be set to fixed multiples of 360 by 180 pixels or set to a custom resolution, which can be filled out by the software. We have implemented an algorithm to help the user find the best resolution for his particular point cloud. It works by creating a histogram for counting the number of fixed steps of horizontal angles. First, we define an angle accuracy $\Delta{w}$:
+Users of PC2B have the option to automatically determine the resolution of a panorama based on the point cloud file. The panorama resolution can either be set to fixed multiples of 360 by 180 pixels or set to a custom resolution, which can be filled out by the software. We have implemented an algorithm to help the user find the best resolution for his particular point cloud. It works by creating a histogram for counting the number of fixed steps of horizontal angles. First, we define an angle accuracy $\Delta{w}$:
 
 $$ \Delta{w}=  \frac{\frac{360}{30000}}{4} $$
 
@@ -251,6 +254,7 @@ While the mesh is being generated, texture coordinates and normals are being cal
 	\label{fig:pc2b_texture_coordinates}
 \end{figure}
 
+\pagebreak
 
 Calculating normals is accomplished by determining the cross product of the two vectors forming the current quad. It may happen that a polygon will get distorted at locations where the depth image values change quickly. Hence, the four-sided polygon is divided into two triangles and normals are generated for each of them. Normals are very useful to test certain properties of the mesh. This research uses normals to determine if a face is oriented perpendicular to the center of the panorama. Computing the dot product of a normal and a vector from the origin to the face returns the cosine of the angle between those two vectors. This is used in PC2B to discard polygons which would normally distort the mesh, as shown here:
 
@@ -284,20 +288,6 @@ This improvement cleaned up the generated mesh, since a lot of faces have been c
 \end{figure}
 
 
-\subsection{OpenGL Point Cloud Viewer}
-
-During the development of PC2B, it turned out that debugging would be easier if data is visualized simultaneously while importing and meshing. To that end we implemented a point cloud viewer. Initially it displays the coordinate axes. While importing it displays, at maximum, three million points from the point cloud file and during meshing it displays the final 3D panorama mesh.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{PC2B_OpenGL_Viewer.jpg}
-	\caption{PC2B OpenGL Viewer}
-	\label{fig:pc2b_opengl_viewer}
-\end{figure}
-
-The Qt framework offers its own implementations to utilize OpenGL for drawing. Setting up the basic functionality within Qt was done with the help of a Russian video tutorial (see Enzhaev 2014 \parencite{ytQtOpenGL}). Using modern OpenGL drawing code was important to be able to handle millions of points and render high-resolution 3D meshes in real time.
-
-
 \subsection{Mesh Exporter}
 
 As a last step the generated mesh needs to be exported. Just like for importing, there is a huge amount of file formats available to export to. One format had to be chosen that supported at least vertices, texture coordinates and faces.
@@ -313,6 +303,68 @@ A personal goal for this research was to implement a .blend export feature to al
 \subsubsection{custom format}
 
 Even the Blender community suggested to not use the .blend format directly, but rather try a custom binary format (see thread on BlenderArtists \parencite{webBlenderArtistsBlendExport} by the author). Implementing such a binary file format would result in a fast and memory efficient way to exchange the mesh between PC2B and Blender as well as a comfortable solution for users, since the file could automatically be openend with Blender after meshing is finished. In this research the custom file format was omitted in favor of the aforementioned .obj file format. However, it is under consideration to be implemented eventually.
+
+
+
+
+
+\section{How the conversion is implemented}
+
+Additionally, an OpenGL viewer is implemented to visualize the data while it is being processed. A programming language and framework that provide the necessary performance and graphical user interface were needed. We decided to use C++ with Qt 5 for this task.
+
+
+
+\subsection{UML class diagram}
+
+PC2B was developed using object-oriented programming (OOP). To encapsulate certain properties and actions by creating and using objects, those are represented as classes in the source code. PC2B consists of several classes.\\
+
+Helper classes, such as \textit{Point3D} and \textit{FileType}, provide clear representations of entities while still being flexible for future extensions. Graphical User Interface (GUI) code is contained in \textit{MainWindow}, which inherits from \textit{QMainWindow}. This \textit{MainWindow} is made visible in an instance of a \textit{QApplication} when the program is launched and creates user interface elements as well as instances of PC2B's main components responsible for processing LiDAR data. One of those component parts is the \textit{ImportWorker} which inherits from \textit{QRunnable} and enables it to run on a separate thread in a \textit{QThreadPool}. This is important, because reading and parsing a 6 GB point cloud file can take several minutes which freezes the main GUI loop if on the same thread. The same applies to \textit{MeshWorker} which implements the meshing algorithm and exports the final textured mesh for use in 3D applications. The \textit{Panorama3D} class encapsulates methods to convert a 3D point to a 2D pixel and vice versa. Additionally, it stores the panorama images. Finally the OpenGL viewer is implemented in two classes, \textit{GLWidget} which inherits from \textit{QGLWidget}, and \textit{GLMesh}. While \textit{GLWidget} provides a canvas to draw 3D graphics onto it via OpenGL, \textit{GLMesh} represents the 3D point cloud mesh and groups every property such as vertices, colors and shaders.\\
+
+This relationship between individual objects is usually depicted in the Unified Modeling Language (UML) as a class diagram. Below is an example of what a simplified UML class diagram for PC2B could look like:
+
+\pagebreak
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{PC2B_UML_class_diagram.jpg}
+	\caption{PC2B UML class diagram (simplified)}
+	\label{fig:pc2b_uml_class_diagram}
+\end{figure}
+
+\pagebreak
+
+\subsection{Working with the PC2B User Interface}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{PC2B_GUI.jpg}
+	\caption{PC2B Graphical User Interface}
+	\label{fig:pc2b_gui}
+\end{figure}
+
+The Graphical User Interface (GUI) of PC2B is divided into two parts. On the left hand side it allows to setup and load point cloud files that PC2B will process. On the right hand side it visualizes every step of the conversion procedure in a 3D viewer, which is described in more detail in the following chapter.\\
+
+To convert a point cloud file the user can either browse to a file on the local machine or open the most recent file from the file menu. This is the only prerequisite to start the conversion in PC2B. However, the file may need additional tweaking which a user can perform by easily adjusting the respective setting in the user interface.\\
+
+Users are able to define the coordinate system handedness and its corresponding Up-Vector. This provides a way to handle point clouds with varying orientations. Furthermore the point cloud can be translated by a user defined 3D vector and it is possible to set the maximum scan distance to work with files from diverse point cloud generators.\\
+
+Lastly, panorama settings are provided. On the one hand the projection type can be set to "Equirectangular", "Cylindrical", or "Mercator". On the other hand the final panorama resolution can be defined by using presets or a custom resolution. The final mesh can be cleaned up by adjusting the threshold at which a normal angle will discard a polygon.
+
+\pagebreak
+
+\subsection{OpenGL Point Cloud Viewer}
+
+During the development of PC2B, it turned out that debugging would be easier if data is visualized simultaneously while importing and meshing. To that end we implemented a point cloud viewer. Initially it displays the coordinate axes. While importing it displays, at maximum, three million points from the point cloud file and during meshing it displays the final 3D panorama mesh.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{PC2B_OpenGL_Viewer.jpg}
+	\caption{PC2B OpenGL Viewer}
+	\label{fig:pc2b_opengl_viewer}
+\end{figure}
+
+The Qt framework offers its own implementations to utilize OpenGL for drawing. Setting up the basic functionality within Qt was done with the help of a Russian video tutorial (see Enzhaev 2014 \parencite{ytQtOpenGL}). Using modern OpenGL drawing code was important to be able to handle millions of points and render high-resolution 3D meshes in real time.
+
 
 \subsection{Optimizations}
 \label{section_optimizations}

@@ -1,4 +1,4 @@
-\documentclass[12pt, twoside, titlepage]{book}
+\documentclass[12pt, oneside, titlepage]{book}
 
 \title{Visualization of laser scanner point clouds as 3D panorama}
 \author{Adam Kalisz}
@@ -45,10 +45,10 @@
 
 \begin{document}
 	
-	\input{titlepage}
-	
+	\include{titlepage}
 	\thispagestyle{empty}
 	
+	\setcounter{page}{2}
 	\include{declaration}
 	\include{abstract}
 	\include{acknowledgements}
@@ -61,9 +61,7 @@
 	\clearpage
 	
 
-	\thispagestyle{plain}
 	
-	\pagestyle{fancy}
 	\chapter{Introduction}
 	\input{chapters/introduction}
 	\chapter{Background Research}
@@ -80,8 +78,9 @@
 	\chapter{Appendix}
 	\input{chapters/appendix}
 	
-	\pagestyle{plain}
 	\printbibliography
+	
+	\include{material}
 		
 
 \end{document}

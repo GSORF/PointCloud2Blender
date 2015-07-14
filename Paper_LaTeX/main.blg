@@ -1,20 +1,20 @@
 [0] Config.pm:318> INFO - This is Biber 1.8
 [0] Config.pm:321> INFO - Logfile is 'main.blg'
-[231] biber-MSWIN:272> INFO - === %a %b %e, %Y, %H:%M:%S
-[231] Biber.pm:333> INFO - Reading 'main.bcf'
-[307] Utils.pm:169> WARN - Warning: Found biblatex control file version 2.6, expected version 2.5
-[308] Biber.pm:630> INFO - Found 64 citekeys in bib section 0
-[468] Biber.pm:3053> INFO - Processing section 0
-[654] Biber.pm:3190> INFO - Looking for bibtex format file 'references.bib' for section 0
-[664] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
-[687] bibtex.pm:812> INFO - Found BibTeX data source 'references.bib'
-[857] Utils.pm:169> WARN - Datamodel: Entry 'afWiederaufbauDesPellerhofes' (references.bib): Invalid format 'publication date unknown' of date field 'date' - ignoring
-[1138] Biber.pm:2939> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[1138] Biber.pm:2945> INFO - Sorting 'entry' list '' keys
-[1139] Biber.pm:2949> INFO - No sort tailoring available for locale 'English_United States.1252'
-[1166] Biber.pm:2939> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[1166] Biber.pm:2945> INFO - Sorting 'entry' list 'none' keys
-[1167] Biber.pm:2949> INFO - No sort tailoring available for locale 'English_United States.1252'
-[1284] bbl.pm:482> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1309] bbl.pm:555> INFO - Output to main.bbl
-[1309] Biber.pm:105> INFO - WARNINGS: 2
+[78] biber-MSWIN:272> INFO - === %a %b %e, %Y, %H:%M:%S
+[79] Biber.pm:333> INFO - Reading 'main.bcf'
+[157] Utils.pm:169> WARN - Warning: Found biblatex control file version 2.6, expected version 2.5
+[159] Biber.pm:630> INFO - Found 64 citekeys in bib section 0
+[264] Biber.pm:3053> INFO - Processing section 0
+[399] Biber.pm:3190> INFO - Looking for bibtex format file 'references.bib' for section 0
+[409] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[432] bibtex.pm:812> INFO - Found BibTeX data source 'references.bib'
+[560] Utils.pm:169> WARN - Datamodel: Entry 'afWiederaufbauDesPellerhofes' (references.bib): Invalid format 'publication date unknown' of date field 'date' - ignoring
+[826] Biber.pm:2939> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[826] Biber.pm:2945> INFO - Sorting 'entry' list '' keys
+[826] Biber.pm:2949> INFO - No sort tailoring available for locale 'English_United States.1252'
+[855] Biber.pm:2939> INFO - Overriding locale 'English_United States.1252' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[855] Biber.pm:2945> INFO - Sorting 'entry' list 'none' keys
+[855] Biber.pm:2949> INFO - No sort tailoring available for locale 'English_United States.1252'
+[978] bbl.pm:482> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1001] bbl.pm:555> INFO - Output to main.bbl
+[1002] Biber.pm:105> INFO - WARNINGS: 2

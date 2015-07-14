@@ -286,7 +286,7 @@
       \field{urlyear}{2015}
       \field{year}{2015}
       \verb{url}
-      \verb http://www.vega.com/de-DE/home_de/Produkte/Produktkatalog/F%C3%83%C2%BCllstand/Radar/VEGAPULS%2069
+      \verb https://www.vega.com/en/home_ch/Home_International/Products/Product%20cataloque/Level/Radar/102559
       \endverb
     \endentry
     \entry{sensorsmag}{online}{}
@@ -1025,27 +1025,6 @@
       \field{title}{Physically Based Rendering, Second Edition: From Theory To Implementation}
       \field{year}{2010}
     \endentry
-    \entry{ytQtOpenGL}{online}{}
-      \name{labelname}{1}{}{%
-        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{b0ba9a20984769d4d1a0a4b6d25646ed}
-      \strng{fullhash}{b0ba9a20984769d4d1a0a4b6d25646ed}
-      \field{labelalpha}{Enz14}
-      \field{sortinit}{0}
-      \field{labeltitle}{Qt C++ OpenGL GLSL (parts 1 to 8)}
-      \field{title}{Qt C++ OpenGL GLSL (parts 1 to 8)}
-      \field{urlday}{10}
-      \field{urlmonth}{03}
-      \field{urlyear}{2015}
-      \field{year}{2014}
-      \verb{url}
-      \verb https://www.youtube.com/watch?v=jTHvFGjy5uA&list=PLHlHFavas54e0-05vZcZ0wNGhnpRyFmLc
-      \endverb
-    \endentry
     \entry{webMysteryOfTheBlend}{online}{}
       \name{labelname}{1}{}{%
         {{hash=9d1c56cee47294f756427d2174409457}{Bakker}{B\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
@@ -1087,6 +1066,27 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{ytQtOpenGL}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \strng{fullhash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \field{labelalpha}{Enz14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{title}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=jTHvFGjy5uA&list=PLHlHFavas54e0-05vZcZ0wNGhnpRyFmLc
       \endverb
     \endentry
     \entry{freedomOfPanoramaUnderAttack}{online}{}
@@ -1725,7 +1725,7 @@
       \field{urlyear}{2015}
       \field{year}{2015}
       \verb{url}
-      \verb http://www.vega.com/de-DE/home_de/Produkte/Produktkatalog/F%C3%83%C2%BCllstand/Radar/VEGAPULS%2069
+      \verb https://www.vega.com/en/home_ch/Home_International/Products/Product%20cataloque/Level/Radar/102559
       \endverb
     \endentry
     \entry{sensorsmag}{online}{}
@@ -2464,27 +2464,6 @@
       \field{title}{Physically Based Rendering, Second Edition: From Theory To Implementation}
       \field{year}{2010}
     \endentry
-    \entry{ytQtOpenGL}{online}{}
-      \name{labelname}{1}{}{%
-        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{b0ba9a20984769d4d1a0a4b6d25646ed}
-      \strng{fullhash}{b0ba9a20984769d4d1a0a4b6d25646ed}
-      \field{labelalpha}{Enz14}
-      \field{sortinit}{0}
-      \field{labeltitle}{Qt C++ OpenGL GLSL (parts 1 to 8)}
-      \field{title}{Qt C++ OpenGL GLSL (parts 1 to 8)}
-      \field{urlday}{10}
-      \field{urlmonth}{03}
-      \field{urlyear}{2015}
-      \field{year}{2014}
-      \verb{url}
-      \verb https://www.youtube.com/watch?v=jTHvFGjy5uA&list=PLHlHFavas54e0-05vZcZ0wNGhnpRyFmLc
-      \endverb
-    \endentry
     \entry{webMysteryOfTheBlend}{online}{}
       \name{labelname}{1}{}{%
         {{hash=9d1c56cee47294f756427d2174409457}{Bakker}{B\bibinitperiod}{Jeroen}{J\bibinitperiod}{}{}{}{}}%
@@ -2526,6 +2505,27 @@
       \field{year}{2014}
       \verb{url}
       \verb http://www.blenderartists.org/forum/showthread.php?362865-C-Qt-Export-blend-with-procedurally-generated-mesh
+      \endverb
+    \endentry
+    \entry{ytQtOpenGL}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b0ba9a20984769d4d1a0a4b6d25646ed}{Enzhaev}{E\bibinitperiod}{Ivan}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \strng{fullhash}{b0ba9a20984769d4d1a0a4b6d25646ed}
+      \field{labelalpha}{Enz14}
+      \field{sortinit}{0}
+      \field{labeltitle}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{title}{Qt C++ OpenGL GLSL (parts 1 to 8)}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2014}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=jTHvFGjy5uA&list=PLHlHFavas54e0-05vZcZ0wNGhnpRyFmLc
       \endverb
     \endentry
     \entry{freedomOfPanoramaUnderAttack}{online}{}
