@@ -1,3 +1,21 @@
+/*
+    PointCloud2Blender - convert point cloud files to a textured 3D mesh
+    Copyright (C) 2015 Adam Kalisz (Bachelor@Kalisz.co)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -290,13 +308,14 @@ void MainWindow::updateMeshingStatus(float percent)
 {
     ui->prbImportStatus->setValue(percent);
 
-    qint64 duration = (QDateTime::currentMSecsSinceEpoch() - startTime) / 1000;
+    qint64 duration = (QDateTime::currentMSecsSinceEpoch() - startTime);
     qint64 minutes = duration / 60;
     ui->prbImportStatus->setFormat("%p%");
 
     if(percent >= 100.0f)
     {
-        QMessageBox::information(this, "Meshing complete!", "The meshing process has finished. This took " + QString::number(minutes, 'f', 2) + " minutes.\n\nYou can see the result in the 3D viewer and you can use the generated .obj file in Blender. Have fun!", QMessageBox::Ok);
+        QMessageBox::information(this, "Meshing complete!", "The meshing process has finished. This took " + QString::number(duration) + " milliseconds.\n\nYou can see the result in the 3D viewer and you can use the generated .obj file in Blender. Have fun!", QMessageBox::Ok);
+        ui->btnImport->setEnabled(true);
     }
 }
 
